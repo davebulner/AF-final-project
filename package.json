@@ -3,12 +3,14 @@
   "version": "1.0.0",
   "description": "MERN video conferencing app",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "node backend/server"
   },
   "author": "Agasthi,Madusanka,Ushini,Bulner",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1"
   }
 }
