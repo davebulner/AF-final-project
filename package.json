@@ -1,0 +1,14 @@
+{
+  "name": "af-final-project",
+  "version": "1.0.0",
+  "description": "MERN video conferencing app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node backend/server"
+  },
+  "author": "Agasthi,Madusanka,Ushini,Bulner",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
