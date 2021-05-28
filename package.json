@@ -7,7 +7,9 @@
   "scripts": {
     "start": "node backend/server",
     "data:import": "node backend/seeder",
-    "data:destory": "node backend/seeder -d"
+    "data:destory": "node backend/seeder -d",
+    "server": "nodemon backend/server"
+    
   },
   "author": "Agasthi,Madusanka,Ushini,Bulner",
   "license": "MIT",
@@ -16,6 +18,7 @@
     "colors": "^1.4.0",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
     "mongoose": "^5.12.11"
   }
 }
