@@ -19,7 +19,7 @@ const authUser = asyncHandler(async (req, res) => {
             isEditor: user.isEditor,
             isReviwer: user.isReviwer,
             isUser: user.isUser,
-            token : null
+            token : null,
 
         })
     } else {
