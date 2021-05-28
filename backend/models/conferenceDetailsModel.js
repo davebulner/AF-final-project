@@ -35,6 +35,9 @@ const conferenceDetailsSchema = mongoose.Schema({
       venue: {
             type: String,
             required: true
+      },
+      approved: {
+            type: Boolean
       }
 
 }, {
