@@ -5,12 +5,12 @@ const addConDetails = asyncHandler(async (req, res) => {
       const conDetails = new ConferenceDetails({
             conname: 'conference Name',
             description: 'sample description',
-            user: req.user._id,
+            // user: req.user._id,
             organizer: 'add organizer',
-            phone: 'add phone',
+            phone: '1234567809',
             email: 'add email',
-            startDate: 'add start date',
-            endDate: 'add end date',
+            startDate: '12/12/21',
+            endDate: '',
             venue: 'add venue',
             approved: false
 
@@ -20,4 +20,9 @@ const addConDetails = asyncHandler(async (req, res) => {
       res.status(201).json(addConDetails)
 })
 
-export { addConDetails }
+const getAllConDetails = asyncHandler(async (req, res) => {
+      const conDetails = await ConferenceDetails.find({})
+      res.json(conDetails)
+})
+
+export { addConDetails, getAllConDetails }
