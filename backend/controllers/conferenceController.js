@@ -16,6 +16,6 @@ const addConDetails = asyncHandler(async (req, res) => {
 
       })
 
-      const addConDetails = await product.save()
+      const addConDetails = await conDetails.save()
       res.status(201).json(addConDetails)
 })
