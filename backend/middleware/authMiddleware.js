@@ -35,4 +35,33 @@ const protect = asyncHandler (async (req, res, next) => {
 
 })
 
-export { protect }
+//check authorization
+const admin = (req, res, next) => {
+    if(req.user && req.user.isAdmin){
+        next()
+    }else {
+        res.status(401)
+        throw new Error('Not authorized as an admin')
+    }
+}
+
+const editor = (req, res, next) => {
+    if(req.user && req.user.isEditor){
+        next()
+    }else {
+        res.status(401)
+        throw new Error('Not authorized as an editor')
+    }
+}
+
+const reviver = (req, res, next) => {
+    if(req.user && req.user.isReviwer){
+        next()
+    }else {
+        res.status(401)
+        throw new Error('Not authorized as an reviwer')
+    }
+}
+
+
+export { protect, admin, editor, reviver}
