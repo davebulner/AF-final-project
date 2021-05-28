@@ -1,5 +1,5 @@
-import asyncHandler from 'express-async-hander'
-import ConferenceDetails from '../models/conferenceDetailsModel'
+import asyncHandler from 'express-async-handler'
+import ConferenceDetails from '../models/conferenceDetailsModel.js'
 
 const addConDetails = asyncHandler(async (req, res) => {
       const conDetails = new ConferenceDetails({
@@ -19,3 +19,5 @@ const addConDetails = asyncHandler(async (req, res) => {
       const addConDetails = await conDetails.save()
       res.status(201).json(addConDetails)
 })
+
+export { addConDetails }

@@ -9,7 +9,6 @@
     "data:import": "node backend/seeder",
     "data:destory": "node backend/seeder -d",
     "server": "nodemon backend/server"
-    
   },
   "author": "Agasthi,Madusanka,Ushini,Bulner",
   "license": "MIT",

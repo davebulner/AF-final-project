@@ -4,9 +4,9 @@ import connectDB from './config/db.js'
 import colors from 'colors'
 
 
-import userRoutes from './routes/userRoutes.js'
 //routes
-import conferenceRoutes from './routes/conferenceRoutes'
+import conferenceRoutes from './routes/conferenceRoutes.js'
+import userRoutes from './routes/userRoutes.js'
 
 dotenv.config()
 
@@ -16,19 +16,13 @@ const app = express()
 
 
 app.use(express.json())
-
-app.get('/', (req,res)=>{
-    res.send('API running...')
-})
-
-app.use('/api/users', userRoutes)
-
 app.get('/', (req, res) => {
     res.send('API running...')
 })
 
 //calling routes
 app.use('/api/conDetails', conferenceRoutes)
+app.use('/api/users', userRoutes)
 
 const PORT = process.env.PORT || 8040
 
