@@ -20,4 +20,9 @@ const addConDetails = asyncHandler(async (req, res) => {
       res.status(201).json(addConDetails)
 })
 
-export { addConDetails }
+const getAllConDetails = asyncHandler(async (req, res) => {
+      const conDetails = await ConferenceDetails.find({})
+      res.json(conDetails)
+})
+
+export { addConDetails, getAllConDetails }
