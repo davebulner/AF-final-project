@@ -4,6 +4,6 @@ const router = express.Router()
 
 import { addConDetails } from '../controllers/conferenceController.js'
 
-router.route('/').post(addConDetails)
+router.post('/addConDetails', addConDetails)
 
 export default router
