@@ -12,7 +12,7 @@ const addConDetails = asyncHandler(async (req, res) => {
             startDate: '12/12/21',
             endDate: '',
             venue: 'add venue',
-            approved: false
+            isApproved: 'false'
 
       })
 
