@@ -1,14 +1,14 @@
 import mongoose from 'mongoose'
 
-const reviwerDataSchema = mongoose.Schema({
-   
-    reviwerEmail: {
+const reviewerDataSchema = mongoose.Schema({
+  
+    reveiwerEmail: {
         type: String,
         required: true,
     },
 
-    reviwerPhoneNo: {
-        type: String,
+    reveiwerPhoneNo: {
+        type: Number,
         required: true,
     },
 
@@ -21,7 +21,7 @@ const reviwerDataSchema = mongoose.Schema({
     timestamps: true
 })
 
-const Reviewer = mongoose.model('Reviwer', reviwerDataSchema)
+const Reviewer = mongoose.model('Reviewer', reviewerDataSchema)
 
 export default Reviewer
 

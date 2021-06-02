@@ -7,6 +7,7 @@ import colors from 'colors'
 //routes
 import conferenceRoutes from './routes/conferenceRoutes.js'
 import userRoutes from './routes/userRoutes.js'
+import reviewerRoutes from './routes/reveiwerRoutes.js'
 
 dotenv.config()
 
@@ -23,6 +24,7 @@ app.get('/', (req, res) => {
 //calling routes
 app.use('/api/conDetails', conferenceRoutes)
 app.use('/api/users', userRoutes)
+app.use('/api/reviewer', reviewerRoutes)
 
 const PORT = process.env.PORT || 8040
 
