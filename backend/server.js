@@ -2,12 +2,14 @@ import express from 'express'
 import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import colors from 'colors'
+import path from 'path'
 
 
 //routes
 import conferenceRoutes from './routes/conferenceRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import reviewerRoutes from './routes/reveiwerRoutes.js'
+import uploadRoutes from './routes/uploadRoutes.js'
 
 dotenv.config()
 
@@ -25,6 +27,10 @@ app.get('/', (req, res) => {
 app.use('/api/conDetails', conferenceRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/reviewer', reviewerRoutes)
+app.use('/api/uploads', uploadRoutes)
+
+const __dirname = path.resolve()
+app.use('/documents', express.static(path.join(__dirname, '/documents')))
 
 const PORT = process.env.PORT || 8040
 
