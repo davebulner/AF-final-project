@@ -1,14 +1,18 @@
 import React from "react"
-import Footer from './components/Footer'
+import Footer from "./components/Footer"
+import Navbar from "./components/Navbar"
+import "./App.css"
 
 function App() {
   return (
-   <>
-      <main>
-        <h1>welcome</h1>
-      </main>
+    <>
+      <Navbar />
+      <div className="main">
+
+
+      </div>
       <Footer />
-   </>
+    </>
   )
 }
 
