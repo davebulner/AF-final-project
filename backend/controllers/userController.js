@@ -19,7 +19,9 @@ const authUser = asyncHandler(async (req, res) => {
             isAdmin: user.isAdmin,
             isEditor: user.isEditor,
             isReviwer: user.isReviwer,
-            isUser: user.isUser,
+            isReasearcher: user.isReasearcher,
+            isWorkPresnter: user.isWorkPresnter,
+            isAtendee: user.isAtendee,
             token : generateToken(user._id),
         })
     } else {
@@ -30,7 +32,7 @@ const authUser = asyncHandler(async (req, res) => {
 
 
 // @desc get user profile
-// @route POST /api/users/profile
+// @route GET /api/users/profile
 //@access Private
 
 const getUserProfile = asyncHandler(async (req, res) => {
@@ -44,7 +46,9 @@ const getUserProfile = asyncHandler(async (req, res) => {
             isAdmin: user.isAdmin,
             isEditor: user.isEditor,
             isReviwer: user.isReviwer,
-            isUser: user.isUser,
+            isReasearcher: user.isReasearcher,
+            isWorkPresnter: user.isWorkPresnter,
+            isAtendee: user.isAtendee,
         })
 
     }else {
@@ -59,7 +63,7 @@ const getUserProfile = asyncHandler(async (req, res) => {
 //@access Public
 
 const registerUser = asyncHandler(async (req, res) => {
-    const { name, email, password } = req.body
+    const { name, email, password, isReasearcher, isWorkPresnter, isAtendee, insertDoc } = req.body
 
     const userExists = await User.findOne({ email })
 
@@ -72,8 +76,11 @@ const registerUser = asyncHandler(async (req, res) => {
     const user = await User.create({
         name,
         email,
-        password
-        
+        password,
+        isReasearcher,
+        isWorkPresnter,
+        isAtendee,
+        insertDoc
 
     })
 
@@ -85,7 +92,9 @@ const registerUser = asyncHandler(async (req, res) => {
             isAdmin: user.isAdmin,
             isEditor: user.isEditor,
             isReviwer: user.isReviwer,
-            isUser: user.isUser,
+            isReasearcher: user.isReasearcher,
+            isWorkPresnter: user.isWorkPresnter,
+            isAtendee: user.isAtendee,
             token : generateToken(user._id),
         })
     }else{

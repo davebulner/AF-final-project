@@ -31,11 +31,30 @@ const userSchema = mongoose.Schema({
         required: true,
         default: false  
     },
-    isUser: {
+
+    isReasearcher: {
         type: Boolean,
         required: true,
         default: false  
     },
+
+    isWorkPresnter: {
+        type: Boolean,
+        required: true,
+        default: false  
+    },
+
+    isAtendee: {
+        type: Boolean,
+        required: true,
+        default: false  
+    },
+
+    insertDoc: {
+        type: String,
+        default: false
+    }
+
 
 }, {
     timestamps: true
