@@ -11,8 +11,6 @@ function App() {
       <div className="main">
         <Navbar />
         <Showcase />
-
-
       </div>
       <Footer />
     </>

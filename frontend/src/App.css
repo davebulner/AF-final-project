@@ -73,7 +73,6 @@ a {
 
 @media screen and (max-width: 850px) {
   body {
-    overflow-x: hidden;
   }
   .hambuger-toggle {
     display: block;
@@ -142,4 +141,16 @@ a {
   color: rgb(26, 108, 122);
   padding: 10px 50px;
   margin: 0;
+}
+
+.modal {
+  width: 10%;
+  height: 200%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 200%;
+  padding-left: 30%;
 }

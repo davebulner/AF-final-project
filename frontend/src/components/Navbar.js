@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import styled from 'styled-components';
+import { LoginScreen } from '../screens/LoginScreen'
+
 
 
 const Navbar = () => {
@@ -29,6 +32,12 @@ const Navbar = () => {
 
       window.addEventListener('scroll', changeBackground);
 
+      const [showModal, setShowModal] = useState(false);
+
+      const openModal = () => {
+            setShowModal(prev => !prev);
+      };
+
 
       return (
             <>
@@ -39,8 +48,8 @@ const Navbar = () => {
                         </div>
                         <ul className={renderClasses()}>
                               <li className="link"><a href="#">Home</a></li>
-                              <li className="link"><a href="#">About</a></li>
-                              <li className="link"><a href="#">Services</a></li>
+                              <li className="link" onClick={openModal}><LoginScreen showModal={showModal} setShowModal={showModal}></LoginScreen>Login</li>
+                              <li className="link"><a href="#">Register</a></li>
                               <li className="link"><a href="#">Contact us</a></li>
                         </ul>
                         <div onClick={handleNavLinksToggle} className="hambuger-toggle">
