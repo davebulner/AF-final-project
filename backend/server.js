@@ -10,6 +10,7 @@ import conferenceRoutes from './routes/conferenceRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 import researcherRoutes from './routes/researchRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
+import workPresenterRoutes from './routes/workPresenterRoutes.js'
 
 dotenv.config()
 
@@ -27,6 +28,7 @@ app.get('/', (req, res) => {
 app.use('/api/conDetails', conferenceRoutes)
 app.use('/api/users', userRoutes)
 app.use('/api/researcher', researcherRoutes)
+app.use('/api/presenter', workPresenterRoutes)
 app.use('/api/uploads', uploadRoutes)
 
 const __dirname = path.resolve()
