@@ -12,13 +12,21 @@ a {
   text-decoration: none;
 }
 
-nav {
+.navbar {
   display: flex;
+  height: 80px;
   justify-content: space-around;
   min-height: 8vh;
-  position: absolute;
+  position: sticky;
   width: 100%;
   align-items: center;
+  background-color: transparent;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar.active {
+  background: linear-gradient(90deg, rgb(1, 0, 14) 10%, rgb(0, 78, 194) 100%);
 }
 
 .logo {

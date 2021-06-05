@@ -7,9 +7,11 @@ import Showcase from "./components/Showcase"
 function App() {
   return (
     <>
-      <Navbar />
+
       <div className="main">
+        <Navbar />
         <Showcase />
+
 
       </div>
       <Footer />
