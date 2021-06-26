@@ -38436,6 +38436,6 @@ exports.default = registerScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./registerscreen.css":"TbhEH","react-bootstrap":"4n7hB","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI"}],"TbhEH":[function() {},{}],"24gh2":[function() {},{}]},["1j6wU","39Mbm","5rkFb"], "5rkFb", "parcelRequire0de8")
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-bootstrap":"4n7hB","./registerscreen.css":"TbhEH","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI"}],"TbhEH":[function() {},{}],"24gh2":[function() {},{}]},["1j6wU","39Mbm","5rkFb"], "5rkFb", "parcelRequire0de8")
 
 //# sourceMappingURL=index.3fafb3e2.js.map
