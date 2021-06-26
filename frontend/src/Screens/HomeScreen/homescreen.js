@@ -2,7 +2,6 @@ import React from 'react'
 import Navbar from '../../components/Navbar/navbar.js'
 import Footer from '../../components/Footer/footer.js'
 import Showcase from '../../components/Showcase/showcase.js'
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Button, Form } from 'react-bootstrap';
 
 const homeScreen = () => {
