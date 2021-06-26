@@ -11,7 +11,6 @@ const App = () => {
                         <Route path="/" component={HomeScreen} exact />
                         <Route path="/login" component={LoginScreen} />
                   </div>
-
             </Router>
       )
 }
