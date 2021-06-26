@@ -46,9 +46,9 @@ const Navbar = () => {
                               <h4>VCMS</h4>
                         </div>
                         <ul className={renderClasses()}>
-                              <li className="link"><a href="#">Home</a></li>
+                              <li className="link"><a href="/">Home</a></li>
                               <li className="link" ><a href="/login"> Login</a></li>
-                              <li className="link"><a href="#">Register</a></li>
+                              <li className="link"><a href="/register">Register</a></li>
                               <li className="link"><a href="#">Contact us</a></li>
                         </ul>
                         <div onClick={handleNavLinksToggle} className="hambuger-toggle">

@@ -1,25 +1,32 @@
-import React from 'react';
-import { Button, Form } from 'react-bootstrap';
-import './loginscreen.css'
+import React from 'react'
+import { Button, Form } from 'react-bootstrap'
+import './registerscreen.css'
+
 import Navbar from '../../components/Navbar/navbar.js'
 import Footer from '../../components/Footer/footer.js'
 
-
-const Loginscreen = () => {
-
-
+const registerScreen = () => {
       return (
             <>
                   <Navbar />
 
                   <div className='wrapper'>
-                        <div className='nm'>
+                        <div className='ni'>
 
                         </div>
                         <div className='content'>
-
                               <Form>
-                                    <h3 align='center'>Sign In</h3>
+                                    <h3 align='center'>Sign Up</h3>
+
+                                    <div className="form-group bn">
+                                          <label>First name</label>
+                                          <input type="text" className="form-control" placeholder="First name" />
+                                    </div>
+
+                                    <div className="form-group bn">
+                                          <label>Last name</label>
+                                          <input type="text" className="form-control" placeholder="Last name" />
+                                    </div>
 
                                     <div className="form-group bn">
                                           <label>Email address</label>
@@ -31,16 +38,9 @@ const Loginscreen = () => {
                                           <input type="password" className="form-control" placeholder="Enter password" />
                                     </div>
 
-                                    <div className="form-group bn">
-                                          <div className="custom-control custom-checkbox">
-                                                <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                                                <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                                          </div>
-                                    </div>
-
-                                    <Button type="submit" className="btn btn-primary btn-block">Submit</Button>
+                                    <Button type="submit" className="btn btn-primary btn-block ">Sign Up</Button>
                                     <p className="forgot-password text-right">
-                                          Forgot <a href="#">password?</a>
+                                          Already registered <a href="/login">sign in?</a>
                                     </p>
                               </Form>
                         </div>
@@ -49,12 +49,10 @@ const Loginscreen = () => {
 
 
                   <Footer />
+
             </>
 
-
       )
-
-
 }
 
-export default Loginscreen
+export default registerScreen
