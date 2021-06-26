@@ -618,7 +618,7 @@ module.exports = require('./cjs/react-refresh-runtime.development.js');
     exports.setSignature = setSignature;
 })();
 
-},{}],"39Mbm":[function(require,module,exports) {
+},{}],"6iKAK":[function(require,module,exports) {
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
@@ -874,13 +874,13 @@ var _app = require("./App");
 var _appDefault = parcelHelpers.interopDefault(_app);
 _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.StrictMode, {
     __source: {
-        fileName: "D:\\AF-final-project\\frontend\\src\\index.js",
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\index.js",
         lineNumber: 7
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_appDefault.default, {
     __source: {
-        fileName: "D:\\AF-final-project\\frontend\\src\\index.js",
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\index.js",
         lineNumber: 8
     },
     __self: undefined
@@ -21860,8 +21860,13 @@ var _loginScreenDefault = parcelHelpers.interopDefault(_loginScreen);
 const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
             lineNumber: 9
+=======
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 6
+>>>>>>> f8ce19c2d92d3e929df822e1ab4a11e2001c8eea
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
@@ -22604,6 +22609,7 @@ function compilePath$1(path, options) {
 function isEmptyChildren(children) {
     return React.Children.count(children) === 0;
 }
+<<<<<<< HEAD
 function evalChildrenDev(children, props, path) {
     var value = children(props);
     warning(value !== undefined, "You returned `undefined` from the `children` function of " + ("<Route" + (path ? " path=\"" + path + "\"" : "") + ">, but you ") + "should have returned a React element or `null`");
@@ -38190,5 +38196,9 @@ $RefreshReg$(_c, "Showcase");
   window.$RefreshSig$ = prevRefreshSig;
 }
 },{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"24gh2":[function() {},{}]},["1j6wU","39Mbm","5rkFb"], "5rkFb", "parcelRequire0de8")
+=======
+
+},{"react-refresh/runtime":"592mh"}]},["1j6wU","6iKAK","5rkFb"], "5rkFb", "parcelRequire0de8")
+>>>>>>> f8ce19c2d92d3e929df822e1ab4a11e2001c8eea
 
 //# sourceMappingURL=index.3fafb3e2.js.map
