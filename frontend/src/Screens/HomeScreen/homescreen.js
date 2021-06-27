@@ -1,34 +1,21 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
 import Navbar from '../../components/Navbar/navbar.js'
 import Footer from '../../components/Footer/footer.js'
 import Showcase from '../../components/Showcase/showcase.js'
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Table } from 'react-bootstrap';
+
+import Loader from '../../components/Loader/loader.js'
+import Message from '../../components/Message/message.js'
+
 
 const homeScreen = () => {
+
       return (
             <>
                   <Navbar />
                   <Showcase />
-                  <Form>
-                        <Form.Group controlId="formBasicEmail">
-                              <Form.Label>Email address</Form.Label>
-                              <Form.Control type="email" placeholder="Enter email" />
-                              <Form.Text className="text-muted">
-                                    We'll never share your email with anyone else.
-                              </Form.Text>
-                        </Form.Group>
 
-                        <Form.Group controlId="formBasicPassword">
-                              <Form.Label>Password</Form.Label>
-                              <Form.Control type="password" placeholder="Password" />
-                        </Form.Group>
-                        <Form.Group controlId="formBasicCheckbox">
-                              <Form.Check type="checkbox" label="Check me out" />
-                        </Form.Group>
-                        <Button variant="primary" type="submit">
-                              Submit
-                        </Button>
-                  </Form>
                   <Footer />
             </>
       )
