@@ -3,6 +3,7 @@ import dotenv from 'dotenv'
 import connectDB from './config/db.js'
 import colors from 'colors'
 import path from 'path'
+import cors from 'cors'
 
 
 //routes
@@ -18,7 +19,7 @@ connectDB()
 
 const app = express()
 
-
+app.use(cors())
 app.use(express.json())
 app.get('/', (req, res) => {
     res.send('API running...')

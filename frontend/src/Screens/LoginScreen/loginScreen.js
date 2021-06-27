@@ -5,11 +5,32 @@ import { useDispatch, useSelector } from 'react-redux'
 import './loginscreen.css'
 import Navbar from '../../components/Navbar/navbar.js'
 import Footer from '../../components/Footer/footer.js'
-import { login } from '../../action/userAction';
+import { login } from '../../action/userAction.js'
+import Message from '../../components/Message/message.js'
+import Loader from '../../components/Loader/loader.js'
 
 
-const Loginscreen = () => {
+const Loginscreen = ({ location, history }) => {
+      const [email, setEmail] = useState('')
+      const [password, setPassword] = useState('')
 
+      const dispatch = useDispatch()
+
+      const userLogin = useSelector(state => state.userLogin)
+      const { loading, error, userInfo } = userLogin
+
+      const redirect = location.search ? location.search.split('=')[1] : '/'
+
+      useEffect(() => {
+            if (userInfo) {
+                  history.pushState(redirect)
+            }
+      }, [history, userInfo, redirect])
+
+      const submitHandler = (e) => {
+            e.preventDefault()
+            dispatch(login(email, password))
+      }
 
       return (
             <>
@@ -17,22 +38,33 @@ const Loginscreen = () => {
 
                   <div className='wrapper'>
                         <div className='nm'>
-
+                              {error && <Message variant='danger'>{error}</Message>}
+                              {loading && <Loader />}
                         </div>
                         <div className='content'>
 
-                              <Form>
+                              <Form onSubmit={submitHandler}>
                                     <h3 align='center'>Sign In</h3>
 
-                                    <div className="form-group bn">
-                                          <label>Email address</label>
-                                          <input type="email" className="form-control" placeholder="Enter email" />
-                                    </div>
+                                    <Form.Group controlId='email'>
+                                          <div className="form-group bn">
+                                                <Form.Label>Email address</Form.Label>
+                                                <Form.Control type='email' className="form-control" placeholder='Enter email'
+                                                      value={email}
+                                                      onChange={(e) => setEmail(e.target.value)}
+                                                ></Form.Control>
+                                          </div>
+                                    </Form.Group>
 
-                                    <div className="form-group bn">
-                                          <label>Password</label>
-                                          <input type="password" className="form-control" placeholder="Enter password" />
-                                    </div>
+                                    <Form.Group controlId='password'>
+                                          <div className="form-group bn">
+                                                <Form.Label>Password</Form.Label>
+                                                <Form.Control type='password' className="form-control" placeholder='Enter password'
+                                                      value={password}
+                                                      onChange={(e) => setPassword(e.target.value)}
+                                                ></Form.Control>
+                                          </div>
+                                    </Form.Group>
 
                                     <div className="form-group bn">
                                           <div className="custom-control custom-checkbox">

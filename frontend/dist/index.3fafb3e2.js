@@ -25218,104 +25218,162 @@ var _navbarJs = require("../../components/Navbar/navbar.js");
 var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
 var _footerJs = require("../../components/Footer/footer.js");
 var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
-var _userAction = require("../../action/userAction");
-const Loginscreen = ()=>{
+var _userActionJs = require("../../action/userAction.js");
+var _messageJs = require("../../components/Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _loaderJs = require("../../components/Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _s = $RefreshSig$();
+const Loginscreen = ({ location , history  })=>{
+    _s();
+    const [email, setEmail] = _react.useState('');
+    const [password, setPassword] = _react.useState('');
+    const dispatch = _reactRedux.useDispatch();
+    const userLogin = _reactRedux.useSelector((state)=>state.userLogin
+    );
+    const { loading , error , userInfo  } = userLogin;
+    const redirect = location.search ? location.search.split('=')[1] : '/';
+    _react.useEffect(()=>{
+        if (userInfo) history.pushState(redirect);
+    }, [
+        history,
+        userInfo,
+        redirect
+    ]);
+    const submitHandler = (e)=>{
+        e.preventDefault();
+        dispatch(_userActionJs.login(email, password));
+    };
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 16
+            lineNumber: 37
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "wrapper",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 18
+            lineNumber: 39
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "nm",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 19
+            lineNumber: 40
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }, error && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 41
+        },
+        __self: undefined
+    }, error), loading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 42
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "content",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 22
+            lineNumber: 44
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form, {
+        onSubmit: submitHandler,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 24
+            lineNumber: 46
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         align: "center",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 25
+            lineNumber: 47
         },
         __self: undefined
-    }, "Sign In"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }, "Sign In"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "email",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 49
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 27
+            lineNumber: 50
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 28
+            lineNumber: 51
         },
         __self: undefined
-    }, "Email address"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+    }, "Email address"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
         type: "email",
         className: "form-control",
         placeholder: "Enter email",
+        value: email,
+        onChange: (e)=>setEmail(e.target.value)
+        ,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 29
+            lineNumber: 52
         },
         __self: undefined
-    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "password",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 59
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 32
+            lineNumber: 60
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 33
+            lineNumber: 61
         },
         __self: undefined
-    }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+    }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
         type: "password",
         className: "form-control",
         placeholder: "Enter password",
+        value: password,
+        onChange: (e)=>setPassword(e.target.value)
+        ,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 34
+            lineNumber: 62
         },
         __self: undefined
-    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 37
+            lineNumber: 69
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "custom-control custom-checkbox",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 38
+            lineNumber: 70
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
@@ -25324,7 +25382,7 @@ const Loginscreen = ()=>{
         id: "customCheck1",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 39
+            lineNumber: 71
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("label", {
@@ -25332,7 +25390,7 @@ const Loginscreen = ()=>{
         htmlFor: "customCheck1",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 40
+            lineNumber: 72
         },
         __self: undefined
     }, "Remember me"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
@@ -25340,31 +25398,34 @@ const Loginscreen = ()=>{
         className: "btn btn-primary btn-block",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 44
+            lineNumber: 76
         },
         __self: undefined
     }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         className: "forgot-password text-right",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 45
+            lineNumber: 77
         },
         __self: undefined
     }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 46
+            lineNumber: 78
         },
         __self: undefined
     }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 54
+            lineNumber: 86
         },
         __self: undefined
     })));
 };
+_s(Loginscreen, "BzGu8FQYYpZCJvK13oRoP+xbLkk=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
 _c = Loginscreen;
 exports.default = Loginscreen;
 var _c;
@@ -25375,7 +25436,7 @@ $RefreshReg$(_c, "Loginscreen");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","./loginscreen.css":"4i3MP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","react-router-dom":"1PMSK","react-redux":"7GDa4","../../action/userAction":"7aL1U"}],"4n7hB":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","./loginscreen.css":"4i3MP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","react-router-dom":"1PMSK","react-redux":"7GDa4","../../action/userAction.js":"7aL1U","../../components/Message/message.js":"6fMfw","../../components/Loader/loader.js":"68bDI"}],"4n7hB":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 exports.__esModule = true;
@@ -40770,7 +40831,88 @@ const USER_LOGIN_SUCESS = 'USER_LOGIN_SUCESS';
 const USER_LOGIN_FAIL = 'USER_LOGIN_FAIL';
 const USER_LOGOUT = 'USER_LOGOUT';
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"2PCZy":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"6fMfw":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactBootstrap = require("react-bootstrap");
+const Message = ({ variant , children  })=>{
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Alert, {
+        variant: variant,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\components\\Message\\message.js",
+            lineNumber: 5
+        },
+        __self: undefined
+    }, children));
+};
+_c = Message;
+Message.defaultProps = {
+    variant: 'info'
+};
+exports.default = Message;
+var _c;
+$RefreshReg$(_c, "Message");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"68bDI":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactBootstrap = require("react-bootstrap");
+const Loader = ()=>{
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Spinner, {
+        animation: "border",
+        roles: "status",
+        style: {
+            width: '100px',
+            height: '100px',
+            margin: 'auto',
+            display: 'block'
+        },
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\components\\Loader\\loader.js",
+            lineNumber: 6
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
+        className: "sr-only",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\components\\Loader\\loader.js",
+            lineNumber: 11
+        },
+        __self: undefined
+    }, "Loading....")));
+};
+_c = Loader;
+exports.default = Loader;
+var _c;
+$RefreshReg$(_c, "Loader");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2PCZy":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40840,88 +40982,7 @@ $RefreshReg$(_c, "Showcase");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"68bDI":[function(require,module,exports) {
-var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactBootstrap = require("react-bootstrap");
-const Loader = ()=>{
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Spinner, {
-        animation: "border",
-        roles: "status",
-        style: {
-            width: '100px',
-            height: '100px',
-            margin: 'auto',
-            display: 'block'
-        },
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\components\\Loader\\loader.js",
-            lineNumber: 6
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
-        className: "sr-only",
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\components\\Loader\\loader.js",
-            lineNumber: 11
-        },
-        __self: undefined
-    }, "Loading....")));
-};
-_c = Loader;
-exports.default = Loader;
-var _c;
-$RefreshReg$(_c, "Loader");
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6fMfw":[function(require,module,exports) {
-var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactBootstrap = require("react-bootstrap");
-const Message = ({ variant , children  })=>{
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Alert, {
-        variant: variant,
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\components\\Message\\message.js",
-            lineNumber: 5
-        },
-        __self: undefined
-    }, children));
-};
-_c = Message;
-Message.defaultProps = {
-    variant: 'info'
-};
-exports.default = Message;
-var _c;
-$RefreshReg$(_c, "Message");
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7xglY":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7xglY":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
