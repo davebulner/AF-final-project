@@ -11,5 +11,27 @@ const createNews = asyncHandler(async (req, res) => {
       res.status(201).json(createdNews)
 })
 
+const updateNews = asyncHandler(async (req, res) => {
+      const {
+            date,
+            message,
+            isApproved
+      } = req.body
 
-export { createNews }
+      const news = await News.findById(req.params.id)
+
+      if (news) {
+            news.date = date
+            news.message = message
+            news.isApproved = isApproved
+
+            const updatedNews = await news.save()
+            res.json(updatedNews)
+      } else {
+            res.status(404)
+            throw new Error('News not found')
+      }
+})
+
+
+export { createNews, updateNews }
