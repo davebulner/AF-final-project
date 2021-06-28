@@ -41261,12 +41261,18 @@ parcelHelpers.export(exports, "unappConList", ()=>unappConList
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _conferenceConstants = require("../constants/conferenceConstants");
-const listConDetails = ()=>async (dispatch)=>{
+const listConDetails = ()=>async (dispatch, getState)=>{
         try {
             dispatch({
                 type: _conferenceConstants.CONFERENCE_LIST_REQUEST
             });
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/');
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/', config);
             dispatch({
                 type: _conferenceConstants.CONFERENCE_LIST_SUCCESS,
                 payload: data
@@ -41279,12 +41285,18 @@ const listConDetails = ()=>async (dispatch)=>{
         }
     }
 ;
-const appConList = ()=>async (dispatch)=>{
+const appConList = ()=>async (dispatch, getState)=>{
         try {
             dispatch({
                 type: _conferenceConstants.CONFERENCE_APPROVED_LIST_REQUEST
             });
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/approvedCon');
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/approvedCon', config);
             dispatch({
                 type: _conferenceConstants.CONFERENCE_APPROVED_LIST_SUCCESS,
                 payload: data
@@ -41297,12 +41309,18 @@ const appConList = ()=>async (dispatch)=>{
         }
     }
 ;
-const unappConList = ()=>async (dispatch)=>{
+const unappConList = ()=>async (dispatch, getState)=>{
         try {
             dispatch({
                 type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_REQUEST
             });
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/unAprrovedCon');
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/unAprrovedCon', config);
             dispatch({
                 type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_SUCCESS,
                 payload: data

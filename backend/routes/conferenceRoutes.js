@@ -6,9 +6,9 @@ import { addConDetails, getAllConDetails, updateConDetails, getUnApprovedConDeta
 import { protect, editor } from '../middleware/authMiddleware.js'
 
 router.post('/addConDetails', protect, editor, addConDetails)
-router.get('/', getAllConDetails)
+router.get('/', protect, editor, getAllConDetails)
 router.route('/:id').put(updateConDetails)
-router.get('/approvedCon', getApprovedConDetails)
-router.get('/unAprrovedCon', getUnApprovedConDetails)
+router.get('/approvedCon', protect, editor, getApprovedConDetails)
+router.get('/unAprrovedCon', protect, editor, getUnApprovedConDetails)
 
 export default router

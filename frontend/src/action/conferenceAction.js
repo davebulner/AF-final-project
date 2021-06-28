@@ -14,13 +14,23 @@ import {
       CONFERENCE_UNAPPROVED_LIST_RESET
 } from '../constants/conferenceConstants'
 
-export const listConDetails = () => async (dispatch) => {
+export const listConDetails = () => async (dispatch, getState) => {
       try {
             dispatch({
                   type: CONFERENCE_LIST_REQUEST,
             })
 
-            const { data } = await axios.get('http://localhost:8040/api/conDetails/')
+            const {
+                  userLogin: { userInfo },
+            } = getState()
+
+            const config = {
+                  headers: {
+                        Authorization: `Bearer ${userInfo.token}`,
+                  },
+            }
+
+            const { data } = await axios.get('http://localhost:8040/api/conDetails/', config)
 
             dispatch({
                   type: CONFERENCE_LIST_SUCCESS,
@@ -37,13 +47,23 @@ export const listConDetails = () => async (dispatch) => {
       }
 }
 
-export const appConList = () => async (dispatch) => {
+export const appConList = () => async (dispatch, getState) => {
       try {
             dispatch({
                   type: CONFERENCE_APPROVED_LIST_REQUEST,
             })
 
-            const { data } = await axios.get('http://localhost:8040/api/conDetails/approvedCon')
+            const {
+                  userLogin: { userInfo },
+            } = getState()
+
+            const config = {
+                  headers: {
+                        Authorization: `Bearer ${userInfo.token}`,
+                  },
+            }
+
+            const { data } = await axios.get('http://localhost:8040/api/conDetails/approvedCon', config)
 
             dispatch({
                   type: CONFERENCE_APPROVED_LIST_SUCCESS,
@@ -60,13 +80,22 @@ export const appConList = () => async (dispatch) => {
       }
 }
 
-export const unappConList = () => async (dispatch) => {
+export const unappConList = () => async (dispatch, getState) => {
       try {
             dispatch({
                   type: CONFERENCE_UNAPPROVED_LIST_REQUEST,
             })
+            const {
+                  userLogin: { userInfo },
+            } = getState()
 
-            const { data } = await axios.get('http://localhost:8040/api/conDetails/unAprrovedCon')
+            const config = {
+                  headers: {
+                        Authorization: `Bearer ${userInfo.token}`,
+                  },
+            }
+
+            const { data } = await axios.get('http://localhost:8040/api/conDetails/unAprrovedCon', config)
 
             dispatch({
                   type: CONFERENCE_UNAPPROVED_LIST_SUCCESS,
