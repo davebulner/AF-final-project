@@ -24,9 +24,9 @@ import { mainListItems, secondaryListItems } from './listItems';
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
-      {'Copyright © '}
-      <Link color="inherit" href="">
-        Your Website
+      {'Created By © '}
+      <Link color="inherit" href="#">
+        Agasthi Sankalana
       </Link>{' '}
       {new Date().getFullYear()}
       {'.'}

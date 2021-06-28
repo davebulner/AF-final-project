@@ -9,6 +9,7 @@ import AdminScreen from './components/Admin/adminDashboard/adminDashboard'
 import EditorScreen from './Screens/EditorScreen/Editor dashboard/editorDashboard'
 import appconlistScreen from './Screens/EditorScreen/approvedScreen'
 import unappconlistScreen from './Screens/EditorScreen/unapprovedScreen'
+import AdminConference from './components/Admin/adminConferenceDetails/adminConferenceDetails.js'
 
 const App = () => {
       return (
@@ -22,8 +23,7 @@ const App = () => {
                         <Route path="/editor" component={EditorScreen} />
                         <Route path="/applist" component={appconlistScreen} />
                         <Route path="/unapplist" component={unappconlistScreen} />
-
-
+                        <Route path="/adminCon" component={AdminConference} />
                   </div>
             </Router>
       )
