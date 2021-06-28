@@ -63,7 +63,7 @@ export const conUnApprovedReduceer = (state = { conferencedetails: [] }, action)
       }
 }
 
-export const conDetailsDelete = (state = {}, action) => {
+export const conDetailsDeleteReducer = (state = {}, action) => {
       switch (action.type) {
             case CONFERENCE_DETAILS_DELETE_REQUEST:
                   return { loading: true }

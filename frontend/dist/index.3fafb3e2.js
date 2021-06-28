@@ -41268,6 +41268,8 @@ parcelHelpers.export(exports, "appConList", ()=>appConList
 );
 parcelHelpers.export(exports, "unappConList", ()=>unappConList
 );
+parcelHelpers.export(exports, "deleteConDetails", ()=>deleteConDetails
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _conferenceConstants = require("../constants/conferenceConstants");
@@ -41276,6 +41278,14 @@ const listConDetails = ()=>async (dispatch)=>{
             dispatch({
                 type: _conferenceConstants.CONFERENCE_LIST_REQUEST
             });
+            // const {
+            //       userLogin: { userInfo },
+            // } = getState()
+            // const config = {
+            //       headers: {
+            //             Authorization: `Bearer ${userInfo.token}`,
+            //       },
+            // }
             const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/');
             dispatch({
                 type: _conferenceConstants.CONFERENCE_LIST_SUCCESS,
@@ -41332,6 +41342,29 @@ const unappConList = ()=>async (dispatch, getState)=>{
         } catch (error) {
             dispatch({
                 type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const deleteConDetails = (id)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_DELETE_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            await _axiosDefault.default.delete(`http://localhost:8040/api/conDetails/${id}`, config);
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_DELETE_SUCCESS
+            });
+        } catch (error) {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_DELETE_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
@@ -57768,22 +57801,31 @@ function Dashboard() {
     const listCon = _reactRedux.useSelector((state)=>state.listCon
     );
     const { loading , error , conferencedetails  } = listCon;
+    // const userLogin = useSelector((state) => state.userLogin)
+    // const { userInfo } = userLogin
+    const deleteCon = _reactRedux.useSelector((state)=>state.deleteCon
+    );
+    const { success: successDelete  } = deleteCon;
     _react.useEffect(()=>{
         dispatch(_conferenceAction.listConDetails());
     }, [
-        dispatch
+        dispatch,
+        successDelete
     ]);
+    const deleteHandler = (id)=>{
+        if (window.confirm('Are you sure')) dispatch(_conferenceAction.deleteConDetails(id));
+    };
     return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.root,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 146
+            lineNumber: 161
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 147
+            lineNumber: 162
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
@@ -57791,14 +57833,14 @@ function Dashboard() {
         className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 148
+            lineNumber: 163
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
         className: classes.toolbar,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 149
+            lineNumber: 164
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
@@ -57810,13 +57852,13 @@ function Dashboard() {
         className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 150
+            lineNumber: 165
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 158
+            lineNumber: 173
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
@@ -57827,14 +57869,14 @@ function Dashboard() {
         className: classes.title,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 160
+            lineNumber: 175
         },
         __self: this
     }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
         color: "inherit",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 163
+            lineNumber: 178
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
@@ -57842,13 +57884,13 @@ function Dashboard() {
         color: "secondary",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 164
+            lineNumber: 179
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 165
+            lineNumber: 180
         },
         __self: this
     }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
@@ -57859,65 +57901,65 @@ function Dashboard() {
         open: open,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 170
+            lineNumber: 185
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.toolbarIcon,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 177
+            lineNumber: 192
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
         onClick: handleDrawerClose,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 178
+            lineNumber: 193
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 179
+            lineNumber: 194
         },
         __self: this
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 182
+            lineNumber: 197
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 183
+            lineNumber: 198
         },
         __self: this
     }, _listitems1.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 184
+            lineNumber: 199
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 185
+            lineNumber: 200
         },
         __self: this
     }, _listitems1.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
         className: classes.content,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 188
+            lineNumber: 203
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.appBarSpacer,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 189
+            lineNumber: 204
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
@@ -57925,26 +57967,26 @@ function Dashboard() {
         className: classes.container,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 190
+            lineNumber: 205
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 192
+            lineNumber: 207
         },
         __self: this
     }, "All conference Details"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 193
+            lineNumber: 208
         },
         __self: this
     }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 194
+            lineNumber: 209
         },
         __self: this
     }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
@@ -57956,92 +57998,92 @@ function Dashboard() {
         className: "table-sm",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 196
+            lineNumber: 211
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 197
+            lineNumber: 212
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 198
+            lineNumber: 213
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 199
+            lineNumber: 214
         },
         __self: this
     }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 200
+            lineNumber: 215
         },
         __self: this
     }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 201
+            lineNumber: 216
         },
         __self: this
     }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 202
+            lineNumber: 217
         },
         __self: this
     }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 203
+            lineNumber: 218
         },
         __self: this
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-            lineNumber: 206
+            lineNumber: 221
         },
         __self: this
     }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
             key: con._id,
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-                lineNumber: 208
+                lineNumber: 223
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-                lineNumber: 209
+                lineNumber: 224
             },
             __self: this
         }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-                lineNumber: 210
+                lineNumber: 225
             },
             __self: this
         }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-                lineNumber: 211
+                lineNumber: 226
             },
             __self: this
         }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-                lineNumber: 212
+                lineNumber: 227
             },
             __self: this
         }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-                lineNumber: 213
+                lineNumber: 228
             },
             __self: this
         }, con.isApproved ? /*#__PURE__*/ _reactDefault.default.createElement("i", {
@@ -58051,7 +58093,7 @@ function Dashboard() {
             },
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-                lineNumber: 214
+                lineNumber: 229
             },
             __self: this
         }) : /*#__PURE__*/ _reactDefault.default.createElement("i", {
@@ -58061,16 +58103,39 @@ function Dashboard() {
             },
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
-                lineNumber: 216
+                lineNumber: 231
             },
             __self: this
-        })))
+        })), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 233
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+            variant: "danger",
+            className: "btn-sm",
+            onClick: ()=>deleteHandler(con._id)
+            ,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 234
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
+            className: "fas fa-trash",
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 238
+            },
+            __self: this
+        }))))
     )))))));
 }
 exports.default = Dashboard;
-_s(Dashboard, "YiUmAMFtLH0e6JMEx79H2nMEBjE=", false, function() {
+_s(Dashboard, "Z/Vz4bc41P7lkwzwe2RS0mgluE0=", false, function() {
     return [
-        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector, _reactRedux.useSelector];
 });
 _c = Dashboard;
 var _c;
@@ -58651,7 +58716,8 @@ const reducer = _redux.combineReducers({
     listCon: _conferenceReducerJs.conListReducer,
     appCon: _conferenceReducerJs.conApprovedReduceer,
     unappCon: _conferenceReducerJs.conUnApprovedReduceer,
-    appConference: _adminConferenceReducerJs.conferenceReducer
+    appConference: _adminConferenceReducerJs.conferenceReducer,
+    deleteCon: _conferenceReducerJs.conDetailsDeleteReducer
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -59271,7 +59337,7 @@ parcelHelpers.export(exports, "conApprovedReduceer", ()=>conApprovedReduceer
 );
 parcelHelpers.export(exports, "conUnApprovedReduceer", ()=>conUnApprovedReduceer
 );
-parcelHelpers.export(exports, "conDetailsDelete", ()=>conDetailsDelete
+parcelHelpers.export(exports, "conDetailsDeleteReducer", ()=>conDetailsDeleteReducer
 );
 var _conferenceConstantsJs = require("../constants/conferenceConstants.js");
 const conListReducer = (state = {
@@ -59352,7 +59418,7 @@ const conUnApprovedReduceer = (state = {
             return state;
     }
 };
-const conDetailsDelete = (state = {
+const conDetailsDeleteReducer = (state = {
 }, action)=>{
     switch(action.type){
         case _conferenceConstantsJs.CONFERENCE_DETAILS_DELETE_REQUEST:

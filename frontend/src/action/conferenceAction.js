@@ -12,7 +12,9 @@ import {
       CONFERENCE_UNAPPROVED_LIST_SUCCESS,
       CONFERENCE_UNAPPROVED_LIST_FAIL,
       CONFERENCE_UNAPPROVED_LIST_RESET,
-      
+      CONFERENCE_DETAILS_DELETE_REQUEST,
+      CONFERENCE_DETAILS_DELETE_SUCCESS,
+      CONFERENCE_DETAILS_DELETE_FAIL
 
 } from '../constants/conferenceConstants'
 
@@ -21,7 +23,15 @@ export const listConDetails = () => async (dispatch) => {
             dispatch({
                   type: CONFERENCE_LIST_REQUEST,
             })
+            // const {
+            //       userLogin: { userInfo },
+            // } = getState()
 
+            // const config = {
+            //       headers: {
+            //             Authorization: `Bearer ${userInfo.token}`,
+            //       },
+            // }
 
             const { data } = await axios.get('http://localhost:8040/api/conDetails/')
 
@@ -105,3 +115,33 @@ export const unappConList = () => async (dispatch, getState) => {
       }
 }
 
+export const deleteConDetails = (id) => async (dispatch, getState) => {
+      try {
+            dispatch({
+                  type: CONFERENCE_DETAILS_DELETE_REQUEST,
+            })
+
+            const {
+                  userLogin: { userInfo },
+            } = getState()
+
+            const config = {
+                  headers: {
+                        Authorization: `Bearer ${userInfo.token}`,
+                  },
+            }
+
+            await axios.delete(`http://localhost:8040/api/conDetails/${id}`, config)
+
+            dispatch({ type: CONFERENCE_DETAILS_DELETE_SUCCESS })
+
+      } catch (error) {
+            dispatch({
+                  type: CONFERENCE_DETAILS_DELETE_FAIL,
+                  payload:
+                        error.response && error.response.data.message
+                              ? error.response.data.message
+                              : error.message,
+            })
+      }
+}
