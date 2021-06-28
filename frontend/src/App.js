@@ -23,12 +23,7 @@ const App = () => {
                         <Route path="/editor" component={EditorScreen} />
                         <Route path="/applist" component={appconlistScreen} />
                         <Route path="/unapplist" component={unappconlistScreen} />
-<<<<<<< HEAD
                         <Route path="/adminCon" component={AdminConference} />
-=======
-
-
->>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
                   </div>
             </Router>
       )

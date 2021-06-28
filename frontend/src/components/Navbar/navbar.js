@@ -81,12 +81,21 @@ const Appbar = () => {
 
                               {userInfo && userInfo.isEditor && (
                                     <NavDropdown>
-                                         <Link to= '/editor'>
-                                               editor
-                                         </Link>
+                                          <Link to='/editor'>
+                                                editor
+                                          </Link>
+
+                                    </NavDropdown>
+                              ) || userInfo && userInfo.isAdmin && (
+                                    <NavDropdown>
+                                          <Link to='/admincon'>
+                                                Admin
+                                          </Link>
 
                                     </NavDropdown>
                               )}
+
+
 
                         </ul>
                         <div onClick={handleNavLinksToggle} className="hambuger-toggle">
