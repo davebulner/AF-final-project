@@ -33,5 +33,18 @@ const updateNews = asyncHandler(async (req, res) => {
       }
 })
 
+const deleteNews = asyncHandler(async (req, res) => {
+      const news = await News.findById(req.params.id)
 
-export { createNews, updateNews }
+      if (news) {
+            await news.remove()
+            res.json({ message: 'News removed' })
+      } else {
+            res.status(404)
+            throw new Error('News not found')
+      }
+
+
+})
+
+export { createNews, updateNews, deleteNews }
