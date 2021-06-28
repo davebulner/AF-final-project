@@ -210,6 +210,11 @@ export default function Dashboard() {
                                                             <td>{con.description}</td>
                                                             <td>{con.organizer}</td>
                                                             <td>{con.phone}</td>
+                                                            <td>{con.isApproved ? (
+                                                                  <i className='fas fa-check' style={{ color: 'green' }}></i>
+                                                            ) : (
+                                                                  <i className='fas fa-times' style={{ color: 'red' }}></i>
+                                                            )}</td>
                                                       </tr>
                                                 ))}
                                           </tbody>

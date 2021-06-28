@@ -16,23 +16,14 @@ import {
 
 } from '../constants/conferenceConstants'
 
-export const listConDetails = () => async (dispatch, getState) => {
+export const listConDetails = () => async (dispatch) => {
       try {
             dispatch({
                   type: CONFERENCE_LIST_REQUEST,
             })
 
-            const {
-                  userLogin: { userInfo },
-            } = getState()
 
-            const config = {
-                  headers: {
-                        Authorization: `Bearer ${userInfo.token}`,
-                  },
-            }
-
-            const { data } = await axios.get('http://localhost:8040/api/conDetails/', config)
+            const { data } = await axios.get('http://localhost:8040/api/conDetails/')
 
             dispatch({
                   type: CONFERENCE_LIST_SUCCESS,

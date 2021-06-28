@@ -41284,18 +41284,12 @@ parcelHelpers.export(exports, "unappConList", ()=>unappConList
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _conferenceConstants = require("../constants/conferenceConstants");
-const listConDetails = ()=>async (dispatch, getState)=>{
+const listConDetails = ()=>async (dispatch)=>{
         try {
             dispatch({
                 type: _conferenceConstants.CONFERENCE_LIST_REQUEST
             });
-            const { userLogin: { userInfo  } ,  } = getState();
-            const config = {
-                headers: {
-                    Authorization: `Bearer ${userInfo.token}`
-                }
-            };
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/', config);
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/');
             dispatch({
                 type: _conferenceConstants.CONFERENCE_LIST_SUCCESS,
                 payload: data
@@ -41386,6 +41380,12 @@ parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_FAIL", ()=>CONFERENCE_
 );
 parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_RESET", ()=>CONFERENCE_UNAPPROVED_LIST_RESET
 );
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_DELETE_REQUEST", ()=>CONFERENCE_DETAILS_DELETE_REQUEST
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_DELETE_SUCCESS", ()=>CONFERENCE_DETAILS_DELETE_SUCCESS
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_DELETE_FAIL", ()=>CONFERENCE_DETAILS_DELETE_FAIL
+);
 const CONFERENCE_LIST_REQUEST = 'CONFERENCE_LIST_REQUEST';
 const CONFERENCE_LIST_SUCCESS = 'CONFERENCE_LIST_SUCCESS';
 const CONFERENCE_LIST_FAIL = 'CONFERENCE_LIST_FAIL';
@@ -41399,6 +41399,9 @@ const CONFERENCE_UNAPPROVED_LIST_REQUEST = 'CONFERENCE_UNAPPROVED_LIST_REQUEST';
 const CONFERENCE_UNAPPROVED_LIST_SUCCESS = 'CONFERENCE_UNAPPROVED_LIST_SUCCESS';
 const CONFERENCE_UNAPPROVED_LIST_FAIL = 'CONFERENCE_UNAPPROVED_LIST_FAIL';
 const CONFERENCE_UNAPPROVED_LIST_RESET = 'CONFERENCE_UNAPPROVED_LIST_RESET';
+const CONFERENCE_DETAILS_DELETE_REQUEST = 'CONFERENCE_DETAILS_DELETE_REQUEST';
+const CONFERENCE_DETAILS_DELETE_SUCCESS = 'CONFERENCE_DETAILS_DELETE_SUCCESS';
+const CONFERENCE_DETAILS_DELETE_FAIL = 'CONFERENCE_DETAILS_DELETE_FAIL';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"yo9U2":[function() {},{}],"7xglY":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -58503,7 +58506,33 @@ function Dashboard() {
                 lineNumber: 212
             },
             __self: this
-        }, con.phone))
+        }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 213
+            },
+            __self: this
+        }, con.isApproved ? /*#__PURE__*/ _reactDefault.default.createElement("i", {
+            className: "fas fa-check",
+            style: {
+                color: 'green'
+            },
+            __source: {
+                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 214
+            },
+            __self: this
+        }) : /*#__PURE__*/ _reactDefault.default.createElement("i", {
+            className: "fas fa-times",
+            style: {
+                color: 'red'
+            },
+            __source: {
+                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 216
+            },
+            __self: this
+        })))
     )))))));
 }
 exports.default = Dashboard;
@@ -59155,6 +59184,8 @@ parcelHelpers.export(exports, "conApprovedReduceer", ()=>conApprovedReduceer
 );
 parcelHelpers.export(exports, "conUnApprovedReduceer", ()=>conUnApprovedReduceer
 );
+parcelHelpers.export(exports, "conDetailsDelete", ()=>conDetailsDelete
+);
 var _conferenceConstantsJs = require("../constants/conferenceConstants.js");
 const conListReducer = (state = {
     conferencedetails: []
@@ -59229,6 +59260,27 @@ const conUnApprovedReduceer = (state = {
         case _conferenceConstantsJs.CONFERENCE_UNAPPROVED_LIST_RESET:
             return {
                 conferencedetails: []
+            };
+        default:
+            return state;
+    }
+};
+const conDetailsDelete = (state = {
+}, action)=>{
+    switch(action.type){
+        case _conferenceConstantsJs.CONFERENCE_DETAILS_DELETE_REQUEST:
+            return {
+                loading: true
+            };
+        case _conferenceConstantsJs.CONFERENCE_DETAILS_DELETE_SUCCESS:
+            return {
+                loading: false,
+                success: true
+            };
+        case _conferenceConstantsJs.CONFERENCE_DETAILS_DELETE_FAIL:
+            return {
+                loading: false,
+                error: action.payload
             };
         default:
             return state;
