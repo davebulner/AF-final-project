@@ -21864,18 +21864,22 @@ var _loginScreen = require("./Screens/LoginScreen/loginScreen");
 var _loginScreenDefault = parcelHelpers.interopDefault(_loginScreen);
 var _registerScreen = require("./Screens/RegisterScreen/registerScreen");
 var _registerScreenDefault = parcelHelpers.interopDefault(_registerScreen);
+var _editorScreen = require("./Screens/EditorScreen/editorScreen");
+var _editorScreenDefault = parcelHelpers.interopDefault(_editorScreen);
+var _approvedScreen = require("./Screens/EditorScreen/approvedScreen");
+var _approvedScreenDefault = parcelHelpers.interopDefault(_approvedScreen);
 const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 10
+            lineNumber: 12
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "main",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 11
+            lineNumber: 13
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21884,7 +21888,7 @@ const App = ()=>{
         exact: true,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 12
+            lineNumber: 14
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21892,7 +21896,7 @@ const App = ()=>{
         component: _loginScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 13
+            lineNumber: 15
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21900,7 +21904,23 @@ const App = ()=>{
         component: _registerScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 14
+            lineNumber: 16
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/editor",
+        component: _editorScreenDefault.default,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 17
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/applist",
+        component: _approvedScreenDefault.default,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 18
         },
         __self: undefined
     }))));
@@ -21915,7 +21935,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/EditorScreen/editorScreen":"3WoBG","./Screens/EditorScreen/approvedScreen":"3lNMi"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -25018,6 +25038,7 @@ var _loaderJs = require("../../components/Loader/loader.js");
 var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
 var _messageJs = require("../../components/Message/message.js");
 var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _homescreenCss = require("./homescreen.css");
 var _s = $RefreshSig$();
 const homeScreen = ()=>{
     _s();
@@ -25030,29 +25051,36 @@ const homeScreen = ()=>{
     }, [
         dispatch
     ]);
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
-        __source: {
-            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 25
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement(_showcaseJsDefault.default, {
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "man",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 26
         },
         __self: undefined
-    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 27
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_showcaseJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            lineNumber: 28
+        },
+        __self: undefined
+    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            lineNumber: 29
         },
         __self: undefined
     }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 28
+            lineNumber: 30
         },
         __self: undefined
     }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
@@ -25063,108 +25091,108 @@ const homeScreen = ()=>{
         className: "table-sm",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 30
+            lineNumber: 32
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 31
+            lineNumber: 33
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 32
+            lineNumber: 34
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 33
+            lineNumber: 35
         },
         __self: undefined
     }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 34
+            lineNumber: 36
         },
         __self: undefined
     }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 35
+            lineNumber: 37
         },
         __self: undefined
     }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 36
+            lineNumber: 38
         },
         __self: undefined
     }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 37
+            lineNumber: 39
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 40
+            lineNumber: 42
         },
         __self: undefined
     }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
             key: con._id,
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-                lineNumber: 42
+                lineNumber: 44
             },
             __self: undefined
         }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-                lineNumber: 43
+                lineNumber: 45
             },
             __self: undefined
         }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-                lineNumber: 44
+                lineNumber: 46
             },
             __self: undefined
         }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-                lineNumber: 45
+                lineNumber: 47
             },
             __self: undefined
         }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-                lineNumber: 46
+                lineNumber: 48
             },
             __self: undefined
         }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-                lineNumber: 47
+                lineNumber: 49
             },
             __self: undefined
         }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-                lineNumber: 48
+                lineNumber: 50
             },
             __self: undefined
         }, con.venue))
     ))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 54
+            lineNumber: 56
         },
         __self: undefined
-    })));
+    }))));
 };
 _s(homeScreen, "/uTQqnyawgFaoXO5LcEC6bed1ZY=", false, function() {
     return [_reactRedux.useDispatch, _reactRedux.useSelector];
@@ -25176,7 +25204,7 @@ exports.default = homeScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-redux":"7GDa4","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","../../components/Showcase/showcase.js":"2PCZy","react-bootstrap":"4n7hB","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../action/conferenceAction.js":"7CqFH"}],"7GDa4":[function(require,module,exports) {
+},{"react":"3b2NM","react-redux":"7GDa4","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","../../components/Showcase/showcase.js":"2PCZy","react-bootstrap":"4n7hB","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../action/conferenceAction.js":"7CqFH","./homescreen.css":"2Ihqr"}],"7GDa4":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 exports.__esModule = true;
@@ -26517,7 +26545,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _navbarCss = require("./navbar.css");
 var _loginScreen = require("../../Screens/LoginScreen/loginScreen");
 var _s = $RefreshSig$();
-const Navbar = ()=>{
+const Appbar = ()=>{
     _s();
     const [navlinkOpen, navlinkToggle] = _react.useState(false);
     const [navbar, setnavbar] = _react.useState(false);
@@ -26623,7 +26651,7 @@ const Navbar = ()=>{
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-        href: "#",
+        href: "/editor",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
             lineNumber: 52
@@ -26646,18 +26674,18 @@ const Navbar = ()=>{
         __self: undefined
     })))));
 };
-_s(Navbar, "nXhBWj32zuQPWa24WZPC8r2poO4=");
-_c = Navbar;
-exports.default = Navbar;
+_s(Appbar, "nXhBWj32zuQPWa24WZPC8r2poO4=");
+_c = Appbar;
+exports.default = Appbar;
 var _c;
-$RefreshReg$(_c, "Navbar");
+$RefreshReg$(_c, "Appbar");
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./navbar.css":"7HBzg","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../Screens/LoginScreen/loginScreen":"2EjbP"}],"7HBzg":[function() {},{}],"367CR":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./navbar.css":"7HBzg","../../Screens/LoginScreen/loginScreen":"2EjbP"}],"367CR":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -26809,7 +26837,7 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"592mh"}],"2EjbP":[function(require,module,exports) {
+},{"react-refresh/runtime":"592mh"}],"7HBzg":[function() {},{}],"2EjbP":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41118,6 +41146,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "listConDetails", ()=>listConDetails
 );
+parcelHelpers.export(exports, "appConList", ()=>appConList
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _conferenceConstants = require("../constants/conferenceConstants");
@@ -41139,6 +41169,24 @@ const listConDetails = ()=>async (dispatch)=>{
         }
     }
 ;
+const appConList = ()=>async (dispatch)=>{
+        try {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_APPROVED_LIST_REQUEST
+            });
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/approvedCon');
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_APPROVED_LIST_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_APPROVED_LIST_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
 
 },{"axios":"7rA65","../constants/conferenceConstants":"5LNy7","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"5LNy7":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -41151,12 +41199,24 @@ parcelHelpers.export(exports, "CONFERENCE_LIST_FAIL", ()=>CONFERENCE_LIST_FAIL
 );
 parcelHelpers.export(exports, "CONFERENCE_LIST_RESET", ()=>CONFERENCE_LIST_RESET
 );
+parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_REQUEST", ()=>CONFERENCE_APPROVED_LIST_REQUEST
+);
+parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_SUCCESS", ()=>CONFERENCE_APPROVED_LIST_SUCCESS
+);
+parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_FAIL", ()=>CONFERENCE_APPROVED_LIST_FAIL
+);
+parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_RESET", ()=>CONFERENCE_APPROVED_LIST_RESET
+);
 const CONFERENCE_LIST_REQUEST = 'CONFERENCE_LIST_REQUEST';
 const CONFERENCE_LIST_SUCCESS = 'CONFERENCE_LIST_SUCCESS';
 const CONFERENCE_LIST_FAIL = 'CONFERENCE_LIST_FAIL';
 const CONFERENCE_LIST_RESET = 'CONFERENCE_LIST_RESET';
+const CONFERENCE_APPROVED_LIST_REQUEST = 'CONFERENCE_APPROVED_LIST_REQUEST';
+const CONFERENCE_APPROVED_LIST_SUCCESS = 'CONFERENCE_APPROVED_LIST_SUCCESS';
+const CONFERENCE_APPROVED_LIST_FAIL = 'CONFERENCE_APPROVED_LIST_FAIL';
+const CONFERENCE_APPROVED_LIST_RESET = 'CONFERENCE_APPROVED_LIST_RESET';
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"7xglY":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"2Ihqr":[function() {},{}],"7xglY":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41339,7 +41399,462 @@ exports.default = registerScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-bootstrap":"4n7hB","./registerscreen.css":"TbhEH","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI"}],"TbhEH":[function() {},{}],"24gh2":[function() {},{}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-bootstrap":"4n7hB","./registerscreen.css":"TbhEH","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI"}],"TbhEH":[function() {},{}],"3WoBG":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRedux = require("react-redux");
+var _reactBootstrap = require("react-bootstrap");
+var _conferenceActionJs = require("../../action/conferenceAction.js");
+var _loaderJs = require("../../components/Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _messageJs = require("../../components/Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
+var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
+var _navbarJs = require("../../components/Navbar/navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _footerJs = require("../../components/Footer/footer.js");
+var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
+var _s = $RefreshSig$();
+const EditorScreen = ()=>{
+    _s();
+    const dispatch = _reactRedux.useDispatch();
+    const listCon = _reactRedux.useSelector((state)=>state.listCon
+    );
+    const { loading , error , conferencedetails  } = listCon;
+    _react.useEffect(()=>{
+        dispatch(_conferenceActionJs.listConDetails());
+    }, [
+        dispatch
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 22
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 23
+        },
+        __self: undefined
+    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_editorNavbarJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 24
+        },
+        __self: undefined
+    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 25
+        },
+        __self: undefined
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 26
+        },
+        __self: undefined
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
+        striped: true,
+        bordered: true,
+        hover: true,
+        responsive: true,
+        variant: "dark",
+        className: "table-sm",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 28
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 29
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 30
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 31
+        },
+        __self: undefined
+    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 32
+        },
+        __self: undefined
+    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 33
+        },
+        __self: undefined
+    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 34
+        },
+        __self: undefined
+    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 35
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+            lineNumber: 38
+        },
+        __self: undefined
+    }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            key: con._id,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+                lineNumber: 40
+            },
+            __self: undefined
+        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+                lineNumber: 41
+            },
+            __self: undefined
+        }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+                lineNumber: 42
+            },
+            __self: undefined
+        }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+                lineNumber: 43
+            },
+            __self: undefined
+        }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+                lineNumber: 44
+            },
+            __self: undefined
+        }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+                lineNumber: 45
+            },
+            __self: undefined
+        }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
+                lineNumber: 46
+            },
+            __self: undefined
+        }, con.venue))
+    )))));
+};
+_s(EditorScreen, "/uTQqnyawgFaoXO5LcEC6bed1ZY=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
+_c = EditorScreen;
+exports.default = EditorScreen;
+var _c;
+$RefreshReg$(_c, "EditorScreen");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Footer/footer.js":"7dMDI","../../components/EditorNav/editorNavbar.js":"56S2h","../../components/Navbar/navbar.js":"5c3hR","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../action/conferenceAction.js":"7CqFH","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw"}],"56S2h":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _nav = require("react-bootstrap/Nav");
+var _navDefault = parcelHelpers.interopDefault(_nav);
+const Editornavbar = ()=>{
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default, {
+        fill: true,
+        variant: "tabs",
+        defaultActiveKey: "/home",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 7
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 8
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
+        href: "/editor",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 9
+        },
+        __self: undefined
+    }, "All")), /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 11
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
+        href: "/applist",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 12
+        },
+        __self: undefined
+    }, "Loooonger NavLink")), /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 14
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
+        eventKey: "link-2",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 15
+        },
+        __self: undefined
+    }, "Link")), /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 17
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
+        eventKey: "disabled",
+        disabled: true,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 18
+        },
+        __self: undefined
+    }, "Disabled"))));
+};
+_c = Editornavbar;
+exports.default = Editornavbar;
+var _c;
+$RefreshReg$(_c, "Editornavbar");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-bootstrap/Nav":"3T3v1"}],"3lNMi":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactBootstrap = require("react-bootstrap");
+var _reactRedux = require("react-redux");
+var _message = require("../../components/Message/message");
+var _messageDefault = parcelHelpers.interopDefault(_message);
+var _loader = require("../../components/Loader/loader");
+var _loaderDefault = parcelHelpers.interopDefault(_loader);
+var _conferenceAction = require("../../action/conferenceAction");
+var _navbarJs = require("../../components/Navbar/navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
+var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
+var _s = $RefreshSig$();
+const appconlistScreen = ()=>{
+    _s();
+    const dispatch = _reactRedux.useDispatch();
+    const appCon = _reactRedux.useSelector((state)=>state.appCon
+    );
+    const { loading , error , conferencedetails  } = appCon;
+    _react.useEffect(()=>{
+        dispatch(_conferenceAction.appConList());
+    }, [
+        dispatch
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 23
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 24
+        },
+        __self: undefined
+    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_editorNavbarJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 25
+        },
+        __self: undefined
+    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 26
+        },
+        __self: undefined
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 27
+        },
+        __self: undefined
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
+        striped: true,
+        bordered: true,
+        hover: true,
+        responsive: true,
+        variant: "dark",
+        className: "table-sm",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 29
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 30
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 31
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 32
+        },
+        __self: undefined
+    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 33
+        },
+        __self: undefined
+    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 34
+        },
+        __self: undefined
+    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 35
+        },
+        __self: undefined
+    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 36
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 39
+        },
+        __self: undefined
+    }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            key: con._id,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 41
+            },
+            __self: undefined
+        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 42
+            },
+            __self: undefined
+        }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 43
+            },
+            __self: undefined
+        }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 44
+            },
+            __self: undefined
+        }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 45
+            },
+            __self: undefined
+        }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 46
+            },
+            __self: undefined
+        }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 47
+            },
+            __self: undefined
+        }, con.venue))
+    )))));
+};
+_s(appconlistScreen, "mUPm43AvAAwIM2xT+EVZ+NXI1Ps=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
+exports.default = appconlistScreen;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../action/conferenceAction":"7CqFH","../../components/Navbar/navbar.js":"5c3hR","../../components/EditorNav/editorNavbar.js":"56S2h","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI"}],"24gh2":[function() {},{}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -41350,7 +41865,8 @@ var _userReducersJs = require("../src/reducers/userReducers.js");
 var _conferenceReducerJs = require("../src/reducers/conferenceReducer.js");
 const reducer = _redux.combineReducers({
     userLogin: _userReducersJs.userLoginReducer,
-    listCon: _conferenceReducerJs.conListReducer
+    listCon: _conferenceReducerJs.conListReducer,
+    appCon: _conferenceReducerJs.conApprovedReduceer
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -41980,6 +42496,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "conListReducer", ()=>conListReducer
 );
+parcelHelpers.export(exports, "conApprovedReduceer", ()=>conApprovedReduceer
+);
 var _conferenceConstantsJs = require("../constants/conferenceConstants.js");
 const conListReducer = (state = {
     conferencedetails: []
@@ -42000,6 +42518,32 @@ const conListReducer = (state = {
                 error: action.payload
             };
         case _conferenceConstantsJs.CONFERENCE_LIST_RESET:
+            return {
+                conferencedetails: []
+            };
+        default:
+            return state;
+    }
+};
+const conApprovedReduceer = (state = {
+    conferencedetails: []
+}, action)=>{
+    switch(action.type){
+        case _conferenceConstantsJs.CONFERENCE_APPROVED_LIST_REQUEST:
+            return {
+                loading: true
+            };
+        case _conferenceConstantsJs.CONFERENCE_APPROVED_LIST_SUCCESS:
+            return {
+                loading: false,
+                conferencedetails: action.payload
+            };
+        case _conferenceConstantsJs.CONFERENCE_APPROVED_LIST_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        case _conferenceConstantsJs.CONFERENCE_APPROVED_LIST_RESET:
             return {
                 conferencedetails: []
             };

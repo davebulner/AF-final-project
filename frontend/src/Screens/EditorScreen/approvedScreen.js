@@ -1,22 +1,23 @@
 import React, { useEffect } from 'react'
+import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
-import { Button, Form, Table } from 'react-bootstrap';
-import { listConDetails } from '../../action/conferenceAction.js'
-import Loader from '../../components/Loader/loader.js'
-import Message from '../../components/Message/message.js'
-import Editornavbar from '../../components/EditorNav/editorNavbar.js'
+import Message from '../../components/Message/message'
+import Loader from '../../components/Loader/loader'
+import { appConList } from '../../action/conferenceAction'
 import Appbar from '../../components/Navbar/navbar.js'
-import Footer from '../../components/Footer/footer.js'
-const EditorScreen = () => {
+import Editornavbar from '../../components/EditorNav/editorNavbar.js'
 
+
+const appconlistScreen = () => {
       const dispatch = useDispatch()
 
-      const listCon = useSelector(state => state.listCon)
-      const { loading, error, conferencedetails } = listCon
+      const appCon = useSelector((state) => state.appCon)
+      const { loading, error, conferencedetails } = appCon
 
       useEffect(() => {
-            dispatch(listConDetails())
+            dispatch(appConList())
       }, [dispatch])
+
       return (
             <>
                   <Appbar />
@@ -52,7 +53,8 @@ const EditorScreen = () => {
 
             </>
       )
+
 }
 
 
-export default EditorScreen
+export default appconlistScreen

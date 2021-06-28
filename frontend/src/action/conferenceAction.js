@@ -3,7 +3,11 @@ import {
       CONFERENCE_LIST_REQUEST,
       CONFERENCE_LIST_SUCCESS,
       CONFERENCE_LIST_RESET,
-      CONFERENCE_LIST_FAIL
+      CONFERENCE_LIST_FAIL,
+      CONFERENCE_APPROVED_LIST_REQUEST,
+      CONFERENCE_APPROVED_LIST_SUCCESS,
+      CONFERENCE_APPROVED_LIST_RESET,
+      CONFERENCE_APPROVED_LIST_FAIL,
 } from '../constants/conferenceConstants'
 
 export const listConDetails = () => async (dispatch) => {
@@ -29,5 +33,26 @@ export const listConDetails = () => async (dispatch) => {
       }
 }
 
+export const appConList = () => async (dispatch) => {
+      try {
+            dispatch({
+                  type: CONFERENCE_APPROVED_LIST_REQUEST,
+            })
 
+            const { data } = await axios.get('http://localhost:8040/api/conDetails/approvedCon')
+
+            dispatch({
+                  type: CONFERENCE_APPROVED_LIST_SUCCESS,
+                  payload: data
+            })
+      } catch (error) {
+            dispatch({
+                  type: CONFERENCE_APPROVED_LIST_FAIL,
+                  payload:
+                        error.response && error.response.data.message
+                              ? error.response.data.message
+                              : error.message,
+            })
+      }
+}
 

@@ -3,9 +3,11 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { userLoginReducer } from '../src/reducers/userReducers.js'
 import { conListReducer } from '../src/reducers/conferenceReducer.js'
+import { conApprovedReduceer } from '../src/reducers/conferenceReducer.js'
 const reducer = combineReducers({
     userLogin: userLoginReducer,
-    listCon: conListReducer
+    listCon: conListReducer,
+    appCon: conApprovedReduceer,
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo')
