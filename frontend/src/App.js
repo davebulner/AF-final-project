@@ -5,7 +5,7 @@ import HomeScreen from './Screens/HomeScreen/homescreen'
 import LoginScreen from './Screens/LoginScreen/loginScreen'
 import RegisterScreen from './Screens/RegisterScreen/registerScreen'
 import AdminScreen from './components/Admin/adminDashboard/adminDashboard'
-import EditorScreen from './Screens/EditorScreen/editorScreen'
+import EditorScreen from './Screens/EditorScreen/Editor dashboard/editorDashboard'
 import appconlistScreen from './Screens/EditorScreen/approvedScreen'
 import unappconlistScreen from './Screens/EditorScreen/unapprovedScreen'
 
@@ -20,6 +20,8 @@ const App = () => {
                         <Route path="/editor" component={EditorScreen} />
                         <Route path="/applist" component={appconlistScreen} />
                         <Route path="/unapplist" component={unappconlistScreen} />
+
+
                   </div>
             </Router>
       )

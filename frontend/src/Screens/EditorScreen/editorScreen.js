@@ -4,9 +4,10 @@ import { Button, Form, Table } from 'react-bootstrap';
 import { listConDetails } from '../../action/conferenceAction.js'
 import Loader from '../../components/Loader/loader.js'
 import Message from '../../components/Message/message.js'
-import Editornavbar from '../../components/EditorNav/editorNavbar.js'
-import Appbar from '../../components/Navbar/navbar.js'
-import Footer from '../../components/Footer/footer.js'
+
+
+
+
 const EditorScreen = () => {
 
       const dispatch = useDispatch()
