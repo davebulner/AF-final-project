@@ -47,4 +47,23 @@ const deleteNews = asyncHandler(async (req, res) => {
 
 })
 
-export { createNews, updateNews, deleteNews }
+const getAllNews = asyncHandler(async (req, res) => {
+      const news = await News.find({})
+      res.json(news)
+})
+
+const getAprrovedNews = asyncHandler(async (req, res) => {
+      const news = await News.find({
+            isApproved: true,
+      })
+      res.json(news)
+})
+
+const getUnAprrovedNews = asyncHandler(async (req, res) => {
+      const news = await News.find({
+            isApproved: false,
+      })
+      res.json(news)
+})
+
+export { createNews, updateNews, deleteNews, getAllNews, getAprrovedNews, getUnAprrovedNews }
