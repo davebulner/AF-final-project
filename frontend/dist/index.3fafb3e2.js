@@ -25432,21 +25432,14 @@ const Appbar = ()=>{
             lineNumber: 83
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
-        className: "link",
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/editor",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
             lineNumber: 84
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-        href: "/editor",
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 84
-        },
-        __self: undefined
-    }, "Contact us"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
             lineNumber: 85
