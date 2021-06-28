@@ -21864,6 +21864,8 @@ var _loginScreen = require("./Screens/LoginScreen/loginScreen");
 var _loginScreenDefault = parcelHelpers.interopDefault(_loginScreen);
 var _registerScreen = require("./Screens/RegisterScreen/registerScreen");
 var _registerScreenDefault = parcelHelpers.interopDefault(_registerScreen);
+var _lggedInHomeScreen = require("./Screens/loggedinHomeScreen/lggedInHomeScreen");
+var _lggedInHomeScreenDefault = parcelHelpers.interopDefault(_lggedInHomeScreen);
 var _adminDashboard = require("./components/Admin/adminDashboard/adminDashboard");
 var _adminDashboardDefault = parcelHelpers.interopDefault(_adminDashboard);
 var _editorDashboard = require("./Screens/EditorScreen/Editor dashboard/editorDashboard");
@@ -21876,14 +21878,14 @@ const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 14
+            lineNumber: 15
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "main",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 15
+            lineNumber: 16
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21892,7 +21894,7 @@ const App = ()=>{
         exact: true,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 16
+            lineNumber: 17
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21900,7 +21902,7 @@ const App = ()=>{
         component: _loginScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 17
+            lineNumber: 18
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21908,7 +21910,15 @@ const App = ()=>{
         component: _registerScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 18
+            lineNumber: 19
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/loggedInHome",
+        component: _lggedInHomeScreenDefault.default,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 20
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21916,7 +21926,7 @@ const App = ()=>{
         component: _adminDashboardDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 19
+            lineNumber: 21
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21924,7 +21934,7 @@ const App = ()=>{
         component: _editorDashboardDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 20
+            lineNumber: 22
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21932,7 +21942,7 @@ const App = ()=>{
         component: _approvedScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 21
+            lineNumber: 23
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21940,7 +21950,7 @@ const App = ()=>{
         component: _unapprovedScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 22
+            lineNumber: 24
         },
         __self: undefined
     }))));
@@ -21955,7 +21965,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -26564,9 +26574,20 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _navbarCss = require("./navbar.css");
 var _loginScreen = require("../../Screens/LoginScreen/loginScreen");
+var _reactRedux = require("react-redux");
+var _reactBootstrap = require("react-bootstrap");
+var _userActionJs = require("../../action/userAction.js");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const Appbar = ()=>{
     _s();
+    const dispatch = _reactRedux.useDispatch();
+    const userLogin = _reactRedux.useSelector((state)=>state.userLogin
+    );
+    const { userInfo  } = userLogin;
+    const logoutHandler = ()=>{
+        dispatch(_userActionJs.logout());
+    };
     const [navlinkOpen, navlinkToggle] = _react.useState(false);
     const [navbar, setnavbar] = _react.useState(false);
     const handleNavLinksToggle = ()=>{
@@ -26591,110 +26612,193 @@ const Appbar = ()=>{
         className: navbar ? 'navbar active' : 'navbar',
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 43
+            lineNumber: 55
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "logo",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 44
+            lineNumber: 56
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         className: "fas fa-mountain",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 45
+            lineNumber: 57
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 46
+            lineNumber: 58
         },
         __self: undefined
     }, "VCMS")), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
         className: renderClasses(),
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 48
+            lineNumber: 60
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 49
+            lineNumber: 62
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 49
+            lineNumber: 62
         },
         __self: undefined
     }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 50
+            lineNumber: 63
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/login",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 50
+            lineNumber: 63
         },
         __self: undefined
     }, " Login")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 51
+            lineNumber: 64
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/register",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 51
+            lineNumber: 64
         },
         __self: undefined
     }, "Register")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 52
+            lineNumber: 65
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "#",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 65
+        },
+        __self: undefined
+    }, "Contact us")), userInfo ? /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
+        title: userInfo.name,
+        id: "username",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 69
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "#",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 70
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 71
+        },
+        __self: undefined
+    }, "Profile"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+        onClick: logoutHandler,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 72
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        className: "link",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 73
+        },
+        __self: undefined
+    }, "logout"))) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Nav.Link, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 77
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        className: "link",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 78
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "#",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 78
+        },
+        __self: undefined
+    }, "User"))), userInfo && userInfo.isEditor && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 83
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        className: "link",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 84
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/editor",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 52
+            lineNumber: 84
         },
         __self: undefined
-    }, "Contact us"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }, "Contact us"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 85
+        },
+        __self: undefined
+    }, "editor")))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         onClick: handleNavLinksToggle,
         className: "hambuger-toggle",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 54
+            lineNumber: 93
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         className: "fas fa-bars fa-lg",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 55
+            lineNumber: 94
         },
         __self: undefined
     })))));
 };
-_s(Appbar, "nXhBWj32zuQPWa24WZPC8r2poO4=");
+_s(Appbar, "5PuCl0Mxg6wNMHwtkLWwP+5TGVo=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
 _c = Appbar;
 exports.default = Appbar;
 var _c;
@@ -26705,7 +26809,7 @@ $RefreshReg$(_c, "Appbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./navbar.css":"7HBzg","../../Screens/LoginScreen/loginScreen":"2EjbP"}],"367CR":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./navbar.css":"7HBzg","../../Screens/LoginScreen/loginScreen":"2EjbP","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../action/userAction.js":"7aL1U","react-router-dom":"1PMSK"}],"367CR":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -26890,9 +26994,9 @@ const Loginscreen = ({ location , history  })=>{
     const userLogin = _reactRedux.useSelector((state)=>state.userLogin
     );
     const { loading , error , userInfo  } = userLogin;
-    const redirect = location.search ? location.search.split('=')[1] : '/';
+    const redirect = location.search ? location.search.split('=')[1] : '/loggedInHome';
     _react.useEffect(()=>{
-        if (userInfo) history.pushState(redirect);
+        if (userInfo) history.push(redirect);
     }, [
         history,
         userInfo,
@@ -26905,75 +27009,75 @@ const Loginscreen = ({ location , history  })=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 37
+            lineNumber: 39
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "wrapper",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 39
+            lineNumber: 41
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "nm",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 40
+            lineNumber: 42
         },
         __self: undefined
     }, error && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 41
+            lineNumber: 43
         },
         __self: undefined
     }, error), loading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 42
+            lineNumber: 44
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "content",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 44
+            lineNumber: 46
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form, {
         onSubmit: submitHandler,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 46
+            lineNumber: 48
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         align: "center",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 47
+            lineNumber: 49
         },
         __self: undefined
     }, "Sign In"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
         controlId: "email",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 49
+            lineNumber: 51
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 50
+            lineNumber: 52
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 51
+            lineNumber: 53
         },
         __self: undefined
     }, "Email address"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
@@ -26985,27 +27089,27 @@ const Loginscreen = ({ location , history  })=>{
         ,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 52
+            lineNumber: 54
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
         controlId: "password",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 59
+            lineNumber: 61
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 60
+            lineNumber: 62
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 61
+            lineNumber: 63
         },
         __self: undefined
     }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
@@ -27017,66 +27121,54 @@ const Loginscreen = ({ location , history  })=>{
         ,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 62
+            lineNumber: 64
         },
         __self: undefined
-    }))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-        className: "form-group bn",
-        __source: {
-            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 69
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-        className: "custom-control custom-checkbox",
-        __source: {
-            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 70
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
-        type: "checkbox",
-        className: "custom-control-input",
-        id: "customCheck1",
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
             lineNumber: 71
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("label", {
-        className: "custom-control-label",
-        htmlFor: "customCheck1",
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
             lineNumber: 72
         },
         __self: undefined
-    }, "Remember me"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+    }, "New User? ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: redirect ? `/register?redirect=${redirect}` : '/register',
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 73
+        },
+        __self: undefined
+    }, "Register Now"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
         type: "submit",
         className: "btn btn-primary btn-block",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 76
+            lineNumber: 78
         },
         __self: undefined
     }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         className: "forgot-password text-right",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 77
+            lineNumber: 79
         },
         __self: undefined
     }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 78
+            lineNumber: 80
         },
         __self: undefined
     }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 86
+            lineNumber: 88
         },
         __self: undefined
     })));
@@ -39597,6 +39689,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "login", ()=>login
 );
+parcelHelpers.export(exports, "logout", ()=>logout
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _userConstants = require("../constants/userConstants");
@@ -39625,6 +39719,13 @@ const login = (email, password)=>async (dispatch)=>{
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
+    }
+;
+const logout = ()=>(dispatch)=>{
+        localStorage.removeItem('userInfo');
+        dispatch({
+            type: _userConstants.USER_LOGOUT
+        });
     }
 ;
 
@@ -57933,7 +58034,40 @@ $RefreshReg$(_c, "Dashboard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../../action/conferenceAction":"7CqFH","../../../components/Loader/loader.js":"68bDI","../../../components/Message/message.js":"6fMfw","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./listitems1":"1TblZ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"24gh2":[function() {},{}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../../action/conferenceAction":"7CqFH","../../../components/Loader/loader.js":"68bDI","../../../components/Message/message.js":"6fMfw","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./listitems1":"1TblZ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5pJ4O":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactBootstrap = require("react-bootstrap");
+var _navbarJs = require("../../components/Navbar/navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+const LoggedinHomeScreen = ()=>{
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\loggedinHomeScreen\\lggedInHomeScreen.js",
+            lineNumber: 9
+        },
+        __self: undefined
+    })));
+};
+_c = LoggedinHomeScreen;
+exports.default = LoggedinHomeScreen;
+var _c;
+$RefreshReg$(_c, "LoggedinHomeScreen");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-bootstrap":"4n7hB","../../components/Navbar/navbar.js":"5c3hR","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"24gh2":[function() {},{}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
