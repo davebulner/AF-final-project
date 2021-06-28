@@ -1,27 +1,21 @@
-import User from '../models/userModel.js'
-import generateTokens from '../utils/generateToken.js'
+import asyncHandler from 'express-async-handler'
 import ConferenceDetails from '../models/conferenceDetailsModel.js'
 
-const getUsers = async(req, res) => {
-    const users = await User.find({})
-    res.json(users)
-}
+const updateConferenceDeatils = asyncHandler(async(req, res) => {
+    const conference = await ConferenceDetails.findById(req.params.id)
 
-const deleteUser = async(req, res) => {
-    const user = await User.findById(req.params.id)
+    if(conference) {
+        conference.isApproved = true
+        conference.approvedAt = Date.now()
 
-    if(user){
-        await user.remove()
-        res.json({ message: 'User Removed'})
+        const updateApprovel = await conference.save()
+
+        res.json(updateApprovel)
     } else {
         res.status(404)
-        throw new Error ('User not found!')
+        throw new Error('Conference not found')
     }
-}
+})
 
-const getadminConferenceDetails = async(req, res) => {
-    const conferenceDetails = await ConferenceDetails.find({})
-    res.json(conferenceDetails)
-}
 
-export { getUsers, deleteUser, getadminConferenceDetails }
+export { updateConferenceDeatils }

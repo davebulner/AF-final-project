@@ -55,7 +55,6 @@ const Navbar = () => {
                               <i className="fas fa-bars fa-lg"></i>
                         </div>
                   </nav >
-
             </>
       )
 
