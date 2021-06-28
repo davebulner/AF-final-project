@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './navbar.css'
 import { LoginScreen } from "../../Screens/LoginScreen/loginScreen";
 
-const Navbar = () => {
+const Appbar = () => {
 
 
       const [navlinkOpen, navlinkToggle] = useState(false);
@@ -49,7 +49,7 @@ const Navbar = () => {
                               <li className="link"><a href="/">Home</a></li>
                               <li className="link" ><a href="/login"> Login</a></li>
                               <li className="link"><a href="/register">Register</a></li>
-                              <li className="link"><a href="#">Contact us</a></li>
+                              <li className="link"><a href="/editor">Contact us</a></li>
                         </ul>
                         <div onClick={handleNavLinksToggle} className="hambuger-toggle">
                               <i className="fas fa-bars fa-lg"></i>
@@ -59,4 +59,4 @@ const Navbar = () => {
       )
 
 }
-export default Navbar
+export default Appbar

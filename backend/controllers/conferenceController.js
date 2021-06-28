@@ -5,7 +5,7 @@ const addConDetails = asyncHandler(async (req, res) => {
       const conDetails = new ConferenceDetails({
             conname: 'conference Name',
             description: 'sample description',
-            // user: req.user._id,
+            user: req.user._id,
             organizer: 'add organizer',
             phone: '1234567809',
             email: 'add email',
@@ -63,4 +63,22 @@ const updateConDetails = asyncHandler(async (req, res) => {
       }
 })
 
-export { addConDetails, getAllConDetails, updateConDetails }
+
+const getApprovedConDetails = asyncHandler(async (req, res) => {
+      const conDeatils = await ConferenceDetails.find({
+            isApproved: true,
+      })
+      res.json(conDeatils)
+
+})
+
+
+const getUnApprovedConDetails = asyncHandler(async (req, res) => {
+      const conDeatils = await ConferenceDetails.find({
+            isApproved: false,
+      })
+      res.json(conDeatils)
+
+})
+
+export { addConDetails, getAllConDetails, updateConDetails, getApprovedConDetails, getUnApprovedConDetails }
