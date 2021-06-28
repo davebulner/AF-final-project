@@ -4,8 +4,9 @@ import { LoginScreen } from "../../Screens/LoginScreen/loginScreen";
 import { useDispatch, useSelector } from "react-redux";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { logout } from "../../action/userAction.js";
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Appbar = () => {
 
       const dispatch = useDispatch()
 
@@ -77,9 +78,14 @@ const Navbar = () => {
                                     <li className="link"><a href="#">User</a></li>
                               </Nav.Link>}
 
+
                               {userInfo && userInfo.isEditor && (
                                     <NavDropdown>
-                                          <Link>to=''</Link>
+                                          <li className="link"><a href="/editor">Contact us</a>
+                                                <NavDropdown.Item>
+                                                      editor
+                                                </NavDropdown.Item>
+                                          </li>
                                     </NavDropdown>
                               )}
 
@@ -88,9 +94,8 @@ const Navbar = () => {
                               <i className="fas fa-bars fa-lg"></i>
                         </div>
                   </nav >
-
             </>
       )
 
 }
-export default Navbar
+export default Appbar
