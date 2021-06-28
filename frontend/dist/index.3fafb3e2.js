@@ -618,7 +618,7 @@ module.exports = require('./cjs/react-refresh-runtime.development.js');
     exports.setSignature = setSignature;
 })();
 
-},{}],"6iKAK":[function(require,module,exports) {
+},{}],"39Mbm":[function(require,module,exports) {
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
@@ -879,13 +879,13 @@ var _bootstrapMinCss = require("bootstrap/dist/css/bootstrap.min.css");
 _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElement(_reactRedux.Provider, {
     store: _storeJsDefault.default,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\index.js",
+        fileName: "D:\\AF-final-project\\frontend\\src\\index.js",
         lineNumber: 10
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_appDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\index.js",
+        fileName: "D:\\AF-final-project\\frontend\\src\\index.js",
         lineNumber: 11
     },
     __self: undefined
@@ -896,7 +896,7 @@ _reactDomDefault.default.render(/*#__PURE__*/ _reactDefault.default.createElemen
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-dom":"2sg1U","./App":"6Pm2X","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","bootstrap/dist/css/bootstrap.min.css":"6DxLW","react-redux":"7GDa4","./store.js":"4av32"}],"3b2NM":[function(require,module,exports) {
+},{"react":"3b2NM","react-dom":"2sg1U","./App":"6Pm2X","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","bootstrap/dist/css/bootstrap.min.css":"24gh2","react-redux":"7GDa4","./store.js":"4av32"}],"3b2NM":[function(require,module,exports) {
 'use strict';
 module.exports = require('./cjs/react.development.js');
 
@@ -21864,10 +21864,12 @@ var _loginScreen = require("./Screens/LoginScreen/loginScreen");
 var _loginScreenDefault = parcelHelpers.interopDefault(_loginScreen);
 var _registerScreen = require("./Screens/RegisterScreen/registerScreen");
 var _registerScreenDefault = parcelHelpers.interopDefault(_registerScreen);
+var _lggedInHomeScreen = require("./Screens/loggedinHomeScreen/lggedInHomeScreen");
+var _lggedInHomeScreenDefault = parcelHelpers.interopDefault(_lggedInHomeScreen);
 var _adminDashboard = require("./components/Admin/adminDashboard/adminDashboard");
 var _adminDashboardDefault = parcelHelpers.interopDefault(_adminDashboard);
-var _editorScreen = require("./Screens/EditorScreen/editorScreen");
-var _editorScreenDefault = parcelHelpers.interopDefault(_editorScreen);
+var _editorDashboard = require("./Screens/EditorScreen/Editor dashboard/editorDashboard");
+var _editorDashboardDefault = parcelHelpers.interopDefault(_editorDashboard);
 var _approvedScreen = require("./Screens/EditorScreen/approvedScreen");
 var _approvedScreenDefault = parcelHelpers.interopDefault(_approvedScreen);
 var _unapprovedScreen = require("./Screens/EditorScreen/unapprovedScreen");
@@ -21877,14 +21879,22 @@ var _adminConferenceDetailsJsDefault = parcelHelpers.interopDefault(_adminConfer
 const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
+=======
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
             lineNumber: 15
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "main",
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
+=======
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
             lineNumber: 16
         },
         __self: undefined
@@ -21893,7 +21903,11 @@ const App = ()=>{
         component: _homescreenDefault.default,
         exact: true,
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
+=======
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
             lineNumber: 17
         },
         __self: undefined
@@ -21901,7 +21915,11 @@ const App = ()=>{
         path: "/login",
         component: _loginScreenDefault.default,
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
+=======
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
             lineNumber: 18
         },
         __self: undefined
@@ -21909,38 +21927,67 @@ const App = ()=>{
         path: "/register",
         component: _registerScreenDefault.default,
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
             lineNumber: 19
+=======
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 19
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/loggedInHome",
+        component: _lggedInHomeScreenDefault.default,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 20
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/admin",
         component: _adminDashboardDefault.default,
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
             lineNumber: 20
+=======
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 21
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/editor",
-        component: _editorScreenDefault.default,
+        component: _editorDashboardDefault.default,
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
             lineNumber: 21
+=======
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 22
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/applist",
         component: _approvedScreenDefault.default,
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
             lineNumber: 22
+=======
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 23
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/unapplist",
         component: _unapprovedScreenDefault.default,
         __source: {
+<<<<<<< HEAD
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
             lineNumber: 23
         },
@@ -21950,6 +21997,9 @@ const App = ()=>{
         component: _adminConferenceDetailsJsDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
+=======
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
             lineNumber: 24
         },
         __self: undefined
@@ -21965,7 +22015,11 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
+<<<<<<< HEAD
 },{"react":"3b2NM","./App.css":"3lxWH","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/RegisterScreen/registerScreen":"7xglY","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/editorScreen":"3WoBG","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo"}],"3lxWH":[function() {},{}],"1PMSK":[function(require,module,exports) {
+=======
+},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -25084,32 +25138,32 @@ const homeScreen = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "man",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 26
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 27
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_showcaseJsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 28
         },
         __self: undefined
     }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 29
         },
         __self: undefined
     }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
         variant: "danger",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 30
         },
         __self: undefined
@@ -25120,105 +25174,105 @@ const homeScreen = ()=>{
         responsive: true,
         className: "table-sm",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 32
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 33
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 34
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 35
         },
         __self: undefined
     }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 36
         },
         __self: undefined
     }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 37
         },
         __self: undefined
     }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 38
         },
         __self: undefined
     }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 39
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 42
         },
         __self: undefined
     }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
             key: con._id,
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
                 lineNumber: 44
             },
             __self: undefined
         }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
                 lineNumber: 45
             },
             __self: undefined
         }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
                 lineNumber: 46
             },
             __self: undefined
         }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
                 lineNumber: 47
             },
             __self: undefined
         }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
                 lineNumber: 48
             },
             __self: undefined
         }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
                 lineNumber: 49
             },
             __self: undefined
         }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
                 lineNumber: 50
             },
             __self: undefined
         }, con.venue))
     ))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 56
         },
         __self: undefined
@@ -25234,7 +25288,1334 @@ exports.default = homeScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","../../components/Showcase/showcase.js":"2PCZy","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-redux":"7GDa4","../../action/conferenceAction.js":"7CqFH","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","./homescreen.css":"yo9U2"}],"5c3hR":[function(require,module,exports) {
+},{"react":"3b2NM","react-redux":"7GDa4","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","../../components/Showcase/showcase.js":"2PCZy","react-bootstrap":"4n7hB","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../action/conferenceAction.js":"7CqFH","./homescreen.css":"2Ihqr"}],"7GDa4":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+var _Provider = _interopRequireDefault(require("./components/Provider"));
+exports.Provider = _Provider["default"];
+var _connectAdvanced = _interopRequireDefault(require("./components/connectAdvanced"));
+exports.connectAdvanced = _connectAdvanced["default"];
+var _Context = require("./components/Context");
+exports.ReactReduxContext = _Context.ReactReduxContext;
+var _connect = _interopRequireDefault(require("./connect/connect"));
+exports.connect = _connect["default"];
+var _useDispatch = require("./hooks/useDispatch");
+exports.useDispatch = _useDispatch.useDispatch;
+exports.createDispatchHook = _useDispatch.createDispatchHook;
+var _useSelector = require("./hooks/useSelector");
+exports.useSelector = _useSelector.useSelector;
+exports.createSelectorHook = _useSelector.createSelectorHook;
+var _useStore = require("./hooks/useStore");
+exports.useStore = _useStore.useStore;
+exports.createStoreHook = _useStore.createStoreHook;
+var _batch = require("./utils/batch");
+var _reactBatchedUpdates = require("./utils/reactBatchedUpdates");
+exports.batch = _reactBatchedUpdates.unstable_batchedUpdates;
+var _shallowEqual = _interopRequireDefault(require("./utils/shallowEqual"));
+exports.shallowEqual = _shallowEqual["default"];
+_batch.setBatch(_reactBatchedUpdates.unstable_batchedUpdates);
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","./components/Provider":"3bhyH","./components/connectAdvanced":"SPrTN","./components/Context":"6ScOK","./connect/connect":"1HacB","./hooks/useDispatch":"4H7HK","./hooks/useSelector":"6dv0a","./hooks/useStore":"5zPKn","./utils/batch":"XOS5r","./utils/reactBatchedUpdates":"12gEH","./utils/shallowEqual":"1BbL9"}],"4ttVj":[function(require,module,exports) {
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        "default": obj
+    };
+}
+module.exports = _interopRequireDefault;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+},{}],"3bhyH":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+exports.__esModule = true;
+exports["default"] = void 0;
+var _react = _interopRequireWildcard(require("react"));
+var _propTypes = _interopRequireDefault(require("prop-types"));
+var _Context = require("./Context");
+var _Subscription = _interopRequireDefault(require("../utils/Subscription"));
+var _useIsomorphicLayoutEffect = require("../utils/useIsomorphicLayoutEffect");
+function Provider(_ref) {
+    var store = _ref.store, context = _ref.context, children = _ref.children;
+    var contextValue = _react.useMemo(function() {
+        var subscription = new _Subscription["default"](store);
+        subscription.onStateChange = subscription.notifyNestedSubs;
+        return {
+            store: store,
+            subscription: subscription
+        };
+    }, [
+        store
+    ]);
+    var previousState = _react.useMemo(function() {
+        return store.getState();
+    }, [
+        store
+    ]);
+    _useIsomorphicLayoutEffect.useIsomorphicLayoutEffect(function() {
+        var subscription = contextValue.subscription;
+        subscription.trySubscribe();
+        if (previousState !== store.getState()) subscription.notifyNestedSubs();
+        return function() {
+            subscription.tryUnsubscribe();
+            subscription.onStateChange = null;
+        };
+    }, [
+        contextValue,
+        previousState
+    ]);
+    var Context = context || _Context.ReactReduxContext;
+    return(/*#__PURE__*/ _react["default"].createElement(Context.Provider, {
+        value: contextValue
+    }, children));
+}
+Provider.propTypes = {
+    store: _propTypes["default"].shape({
+        subscribe: _propTypes["default"].func.isRequired,
+        dispatch: _propTypes["default"].func.isRequired,
+        getState: _propTypes["default"].func.isRequired
+    }),
+    context: _propTypes["default"].object,
+    children: _propTypes["default"].any
+};
+var _default = Provider;
+exports["default"] = _default;
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","prop-types":"4dfy5","./Context":"6ScOK","../utils/Subscription":"Y1J0m","../utils/useIsomorphicLayoutEffect":"64Bcp"}],"28En5":[function(require,module,exports) {
+var _typeof = require("@babel/runtime/helpers/typeof")["default"];
+function _getRequireWildcardCache(nodeInterop) {
+    if (typeof WeakMap !== "function") return null;
+    var cacheBabelInterop = new WeakMap();
+    var cacheNodeInterop = new WeakMap();
+    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
+        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
+    })(nodeInterop);
+}
+function _interopRequireWildcard(obj, nodeInterop) {
+    if (!nodeInterop && obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        "default": obj
+    };
+    var cache = _getRequireWildcardCache(nodeInterop);
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {
+    };
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj["default"] = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+module.exports = _interopRequireWildcard;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+},{"@babel/runtime/helpers/typeof":"3F8fn"}],"3F8fn":[function(require,module,exports) {
+function _typeof(obj) {
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+        module.exports = _typeof = function _typeof1(obj1) {
+            return typeof obj1;
+        };
+        module.exports["default"] = module.exports, module.exports.__esModule = true;
+    } else {
+        module.exports = _typeof = function _typeof1(obj1) {
+            return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
+        };
+        module.exports["default"] = module.exports, module.exports.__esModule = true;
+    }
+    return _typeof(obj);
+}
+module.exports = _typeof;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+},{}],"6ScOK":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports["default"] = exports.ReactReduxContext = void 0;
+var _react = _interopRequireDefault(require("react"));
+var ReactReduxContext = /*#__PURE__*/ _react["default"].createContext(null);
+exports.ReactReduxContext = ReactReduxContext;
+ReactReduxContext.displayName = 'ReactRedux';
+var _default = ReactReduxContext;
+exports["default"] = _default;
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","react":"3b2NM"}],"Y1J0m":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports["default"] = void 0;
+var _batch = require("./batch");
+// encapsulates the subscription logic for connecting a component to the redux store, as
+// well as nesting subscriptions of descendant components, so that we can ensure the
+// ancestor components re-render before descendants
+var nullListeners = {
+    notify: function notify() {
+    }
+};
+function createListenerCollection() {
+    var batch = _batch.getBatch();
+    var first = null;
+    var last = null;
+    return {
+        clear: function clear() {
+            first = null;
+            last = null;
+        },
+        notify: function notify() {
+            batch(function() {
+                var listener = first;
+                while(listener){
+                    listener.callback();
+                    listener = listener.next;
+                }
+            });
+        },
+        get: function get() {
+            var listeners = [];
+            var listener = first;
+            while(listener){
+                listeners.push(listener);
+                listener = listener.next;
+            }
+            return listeners;
+        },
+        subscribe: function subscribe(callback) {
+            var isSubscribed = true;
+            var listener = last = {
+                callback: callback,
+                next: null,
+                prev: last
+            };
+            if (listener.prev) listener.prev.next = listener;
+            else first = listener;
+            return function unsubscribe() {
+                if (!isSubscribed || first === null) return;
+                isSubscribed = false;
+                if (listener.next) listener.next.prev = listener.prev;
+                else last = listener.prev;
+                if (listener.prev) listener.prev.next = listener.next;
+                else first = listener.next;
+            };
+        }
+    };
+}
+var Subscription = /*#__PURE__*/ function() {
+    function Subscription1(store, parentSub) {
+        this.store = store;
+        this.parentSub = parentSub;
+        this.unsubscribe = null;
+        this.listeners = nullListeners;
+        this.handleChangeWrapper = this.handleChangeWrapper.bind(this);
+    }
+    var _proto = Subscription1.prototype;
+    _proto.addNestedSub = function addNestedSub(listener) {
+        this.trySubscribe();
+        return this.listeners.subscribe(listener);
+    };
+    _proto.notifyNestedSubs = function notifyNestedSubs() {
+        this.listeners.notify();
+    };
+    _proto.handleChangeWrapper = function handleChangeWrapper() {
+        if (this.onStateChange) this.onStateChange();
+    };
+    _proto.isSubscribed = function isSubscribed() {
+        return Boolean(this.unsubscribe);
+    };
+    _proto.trySubscribe = function trySubscribe() {
+        if (!this.unsubscribe) {
+            this.unsubscribe = this.parentSub ? this.parentSub.addNestedSub(this.handleChangeWrapper) : this.store.subscribe(this.handleChangeWrapper);
+            this.listeners = createListenerCollection();
+        }
+    };
+    _proto.tryUnsubscribe = function tryUnsubscribe() {
+        if (this.unsubscribe) {
+            this.unsubscribe();
+            this.unsubscribe = null;
+            this.listeners.clear();
+            this.listeners = nullListeners;
+        }
+    };
+    return Subscription1;
+}();
+exports["default"] = Subscription;
+
+},{"./batch":"XOS5r"}],"XOS5r":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.getBatch = exports.setBatch = void 0;
+// Default to a dummy "batch" implementation that just runs the callback
+function defaultNoopBatch(callback) {
+    callback();
+}
+var batch = defaultNoopBatch; // Allow injecting another batching function later
+var setBatch = function setBatch1(newBatch) {
+    return batch = newBatch;
+}; // Supply a getter just to skip dealing with ESM bindings
+exports.setBatch = setBatch;
+var getBatch = function getBatch1() {
+    return batch;
+};
+exports.getBatch = getBatch;
+
+},{}],"64Bcp":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.useIsomorphicLayoutEffect = void 0;
+var _react = require("react");
+// React currently throws a warning when using useLayoutEffect on the server.
+// To get around it, we can conditionally useEffect on the server (no-op) and
+// useLayoutEffect in the browser. We need useLayoutEffect to ensure the store
+// subscription callback always has the selector from the latest render commit
+// available, otherwise a store update may happen between render and the effect,
+// which may cause missed updates; we also must ensure the store subscription
+// is created synchronously, otherwise a store update may occur before the
+// subscription is created and an inconsistent state may be observed
+var useIsomorphicLayoutEffect = typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined' ? _react.useLayoutEffect : _react.useEffect;
+exports.useIsomorphicLayoutEffect = useIsomorphicLayoutEffect;
+
+},{"react":"3b2NM"}],"SPrTN":[function(require,module,exports) {
+"use strict";
+var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports["default"] = connectAdvanced;
+var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
+var _objectWithoutPropertiesLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/objectWithoutPropertiesLoose"));
+var _hoistNonReactStatics = _interopRequireDefault(require("hoist-non-react-statics"));
+var _react = _interopRequireWildcard(require("react"));
+var _reactIs = require("react-is");
+var _Subscription = _interopRequireDefault(require("../utils/Subscription"));
+var _useIsomorphicLayoutEffect = require("../utils/useIsomorphicLayoutEffect");
+var _Context = require("./Context");
+// Define some constant arrays just to avoid re-creating these
+var EMPTY_ARRAY = [];
+var NO_SUBSCRIPTION_ARRAY = [
+    null,
+    null
+];
+var stringifyComponent = function stringifyComponent1(Comp) {
+    try {
+        return JSON.stringify(Comp);
+    } catch (err) {
+        return String(Comp);
+    }
+};
+function storeStateUpdatesReducer(state, action) {
+    var updateCount = state[1];
+    return [
+        action.payload,
+        updateCount + 1
+    ];
+}
+function useIsomorphicLayoutEffectWithArgs(effectFunc, effectArgs, dependencies) {
+    _useIsomorphicLayoutEffect.useIsomorphicLayoutEffect(function() {
+        return effectFunc.apply(void 0, effectArgs);
+    }, dependencies);
+}
+function captureWrapperProps(lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, actualChildProps, childPropsFromStoreUpdate, notifyNestedSubs) {
+    // We want to capture the wrapper props and child props we used for later comparisons
+    lastWrapperProps.current = wrapperProps;
+    lastChildProps.current = actualChildProps;
+    renderIsScheduled.current = false; // If the render was from a store update, clear out that reference and cascade the subscriber update
+    if (childPropsFromStoreUpdate.current) {
+        childPropsFromStoreUpdate.current = null;
+        notifyNestedSubs();
+    }
+}
+function subscribeUpdates(shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, childPropsFromStoreUpdate, notifyNestedSubs, forceComponentUpdateDispatch) {
+    // If we're not subscribed to the store, nothing to do here
+    if (!shouldHandleStateChanges) return; // Capture values for checking if and when this component unmounts
+    var didUnsubscribe = false;
+    var lastThrownError = null; // We'll run this callback every time a store subscription update propagates to this component
+    var checkForUpdates = function checkForUpdates1() {
+        if (didUnsubscribe) // Don't run stale listeners.
+        // Redux doesn't guarantee unsubscriptions happen until next dispatch.
+        return;
+        var latestStoreState = store.getState();
+        var newChildProps, error;
+        try {
+            // Actually run the selector with the most recent store state and wrapper props
+            // to determine what the child props should be
+            newChildProps = childPropsSelector(latestStoreState, lastWrapperProps.current);
+        } catch (e) {
+            error = e;
+            lastThrownError = e;
+        }
+        if (!error) lastThrownError = null;
+         // If the child props haven't changed, nothing to do here - cascade the subscription update
+        if (newChildProps === lastChildProps.current) {
+            if (!renderIsScheduled.current) notifyNestedSubs();
+        } else {
+            // Save references to the new child props.  Note that we track the "child props from store update"
+            // as a ref instead of a useState/useReducer because we need a way to determine if that value has
+            // been processed.  If this went into useState/useReducer, we couldn't clear out the value without
+            // forcing another re-render, which we don't want.
+            lastChildProps.current = newChildProps;
+            childPropsFromStoreUpdate.current = newChildProps;
+            renderIsScheduled.current = true; // If the child props _did_ change (or we caught an error), this wrapper component needs to re-render
+            forceComponentUpdateDispatch({
+                type: 'STORE_UPDATED',
+                payload: {
+                    error: error
+                }
+            });
+        }
+    }; // Actually subscribe to the nearest connected ancestor (or store)
+    subscription.onStateChange = checkForUpdates;
+    subscription.trySubscribe(); // Pull data from the store after first render in case the store has
+    // changed since we began.
+    checkForUpdates();
+    var unsubscribeWrapper = function unsubscribeWrapper1() {
+        didUnsubscribe = true;
+        subscription.tryUnsubscribe();
+        subscription.onStateChange = null;
+        if (lastThrownError) // It's possible that we caught an error due to a bad mapState function, but the
+        // parent re-rendered without this component and we're about to unmount.
+        // This shouldn't happen as long as we do top-down subscriptions correctly, but
+        // if we ever do those wrong, this throw will surface the error in our tests.
+        // In that case, throw the error from here so it doesn't get lost.
+        throw lastThrownError;
+    };
+    return unsubscribeWrapper;
+}
+var initStateUpdates = function initStateUpdates1() {
+    return [
+        null,
+        0
+    ];
+};
+function connectAdvanced(/*
+  selectorFactory is a func that is responsible for returning the selector function used to
+  compute new props from state, props, and dispatch. For example:
+      export default connectAdvanced((dispatch, options) => (state, props) => ({
+      thing: state.things[props.thingId],
+      saveThing: fields => dispatch(actionCreators.saveThing(props.thingId, fields)),
+    }))(YourComponent)
+    Access to dispatch is provided to the factory so selectorFactories can bind actionCreators
+  outside of their selector as an optimization. Options passed to connectAdvanced are passed to
+  the selectorFactory, along with displayName and WrappedComponent, as the second argument.
+    Note that selectorFactory is responsible for all caching/memoization of inbound and outbound
+  props. Do not use connectAdvanced directly without memoizing results between calls to your
+  selector, otherwise the Connect component will re-render on every state or props change.
+*/ selectorFactory, _ref) {
+    if (_ref === void 0) _ref = {
+    };
+    var _ref2 = _ref, _ref2$getDisplayName = _ref2.getDisplayName, getDisplayName = _ref2$getDisplayName === void 0 ? function(name) {
+        return "ConnectAdvanced(" + name + ")";
+    } : _ref2$getDisplayName, _ref2$methodName = _ref2.methodName, methodName = _ref2$methodName === void 0 ? 'connectAdvanced' : _ref2$methodName, _ref2$renderCountProp = _ref2.renderCountProp, renderCountProp = _ref2$renderCountProp === void 0 ? undefined : _ref2$renderCountProp, _ref2$shouldHandleSta = _ref2.shouldHandleStateChanges, shouldHandleStateChanges = _ref2$shouldHandleSta === void 0 ? true : _ref2$shouldHandleSta, _ref2$storeKey = _ref2.storeKey, storeKey = _ref2$storeKey === void 0 ? 'store' : _ref2$storeKey, _ref2$withRef = _ref2.withRef, withRef = _ref2$withRef === void 0 ? false : _ref2$withRef, _ref2$forwardRef = _ref2.forwardRef, forwardRef = _ref2$forwardRef === void 0 ? false : _ref2$forwardRef, _ref2$context = _ref2.context, context = _ref2$context === void 0 ? _Context.ReactReduxContext : _ref2$context, connectOptions = _objectWithoutPropertiesLoose2["default"](_ref2, [
+        "getDisplayName",
+        "methodName",
+        "renderCountProp",
+        "shouldHandleStateChanges",
+        "storeKey",
+        "withRef",
+        "forwardRef",
+        "context"
+    ]);
+    if (renderCountProp !== undefined) throw new Error("renderCountProp is removed. render counting is built into the latest React Dev Tools profiling extension");
+    if (withRef) throw new Error('withRef is removed. To access the wrapped instance, use a ref on the connected component');
+    var customStoreWarningMessage = "To use a custom Redux store for specific components, create a custom React context with React.createContext(), and pass the context object to React Redux's Provider and specific components like: <Provider context={MyContext}><ConnectedComponent context={MyContext} /></Provider>. You may also pass a {context : MyContext} option to connect";
+    if (storeKey !== 'store') throw new Error('storeKey has been removed and does not do anything. ' + customStoreWarningMessage);
+    var Context = context;
+    return function wrapWithConnect(WrappedComponent) {
+        if (!_reactIs.isValidElementType(WrappedComponent)) throw new Error("You must pass a component to the function returned by " + (methodName + ". Instead received " + stringifyComponent(WrappedComponent)));
+        var wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
+        var displayName = getDisplayName(wrappedComponentName);
+        var selectorFactoryOptions = _extends2["default"]({
+        }, connectOptions, {
+            getDisplayName: getDisplayName,
+            methodName: methodName,
+            renderCountProp: renderCountProp,
+            shouldHandleStateChanges: shouldHandleStateChanges,
+            storeKey: storeKey,
+            displayName: displayName,
+            wrappedComponentName: wrappedComponentName,
+            WrappedComponent: WrappedComponent
+        });
+        var pure = connectOptions.pure;
+        function createChildSelector(store) {
+            return selectorFactory(store.dispatch, selectorFactoryOptions);
+        } // If we aren't running in "pure" mode, we don't want to memoize values.
+        // To avoid conditionally calling hooks, we fall back to a tiny wrapper
+        // that just executes the given callback immediately.
+        var usePureOnlyMemo = pure ? _react.useMemo : function(callback) {
+            return callback();
+        };
+        function ConnectFunction(props) {
+            var _useMemo = _react.useMemo(function() {
+                // Distinguish between actual "data" props that were passed to the wrapper component,
+                // and values needed to control behavior (forwarded refs, alternate context instances).
+                // To maintain the wrapperProps object reference, memoize this destructuring.
+                var reactReduxForwardedRef = props.reactReduxForwardedRef, wrapperProps = _objectWithoutPropertiesLoose2["default"](props, [
+                    "reactReduxForwardedRef"
+                ]);
+                return [
+                    props.context,
+                    reactReduxForwardedRef,
+                    wrapperProps
+                ];
+            }, [
+                props
+            ]), propsContext = _useMemo[0], reactReduxForwardedRef = _useMemo[1], wrapperProps = _useMemo[2];
+            var ContextToUse = _react.useMemo(function() {
+                // Users may optionally pass in a custom context instance to use instead of our ReactReduxContext.
+                // Memoize the check that determines which context instance we should use.
+                return propsContext && propsContext.Consumer && _reactIs.isContextConsumer(/*#__PURE__*/ _react["default"].createElement(propsContext.Consumer, null)) ? propsContext : Context;
+            }, [
+                propsContext,
+                Context
+            ]); // Retrieve the store and ancestor subscription via context, if available
+            var contextValue = _react.useContext(ContextToUse); // The store _must_ exist as either a prop or in context.
+            // We'll check to see if it _looks_ like a Redux store first.
+            // This allows us to pass through a `store` prop that is just a plain value.
+            var didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
+            var didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
+            if (!didStoreComeFromProps && !didStoreComeFromContext) throw new Error("Could not find \"store\" in the context of " + ("\"" + displayName + "\". Either wrap the root component in a <Provider>, ") + "or pass a custom React context provider to <Provider> and the corresponding " + ("React context consumer to " + displayName + " in connect options."));
+             // Based on the previous check, one of these must be true
+            var store = didStoreComeFromProps ? props.store : contextValue.store;
+            var childPropsSelector = _react.useMemo(function() {
+                // The child props selector needs the store reference as an input.
+                // Re-create this selector whenever the store changes.
+                return createChildSelector(store);
+            }, [
+                store
+            ]);
+            var _useMemo2 = _react.useMemo(function() {
+                if (!shouldHandleStateChanges) return NO_SUBSCRIPTION_ARRAY; // This Subscription's source should match where store came from: props vs. context. A component
+                // connected to the store via props shouldn't use subscription from context, or vice versa.
+                var subscription = new _Subscription["default"](store, didStoreComeFromProps ? null : contextValue.subscription); // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
+                // the middle of the notification loop, where `subscription` will then be null. This can
+                // probably be avoided if Subscription's listeners logic is changed to not call listeners
+                // that have been unsubscribed in the  middle of the notification loop.
+                var notifyNestedSubs = subscription.notifyNestedSubs.bind(subscription);
+                return [
+                    subscription,
+                    notifyNestedSubs
+                ];
+            }, [
+                store,
+                didStoreComeFromProps,
+                contextValue
+            ]), subscription = _useMemo2[0], notifyNestedSubs = _useMemo2[1]; // Determine what {store, subscription} value should be put into nested context, if necessary,
+            // and memoize that value to avoid unnecessary context updates.
+            var overriddenContextValue = _react.useMemo(function() {
+                if (didStoreComeFromProps) // This component is directly subscribed to a store from props.
+                // We don't want descendants reading from this store - pass down whatever
+                // the existing context value is from the nearest connected ancestor.
+                return contextValue;
+                 // Otherwise, put this component's subscription instance into context, so that
+                // connected descendants won't update until after this component is done
+                return _extends2["default"]({
+                }, contextValue, {
+                    subscription: subscription
+                });
+            }, [
+                didStoreComeFromProps,
+                contextValue,
+                subscription
+            ]); // We need to force this wrapper component to re-render whenever a Redux store update
+            // causes a change to the calculated child component props (or we caught an error in mapState)
+            var _useReducer = _react.useReducer(storeStateUpdatesReducer, EMPTY_ARRAY, initStateUpdates), _useReducer$ = _useReducer[0], previousStateUpdateResult = _useReducer$[0], forceComponentUpdateDispatch = _useReducer[1]; // Propagate any mapState/mapDispatch errors upwards
+            if (previousStateUpdateResult && previousStateUpdateResult.error) throw previousStateUpdateResult.error;
+             // Set up refs to coordinate values between the subscription effect and the render logic
+            var lastChildProps = _react.useRef();
+            var lastWrapperProps = _react.useRef(wrapperProps);
+            var childPropsFromStoreUpdate = _react.useRef();
+            var renderIsScheduled = _react.useRef(false);
+            var actualChildProps = usePureOnlyMemo(function() {
+                // Tricky logic here:
+                // - This render may have been triggered by a Redux store update that produced new child props
+                // - However, we may have gotten new wrapper props after that
+                // If we have new child props, and the same wrapper props, we know we should use the new child props as-is.
+                // But, if we have new wrapper props, those might change the child props, so we have to recalculate things.
+                // So, we'll use the child props from store update only if the wrapper props are the same as last time.
+                if (childPropsFromStoreUpdate.current && wrapperProps === lastWrapperProps.current) return childPropsFromStoreUpdate.current;
+                 // TODO We're reading the store directly in render() here. Bad idea?
+                // This will likely cause Bad Things (TM) to happen in Concurrent Mode.
+                // Note that we do this because on renders _not_ caused by store updates, we need the latest store state
+                // to determine what the child props should be.
+                return childPropsSelector(store.getState(), wrapperProps);
+            }, [
+                store,
+                previousStateUpdateResult,
+                wrapperProps
+            ]); // We need this to execute synchronously every time we re-render. However, React warns
+            // about useLayoutEffect in SSR, so we try to detect environment and fall back to
+            // just useEffect instead to avoid the warning, since neither will run anyway.
+            useIsomorphicLayoutEffectWithArgs(captureWrapperProps, [
+                lastWrapperProps,
+                lastChildProps,
+                renderIsScheduled,
+                wrapperProps,
+                actualChildProps,
+                childPropsFromStoreUpdate,
+                notifyNestedSubs
+            ]); // Our re-subscribe logic only runs when the store/subscription setup changes
+            useIsomorphicLayoutEffectWithArgs(subscribeUpdates, [
+                shouldHandleStateChanges,
+                store,
+                subscription,
+                childPropsSelector,
+                lastWrapperProps,
+                lastChildProps,
+                renderIsScheduled,
+                childPropsFromStoreUpdate,
+                notifyNestedSubs,
+                forceComponentUpdateDispatch
+            ], [
+                store,
+                subscription,
+                childPropsSelector
+            ]); // Now that all that's done, we can finally try to actually render the child component.
+            // We memoize the elements for the rendered child component as an optimization.
+            var renderedWrappedComponent = _react.useMemo(function() {
+                return(/*#__PURE__*/ _react["default"].createElement(WrappedComponent, _extends2["default"]({
+                }, actualChildProps, {
+                    ref: reactReduxForwardedRef
+                })));
+            }, [
+                reactReduxForwardedRef,
+                WrappedComponent,
+                actualChildProps
+            ]); // If React sees the exact same element reference as last time, it bails out of re-rendering
+            // that child, same as if it was wrapped in React.memo() or returned false from shouldComponentUpdate.
+            var renderedChild = _react.useMemo(function() {
+                if (shouldHandleStateChanges) // If this component is subscribed to store updates, we need to pass its own
+                // subscription instance down to our descendants. That means rendering the same
+                // Context instance, and putting a different value into the context.
+                return(/*#__PURE__*/ _react["default"].createElement(ContextToUse.Provider, {
+                    value: overriddenContextValue
+                }, renderedWrappedComponent));
+                return renderedWrappedComponent;
+            }, [
+                ContextToUse,
+                renderedWrappedComponent,
+                overriddenContextValue
+            ]);
+            return renderedChild;
+        } // If we're in "pure" mode, ensure our wrapper component only re-renders when incoming props have changed.
+        var Connect = pure ? _react["default"].memo(ConnectFunction) : ConnectFunction;
+        Connect.WrappedComponent = WrappedComponent;
+        Connect.displayName = ConnectFunction.displayName = displayName;
+        if (forwardRef) {
+            var forwarded = _react["default"].forwardRef(function forwardConnectRef(props, ref) {
+                return(/*#__PURE__*/ _react["default"].createElement(Connect, _extends2["default"]({
+                }, props, {
+                    reactReduxForwardedRef: ref
+                })));
+            });
+            forwarded.displayName = displayName;
+            forwarded.WrappedComponent = WrappedComponent;
+            return _hoistNonReactStatics["default"](forwarded, WrappedComponent);
+        }
+        return _hoistNonReactStatics["default"](Connect, WrappedComponent);
+    };
+}
+
+},{"@babel/runtime/helpers/interopRequireWildcard":"28En5","@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","hoist-non-react-statics":"3nUHV","react":"3b2NM","react-is":"68QIU","../utils/Subscription":"Y1J0m","../utils/useIsomorphicLayoutEffect":"64Bcp","./Context":"6ScOK"}],"3krLJ":[function(require,module,exports) {
+function _extends() {
+    module.exports = _extends = Object.assign || function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    module.exports["default"] = module.exports, module.exports.__esModule = true;
+    return _extends.apply(this, arguments);
+}
+module.exports = _extends;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+},{}],"3Yx9V":[function(require,module,exports) {
+function _objectWithoutPropertiesLoose(source, excluded) {
+    if (source == null) return {
+    };
+    var target = {
+    };
+    var sourceKeys = Object.keys(source);
+    var key, i;
+    for(i = 0; i < sourceKeys.length; i++){
+        key = sourceKeys[i];
+        if (excluded.indexOf(key) >= 0) continue;
+        target[key] = source[key];
+    }
+    return target;
+}
+module.exports = _objectWithoutPropertiesLoose;
+module.exports["default"] = module.exports, module.exports.__esModule = true;
+
+},{}],"1HacB":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports.createConnect = createConnect;
+exports["default"] = void 0;
+var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
+var _objectWithoutPropertiesLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/objectWithoutPropertiesLoose"));
+var _connectAdvanced = _interopRequireDefault(require("../components/connectAdvanced"));
+var _shallowEqual = _interopRequireDefault(require("../utils/shallowEqual"));
+var _mapDispatchToProps = _interopRequireDefault(require("./mapDispatchToProps"));
+var _mapStateToProps = _interopRequireDefault(require("./mapStateToProps"));
+var _mergeProps = _interopRequireDefault(require("./mergeProps"));
+var _selectorFactory = _interopRequireDefault(require("./selectorFactory"));
+/*
+  connect is a facade over connectAdvanced. It turns its args into a compatible
+  selectorFactory, which has the signature:
+
+    (dispatch, options) => (nextState, nextOwnProps) => nextFinalProps
+  
+  connect passes its args to connectAdvanced as options, which will in turn pass them to
+  selectorFactory each time a Connect component instance is instantiated or hot reloaded.
+
+  selectorFactory returns a final props selector from its mapStateToProps,
+  mapStateToPropsFactories, mapDispatchToProps, mapDispatchToPropsFactories, mergeProps,
+  mergePropsFactories, and pure args.
+
+  The resulting final props selector is called by the Connect component instance whenever
+  it receives new props or store state.
+ */ function match(arg, factories, name) {
+    for(var i = factories.length - 1; i >= 0; i--){
+        var result = factories[i](arg);
+        if (result) return result;
+    }
+    return function(dispatch, options) {
+        throw new Error("Invalid value of type " + typeof arg + " for " + name + " argument when connecting component " + options.wrappedComponentName + ".");
+    };
+}
+function strictEqual(a, b) {
+    return a === b;
+} // createConnect with default args builds the 'official' connect behavior. Calling it with
+// different options opens up some testing and extensibility scenarios
+function createConnect(_temp) {
+    var _ref = _temp === void 0 ? {
+    } : _temp, _ref$connectHOC = _ref.connectHOC, connectHOC = _ref$connectHOC === void 0 ? _connectAdvanced["default"] : _ref$connectHOC, _ref$mapStateToPropsF = _ref.mapStateToPropsFactories, mapStateToPropsFactories = _ref$mapStateToPropsF === void 0 ? _mapStateToProps["default"] : _ref$mapStateToPropsF, _ref$mapDispatchToPro = _ref.mapDispatchToPropsFactories, mapDispatchToPropsFactories = _ref$mapDispatchToPro === void 0 ? _mapDispatchToProps["default"] : _ref$mapDispatchToPro, _ref$mergePropsFactor = _ref.mergePropsFactories, mergePropsFactories = _ref$mergePropsFactor === void 0 ? _mergeProps["default"] : _ref$mergePropsFactor, _ref$selectorFactory = _ref.selectorFactory, selectorFactory = _ref$selectorFactory === void 0 ? _selectorFactory["default"] : _ref$selectorFactory;
+    return function connect(mapStateToProps, mapDispatchToProps, mergeProps, _ref2) {
+        if (_ref2 === void 0) _ref2 = {
+        };
+        var _ref3 = _ref2, _ref3$pure = _ref3.pure, pure = _ref3$pure === void 0 ? true : _ref3$pure, _ref3$areStatesEqual = _ref3.areStatesEqual, areStatesEqual = _ref3$areStatesEqual === void 0 ? strictEqual : _ref3$areStatesEqual, _ref3$areOwnPropsEqua = _ref3.areOwnPropsEqual, areOwnPropsEqual = _ref3$areOwnPropsEqua === void 0 ? _shallowEqual["default"] : _ref3$areOwnPropsEqua, _ref3$areStatePropsEq = _ref3.areStatePropsEqual, areStatePropsEqual = _ref3$areStatePropsEq === void 0 ? _shallowEqual["default"] : _ref3$areStatePropsEq, _ref3$areMergedPropsE = _ref3.areMergedPropsEqual, areMergedPropsEqual = _ref3$areMergedPropsE === void 0 ? _shallowEqual["default"] : _ref3$areMergedPropsE, extraOptions = _objectWithoutPropertiesLoose2["default"](_ref3, [
+            "pure",
+            "areStatesEqual",
+            "areOwnPropsEqual",
+            "areStatePropsEqual",
+            "areMergedPropsEqual"
+        ]);
+        var initMapStateToProps = match(mapStateToProps, mapStateToPropsFactories, 'mapStateToProps');
+        var initMapDispatchToProps = match(mapDispatchToProps, mapDispatchToPropsFactories, 'mapDispatchToProps');
+        var initMergeProps = match(mergeProps, mergePropsFactories, 'mergeProps');
+        return connectHOC(selectorFactory, _extends2["default"]({
+            // used in error messages
+            methodName: 'connect',
+            // used to compute Connect's displayName from the wrapped component's displayName.
+            getDisplayName: function getDisplayName(name) {
+                return "Connect(" + name + ")";
+            },
+            // if mapStateToProps is falsy, the Connect component doesn't subscribe to store state changes
+            shouldHandleStateChanges: Boolean(mapStateToProps),
+            // passed through to selectorFactory
+            initMapStateToProps: initMapStateToProps,
+            initMapDispatchToProps: initMapDispatchToProps,
+            initMergeProps: initMergeProps,
+            pure: pure,
+            areStatesEqual: areStatesEqual,
+            areOwnPropsEqual: areOwnPropsEqual,
+            areStatePropsEqual: areStatePropsEqual,
+            areMergedPropsEqual: areMergedPropsEqual
+        }, extraOptions));
+    };
+}
+var _default = /*#__PURE__*/ createConnect();
+exports["default"] = _default;
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","../components/connectAdvanced":"SPrTN","../utils/shallowEqual":"1BbL9","./mapDispatchToProps":"aHbco","./mapStateToProps":"6esSH","./mergeProps":"4XiYM","./selectorFactory":"XQRNr"}],"1BbL9":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports["default"] = shallowEqual;
+function is(x, y) {
+    if (x === y) return x !== 0 || y !== 0 || 1 / x === 1 / y;
+    else return x !== x && y !== y;
+}
+function shallowEqual(objA, objB) {
+    if (is(objA, objB)) return true;
+    if (typeof objA !== 'object' || objA === null || typeof objB !== 'object' || objB === null) return false;
+    var keysA = Object.keys(objA);
+    var keysB = Object.keys(objB);
+    if (keysA.length !== keysB.length) return false;
+    for(var i = 0; i < keysA.length; i++){
+        if (!Object.prototype.hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) return false;
+    }
+    return true;
+}
+
+},{}],"aHbco":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports.whenMapDispatchToPropsIsFunction = whenMapDispatchToPropsIsFunction;
+exports.whenMapDispatchToPropsIsMissing = whenMapDispatchToPropsIsMissing;
+exports.whenMapDispatchToPropsIsObject = whenMapDispatchToPropsIsObject;
+exports["default"] = void 0;
+var _bindActionCreators = _interopRequireDefault(require("../utils/bindActionCreators"));
+var _wrapMapToProps = require("./wrapMapToProps");
+function whenMapDispatchToPropsIsFunction(mapDispatchToProps) {
+    return typeof mapDispatchToProps === 'function' ? _wrapMapToProps.wrapMapToPropsFunc(mapDispatchToProps, 'mapDispatchToProps') : undefined;
+}
+function whenMapDispatchToPropsIsMissing(mapDispatchToProps) {
+    return !mapDispatchToProps ? _wrapMapToProps.wrapMapToPropsConstant(function(dispatch) {
+        return {
+            dispatch: dispatch
+        };
+    }) : undefined;
+}
+function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
+    return mapDispatchToProps && typeof mapDispatchToProps === 'object' ? _wrapMapToProps.wrapMapToPropsConstant(function(dispatch) {
+        return _bindActionCreators["default"](mapDispatchToProps, dispatch);
+    }) : undefined;
+}
+var _default = [
+    whenMapDispatchToPropsIsFunction,
+    whenMapDispatchToPropsIsMissing,
+    whenMapDispatchToPropsIsObject
+];
+exports["default"] = _default;
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","../utils/bindActionCreators":"21ucm","./wrapMapToProps":"7rpe9"}],"21ucm":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports["default"] = bindActionCreators;
+function bindActionCreators(actionCreators, dispatch) {
+    var boundActionCreators = {
+    };
+    var _loop = function _loop1(key) {
+        var actionCreator = actionCreators[key];
+        if (typeof actionCreator === 'function') boundActionCreators[key] = function() {
+            return dispatch(actionCreator.apply(void 0, arguments));
+        };
+    };
+    for(var key in actionCreators)_loop(key);
+    return boundActionCreators;
+}
+
+},{}],"7rpe9":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports.wrapMapToPropsConstant = wrapMapToPropsConstant;
+exports.getDependsOnOwnProps = getDependsOnOwnProps;
+exports.wrapMapToPropsFunc = wrapMapToPropsFunc;
+var _verifyPlainObject = _interopRequireDefault(require("../utils/verifyPlainObject"));
+function wrapMapToPropsConstant(getConstant) {
+    return function initConstantSelector(dispatch, options) {
+        var constant = getConstant(dispatch, options);
+        function constantSelector() {
+            return constant;
+        }
+        constantSelector.dependsOnOwnProps = false;
+        return constantSelector;
+    };
+} // dependsOnOwnProps is used by createMapToPropsProxy to determine whether to pass props as args
+// to the mapToProps function being wrapped. It is also used by makePurePropsSelector to determine
+// whether mapToProps needs to be invoked when props have changed.
+//
+// A length of one signals that mapToProps does not depend on props from the parent component.
+// A length of zero is assumed to mean mapToProps is getting args via arguments or ...args and
+// therefore not reporting its length accurately..
+function getDependsOnOwnProps(mapToProps) {
+    return mapToProps.dependsOnOwnProps !== null && mapToProps.dependsOnOwnProps !== undefined ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
+} // Used by whenMapStateToPropsIsFunction and whenMapDispatchToPropsIsFunction,
+// this function wraps mapToProps in a proxy function which does several things:
+//
+//  * Detects whether the mapToProps function being called depends on props, which
+//    is used by selectorFactory to decide if it should reinvoke on props changes.
+//
+//  * On first call, handles mapToProps if returns another function, and treats that
+//    new function as the true mapToProps for subsequent calls.
+//
+//  * On first call, verifies the first result is a plain object, in order to warn
+//    the developer that their mapToProps function is not returning a valid result.
+//
+function wrapMapToPropsFunc(mapToProps, methodName) {
+    return function initProxySelector(dispatch, _ref) {
+        var displayName = _ref.displayName;
+        var proxy = function mapToPropsProxy(stateOrDispatch, ownProps) {
+            return proxy.dependsOnOwnProps ? proxy.mapToProps(stateOrDispatch, ownProps) : proxy.mapToProps(stateOrDispatch);
+        }; // allow detectFactoryAndVerify to get ownProps
+        proxy.dependsOnOwnProps = true;
+        proxy.mapToProps = function detectFactoryAndVerify(stateOrDispatch, ownProps) {
+            proxy.mapToProps = mapToProps;
+            proxy.dependsOnOwnProps = getDependsOnOwnProps(mapToProps);
+            var props = proxy(stateOrDispatch, ownProps);
+            if (typeof props === 'function') {
+                proxy.mapToProps = props;
+                proxy.dependsOnOwnProps = getDependsOnOwnProps(props);
+                props = proxy(stateOrDispatch, ownProps);
+            }
+            _verifyPlainObject["default"](props, displayName, methodName);
+            return props;
+        };
+        return proxy;
+    };
+}
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","../utils/verifyPlainObject":"4G4Zn"}],"4G4Zn":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports["default"] = verifyPlainObject;
+var _isPlainObject = _interopRequireDefault(require("./isPlainObject"));
+var _warning = _interopRequireDefault(require("./warning"));
+function verifyPlainObject(value, displayName, methodName) {
+    if (!_isPlainObject["default"](value)) _warning["default"](methodName + "() in " + displayName + " must return a plain object. Instead received " + value + ".");
+}
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","./isPlainObject":"Gqg7l","./warning":"2YNtu"}],"Gqg7l":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports["default"] = isPlainObject;
+/**
+ * @param {any} obj The object to inspect.
+ * @returns {boolean} True if the argument appears to be a plain object.
+ */ function isPlainObject(obj) {
+    if (typeof obj !== 'object' || obj === null) return false;
+    var proto = Object.getPrototypeOf(obj);
+    if (proto === null) return true;
+    var baseProto = proto;
+    while(Object.getPrototypeOf(baseProto) !== null)baseProto = Object.getPrototypeOf(baseProto);
+    return proto === baseProto;
+}
+
+},{}],"2YNtu":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports["default"] = warning;
+/**
+ * Prints a warning in the console if it exists.
+ *
+ * @param {String} message The warning message.
+ * @returns {void}
+ */ function warning(message) {
+    /* eslint-disable no-console */ if (typeof console !== 'undefined' && typeof console.error === 'function') console.error(message);
+    /* eslint-enable no-console */ try {
+        // This error was thrown as a convenience so that if you enable
+        // "break on all exceptions" in your console,
+        // it would pause the execution at this line.
+        throw new Error(message);
+    /* eslint-disable no-empty */ } catch (e) {
+    }
+/* eslint-enable no-empty */ }
+
+},{}],"6esSH":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.whenMapStateToPropsIsFunction = whenMapStateToPropsIsFunction;
+exports.whenMapStateToPropsIsMissing = whenMapStateToPropsIsMissing;
+exports["default"] = void 0;
+var _wrapMapToProps = require("./wrapMapToProps");
+function whenMapStateToPropsIsFunction(mapStateToProps) {
+    return typeof mapStateToProps === 'function' ? _wrapMapToProps.wrapMapToPropsFunc(mapStateToProps, 'mapStateToProps') : undefined;
+}
+function whenMapStateToPropsIsMissing(mapStateToProps) {
+    return !mapStateToProps ? _wrapMapToProps.wrapMapToPropsConstant(function() {
+        return {
+        };
+    }) : undefined;
+}
+var _default = [
+    whenMapStateToPropsIsFunction,
+    whenMapStateToPropsIsMissing
+];
+exports["default"] = _default;
+
+},{"./wrapMapToProps":"7rpe9"}],"4XiYM":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports.defaultMergeProps = defaultMergeProps;
+exports.wrapMergePropsFunc = wrapMergePropsFunc;
+exports.whenMergePropsIsFunction = whenMergePropsIsFunction;
+exports.whenMergePropsIsOmitted = whenMergePropsIsOmitted;
+exports["default"] = void 0;
+var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
+var _verifyPlainObject = _interopRequireDefault(require("../utils/verifyPlainObject"));
+function defaultMergeProps(stateProps, dispatchProps, ownProps) {
+    return _extends2["default"]({
+    }, ownProps, stateProps, dispatchProps);
+}
+function wrapMergePropsFunc(mergeProps) {
+    return function initMergePropsProxy(dispatch, _ref) {
+        var displayName = _ref.displayName, pure = _ref.pure, areMergedPropsEqual = _ref.areMergedPropsEqual;
+        var hasRunOnce = false;
+        var mergedProps;
+        return function mergePropsProxy(stateProps, dispatchProps, ownProps) {
+            var nextMergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+            if (hasRunOnce) {
+                if (!pure || !areMergedPropsEqual(nextMergedProps, mergedProps)) mergedProps = nextMergedProps;
+            } else {
+                hasRunOnce = true;
+                mergedProps = nextMergedProps;
+                _verifyPlainObject["default"](mergedProps, displayName, 'mergeProps');
+            }
+            return mergedProps;
+        };
+    };
+}
+function whenMergePropsIsFunction(mergeProps) {
+    return typeof mergeProps === 'function' ? wrapMergePropsFunc(mergeProps) : undefined;
+}
+function whenMergePropsIsOmitted(mergeProps) {
+    return !mergeProps ? function() {
+        return defaultMergeProps;
+    } : undefined;
+}
+var _default = [
+    whenMergePropsIsFunction,
+    whenMergePropsIsOmitted
+];
+exports["default"] = _default;
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","../utils/verifyPlainObject":"4G4Zn"}],"XQRNr":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports.impureFinalPropsSelectorFactory = impureFinalPropsSelectorFactory;
+exports.pureFinalPropsSelectorFactory = pureFinalPropsSelectorFactory;
+exports["default"] = finalPropsSelectorFactory;
+var _objectWithoutPropertiesLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/objectWithoutPropertiesLoose"));
+var _verifySubselectors = _interopRequireDefault(require("./verifySubselectors"));
+function impureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch) {
+    return function impureFinalPropsSelector(state, ownProps) {
+        return mergeProps(mapStateToProps(state, ownProps), mapDispatchToProps(dispatch, ownProps), ownProps);
+    };
+}
+function pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, _ref) {
+    var areStatesEqual = _ref.areStatesEqual, areOwnPropsEqual = _ref.areOwnPropsEqual, areStatePropsEqual = _ref.areStatePropsEqual;
+    var hasRunAtLeastOnce = false;
+    var state;
+    var ownProps;
+    var stateProps;
+    var dispatchProps;
+    var mergedProps;
+    function handleFirstCall(firstState, firstOwnProps) {
+        state = firstState;
+        ownProps = firstOwnProps;
+        stateProps = mapStateToProps(state, ownProps);
+        dispatchProps = mapDispatchToProps(dispatch, ownProps);
+        mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+        hasRunAtLeastOnce = true;
+        return mergedProps;
+    }
+    function handleNewPropsAndNewState() {
+        stateProps = mapStateToProps(state, ownProps);
+        if (mapDispatchToProps.dependsOnOwnProps) dispatchProps = mapDispatchToProps(dispatch, ownProps);
+        mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+        return mergedProps;
+    }
+    function handleNewProps() {
+        if (mapStateToProps.dependsOnOwnProps) stateProps = mapStateToProps(state, ownProps);
+        if (mapDispatchToProps.dependsOnOwnProps) dispatchProps = mapDispatchToProps(dispatch, ownProps);
+        mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+        return mergedProps;
+    }
+    function handleNewState() {
+        var nextStateProps = mapStateToProps(state, ownProps);
+        var statePropsChanged = !areStatePropsEqual(nextStateProps, stateProps);
+        stateProps = nextStateProps;
+        if (statePropsChanged) mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
+        return mergedProps;
+    }
+    function handleSubsequentCalls(nextState, nextOwnProps) {
+        var propsChanged = !areOwnPropsEqual(nextOwnProps, ownProps);
+        var stateChanged = !areStatesEqual(nextState, state);
+        state = nextState;
+        ownProps = nextOwnProps;
+        if (propsChanged && stateChanged) return handleNewPropsAndNewState();
+        if (propsChanged) return handleNewProps();
+        if (stateChanged) return handleNewState();
+        return mergedProps;
+    }
+    return function pureFinalPropsSelector(nextState, nextOwnProps) {
+        return hasRunAtLeastOnce ? handleSubsequentCalls(nextState, nextOwnProps) : handleFirstCall(nextState, nextOwnProps);
+    };
+} // TODO: Add more comments
+// If pure is true, the selector returned by selectorFactory will memoize its results,
+// allowing connectAdvanced's shouldComponentUpdate to return false if final
+// props have not changed. If false, the selector will always return a new
+// object and shouldComponentUpdate will always return true.
+function finalPropsSelectorFactory(dispatch, _ref2) {
+    var initMapStateToProps = _ref2.initMapStateToProps, initMapDispatchToProps = _ref2.initMapDispatchToProps, initMergeProps = _ref2.initMergeProps, options = _objectWithoutPropertiesLoose2["default"](_ref2, [
+        "initMapStateToProps",
+        "initMapDispatchToProps",
+        "initMergeProps"
+    ]);
+    var mapStateToProps = initMapStateToProps(dispatch, options);
+    var mapDispatchToProps = initMapDispatchToProps(dispatch, options);
+    var mergeProps = initMergeProps(dispatch, options);
+    _verifySubselectors["default"](mapStateToProps, mapDispatchToProps, mergeProps, options.displayName);
+    var selectorFactory = options.pure ? pureFinalPropsSelectorFactory : impureFinalPropsSelectorFactory;
+    return selectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, options);
+}
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","./verifySubselectors":"5MUxF"}],"5MUxF":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports["default"] = verifySubselectors;
+var _warning = _interopRequireDefault(require("../utils/warning"));
+function verify(selector, methodName, displayName) {
+    if (!selector) throw new Error("Unexpected value for " + methodName + " in " + displayName + ".");
+    else if (methodName === 'mapStateToProps' || methodName === 'mapDispatchToProps') {
+        if (!Object.prototype.hasOwnProperty.call(selector, 'dependsOnOwnProps')) _warning["default"]("The selector for " + methodName + " of " + displayName + " did not specify a value for dependsOnOwnProps.");
+    }
+}
+function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, displayName) {
+    verify(mapStateToProps, 'mapStateToProps', displayName);
+    verify(mapDispatchToProps, 'mapDispatchToProps', displayName);
+    verify(mergeProps, 'mergeProps', displayName);
+}
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","../utils/warning":"2YNtu"}],"4H7HK":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.createDispatchHook = createDispatchHook;
+exports.useDispatch = void 0;
+var _Context = require("../components/Context");
+var _useStore = require("./useStore");
+/**
+ * Hook factory, which creates a `useDispatch` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useDispatch` hook bound to the specified context.
+ */ function createDispatchHook(context) {
+    if (context === void 0) context = _Context.ReactReduxContext;
+    var useStore = context === _Context.ReactReduxContext ? _useStore.useStore : _useStore.createStoreHook(context);
+    return function useDispatch() {
+        var store = useStore();
+        return store.dispatch;
+    };
+}
+/**
+ * A hook to access the redux `dispatch` function.
+ *
+ * @returns {any|function} redux store's `dispatch` function
+ *
+ * @example
+ *
+ * import React, { useCallback } from 'react'
+ * import { useDispatch } from 'react-redux'
+ *
+ * export const CounterComponent = ({ value }) => {
+ *   const dispatch = useDispatch()
+ *   const increaseCounter = useCallback(() => dispatch({ type: 'increase-counter' }), [])
+ *   return (
+ *     <div>
+ *       <span>{value}</span>
+ *       <button onClick={increaseCounter}>Increase counter</button>
+ *     </div>
+ *   )
+ * }
+ */ var useDispatch = /*#__PURE__*/ createDispatchHook();
+exports.useDispatch = useDispatch;
+
+},{"../components/Context":"6ScOK","./useStore":"5zPKn"}],"5zPKn":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.createStoreHook = createStoreHook;
+exports.useStore = void 0;
+var _react = require("react");
+var _Context = require("../components/Context");
+var _useReduxContext2 = require("./useReduxContext");
+/**
+ * Hook factory, which creates a `useStore` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useStore` hook bound to the specified context.
+ */ function createStoreHook(context) {
+    if (context === void 0) context = _Context.ReactReduxContext;
+    var useReduxContext = context === _Context.ReactReduxContext ? _useReduxContext2.useReduxContext : function() {
+        return _react.useContext(context);
+    };
+    return function useStore() {
+        var _useReduxContext = useReduxContext(), store = _useReduxContext.store;
+        return store;
+    };
+}
+/**
+ * A hook to access the redux store.
+ *
+ * @returns {any} the redux store
+ *
+ * @example
+ *
+ * import React from 'react'
+ * import { useStore } from 'react-redux'
+ *
+ * export const ExampleComponent = () => {
+ *   const store = useStore()
+ *   return <div>{store.getState()}</div>
+ * }
+ */ var useStore = /*#__PURE__*/ createStoreHook();
+exports.useStore = useStore;
+
+},{"react":"3b2NM","../components/Context":"6ScOK","./useReduxContext":"46ppV"}],"46ppV":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.useReduxContext = useReduxContext;
+var _react = require("react");
+var _Context = require("../components/Context");
+/**
+ * A hook to access the value of the `ReactReduxContext`. This is a low-level
+ * hook that you should usually not need to call directly.
+ *
+ * @returns {any} the value of the `ReactReduxContext`
+ *
+ * @example
+ *
+ * import React from 'react'
+ * import { useReduxContext } from 'react-redux'
+ *
+ * export const CounterComponent = ({ value }) => {
+ *   const { store } = useReduxContext()
+ *   return <div>{store.getState()}</div>
+ * }
+ */ function useReduxContext() {
+    var contextValue = _react.useContext(_Context.ReactReduxContext);
+    if (!contextValue) throw new Error('could not find react-redux context value; please ensure the component is wrapped in a <Provider>');
+    return contextValue;
+}
+
+},{"react":"3b2NM","../components/Context":"6ScOK"}],"6dv0a":[function(require,module,exports) {
+"use strict";
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
+exports.__esModule = true;
+exports.createSelectorHook = createSelectorHook;
+exports.useSelector = void 0;
+var _react = require("react");
+var _useReduxContext2 = require("./useReduxContext");
+var _Subscription = _interopRequireDefault(require("../utils/Subscription"));
+var _useIsomorphicLayoutEffect = require("../utils/useIsomorphicLayoutEffect");
+var _Context = require("../components/Context");
+var refEquality = function refEquality1(a, b) {
+    return a === b;
+};
+function useSelectorWithStoreAndSubscription(selector, equalityFn, store, contextSub) {
+    var _useReducer = _react.useReducer(function(s) {
+        return s + 1;
+    }, 0), forceRender = _useReducer[1];
+    var subscription = _react.useMemo(function() {
+        return new _Subscription["default"](store, contextSub);
+    }, [
+        store,
+        contextSub
+    ]);
+    var latestSubscriptionCallbackError = _react.useRef();
+    var latestSelector = _react.useRef();
+    var latestStoreState = _react.useRef();
+    var latestSelectedState = _react.useRef();
+    var storeState = store.getState();
+    var selectedState;
+    try {
+        if (selector !== latestSelector.current || storeState !== latestStoreState.current || latestSubscriptionCallbackError.current) {
+            var newSelectedState = selector(storeState); // ensure latest selected state is reused so that a custom equality function can result in identical references
+            if (latestSelectedState.current === undefined || !equalityFn(newSelectedState, latestSelectedState.current)) selectedState = newSelectedState;
+            else selectedState = latestSelectedState.current;
+        } else selectedState = latestSelectedState.current;
+    } catch (err) {
+        if (latestSubscriptionCallbackError.current) err.message += "\nThe error may be correlated with this previous error:\n" + latestSubscriptionCallbackError.current.stack + "\n\n";
+        throw err;
+    }
+    _useIsomorphicLayoutEffect.useIsomorphicLayoutEffect(function() {
+        latestSelector.current = selector;
+        latestStoreState.current = storeState;
+        latestSelectedState.current = selectedState;
+        latestSubscriptionCallbackError.current = undefined;
+    });
+    _useIsomorphicLayoutEffect.useIsomorphicLayoutEffect(function() {
+        function checkForUpdates() {
+            try {
+                var newStoreState = store.getState();
+                var _newSelectedState = latestSelector.current(newStoreState);
+                if (equalityFn(_newSelectedState, latestSelectedState.current)) return;
+                latestSelectedState.current = _newSelectedState;
+                latestStoreState.current = newStoreState;
+            } catch (err) {
+                // we ignore all errors here, since when the component
+                // is re-rendered, the selectors are called again, and
+                // will throw again, if neither props nor store state
+                // changed
+                latestSubscriptionCallbackError.current = err;
+            }
+            forceRender();
+        }
+        subscription.onStateChange = checkForUpdates;
+        subscription.trySubscribe();
+        checkForUpdates();
+        return function() {
+            return subscription.tryUnsubscribe();
+        };
+    }, [
+        store,
+        subscription
+    ]);
+    return selectedState;
+}
+/**
+ * Hook factory, which creates a `useSelector` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useSelector` hook bound to the specified context.
+ */ function createSelectorHook(context) {
+    if (context === void 0) context = _Context.ReactReduxContext;
+    var useReduxContext = context === _Context.ReactReduxContext ? _useReduxContext2.useReduxContext : function() {
+        return _react.useContext(context);
+    };
+    return function useSelector(selector, equalityFn) {
+        if (equalityFn === void 0) equalityFn = refEquality;
+        if (!selector) throw new Error("You must pass a selector to useSelector");
+        if (typeof selector !== 'function') throw new Error("You must pass a function as a selector to useSelector");
+        if (typeof equalityFn !== 'function') throw new Error("You must pass a function as an equality function to useSelector");
+        var _useReduxContext = useReduxContext(), store = _useReduxContext.store, contextSub = _useReduxContext.subscription;
+        var selectedState = useSelectorWithStoreAndSubscription(selector, equalityFn, store, contextSub);
+        _react.useDebugValue(selectedState);
+        return selectedState;
+    };
+}
+/**
+ * A hook to access the redux store's state. This hook takes a selector function
+ * as an argument. The selector is called with the store state.
+ *
+ * This hook takes an optional equality comparison function as the second parameter
+ * that allows you to customize the way the selected state is compared to determine
+ * whether the component needs to be re-rendered.
+ *
+ * @param {Function} selector the selector function
+ * @param {Function=} equalityFn the function that will be used to determine equality
+ *
+ * @returns {any} the selected state
+ *
+ * @example
+ *
+ * import React from 'react'
+ * import { useSelector } from 'react-redux'
+ *
+ * export const CounterComponent = () => {
+ *   const counter = useSelector(state => state.counter)
+ *   return <div>{counter}</div>
+ * }
+ */ var useSelector = /*#__PURE__*/ createSelectorHook();
+exports.useSelector = useSelector;
+
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","react":"3b2NM","./useReduxContext":"46ppV","../utils/Subscription":"Y1J0m","../utils/useIsomorphicLayoutEffect":"64Bcp","../components/Context":"6ScOK"}],"12gEH":[function(require,module,exports) {
+"use strict";
+exports.__esModule = true;
+exports.unstable_batchedUpdates = void 0;
+var _reactDom = require("react-dom");
+exports.unstable_batchedUpdates = _reactDom.unstable_batchedUpdates;
+
+},{"react-dom":"2sg1U"}],"5c3hR":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25247,9 +26628,20 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _navbarCss = require("./navbar.css");
 var _loginScreen = require("../../Screens/LoginScreen/loginScreen");
+var _reactRedux = require("react-redux");
+var _reactBootstrap = require("react-bootstrap");
+var _userActionJs = require("../../action/userAction.js");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const Appbar = ()=>{
     _s();
+    const dispatch = _reactRedux.useDispatch();
+    const userLogin = _reactRedux.useSelector((state)=>state.userLogin
+    );
+    const { userInfo  } = userLogin;
+    const logoutHandler = ()=>{
+        dispatch(_userActionJs.logout());
+    };
     const [navlinkOpen, navlinkToggle] = _react.useState(false);
     const [navbar, setnavbar] = _react.useState(false);
     const handleNavLinksToggle = ()=>{
@@ -25273,111 +26665,181 @@ const Appbar = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("nav", {
         className: navbar ? 'navbar active' : 'navbar',
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 43
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 55
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "logo",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 44
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 56
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         className: "fas fa-mountain",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 45
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 57
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 46
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 58
         },
         __self: undefined
     }, "VCMS")), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
         className: renderClasses(),
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 48
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 60
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 49
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 62
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 49
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 62
         },
         __self: undefined
     }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 50
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 63
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/login",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 50
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 63
         },
         __self: undefined
     }, " Login")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 51
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 64
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/register",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 51
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 64
         },
         __self: undefined
     }, "Register")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 52
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 65
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-        href: "/editor",
+        href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 52
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 65
         },
         __self: undefined
-    }, "Contact us"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }, "Contact us")), userInfo ? /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
+        title: userInfo.name,
+        id: "username",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 69
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "#",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 70
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 71
+        },
+        __self: undefined
+    }, "Profile"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+        onClick: logoutHandler,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 72
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        className: "link",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 73
+        },
+        __self: undefined
+    }, "logout"))) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Nav.Link, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 77
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
+        className: "link",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 78
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "#",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 78
+        },
+        __self: undefined
+    }, "User"))), userInfo && userInfo.isEditor && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 83
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/editor",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 84
+        },
+        __self: undefined
+    }, "editor"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         onClick: handleNavLinksToggle,
         className: "hambuger-toggle",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 54
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 92
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         className: "fas fa-bars fa-lg",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 55
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 93
         },
         __self: undefined
     })))));
 };
-_s(Appbar, "nXhBWj32zuQPWa24WZPC8r2poO4=");
+_s(Appbar, "5PuCl0Mxg6wNMHwtkLWwP+5TGVo=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
 _c = Appbar;
 exports.default = Appbar;
 var _c;
@@ -25388,7 +26850,159 @@ $RefreshReg$(_c, "Appbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","../../Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./navbar.css":"R51Uo"}],"2EjbP":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./navbar.css":"7HBzg","../../Screens/LoginScreen/loginScreen":"2EjbP","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../action/userAction.js":"7aL1U","react-router-dom":"1PMSK"}],"367CR":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule') return;
+        // Skip duplicate re-exports when they have the same value.
+        if (key in dest && dest[key] === source[key]) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
+},{}],"4Jj4f":[function(require,module,exports) {
+"use strict";
+var Refresh = require('react-refresh/runtime');
+function debounce(func, delay) {
+    var args;
+    var timeout = undefined;
+    return function(args1) {
+        clearTimeout(timeout);
+        timeout = setTimeout(function() {
+            timeout = undefined;
+            func.call(null, args1);
+        }, delay);
+    };
+}
+var enqueueUpdate = debounce(function() {
+    Refresh.performReactRefresh();
+}, 30); // Everthing below is either adapted or copied from
+// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
+// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
+module.exports.prelude = function(module) {
+    window.$RefreshReg$ = function(type, id) {
+        Refresh.register(type, module.id + ' ' + id);
+    };
+    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
+};
+module.exports.postlude = function(module) {
+    if (isReactRefreshBoundary(module.exports)) {
+        registerExportsForReactRefresh(module);
+        if (module.hot) {
+            module.hot.dispose(function(data) {
+                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
+                data.prevExports = module.exports;
+            });
+            module.hot.accept(function(getParents) {
+                var prevExports = module.hot.data.prevExports;
+                var nextExports = module.exports; // Since we just executed the code for it, it's possible
+                // that the new exports make it ineligible for being a boundary.
+                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
+                // with the previous exports.
+                // For example, if you add/remove/change exports, we'll want
+                // to re-execute the importing modules, and force those components
+                // to re-render. Similarly, if you convert a class component
+                // to a function, we want to invalidate the boundary.
+                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
+                if (isNoLongerABoundary || didInvalidate) {
+                    // We'll be conservative. The only case in which we won't do a full
+                    // reload is if all parent modules are also refresh boundaries.
+                    // In that case we'll add them to the current queue.
+                    var parents = getParents();
+                    if (parents.length === 0) {
+                        // Looks like we bubbled to the root. Can't recover from that.
+                        window.location.reload();
+                        return;
+                    }
+                    return parents;
+                }
+                enqueueUpdate();
+            });
+        }
+    }
+};
+function isReactRefreshBoundary(exports) {
+    if (Refresh.isLikelyComponentType(exports)) return true;
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    return false;
+    var hasExports = false;
+    var areAllExportsComponents = true;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        hasExports = true;
+        if (key === '__esModule') continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
+        return false;
+        var exportValue = exports[key];
+        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
+    }
+    return hasExports && areAllExportsComponents;
+}
+function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
+    var prevSignature = getRefreshBoundarySignature(prevExports);
+    var nextSignature = getRefreshBoundarySignature(nextExports);
+    if (prevSignature.length !== nextSignature.length) return true;
+    for(var i = 0; i < nextSignature.length; i++){
+        if (prevSignature[i] !== nextSignature[i]) return true;
+    }
+    return false;
+} // When this signature changes, it's unsafe to stop at this refresh boundary.
+function getRefreshBoundarySignature(exports) {
+    var signature = [];
+    signature.push(Refresh.getFamilyByType(exports));
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return signature;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        if (key === '__esModule') continue;
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        signature.push(key);
+        signature.push(Refresh.getFamilyByType(exportValue));
+    }
+    return signature;
+}
+function registerExportsForReactRefresh(module) {
+    var exports = module.exports, id = module.id;
+    Refresh.register(exports, id + ' %exports%');
+    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
+    // (This is important for legacy environments.)
+    return;
+    let isESM = '__esModule' in exports;
+    for(var key in exports){
+        var desc = Object.getOwnPropertyDescriptor(exports, key);
+        if (desc && desc.get && !isESM) continue;
+        var exportValue = exports[key];
+        Refresh.register(exportValue, id + ' %exports% ' + key);
+    }
+}
+
+},{"react-refresh/runtime":"592mh"}],"7HBzg":[function() {},{}],"2EjbP":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25421,9 +27035,9 @@ const Loginscreen = ({ location , history  })=>{
     const userLogin = _reactRedux.useSelector((state)=>state.userLogin
     );
     const { loading , error , userInfo  } = userLogin;
-    const redirect = location.search ? location.search.split('=')[1] : '/';
+    const redirect = location.search ? location.search.split('=')[1] : '/loggedInHome';
     _react.useEffect(()=>{
-        if (userInfo) history.pushState(redirect);
+        if (userInfo) history.push(redirect);
     }, [
         history,
         userInfo,
@@ -25435,76 +27049,76 @@ const Loginscreen = ({ location , history  })=>{
     };
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 37
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 39
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "wrapper",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 39
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 41
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "nm",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 40
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 42
         },
         __self: undefined
     }, error && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
         variant: "danger",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 41
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 43
         },
         __self: undefined
     }, error), loading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 42
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 44
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "content",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 44
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 46
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form, {
         onSubmit: submitHandler,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 46
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 48
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         align: "center",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 47
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 49
         },
         __self: undefined
     }, "Sign In"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
         controlId: "email",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 49
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 51
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 50
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 52
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 51
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 53
         },
         __self: undefined
     }, "Email address"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
@@ -25515,28 +27129,28 @@ const Loginscreen = ({ location , history  })=>{
         onChange: (e)=>setEmail(e.target.value)
         ,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 52
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 54
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
         controlId: "password",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 59
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 61
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 60
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 62
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 61
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 63
         },
         __self: undefined
     }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
@@ -25547,67 +27161,55 @@ const Loginscreen = ({ location , history  })=>{
         onChange: (e)=>setPassword(e.target.value)
         ,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 62
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 64
         },
         __self: undefined
-    }))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
-        className: "form-group bn",
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 69
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-        className: "custom-control custom-checkbox",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 70
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
-        type: "checkbox",
-        className: "custom-control-input",
-        id: "customCheck1",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
             lineNumber: 71
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("label", {
-        className: "custom-control-label",
-        htmlFor: "customCheck1",
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
             lineNumber: 72
         },
         __self: undefined
-    }, "Remember me"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+    }, "New User? ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: redirect ? `/register?redirect=${redirect}` : '/register',
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 73
+        },
+        __self: undefined
+    }, "Register Now"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
         type: "submit",
         className: "btn btn-primary btn-block",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 76
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 78
         },
         __self: undefined
     }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         className: "forgot-password text-right",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 77
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 79
         },
         __self: undefined
     }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 78
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 80
         },
         __self: undefined
     }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 86
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
+            lineNumber: 88
         },
         __self: undefined
     })));
@@ -25625,7 +27227,7 @@ $RefreshReg$(_c, "Loginscreen");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","./loginscreen.css":"2dpDy","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","react-router-dom":"1PMSK","react-redux":"7GDa4","../../action/userAction.js":"7aL1U","../../components/Message/message.js":"6fMfw","../../components/Loader/loader.js":"68bDI"}],"4n7hB":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","./loginscreen.css":"4CV00","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","react-router-dom":"1PMSK","react-redux":"7GDa4","../../action/userAction.js":"7aL1U","../../components/Message/message.js":"6fMfw","../../components/Loader/loader.js":"68bDI"}],"4n7hB":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 exports.__esModule = true;
@@ -25811,16 +27413,7 @@ function _interopRequireWildcard(obj, nodeInterop) {
     return newObj;
 }
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","./Accordion":"123ZC","./AccordionContext":"6cHdE","./AccordionCollapse":"6fr2G","./AccordionToggle":"2CEru","./Alert":"1oIYX","./Badge":"2aFSj","./Breadcrumb":"hcZkb","./BreadcrumbItem":"fGRyA","./Button":"1ru0l","./ButtonGroup":"2THBw","./ButtonToolbar":"5QGeS","./Card":"1CZWQ","./CardColumns":"48yv5","./CardDeck":"4fiZs","./CardImg":"68LPL","./CardGroup":"1B9U7","./Carousel":"2Zcjk","./CarouselItem":"2tnC3","./CloseButton":"yWShL","./Col":"2D0r8","./Collapse":"4hhe0","./Dropdown":"27PdI","./DropdownButton":"7vE8v","./Fade":"2CU5C","./Form":"6A5ko","./FormControl":"573gP","./FormCheck":"6WcKM","./FormFile":"6mhKG","./FormGroup":"120iJ","./FormLabel":"70qP9","./FormText":"2VsfR","./Container":"3Mt3t","./Image":"5qrP5","./Figure":"2ZDTl","./InputGroup":"3nb5C","./Jumbotron":"1fO3T","./ListGroup":"6fErm","./ListGroupItem":"4tfxm","./Media":"120yO","./Modal":"20uUD","./ModalBody":"5Zu6o","./ModalDialog":"4OqPY","./ModalFooter":"4rYLN","./ModalTitle":"MJz12","./Nav":"3T3v1","./Navbar":"3qLFd","./NavbarBrand":"4flFi","./NavDropdown":"1qmIy","./NavItem":"39J70","./NavLink":"6stbu","./Overlay":"5PcTh","./OverlayTrigger":"4VaCP","./PageItem":"6IcgF","./Pagination":"3XBVG","./Popover":"4O1Nl","./PopoverTitle":"2W5ao","./PopoverContent":"1KTIN","./ProgressBar":"4HfN1","./ResponsiveEmbed":"76Zpv","./Row":"3fzwD","./SafeAnchor":"5VP5o","./Spinner":"4fhZt","./SplitButton":"qFVWq","./Tab":"2o9hU","./TabContainer":"31im4","./TabContent":"4a1d3","./Table":"34yor","./TabPane":"42ci1","./Tabs":"6YwyY","./ThemeProvider":"4rz1S","./Toast":"o9l9n","./ToastBody":"4qMwS","./ToastHeader":"3bTJs","./ToggleButton":"1noIF","./ToggleButtonGroup":"LW99s","./Tooltip":"2YAjd"}],"4ttVj":[function(require,module,exports) {
-function _interopRequireDefault(obj) {
-    return obj && obj.__esModule ? obj : {
-        "default": obj
-    };
-}
-module.exports = _interopRequireDefault;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
-
-},{}],"123ZC":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","./Accordion":"123ZC","./AccordionContext":"6cHdE","./AccordionCollapse":"6fr2G","./AccordionToggle":"2CEru","./Alert":"1oIYX","./Badge":"2aFSj","./Breadcrumb":"hcZkb","./BreadcrumbItem":"fGRyA","./Button":"1ru0l","./ButtonGroup":"2THBw","./ButtonToolbar":"5QGeS","./Card":"1CZWQ","./CardColumns":"48yv5","./CardDeck":"4fiZs","./CardImg":"68LPL","./CardGroup":"1B9U7","./Carousel":"2Zcjk","./CarouselItem":"2tnC3","./CloseButton":"yWShL","./Col":"2D0r8","./Collapse":"4hhe0","./Dropdown":"27PdI","./DropdownButton":"7vE8v","./Fade":"2CU5C","./Form":"6A5ko","./FormControl":"573gP","./FormCheck":"6WcKM","./FormFile":"6mhKG","./FormGroup":"120iJ","./FormLabel":"70qP9","./FormText":"2VsfR","./Container":"3Mt3t","./Image":"5qrP5","./Figure":"2ZDTl","./InputGroup":"3nb5C","./Jumbotron":"1fO3T","./ListGroup":"6fErm","./ListGroupItem":"4tfxm","./Media":"120yO","./Modal":"20uUD","./ModalBody":"5Zu6o","./ModalDialog":"4OqPY","./ModalFooter":"4rYLN","./ModalTitle":"MJz12","./Nav":"3T3v1","./Navbar":"3qLFd","./NavbarBrand":"4flFi","./NavDropdown":"1qmIy","./NavItem":"39J70","./NavLink":"6stbu","./Overlay":"5PcTh","./OverlayTrigger":"4VaCP","./PageItem":"6IcgF","./Pagination":"3XBVG","./Popover":"4O1Nl","./PopoverTitle":"2W5ao","./PopoverContent":"1KTIN","./ProgressBar":"4HfN1","./ResponsiveEmbed":"76Zpv","./Row":"3fzwD","./SafeAnchor":"5VP5o","./Spinner":"4fhZt","./SplitButton":"qFVWq","./Tab":"2o9hU","./TabContainer":"31im4","./TabContent":"4a1d3","./Table":"34yor","./TabPane":"42ci1","./Tabs":"6YwyY","./ThemeProvider":"4rz1S","./Toast":"o9l9n","./ToastBody":"4qMwS","./ToastHeader":"3bTJs","./ToggleButton":"1noIF","./ToggleButtonGroup":"LW99s","./Tooltip":"2YAjd"}],"123ZC":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 exports.__esModule = true;
@@ -25865,40 +27458,7 @@ var _default = Accordion;
 exports.default = _default;
 module.exports = exports["default"];
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","uncontrollable":"4P7FS","./ThemeProvider":"4rz1S","./AccordionToggle":"2CEru","./SelectableContext":"3ATFf","./AccordionCollapse":"6fr2G","./AccordionContext":"6cHdE"}],"3krLJ":[function(require,module,exports) {
-function _extends() {
-    module.exports = _extends = Object.assign || function(target) {
-        for(var i = 1; i < arguments.length; i++){
-            var source = arguments[i];
-            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
-        }
-        return target;
-    };
-    module.exports["default"] = module.exports, module.exports.__esModule = true;
-    return _extends.apply(this, arguments);
-}
-module.exports = _extends;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
-
-},{}],"3Yx9V":[function(require,module,exports) {
-function _objectWithoutPropertiesLoose(source, excluded) {
-    if (source == null) return {
-    };
-    var target = {
-    };
-    var sourceKeys = Object.keys(source);
-    var key, i;
-    for(i = 0; i < sourceKeys.length; i++){
-        key = sourceKeys[i];
-        if (excluded.indexOf(key) >= 0) continue;
-        target[key] = source[key];
-    }
-    return target;
-}
-module.exports = _objectWithoutPropertiesLoose;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
-
-},{}],"5aJRc":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","uncontrollable":"4P7FS","./ThemeProvider":"4rz1S","./AccordionToggle":"2CEru","./SelectableContext":"3ATFf","./AccordionCollapse":"6fr2G","./AccordionContext":"6cHdE"}],"5aJRc":[function(require,module,exports) {
 (function() {
     var hasOwn = {
     }.hasOwnProperty;
@@ -25944,57 +27504,7 @@ exports.useUncontrolledProp = _hook.useUncontrolledProp;
 var _uncontrollable = _interopRequireDefault(require("./uncontrollable"));
 exports.uncontrollable = _uncontrollable.default;
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","./hook":"6NxN3","./uncontrollable":"4fGiz"}],"28En5":[function(require,module,exports) {
-var _typeof = require("@babel/runtime/helpers/typeof")["default"];
-function _getRequireWildcardCache(nodeInterop) {
-    if (typeof WeakMap !== "function") return null;
-    var cacheBabelInterop = new WeakMap();
-    var cacheNodeInterop = new WeakMap();
-    return (_getRequireWildcardCache = function _getRequireWildcardCache1(nodeInterop1) {
-        return nodeInterop1 ? cacheNodeInterop : cacheBabelInterop;
-    })(nodeInterop);
-}
-function _interopRequireWildcard(obj, nodeInterop) {
-    if (!nodeInterop && obj && obj.__esModule) return obj;
-    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
-        "default": obj
-    };
-    var cache = _getRequireWildcardCache(nodeInterop);
-    if (cache && cache.has(obj)) return cache.get(obj);
-    var newObj = {
-    };
-    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
-    for(var key in obj)if (key !== "default" && Object.prototype.hasOwnProperty.call(obj, key)) {
-        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
-        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
-        else newObj[key] = obj[key];
-    }
-    newObj["default"] = obj;
-    if (cache) cache.set(obj, newObj);
-    return newObj;
-}
-module.exports = _interopRequireWildcard;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
-
-},{"@babel/runtime/helpers/typeof":"3F8fn"}],"3F8fn":[function(require,module,exports) {
-function _typeof(obj) {
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-        module.exports = _typeof = function _typeof1(obj1) {
-            return typeof obj1;
-        };
-        module.exports["default"] = module.exports, module.exports.__esModule = true;
-    } else {
-        module.exports = _typeof = function _typeof1(obj1) {
-            return obj1 && typeof Symbol === "function" && obj1.constructor === Symbol && obj1 !== Symbol.prototype ? "symbol" : typeof obj1;
-        };
-        module.exports["default"] = module.exports, module.exports.__esModule = true;
-    }
-    return _typeof(obj);
-}
-module.exports = _typeof;
-module.exports["default"] = module.exports, module.exports.__esModule = true;
-
-},{}],"6NxN3":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","./hook":"6NxN3","./uncontrollable":"4fGiz"}],"6NxN3":[function(require,module,exports) {
 "use strict";
 var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
@@ -37867,159 +39377,7 @@ var _default = Tooltip;
 exports.default = _default;
 module.exports = exports["default"];
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","prop-types-extra/lib/isRequiredForA11y":"4XrEc","./ThemeProvider":"4rz1S"}],"2dpDy":[function() {},{}],"367CR":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, '__esModule', {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === 'default' || key === '__esModule') return;
-        // Skip duplicate re-exports when they have the same value.
-        if (key in dest && dest[key] === source[key]) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"4Jj4f":[function(require,module,exports) {
-"use strict";
-var Refresh = require('react-refresh/runtime');
-function debounce(func, delay) {
-    var args;
-    var timeout = undefined;
-    return function(args1) {
-        clearTimeout(timeout);
-        timeout = setTimeout(function() {
-            timeout = undefined;
-            func.call(null, args1);
-        }, delay);
-    };
-}
-var enqueueUpdate = debounce(function() {
-    Refresh.performReactRefresh();
-}, 30); // Everthing below is either adapted or copied from
-// https://github.com/facebook/metro/blob/61de16bd1edd7e738dd0311c89555a644023ab2d/packages/metro/src/lib/polyfills/require.js
-// MIT License - Copyright (c) Facebook, Inc. and its affiliates.
-module.exports.prelude = function(module) {
-    window.$RefreshReg$ = function(type, id) {
-        Refresh.register(type, module.id + ' ' + id);
-    };
-    window.$RefreshSig$ = Refresh.createSignatureFunctionForTransform;
-};
-module.exports.postlude = function(module) {
-    if (isReactRefreshBoundary(module.exports)) {
-        registerExportsForReactRefresh(module);
-        if (module.hot) {
-            module.hot.dispose(function(data) {
-                if (Refresh.hasUnrecoverableErrors()) window.location.reload();
-                data.prevExports = module.exports;
-            });
-            module.hot.accept(function(getParents) {
-                var prevExports = module.hot.data.prevExports;
-                var nextExports = module.exports; // Since we just executed the code for it, it's possible
-                // that the new exports make it ineligible for being a boundary.
-                var isNoLongerABoundary = !isReactRefreshBoundary(nextExports); // It can also become ineligible if its exports are incompatible
-                // with the previous exports.
-                // For example, if you add/remove/change exports, we'll want
-                // to re-execute the importing modules, and force those components
-                // to re-render. Similarly, if you convert a class component
-                // to a function, we want to invalidate the boundary.
-                var didInvalidate = shouldInvalidateReactRefreshBoundary(prevExports, nextExports);
-                if (isNoLongerABoundary || didInvalidate) {
-                    // We'll be conservative. The only case in which we won't do a full
-                    // reload is if all parent modules are also refresh boundaries.
-                    // In that case we'll add them to the current queue.
-                    var parents = getParents();
-                    if (parents.length === 0) {
-                        // Looks like we bubbled to the root. Can't recover from that.
-                        window.location.reload();
-                        return;
-                    }
-                    return parents;
-                }
-                enqueueUpdate();
-            });
-        }
-    }
-};
-function isReactRefreshBoundary(exports) {
-    if (Refresh.isLikelyComponentType(exports)) return true;
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    return false;
-    var hasExports = false;
-    var areAllExportsComponents = true;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        hasExports = true;
-        if (key === '__esModule') continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) // Don't invoke getters for CJS as they may have side effects.
-        return false;
-        var exportValue = exports[key];
-        if (!Refresh.isLikelyComponentType(exportValue)) areAllExportsComponents = false;
-    }
-    return hasExports && areAllExportsComponents;
-}
-function shouldInvalidateReactRefreshBoundary(prevExports, nextExports) {
-    var prevSignature = getRefreshBoundarySignature(prevExports);
-    var nextSignature = getRefreshBoundarySignature(nextExports);
-    if (prevSignature.length !== nextSignature.length) return true;
-    for(var i = 0; i < nextSignature.length; i++){
-        if (prevSignature[i] !== nextSignature[i]) return true;
-    }
-    return false;
-} // When this signature changes, it's unsafe to stop at this refresh boundary.
-function getRefreshBoundarySignature(exports) {
-    var signature = [];
-    signature.push(Refresh.getFamilyByType(exports));
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return signature;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        if (key === '__esModule') continue;
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        signature.push(key);
-        signature.push(Refresh.getFamilyByType(exportValue));
-    }
-    return signature;
-}
-function registerExportsForReactRefresh(module) {
-    var exports = module.exports, id = module.id;
-    Refresh.register(exports, id + ' %exports%');
-    if (exports == null || typeof exports !== 'object') // Exit if we can't iterate over exports.
-    // (This is important for legacy environments.)
-    return;
-    let isESM = '__esModule' in exports;
-    for(var key in exports){
-        var desc = Object.getOwnPropertyDescriptor(exports, key);
-        if (desc && desc.get && !isESM) continue;
-        var exportValue = exports[key];
-        Refresh.register(exportValue, id + ' %exports% ' + key);
-    }
-}
-
-},{"react-refresh/runtime":"592mh"}],"7dMDI":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","classnames":"5aJRc","react":"3b2NM","prop-types-extra/lib/isRequiredForA11y":"4XrEc","./ThemeProvider":"4rz1S"}],"4CV00":[function() {},{}],"7dMDI":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -38035,323 +39393,323 @@ const Footer = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement("footer", {
         class: "footer",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 6
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "container",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 7
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "row",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 8
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "footer-col",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 9
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h4", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 10
         },
         __self: undefined
     }, "Company"), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 11
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 12
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 12
         },
         __self: undefined
     }, "about us")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 13
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 13
         },
         __self: undefined
     }, "Agasthi")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 14
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 14
         },
         __self: undefined
     }, "Ushini")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 15
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 15
         },
         __self: undefined
     }, "Madush")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 16
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 16
         },
         __self: undefined
     }, "Bulner")))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "footer-col",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 19
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h4", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 20
         },
         __self: undefined
     }, "roles"), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 21
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 22
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 22
         },
         __self: undefined
     }, "attendee")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 23
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 23
         },
         __self: undefined
     }, "workshop")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 24
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 24
         },
         __self: undefined
     }, "researcher")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 25
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 25
         },
         __self: undefined
     }, "editor")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 26
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 26
         },
         __self: undefined
     }, "reviwer")))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "footer-col",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 29
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h4", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 30
         },
         __self: undefined
     }, "admin"), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 31
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 32
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 32
         },
         __self: undefined
     }, "eeeee")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 33
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 33
         },
         __self: undefined
     }, "eeeee")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 34
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 34
         },
         __self: undefined
     }, "eeeee")))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "footer-col",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 37
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h4", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 38
         },
         __self: undefined
     }, "follow us"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         class: "social-links",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 39
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 40
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         class: "fab fa-facebook-f",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 40
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 41
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         class: "fab fa-twitter",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 41
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 42
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         class: "fab fa-instagram",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 42
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 43
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         class: "fab fa-linkedin-in",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Footer\\footer.js",
             lineNumber: 43
         },
         __self: undefined
@@ -38367,1245 +39725,12 @@ $RefreshReg$(_c, "Footer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./footer.css":"1aO7r","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1aO7r":[function() {},{}],"7GDa4":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-var _Provider = _interopRequireDefault(require("./components/Provider"));
-exports.Provider = _Provider["default"];
-var _connectAdvanced = _interopRequireDefault(require("./components/connectAdvanced"));
-exports.connectAdvanced = _connectAdvanced["default"];
-var _Context = require("./components/Context");
-exports.ReactReduxContext = _Context.ReactReduxContext;
-var _connect = _interopRequireDefault(require("./connect/connect"));
-exports.connect = _connect["default"];
-var _useDispatch = require("./hooks/useDispatch");
-exports.useDispatch = _useDispatch.useDispatch;
-exports.createDispatchHook = _useDispatch.createDispatchHook;
-var _useSelector = require("./hooks/useSelector");
-exports.useSelector = _useSelector.useSelector;
-exports.createSelectorHook = _useSelector.createSelectorHook;
-var _useStore = require("./hooks/useStore");
-exports.useStore = _useStore.useStore;
-exports.createStoreHook = _useStore.createStoreHook;
-var _batch = require("./utils/batch");
-var _reactBatchedUpdates = require("./utils/reactBatchedUpdates");
-exports.batch = _reactBatchedUpdates.unstable_batchedUpdates;
-var _shallowEqual = _interopRequireDefault(require("./utils/shallowEqual"));
-exports.shallowEqual = _shallowEqual["default"];
-_batch.setBatch(_reactBatchedUpdates.unstable_batchedUpdates);
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","./components/Provider":"3bhyH","./components/connectAdvanced":"SPrTN","./components/Context":"6ScOK","./connect/connect":"1HacB","./hooks/useDispatch":"4H7HK","./hooks/useSelector":"6dv0a","./hooks/useStore":"5zPKn","./utils/batch":"XOS5r","./utils/reactBatchedUpdates":"12gEH","./utils/shallowEqual":"1BbL9"}],"3bhyH":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
-exports.__esModule = true;
-exports["default"] = void 0;
-var _react = _interopRequireWildcard(require("react"));
-var _propTypes = _interopRequireDefault(require("prop-types"));
-var _Context = require("./Context");
-var _Subscription = _interopRequireDefault(require("../utils/Subscription"));
-var _useIsomorphicLayoutEffect = require("../utils/useIsomorphicLayoutEffect");
-function Provider(_ref) {
-    var store = _ref.store, context = _ref.context, children = _ref.children;
-    var contextValue = _react.useMemo(function() {
-        var subscription = new _Subscription["default"](store);
-        subscription.onStateChange = subscription.notifyNestedSubs;
-        return {
-            store: store,
-            subscription: subscription
-        };
-    }, [
-        store
-    ]);
-    var previousState = _react.useMemo(function() {
-        return store.getState();
-    }, [
-        store
-    ]);
-    _useIsomorphicLayoutEffect.useIsomorphicLayoutEffect(function() {
-        var subscription = contextValue.subscription;
-        subscription.trySubscribe();
-        if (previousState !== store.getState()) subscription.notifyNestedSubs();
-        return function() {
-            subscription.tryUnsubscribe();
-            subscription.onStateChange = null;
-        };
-    }, [
-        contextValue,
-        previousState
-    ]);
-    var Context = context || _Context.ReactReduxContext;
-    return(/*#__PURE__*/ _react["default"].createElement(Context.Provider, {
-        value: contextValue
-    }, children));
-}
-Provider.propTypes = {
-    store: _propTypes["default"].shape({
-        subscribe: _propTypes["default"].func.isRequired,
-        dispatch: _propTypes["default"].func.isRequired,
-        getState: _propTypes["default"].func.isRequired
-    }),
-    context: _propTypes["default"].object,
-    children: _propTypes["default"].any
-};
-var _default = Provider;
-exports["default"] = _default;
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","prop-types":"4dfy5","./Context":"6ScOK","../utils/Subscription":"Y1J0m","../utils/useIsomorphicLayoutEffect":"64Bcp"}],"6ScOK":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports["default"] = exports.ReactReduxContext = void 0;
-var _react = _interopRequireDefault(require("react"));
-var ReactReduxContext = /*#__PURE__*/ _react["default"].createContext(null);
-exports.ReactReduxContext = ReactReduxContext;
-ReactReduxContext.displayName = 'ReactRedux';
-var _default = ReactReduxContext;
-exports["default"] = _default;
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","react":"3b2NM"}],"Y1J0m":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports["default"] = void 0;
-var _batch = require("./batch");
-// encapsulates the subscription logic for connecting a component to the redux store, as
-// well as nesting subscriptions of descendant components, so that we can ensure the
-// ancestor components re-render before descendants
-var nullListeners = {
-    notify: function notify() {
-    }
-};
-function createListenerCollection() {
-    var batch = _batch.getBatch();
-    var first = null;
-    var last = null;
-    return {
-        clear: function clear() {
-            first = null;
-            last = null;
-        },
-        notify: function notify() {
-            batch(function() {
-                var listener = first;
-                while(listener){
-                    listener.callback();
-                    listener = listener.next;
-                }
-            });
-        },
-        get: function get() {
-            var listeners = [];
-            var listener = first;
-            while(listener){
-                listeners.push(listener);
-                listener = listener.next;
-            }
-            return listeners;
-        },
-        subscribe: function subscribe(callback) {
-            var isSubscribed = true;
-            var listener = last = {
-                callback: callback,
-                next: null,
-                prev: last
-            };
-            if (listener.prev) listener.prev.next = listener;
-            else first = listener;
-            return function unsubscribe() {
-                if (!isSubscribed || first === null) return;
-                isSubscribed = false;
-                if (listener.next) listener.next.prev = listener.prev;
-                else last = listener.prev;
-                if (listener.prev) listener.prev.next = listener.next;
-                else first = listener.next;
-            };
-        }
-    };
-}
-var Subscription = /*#__PURE__*/ function() {
-    function Subscription1(store, parentSub) {
-        this.store = store;
-        this.parentSub = parentSub;
-        this.unsubscribe = null;
-        this.listeners = nullListeners;
-        this.handleChangeWrapper = this.handleChangeWrapper.bind(this);
-    }
-    var _proto = Subscription1.prototype;
-    _proto.addNestedSub = function addNestedSub(listener) {
-        this.trySubscribe();
-        return this.listeners.subscribe(listener);
-    };
-    _proto.notifyNestedSubs = function notifyNestedSubs() {
-        this.listeners.notify();
-    };
-    _proto.handleChangeWrapper = function handleChangeWrapper() {
-        if (this.onStateChange) this.onStateChange();
-    };
-    _proto.isSubscribed = function isSubscribed() {
-        return Boolean(this.unsubscribe);
-    };
-    _proto.trySubscribe = function trySubscribe() {
-        if (!this.unsubscribe) {
-            this.unsubscribe = this.parentSub ? this.parentSub.addNestedSub(this.handleChangeWrapper) : this.store.subscribe(this.handleChangeWrapper);
-            this.listeners = createListenerCollection();
-        }
-    };
-    _proto.tryUnsubscribe = function tryUnsubscribe() {
-        if (this.unsubscribe) {
-            this.unsubscribe();
-            this.unsubscribe = null;
-            this.listeners.clear();
-            this.listeners = nullListeners;
-        }
-    };
-    return Subscription1;
-}();
-exports["default"] = Subscription;
-
-},{"./batch":"XOS5r"}],"XOS5r":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports.getBatch = exports.setBatch = void 0;
-// Default to a dummy "batch" implementation that just runs the callback
-function defaultNoopBatch(callback) {
-    callback();
-}
-var batch = defaultNoopBatch; // Allow injecting another batching function later
-var setBatch = function setBatch1(newBatch) {
-    return batch = newBatch;
-}; // Supply a getter just to skip dealing with ESM bindings
-exports.setBatch = setBatch;
-var getBatch = function getBatch1() {
-    return batch;
-};
-exports.getBatch = getBatch;
-
-},{}],"64Bcp":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports.useIsomorphicLayoutEffect = void 0;
-var _react = require("react");
-// React currently throws a warning when using useLayoutEffect on the server.
-// To get around it, we can conditionally useEffect on the server (no-op) and
-// useLayoutEffect in the browser. We need useLayoutEffect to ensure the store
-// subscription callback always has the selector from the latest render commit
-// available, otherwise a store update may happen between render and the effect,
-// which may cause missed updates; we also must ensure the store subscription
-// is created synchronously, otherwise a store update may occur before the
-// subscription is created and an inconsistent state may be observed
-var useIsomorphicLayoutEffect = typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined' ? _react.useLayoutEffect : _react.useEffect;
-exports.useIsomorphicLayoutEffect = useIsomorphicLayoutEffect;
-
-},{"react":"3b2NM"}],"SPrTN":[function(require,module,exports) {
-"use strict";
-var _interopRequireWildcard = require("@babel/runtime/helpers/interopRequireWildcard");
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports["default"] = connectAdvanced;
-var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
-var _objectWithoutPropertiesLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/objectWithoutPropertiesLoose"));
-var _hoistNonReactStatics = _interopRequireDefault(require("hoist-non-react-statics"));
-var _react = _interopRequireWildcard(require("react"));
-var _reactIs = require("react-is");
-var _Subscription = _interopRequireDefault(require("../utils/Subscription"));
-var _useIsomorphicLayoutEffect = require("../utils/useIsomorphicLayoutEffect");
-var _Context = require("./Context");
-// Define some constant arrays just to avoid re-creating these
-var EMPTY_ARRAY = [];
-var NO_SUBSCRIPTION_ARRAY = [
-    null,
-    null
-];
-var stringifyComponent = function stringifyComponent1(Comp) {
-    try {
-        return JSON.stringify(Comp);
-    } catch (err) {
-        return String(Comp);
-    }
-};
-function storeStateUpdatesReducer(state, action) {
-    var updateCount = state[1];
-    return [
-        action.payload,
-        updateCount + 1
-    ];
-}
-function useIsomorphicLayoutEffectWithArgs(effectFunc, effectArgs, dependencies) {
-    _useIsomorphicLayoutEffect.useIsomorphicLayoutEffect(function() {
-        return effectFunc.apply(void 0, effectArgs);
-    }, dependencies);
-}
-function captureWrapperProps(lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, actualChildProps, childPropsFromStoreUpdate, notifyNestedSubs) {
-    // We want to capture the wrapper props and child props we used for later comparisons
-    lastWrapperProps.current = wrapperProps;
-    lastChildProps.current = actualChildProps;
-    renderIsScheduled.current = false; // If the render was from a store update, clear out that reference and cascade the subscriber update
-    if (childPropsFromStoreUpdate.current) {
-        childPropsFromStoreUpdate.current = null;
-        notifyNestedSubs();
-    }
-}
-function subscribeUpdates(shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, childPropsFromStoreUpdate, notifyNestedSubs, forceComponentUpdateDispatch) {
-    // If we're not subscribed to the store, nothing to do here
-    if (!shouldHandleStateChanges) return; // Capture values for checking if and when this component unmounts
-    var didUnsubscribe = false;
-    var lastThrownError = null; // We'll run this callback every time a store subscription update propagates to this component
-    var checkForUpdates = function checkForUpdates1() {
-        if (didUnsubscribe) // Don't run stale listeners.
-        // Redux doesn't guarantee unsubscriptions happen until next dispatch.
-        return;
-        var latestStoreState = store.getState();
-        var newChildProps, error;
-        try {
-            // Actually run the selector with the most recent store state and wrapper props
-            // to determine what the child props should be
-            newChildProps = childPropsSelector(latestStoreState, lastWrapperProps.current);
-        } catch (e) {
-            error = e;
-            lastThrownError = e;
-        }
-        if (!error) lastThrownError = null;
-         // If the child props haven't changed, nothing to do here - cascade the subscription update
-        if (newChildProps === lastChildProps.current) {
-            if (!renderIsScheduled.current) notifyNestedSubs();
-        } else {
-            // Save references to the new child props.  Note that we track the "child props from store update"
-            // as a ref instead of a useState/useReducer because we need a way to determine if that value has
-            // been processed.  If this went into useState/useReducer, we couldn't clear out the value without
-            // forcing another re-render, which we don't want.
-            lastChildProps.current = newChildProps;
-            childPropsFromStoreUpdate.current = newChildProps;
-            renderIsScheduled.current = true; // If the child props _did_ change (or we caught an error), this wrapper component needs to re-render
-            forceComponentUpdateDispatch({
-                type: 'STORE_UPDATED',
-                payload: {
-                    error: error
-                }
-            });
-        }
-    }; // Actually subscribe to the nearest connected ancestor (or store)
-    subscription.onStateChange = checkForUpdates;
-    subscription.trySubscribe(); // Pull data from the store after first render in case the store has
-    // changed since we began.
-    checkForUpdates();
-    var unsubscribeWrapper = function unsubscribeWrapper1() {
-        didUnsubscribe = true;
-        subscription.tryUnsubscribe();
-        subscription.onStateChange = null;
-        if (lastThrownError) // It's possible that we caught an error due to a bad mapState function, but the
-        // parent re-rendered without this component and we're about to unmount.
-        // This shouldn't happen as long as we do top-down subscriptions correctly, but
-        // if we ever do those wrong, this throw will surface the error in our tests.
-        // In that case, throw the error from here so it doesn't get lost.
-        throw lastThrownError;
-    };
-    return unsubscribeWrapper;
-}
-var initStateUpdates = function initStateUpdates1() {
-    return [
-        null,
-        0
-    ];
-};
-function connectAdvanced(/*
-  selectorFactory is a func that is responsible for returning the selector function used to
-  compute new props from state, props, and dispatch. For example:
-      export default connectAdvanced((dispatch, options) => (state, props) => ({
-      thing: state.things[props.thingId],
-      saveThing: fields => dispatch(actionCreators.saveThing(props.thingId, fields)),
-    }))(YourComponent)
-    Access to dispatch is provided to the factory so selectorFactories can bind actionCreators
-  outside of their selector as an optimization. Options passed to connectAdvanced are passed to
-  the selectorFactory, along with displayName and WrappedComponent, as the second argument.
-    Note that selectorFactory is responsible for all caching/memoization of inbound and outbound
-  props. Do not use connectAdvanced directly without memoizing results between calls to your
-  selector, otherwise the Connect component will re-render on every state or props change.
-*/ selectorFactory, _ref) {
-    if (_ref === void 0) _ref = {
-    };
-    var _ref2 = _ref, _ref2$getDisplayName = _ref2.getDisplayName, getDisplayName = _ref2$getDisplayName === void 0 ? function(name) {
-        return "ConnectAdvanced(" + name + ")";
-    } : _ref2$getDisplayName, _ref2$methodName = _ref2.methodName, methodName = _ref2$methodName === void 0 ? 'connectAdvanced' : _ref2$methodName, _ref2$renderCountProp = _ref2.renderCountProp, renderCountProp = _ref2$renderCountProp === void 0 ? undefined : _ref2$renderCountProp, _ref2$shouldHandleSta = _ref2.shouldHandleStateChanges, shouldHandleStateChanges = _ref2$shouldHandleSta === void 0 ? true : _ref2$shouldHandleSta, _ref2$storeKey = _ref2.storeKey, storeKey = _ref2$storeKey === void 0 ? 'store' : _ref2$storeKey, _ref2$withRef = _ref2.withRef, withRef = _ref2$withRef === void 0 ? false : _ref2$withRef, _ref2$forwardRef = _ref2.forwardRef, forwardRef = _ref2$forwardRef === void 0 ? false : _ref2$forwardRef, _ref2$context = _ref2.context, context = _ref2$context === void 0 ? _Context.ReactReduxContext : _ref2$context, connectOptions = _objectWithoutPropertiesLoose2["default"](_ref2, [
-        "getDisplayName",
-        "methodName",
-        "renderCountProp",
-        "shouldHandleStateChanges",
-        "storeKey",
-        "withRef",
-        "forwardRef",
-        "context"
-    ]);
-    if (renderCountProp !== undefined) throw new Error("renderCountProp is removed. render counting is built into the latest React Dev Tools profiling extension");
-    if (withRef) throw new Error('withRef is removed. To access the wrapped instance, use a ref on the connected component');
-    var customStoreWarningMessage = "To use a custom Redux store for specific components, create a custom React context with React.createContext(), and pass the context object to React Redux's Provider and specific components like: <Provider context={MyContext}><ConnectedComponent context={MyContext} /></Provider>. You may also pass a {context : MyContext} option to connect";
-    if (storeKey !== 'store') throw new Error('storeKey has been removed and does not do anything. ' + customStoreWarningMessage);
-    var Context = context;
-    return function wrapWithConnect(WrappedComponent) {
-        if (!_reactIs.isValidElementType(WrappedComponent)) throw new Error("You must pass a component to the function returned by " + (methodName + ". Instead received " + stringifyComponent(WrappedComponent)));
-        var wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
-        var displayName = getDisplayName(wrappedComponentName);
-        var selectorFactoryOptions = _extends2["default"]({
-        }, connectOptions, {
-            getDisplayName: getDisplayName,
-            methodName: methodName,
-            renderCountProp: renderCountProp,
-            shouldHandleStateChanges: shouldHandleStateChanges,
-            storeKey: storeKey,
-            displayName: displayName,
-            wrappedComponentName: wrappedComponentName,
-            WrappedComponent: WrappedComponent
-        });
-        var pure = connectOptions.pure;
-        function createChildSelector(store) {
-            return selectorFactory(store.dispatch, selectorFactoryOptions);
-        } // If we aren't running in "pure" mode, we don't want to memoize values.
-        // To avoid conditionally calling hooks, we fall back to a tiny wrapper
-        // that just executes the given callback immediately.
-        var usePureOnlyMemo = pure ? _react.useMemo : function(callback) {
-            return callback();
-        };
-        function ConnectFunction(props) {
-            var _useMemo = _react.useMemo(function() {
-                // Distinguish between actual "data" props that were passed to the wrapper component,
-                // and values needed to control behavior (forwarded refs, alternate context instances).
-                // To maintain the wrapperProps object reference, memoize this destructuring.
-                var reactReduxForwardedRef = props.reactReduxForwardedRef, wrapperProps = _objectWithoutPropertiesLoose2["default"](props, [
-                    "reactReduxForwardedRef"
-                ]);
-                return [
-                    props.context,
-                    reactReduxForwardedRef,
-                    wrapperProps
-                ];
-            }, [
-                props
-            ]), propsContext = _useMemo[0], reactReduxForwardedRef = _useMemo[1], wrapperProps = _useMemo[2];
-            var ContextToUse = _react.useMemo(function() {
-                // Users may optionally pass in a custom context instance to use instead of our ReactReduxContext.
-                // Memoize the check that determines which context instance we should use.
-                return propsContext && propsContext.Consumer && _reactIs.isContextConsumer(/*#__PURE__*/ _react["default"].createElement(propsContext.Consumer, null)) ? propsContext : Context;
-            }, [
-                propsContext,
-                Context
-            ]); // Retrieve the store and ancestor subscription via context, if available
-            var contextValue = _react.useContext(ContextToUse); // The store _must_ exist as either a prop or in context.
-            // We'll check to see if it _looks_ like a Redux store first.
-            // This allows us to pass through a `store` prop that is just a plain value.
-            var didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
-            var didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
-            if (!didStoreComeFromProps && !didStoreComeFromContext) throw new Error("Could not find \"store\" in the context of " + ("\"" + displayName + "\". Either wrap the root component in a <Provider>, ") + "or pass a custom React context provider to <Provider> and the corresponding " + ("React context consumer to " + displayName + " in connect options."));
-             // Based on the previous check, one of these must be true
-            var store = didStoreComeFromProps ? props.store : contextValue.store;
-            var childPropsSelector = _react.useMemo(function() {
-                // The child props selector needs the store reference as an input.
-                // Re-create this selector whenever the store changes.
-                return createChildSelector(store);
-            }, [
-                store
-            ]);
-            var _useMemo2 = _react.useMemo(function() {
-                if (!shouldHandleStateChanges) return NO_SUBSCRIPTION_ARRAY; // This Subscription's source should match where store came from: props vs. context. A component
-                // connected to the store via props shouldn't use subscription from context, or vice versa.
-                var subscription = new _Subscription["default"](store, didStoreComeFromProps ? null : contextValue.subscription); // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
-                // the middle of the notification loop, where `subscription` will then be null. This can
-                // probably be avoided if Subscription's listeners logic is changed to not call listeners
-                // that have been unsubscribed in the  middle of the notification loop.
-                var notifyNestedSubs = subscription.notifyNestedSubs.bind(subscription);
-                return [
-                    subscription,
-                    notifyNestedSubs
-                ];
-            }, [
-                store,
-                didStoreComeFromProps,
-                contextValue
-            ]), subscription = _useMemo2[0], notifyNestedSubs = _useMemo2[1]; // Determine what {store, subscription} value should be put into nested context, if necessary,
-            // and memoize that value to avoid unnecessary context updates.
-            var overriddenContextValue = _react.useMemo(function() {
-                if (didStoreComeFromProps) // This component is directly subscribed to a store from props.
-                // We don't want descendants reading from this store - pass down whatever
-                // the existing context value is from the nearest connected ancestor.
-                return contextValue;
-                 // Otherwise, put this component's subscription instance into context, so that
-                // connected descendants won't update until after this component is done
-                return _extends2["default"]({
-                }, contextValue, {
-                    subscription: subscription
-                });
-            }, [
-                didStoreComeFromProps,
-                contextValue,
-                subscription
-            ]); // We need to force this wrapper component to re-render whenever a Redux store update
-            // causes a change to the calculated child component props (or we caught an error in mapState)
-            var _useReducer = _react.useReducer(storeStateUpdatesReducer, EMPTY_ARRAY, initStateUpdates), _useReducer$ = _useReducer[0], previousStateUpdateResult = _useReducer$[0], forceComponentUpdateDispatch = _useReducer[1]; // Propagate any mapState/mapDispatch errors upwards
-            if (previousStateUpdateResult && previousStateUpdateResult.error) throw previousStateUpdateResult.error;
-             // Set up refs to coordinate values between the subscription effect and the render logic
-            var lastChildProps = _react.useRef();
-            var lastWrapperProps = _react.useRef(wrapperProps);
-            var childPropsFromStoreUpdate = _react.useRef();
-            var renderIsScheduled = _react.useRef(false);
-            var actualChildProps = usePureOnlyMemo(function() {
-                // Tricky logic here:
-                // - This render may have been triggered by a Redux store update that produced new child props
-                // - However, we may have gotten new wrapper props after that
-                // If we have new child props, and the same wrapper props, we know we should use the new child props as-is.
-                // But, if we have new wrapper props, those might change the child props, so we have to recalculate things.
-                // So, we'll use the child props from store update only if the wrapper props are the same as last time.
-                if (childPropsFromStoreUpdate.current && wrapperProps === lastWrapperProps.current) return childPropsFromStoreUpdate.current;
-                 // TODO We're reading the store directly in render() here. Bad idea?
-                // This will likely cause Bad Things (TM) to happen in Concurrent Mode.
-                // Note that we do this because on renders _not_ caused by store updates, we need the latest store state
-                // to determine what the child props should be.
-                return childPropsSelector(store.getState(), wrapperProps);
-            }, [
-                store,
-                previousStateUpdateResult,
-                wrapperProps
-            ]); // We need this to execute synchronously every time we re-render. However, React warns
-            // about useLayoutEffect in SSR, so we try to detect environment and fall back to
-            // just useEffect instead to avoid the warning, since neither will run anyway.
-            useIsomorphicLayoutEffectWithArgs(captureWrapperProps, [
-                lastWrapperProps,
-                lastChildProps,
-                renderIsScheduled,
-                wrapperProps,
-                actualChildProps,
-                childPropsFromStoreUpdate,
-                notifyNestedSubs
-            ]); // Our re-subscribe logic only runs when the store/subscription setup changes
-            useIsomorphicLayoutEffectWithArgs(subscribeUpdates, [
-                shouldHandleStateChanges,
-                store,
-                subscription,
-                childPropsSelector,
-                lastWrapperProps,
-                lastChildProps,
-                renderIsScheduled,
-                childPropsFromStoreUpdate,
-                notifyNestedSubs,
-                forceComponentUpdateDispatch
-            ], [
-                store,
-                subscription,
-                childPropsSelector
-            ]); // Now that all that's done, we can finally try to actually render the child component.
-            // We memoize the elements for the rendered child component as an optimization.
-            var renderedWrappedComponent = _react.useMemo(function() {
-                return(/*#__PURE__*/ _react["default"].createElement(WrappedComponent, _extends2["default"]({
-                }, actualChildProps, {
-                    ref: reactReduxForwardedRef
-                })));
-            }, [
-                reactReduxForwardedRef,
-                WrappedComponent,
-                actualChildProps
-            ]); // If React sees the exact same element reference as last time, it bails out of re-rendering
-            // that child, same as if it was wrapped in React.memo() or returned false from shouldComponentUpdate.
-            var renderedChild = _react.useMemo(function() {
-                if (shouldHandleStateChanges) // If this component is subscribed to store updates, we need to pass its own
-                // subscription instance down to our descendants. That means rendering the same
-                // Context instance, and putting a different value into the context.
-                return(/*#__PURE__*/ _react["default"].createElement(ContextToUse.Provider, {
-                    value: overriddenContextValue
-                }, renderedWrappedComponent));
-                return renderedWrappedComponent;
-            }, [
-                ContextToUse,
-                renderedWrappedComponent,
-                overriddenContextValue
-            ]);
-            return renderedChild;
-        } // If we're in "pure" mode, ensure our wrapper component only re-renders when incoming props have changed.
-        var Connect = pure ? _react["default"].memo(ConnectFunction) : ConnectFunction;
-        Connect.WrappedComponent = WrappedComponent;
-        Connect.displayName = ConnectFunction.displayName = displayName;
-        if (forwardRef) {
-            var forwarded = _react["default"].forwardRef(function forwardConnectRef(props, ref) {
-                return(/*#__PURE__*/ _react["default"].createElement(Connect, _extends2["default"]({
-                }, props, {
-                    reactReduxForwardedRef: ref
-                })));
-            });
-            forwarded.displayName = displayName;
-            forwarded.WrappedComponent = WrappedComponent;
-            return _hoistNonReactStatics["default"](forwarded, WrappedComponent);
-        }
-        return _hoistNonReactStatics["default"](Connect, WrappedComponent);
-    };
-}
-
-},{"@babel/runtime/helpers/interopRequireWildcard":"28En5","@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","hoist-non-react-statics":"3nUHV","react":"3b2NM","react-is":"68QIU","../utils/Subscription":"Y1J0m","../utils/useIsomorphicLayoutEffect":"64Bcp","./Context":"6ScOK"}],"1HacB":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports.createConnect = createConnect;
-exports["default"] = void 0;
-var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
-var _objectWithoutPropertiesLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/objectWithoutPropertiesLoose"));
-var _connectAdvanced = _interopRequireDefault(require("../components/connectAdvanced"));
-var _shallowEqual = _interopRequireDefault(require("../utils/shallowEqual"));
-var _mapDispatchToProps = _interopRequireDefault(require("./mapDispatchToProps"));
-var _mapStateToProps = _interopRequireDefault(require("./mapStateToProps"));
-var _mergeProps = _interopRequireDefault(require("./mergeProps"));
-var _selectorFactory = _interopRequireDefault(require("./selectorFactory"));
-/*
-  connect is a facade over connectAdvanced. It turns its args into a compatible
-  selectorFactory, which has the signature:
-
-    (dispatch, options) => (nextState, nextOwnProps) => nextFinalProps
-  
-  connect passes its args to connectAdvanced as options, which will in turn pass them to
-  selectorFactory each time a Connect component instance is instantiated or hot reloaded.
-
-  selectorFactory returns a final props selector from its mapStateToProps,
-  mapStateToPropsFactories, mapDispatchToProps, mapDispatchToPropsFactories, mergeProps,
-  mergePropsFactories, and pure args.
-
-  The resulting final props selector is called by the Connect component instance whenever
-  it receives new props or store state.
- */ function match(arg, factories, name) {
-    for(var i = factories.length - 1; i >= 0; i--){
-        var result = factories[i](arg);
-        if (result) return result;
-    }
-    return function(dispatch, options) {
-        throw new Error("Invalid value of type " + typeof arg + " for " + name + " argument when connecting component " + options.wrappedComponentName + ".");
-    };
-}
-function strictEqual(a, b) {
-    return a === b;
-} // createConnect with default args builds the 'official' connect behavior. Calling it with
-// different options opens up some testing and extensibility scenarios
-function createConnect(_temp) {
-    var _ref = _temp === void 0 ? {
-    } : _temp, _ref$connectHOC = _ref.connectHOC, connectHOC = _ref$connectHOC === void 0 ? _connectAdvanced["default"] : _ref$connectHOC, _ref$mapStateToPropsF = _ref.mapStateToPropsFactories, mapStateToPropsFactories = _ref$mapStateToPropsF === void 0 ? _mapStateToProps["default"] : _ref$mapStateToPropsF, _ref$mapDispatchToPro = _ref.mapDispatchToPropsFactories, mapDispatchToPropsFactories = _ref$mapDispatchToPro === void 0 ? _mapDispatchToProps["default"] : _ref$mapDispatchToPro, _ref$mergePropsFactor = _ref.mergePropsFactories, mergePropsFactories = _ref$mergePropsFactor === void 0 ? _mergeProps["default"] : _ref$mergePropsFactor, _ref$selectorFactory = _ref.selectorFactory, selectorFactory = _ref$selectorFactory === void 0 ? _selectorFactory["default"] : _ref$selectorFactory;
-    return function connect(mapStateToProps, mapDispatchToProps, mergeProps, _ref2) {
-        if (_ref2 === void 0) _ref2 = {
-        };
-        var _ref3 = _ref2, _ref3$pure = _ref3.pure, pure = _ref3$pure === void 0 ? true : _ref3$pure, _ref3$areStatesEqual = _ref3.areStatesEqual, areStatesEqual = _ref3$areStatesEqual === void 0 ? strictEqual : _ref3$areStatesEqual, _ref3$areOwnPropsEqua = _ref3.areOwnPropsEqual, areOwnPropsEqual = _ref3$areOwnPropsEqua === void 0 ? _shallowEqual["default"] : _ref3$areOwnPropsEqua, _ref3$areStatePropsEq = _ref3.areStatePropsEqual, areStatePropsEqual = _ref3$areStatePropsEq === void 0 ? _shallowEqual["default"] : _ref3$areStatePropsEq, _ref3$areMergedPropsE = _ref3.areMergedPropsEqual, areMergedPropsEqual = _ref3$areMergedPropsE === void 0 ? _shallowEqual["default"] : _ref3$areMergedPropsE, extraOptions = _objectWithoutPropertiesLoose2["default"](_ref3, [
-            "pure",
-            "areStatesEqual",
-            "areOwnPropsEqual",
-            "areStatePropsEqual",
-            "areMergedPropsEqual"
-        ]);
-        var initMapStateToProps = match(mapStateToProps, mapStateToPropsFactories, 'mapStateToProps');
-        var initMapDispatchToProps = match(mapDispatchToProps, mapDispatchToPropsFactories, 'mapDispatchToProps');
-        var initMergeProps = match(mergeProps, mergePropsFactories, 'mergeProps');
-        return connectHOC(selectorFactory, _extends2["default"]({
-            // used in error messages
-            methodName: 'connect',
-            // used to compute Connect's displayName from the wrapped component's displayName.
-            getDisplayName: function getDisplayName(name) {
-                return "Connect(" + name + ")";
-            },
-            // if mapStateToProps is falsy, the Connect component doesn't subscribe to store state changes
-            shouldHandleStateChanges: Boolean(mapStateToProps),
-            // passed through to selectorFactory
-            initMapStateToProps: initMapStateToProps,
-            initMapDispatchToProps: initMapDispatchToProps,
-            initMergeProps: initMergeProps,
-            pure: pure,
-            areStatesEqual: areStatesEqual,
-            areOwnPropsEqual: areOwnPropsEqual,
-            areStatePropsEqual: areStatePropsEqual,
-            areMergedPropsEqual: areMergedPropsEqual
-        }, extraOptions));
-    };
-}
-var _default = /*#__PURE__*/ createConnect();
-exports["default"] = _default;
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","../components/connectAdvanced":"SPrTN","../utils/shallowEqual":"1BbL9","./mapDispatchToProps":"aHbco","./mapStateToProps":"6esSH","./mergeProps":"4XiYM","./selectorFactory":"XQRNr"}],"1BbL9":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports["default"] = shallowEqual;
-function is(x, y) {
-    if (x === y) return x !== 0 || y !== 0 || 1 / x === 1 / y;
-    else return x !== x && y !== y;
-}
-function shallowEqual(objA, objB) {
-    if (is(objA, objB)) return true;
-    if (typeof objA !== 'object' || objA === null || typeof objB !== 'object' || objB === null) return false;
-    var keysA = Object.keys(objA);
-    var keysB = Object.keys(objB);
-    if (keysA.length !== keysB.length) return false;
-    for(var i = 0; i < keysA.length; i++){
-        if (!Object.prototype.hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) return false;
-    }
-    return true;
-}
-
-},{}],"aHbco":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports.whenMapDispatchToPropsIsFunction = whenMapDispatchToPropsIsFunction;
-exports.whenMapDispatchToPropsIsMissing = whenMapDispatchToPropsIsMissing;
-exports.whenMapDispatchToPropsIsObject = whenMapDispatchToPropsIsObject;
-exports["default"] = void 0;
-var _bindActionCreators = _interopRequireDefault(require("../utils/bindActionCreators"));
-var _wrapMapToProps = require("./wrapMapToProps");
-function whenMapDispatchToPropsIsFunction(mapDispatchToProps) {
-    return typeof mapDispatchToProps === 'function' ? _wrapMapToProps.wrapMapToPropsFunc(mapDispatchToProps, 'mapDispatchToProps') : undefined;
-}
-function whenMapDispatchToPropsIsMissing(mapDispatchToProps) {
-    return !mapDispatchToProps ? _wrapMapToProps.wrapMapToPropsConstant(function(dispatch) {
-        return {
-            dispatch: dispatch
-        };
-    }) : undefined;
-}
-function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
-    return mapDispatchToProps && typeof mapDispatchToProps === 'object' ? _wrapMapToProps.wrapMapToPropsConstant(function(dispatch) {
-        return _bindActionCreators["default"](mapDispatchToProps, dispatch);
-    }) : undefined;
-}
-var _default = [
-    whenMapDispatchToPropsIsFunction,
-    whenMapDispatchToPropsIsMissing,
-    whenMapDispatchToPropsIsObject
-];
-exports["default"] = _default;
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","../utils/bindActionCreators":"21ucm","./wrapMapToProps":"7rpe9"}],"21ucm":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports["default"] = bindActionCreators;
-function bindActionCreators(actionCreators, dispatch) {
-    var boundActionCreators = {
-    };
-    var _loop = function _loop1(key) {
-        var actionCreator = actionCreators[key];
-        if (typeof actionCreator === 'function') boundActionCreators[key] = function() {
-            return dispatch(actionCreator.apply(void 0, arguments));
-        };
-    };
-    for(var key in actionCreators)_loop(key);
-    return boundActionCreators;
-}
-
-},{}],"7rpe9":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports.wrapMapToPropsConstant = wrapMapToPropsConstant;
-exports.getDependsOnOwnProps = getDependsOnOwnProps;
-exports.wrapMapToPropsFunc = wrapMapToPropsFunc;
-var _verifyPlainObject = _interopRequireDefault(require("../utils/verifyPlainObject"));
-function wrapMapToPropsConstant(getConstant) {
-    return function initConstantSelector(dispatch, options) {
-        var constant = getConstant(dispatch, options);
-        function constantSelector() {
-            return constant;
-        }
-        constantSelector.dependsOnOwnProps = false;
-        return constantSelector;
-    };
-} // dependsOnOwnProps is used by createMapToPropsProxy to determine whether to pass props as args
-// to the mapToProps function being wrapped. It is also used by makePurePropsSelector to determine
-// whether mapToProps needs to be invoked when props have changed.
-//
-// A length of one signals that mapToProps does not depend on props from the parent component.
-// A length of zero is assumed to mean mapToProps is getting args via arguments or ...args and
-// therefore not reporting its length accurately..
-function getDependsOnOwnProps(mapToProps) {
-    return mapToProps.dependsOnOwnProps !== null && mapToProps.dependsOnOwnProps !== undefined ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
-} // Used by whenMapStateToPropsIsFunction and whenMapDispatchToPropsIsFunction,
-// this function wraps mapToProps in a proxy function which does several things:
-//
-//  * Detects whether the mapToProps function being called depends on props, which
-//    is used by selectorFactory to decide if it should reinvoke on props changes.
-//
-//  * On first call, handles mapToProps if returns another function, and treats that
-//    new function as the true mapToProps for subsequent calls.
-//
-//  * On first call, verifies the first result is a plain object, in order to warn
-//    the developer that their mapToProps function is not returning a valid result.
-//
-function wrapMapToPropsFunc(mapToProps, methodName) {
-    return function initProxySelector(dispatch, _ref) {
-        var displayName = _ref.displayName;
-        var proxy = function mapToPropsProxy(stateOrDispatch, ownProps) {
-            return proxy.dependsOnOwnProps ? proxy.mapToProps(stateOrDispatch, ownProps) : proxy.mapToProps(stateOrDispatch);
-        }; // allow detectFactoryAndVerify to get ownProps
-        proxy.dependsOnOwnProps = true;
-        proxy.mapToProps = function detectFactoryAndVerify(stateOrDispatch, ownProps) {
-            proxy.mapToProps = mapToProps;
-            proxy.dependsOnOwnProps = getDependsOnOwnProps(mapToProps);
-            var props = proxy(stateOrDispatch, ownProps);
-            if (typeof props === 'function') {
-                proxy.mapToProps = props;
-                proxy.dependsOnOwnProps = getDependsOnOwnProps(props);
-                props = proxy(stateOrDispatch, ownProps);
-            }
-            _verifyPlainObject["default"](props, displayName, methodName);
-            return props;
-        };
-        return proxy;
-    };
-}
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","../utils/verifyPlainObject":"4G4Zn"}],"4G4Zn":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports["default"] = verifyPlainObject;
-var _isPlainObject = _interopRequireDefault(require("./isPlainObject"));
-var _warning = _interopRequireDefault(require("./warning"));
-function verifyPlainObject(value, displayName, methodName) {
-    if (!_isPlainObject["default"](value)) _warning["default"](methodName + "() in " + displayName + " must return a plain object. Instead received " + value + ".");
-}
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","./isPlainObject":"Gqg7l","./warning":"2YNtu"}],"Gqg7l":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports["default"] = isPlainObject;
-/**
- * @param {any} obj The object to inspect.
- * @returns {boolean} True if the argument appears to be a plain object.
- */ function isPlainObject(obj) {
-    if (typeof obj !== 'object' || obj === null) return false;
-    var proto = Object.getPrototypeOf(obj);
-    if (proto === null) return true;
-    var baseProto = proto;
-    while(Object.getPrototypeOf(baseProto) !== null)baseProto = Object.getPrototypeOf(baseProto);
-    return proto === baseProto;
-}
-
-},{}],"2YNtu":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports["default"] = warning;
-/**
- * Prints a warning in the console if it exists.
- *
- * @param {String} message The warning message.
- * @returns {void}
- */ function warning(message) {
-    /* eslint-disable no-console */ if (typeof console !== 'undefined' && typeof console.error === 'function') console.error(message);
-    /* eslint-enable no-console */ try {
-        // This error was thrown as a convenience so that if you enable
-        // "break on all exceptions" in your console,
-        // it would pause the execution at this line.
-        throw new Error(message);
-    /* eslint-disable no-empty */ } catch (e) {
-    }
-/* eslint-enable no-empty */ }
-
-},{}],"6esSH":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports.whenMapStateToPropsIsFunction = whenMapStateToPropsIsFunction;
-exports.whenMapStateToPropsIsMissing = whenMapStateToPropsIsMissing;
-exports["default"] = void 0;
-var _wrapMapToProps = require("./wrapMapToProps");
-function whenMapStateToPropsIsFunction(mapStateToProps) {
-    return typeof mapStateToProps === 'function' ? _wrapMapToProps.wrapMapToPropsFunc(mapStateToProps, 'mapStateToProps') : undefined;
-}
-function whenMapStateToPropsIsMissing(mapStateToProps) {
-    return !mapStateToProps ? _wrapMapToProps.wrapMapToPropsConstant(function() {
-        return {
-        };
-    }) : undefined;
-}
-var _default = [
-    whenMapStateToPropsIsFunction,
-    whenMapStateToPropsIsMissing
-];
-exports["default"] = _default;
-
-},{"./wrapMapToProps":"7rpe9"}],"4XiYM":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports.defaultMergeProps = defaultMergeProps;
-exports.wrapMergePropsFunc = wrapMergePropsFunc;
-exports.whenMergePropsIsFunction = whenMergePropsIsFunction;
-exports.whenMergePropsIsOmitted = whenMergePropsIsOmitted;
-exports["default"] = void 0;
-var _extends2 = _interopRequireDefault(require("@babel/runtime/helpers/extends"));
-var _verifyPlainObject = _interopRequireDefault(require("../utils/verifyPlainObject"));
-function defaultMergeProps(stateProps, dispatchProps, ownProps) {
-    return _extends2["default"]({
-    }, ownProps, stateProps, dispatchProps);
-}
-function wrapMergePropsFunc(mergeProps) {
-    return function initMergePropsProxy(dispatch, _ref) {
-        var displayName = _ref.displayName, pure = _ref.pure, areMergedPropsEqual = _ref.areMergedPropsEqual;
-        var hasRunOnce = false;
-        var mergedProps;
-        return function mergePropsProxy(stateProps, dispatchProps, ownProps) {
-            var nextMergedProps = mergeProps(stateProps, dispatchProps, ownProps);
-            if (hasRunOnce) {
-                if (!pure || !areMergedPropsEqual(nextMergedProps, mergedProps)) mergedProps = nextMergedProps;
-            } else {
-                hasRunOnce = true;
-                mergedProps = nextMergedProps;
-                _verifyPlainObject["default"](mergedProps, displayName, 'mergeProps');
-            }
-            return mergedProps;
-        };
-    };
-}
-function whenMergePropsIsFunction(mergeProps) {
-    return typeof mergeProps === 'function' ? wrapMergePropsFunc(mergeProps) : undefined;
-}
-function whenMergePropsIsOmitted(mergeProps) {
-    return !mergeProps ? function() {
-        return defaultMergeProps;
-    } : undefined;
-}
-var _default = [
-    whenMergePropsIsFunction,
-    whenMergePropsIsOmitted
-];
-exports["default"] = _default;
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/extends":"3krLJ","../utils/verifyPlainObject":"4G4Zn"}],"XQRNr":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports.impureFinalPropsSelectorFactory = impureFinalPropsSelectorFactory;
-exports.pureFinalPropsSelectorFactory = pureFinalPropsSelectorFactory;
-exports["default"] = finalPropsSelectorFactory;
-var _objectWithoutPropertiesLoose2 = _interopRequireDefault(require("@babel/runtime/helpers/objectWithoutPropertiesLoose"));
-var _verifySubselectors = _interopRequireDefault(require("./verifySubselectors"));
-function impureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch) {
-    return function impureFinalPropsSelector(state, ownProps) {
-        return mergeProps(mapStateToProps(state, ownProps), mapDispatchToProps(dispatch, ownProps), ownProps);
-    };
-}
-function pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, _ref) {
-    var areStatesEqual = _ref.areStatesEqual, areOwnPropsEqual = _ref.areOwnPropsEqual, areStatePropsEqual = _ref.areStatePropsEqual;
-    var hasRunAtLeastOnce = false;
-    var state;
-    var ownProps;
-    var stateProps;
-    var dispatchProps;
-    var mergedProps;
-    function handleFirstCall(firstState, firstOwnProps) {
-        state = firstState;
-        ownProps = firstOwnProps;
-        stateProps = mapStateToProps(state, ownProps);
-        dispatchProps = mapDispatchToProps(dispatch, ownProps);
-        mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
-        hasRunAtLeastOnce = true;
-        return mergedProps;
-    }
-    function handleNewPropsAndNewState() {
-        stateProps = mapStateToProps(state, ownProps);
-        if (mapDispatchToProps.dependsOnOwnProps) dispatchProps = mapDispatchToProps(dispatch, ownProps);
-        mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
-        return mergedProps;
-    }
-    function handleNewProps() {
-        if (mapStateToProps.dependsOnOwnProps) stateProps = mapStateToProps(state, ownProps);
-        if (mapDispatchToProps.dependsOnOwnProps) dispatchProps = mapDispatchToProps(dispatch, ownProps);
-        mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
-        return mergedProps;
-    }
-    function handleNewState() {
-        var nextStateProps = mapStateToProps(state, ownProps);
-        var statePropsChanged = !areStatePropsEqual(nextStateProps, stateProps);
-        stateProps = nextStateProps;
-        if (statePropsChanged) mergedProps = mergeProps(stateProps, dispatchProps, ownProps);
-        return mergedProps;
-    }
-    function handleSubsequentCalls(nextState, nextOwnProps) {
-        var propsChanged = !areOwnPropsEqual(nextOwnProps, ownProps);
-        var stateChanged = !areStatesEqual(nextState, state);
-        state = nextState;
-        ownProps = nextOwnProps;
-        if (propsChanged && stateChanged) return handleNewPropsAndNewState();
-        if (propsChanged) return handleNewProps();
-        if (stateChanged) return handleNewState();
-        return mergedProps;
-    }
-    return function pureFinalPropsSelector(nextState, nextOwnProps) {
-        return hasRunAtLeastOnce ? handleSubsequentCalls(nextState, nextOwnProps) : handleFirstCall(nextState, nextOwnProps);
-    };
-} // TODO: Add more comments
-// If pure is true, the selector returned by selectorFactory will memoize its results,
-// allowing connectAdvanced's shouldComponentUpdate to return false if final
-// props have not changed. If false, the selector will always return a new
-// object and shouldComponentUpdate will always return true.
-function finalPropsSelectorFactory(dispatch, _ref2) {
-    var initMapStateToProps = _ref2.initMapStateToProps, initMapDispatchToProps = _ref2.initMapDispatchToProps, initMergeProps = _ref2.initMergeProps, options = _objectWithoutPropertiesLoose2["default"](_ref2, [
-        "initMapStateToProps",
-        "initMapDispatchToProps",
-        "initMergeProps"
-    ]);
-    var mapStateToProps = initMapStateToProps(dispatch, options);
-    var mapDispatchToProps = initMapDispatchToProps(dispatch, options);
-    var mergeProps = initMergeProps(dispatch, options);
-    _verifySubselectors["default"](mapStateToProps, mapDispatchToProps, mergeProps, options.displayName);
-    var selectorFactory = options.pure ? pureFinalPropsSelectorFactory : impureFinalPropsSelectorFactory;
-    return selectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch, options);
-}
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/objectWithoutPropertiesLoose":"3Yx9V","./verifySubselectors":"5MUxF"}],"5MUxF":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports["default"] = verifySubselectors;
-var _warning = _interopRequireDefault(require("../utils/warning"));
-function verify(selector, methodName, displayName) {
-    if (!selector) throw new Error("Unexpected value for " + methodName + " in " + displayName + ".");
-    else if (methodName === 'mapStateToProps' || methodName === 'mapDispatchToProps') {
-        if (!Object.prototype.hasOwnProperty.call(selector, 'dependsOnOwnProps')) _warning["default"]("The selector for " + methodName + " of " + displayName + " did not specify a value for dependsOnOwnProps.");
-    }
-}
-function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, displayName) {
-    verify(mapStateToProps, 'mapStateToProps', displayName);
-    verify(mapDispatchToProps, 'mapDispatchToProps', displayName);
-    verify(mergeProps, 'mergeProps', displayName);
-}
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","../utils/warning":"2YNtu"}],"4H7HK":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports.createDispatchHook = createDispatchHook;
-exports.useDispatch = void 0;
-var _Context = require("../components/Context");
-var _useStore = require("./useStore");
-/**
- * Hook factory, which creates a `useDispatch` hook bound to a given context.
- *
- * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
- * @returns {Function} A `useDispatch` hook bound to the specified context.
- */ function createDispatchHook(context) {
-    if (context === void 0) context = _Context.ReactReduxContext;
-    var useStore = context === _Context.ReactReduxContext ? _useStore.useStore : _useStore.createStoreHook(context);
-    return function useDispatch() {
-        var store = useStore();
-        return store.dispatch;
-    };
-}
-/**
- * A hook to access the redux `dispatch` function.
- *
- * @returns {any|function} redux store's `dispatch` function
- *
- * @example
- *
- * import React, { useCallback } from 'react'
- * import { useDispatch } from 'react-redux'
- *
- * export const CounterComponent = ({ value }) => {
- *   const dispatch = useDispatch()
- *   const increaseCounter = useCallback(() => dispatch({ type: 'increase-counter' }), [])
- *   return (
- *     <div>
- *       <span>{value}</span>
- *       <button onClick={increaseCounter}>Increase counter</button>
- *     </div>
- *   )
- * }
- */ var useDispatch = /*#__PURE__*/ createDispatchHook();
-exports.useDispatch = useDispatch;
-
-},{"../components/Context":"6ScOK","./useStore":"5zPKn"}],"5zPKn":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports.createStoreHook = createStoreHook;
-exports.useStore = void 0;
-var _react = require("react");
-var _Context = require("../components/Context");
-var _useReduxContext2 = require("./useReduxContext");
-/**
- * Hook factory, which creates a `useStore` hook bound to a given context.
- *
- * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
- * @returns {Function} A `useStore` hook bound to the specified context.
- */ function createStoreHook(context) {
-    if (context === void 0) context = _Context.ReactReduxContext;
-    var useReduxContext = context === _Context.ReactReduxContext ? _useReduxContext2.useReduxContext : function() {
-        return _react.useContext(context);
-    };
-    return function useStore() {
-        var _useReduxContext = useReduxContext(), store = _useReduxContext.store;
-        return store;
-    };
-}
-/**
- * A hook to access the redux store.
- *
- * @returns {any} the redux store
- *
- * @example
- *
- * import React from 'react'
- * import { useStore } from 'react-redux'
- *
- * export const ExampleComponent = () => {
- *   const store = useStore()
- *   return <div>{store.getState()}</div>
- * }
- */ var useStore = /*#__PURE__*/ createStoreHook();
-exports.useStore = useStore;
-
-},{"react":"3b2NM","../components/Context":"6ScOK","./useReduxContext":"46ppV"}],"46ppV":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports.useReduxContext = useReduxContext;
-var _react = require("react");
-var _Context = require("../components/Context");
-/**
- * A hook to access the value of the `ReactReduxContext`. This is a low-level
- * hook that you should usually not need to call directly.
- *
- * @returns {any} the value of the `ReactReduxContext`
- *
- * @example
- *
- * import React from 'react'
- * import { useReduxContext } from 'react-redux'
- *
- * export const CounterComponent = ({ value }) => {
- *   const { store } = useReduxContext()
- *   return <div>{store.getState()}</div>
- * }
- */ function useReduxContext() {
-    var contextValue = _react.useContext(_Context.ReactReduxContext);
-    if (!contextValue) throw new Error('could not find react-redux context value; please ensure the component is wrapped in a <Provider>');
-    return contextValue;
-}
-
-},{"react":"3b2NM","../components/Context":"6ScOK"}],"6dv0a":[function(require,module,exports) {
-"use strict";
-var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
-exports.__esModule = true;
-exports.createSelectorHook = createSelectorHook;
-exports.useSelector = void 0;
-var _react = require("react");
-var _useReduxContext2 = require("./useReduxContext");
-var _Subscription = _interopRequireDefault(require("../utils/Subscription"));
-var _useIsomorphicLayoutEffect = require("../utils/useIsomorphicLayoutEffect");
-var _Context = require("../components/Context");
-var refEquality = function refEquality1(a, b) {
-    return a === b;
-};
-function useSelectorWithStoreAndSubscription(selector, equalityFn, store, contextSub) {
-    var _useReducer = _react.useReducer(function(s) {
-        return s + 1;
-    }, 0), forceRender = _useReducer[1];
-    var subscription = _react.useMemo(function() {
-        return new _Subscription["default"](store, contextSub);
-    }, [
-        store,
-        contextSub
-    ]);
-    var latestSubscriptionCallbackError = _react.useRef();
-    var latestSelector = _react.useRef();
-    var latestStoreState = _react.useRef();
-    var latestSelectedState = _react.useRef();
-    var storeState = store.getState();
-    var selectedState;
-    try {
-        if (selector !== latestSelector.current || storeState !== latestStoreState.current || latestSubscriptionCallbackError.current) {
-            var newSelectedState = selector(storeState); // ensure latest selected state is reused so that a custom equality function can result in identical references
-            if (latestSelectedState.current === undefined || !equalityFn(newSelectedState, latestSelectedState.current)) selectedState = newSelectedState;
-            else selectedState = latestSelectedState.current;
-        } else selectedState = latestSelectedState.current;
-    } catch (err) {
-        if (latestSubscriptionCallbackError.current) err.message += "\nThe error may be correlated with this previous error:\n" + latestSubscriptionCallbackError.current.stack + "\n\n";
-        throw err;
-    }
-    _useIsomorphicLayoutEffect.useIsomorphicLayoutEffect(function() {
-        latestSelector.current = selector;
-        latestStoreState.current = storeState;
-        latestSelectedState.current = selectedState;
-        latestSubscriptionCallbackError.current = undefined;
-    });
-    _useIsomorphicLayoutEffect.useIsomorphicLayoutEffect(function() {
-        function checkForUpdates() {
-            try {
-                var newStoreState = store.getState();
-                var _newSelectedState = latestSelector.current(newStoreState);
-                if (equalityFn(_newSelectedState, latestSelectedState.current)) return;
-                latestSelectedState.current = _newSelectedState;
-                latestStoreState.current = newStoreState;
-            } catch (err) {
-                // we ignore all errors here, since when the component
-                // is re-rendered, the selectors are called again, and
-                // will throw again, if neither props nor store state
-                // changed
-                latestSubscriptionCallbackError.current = err;
-            }
-            forceRender();
-        }
-        subscription.onStateChange = checkForUpdates;
-        subscription.trySubscribe();
-        checkForUpdates();
-        return function() {
-            return subscription.tryUnsubscribe();
-        };
-    }, [
-        store,
-        subscription
-    ]);
-    return selectedState;
-}
-/**
- * Hook factory, which creates a `useSelector` hook bound to a given context.
- *
- * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
- * @returns {Function} A `useSelector` hook bound to the specified context.
- */ function createSelectorHook(context) {
-    if (context === void 0) context = _Context.ReactReduxContext;
-    var useReduxContext = context === _Context.ReactReduxContext ? _useReduxContext2.useReduxContext : function() {
-        return _react.useContext(context);
-    };
-    return function useSelector(selector, equalityFn) {
-        if (equalityFn === void 0) equalityFn = refEquality;
-        if (!selector) throw new Error("You must pass a selector to useSelector");
-        if (typeof selector !== 'function') throw new Error("You must pass a function as a selector to useSelector");
-        if (typeof equalityFn !== 'function') throw new Error("You must pass a function as an equality function to useSelector");
-        var _useReduxContext = useReduxContext(), store = _useReduxContext.store, contextSub = _useReduxContext.subscription;
-        var selectedState = useSelectorWithStoreAndSubscription(selector, equalityFn, store, contextSub);
-        _react.useDebugValue(selectedState);
-        return selectedState;
-    };
-}
-/**
- * A hook to access the redux store's state. This hook takes a selector function
- * as an argument. The selector is called with the store state.
- *
- * This hook takes an optional equality comparison function as the second parameter
- * that allows you to customize the way the selected state is compared to determine
- * whether the component needs to be re-rendered.
- *
- * @param {Function} selector the selector function
- * @param {Function=} equalityFn the function that will be used to determine equality
- *
- * @returns {any} the selected state
- *
- * @example
- *
- * import React from 'react'
- * import { useSelector } from 'react-redux'
- *
- * export const CounterComponent = () => {
- *   const counter = useSelector(state => state.counter)
- *   return <div>{counter}</div>
- * }
- */ var useSelector = /*#__PURE__*/ createSelectorHook();
-exports.useSelector = useSelector;
-
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","react":"3b2NM","./useReduxContext":"46ppV","../utils/Subscription":"Y1J0m","../utils/useIsomorphicLayoutEffect":"64Bcp","../components/Context":"6ScOK"}],"12gEH":[function(require,module,exports) {
-"use strict";
-exports.__esModule = true;
-exports.unstable_batchedUpdates = void 0;
-var _reactDom = require("react-dom");
-exports.unstable_batchedUpdates = _reactDom.unstable_batchedUpdates;
-
-},{"react-dom":"2sg1U"}],"7aL1U":[function(require,module,exports) {
+},{"react":"3b2NM","./footer.css":"3UgGq","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3UgGq":[function() {},{}],"7aL1U":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "login", ()=>login
+);
+parcelHelpers.export(exports, "logout", ()=>logout
 );
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
@@ -39635,6 +39760,13 @@ const login = (email, password)=>async (dispatch)=>{
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
+    }
+;
+const logout = ()=>(dispatch)=>{
+        localStorage.removeItem('userInfo');
+        dispatch({
+            type: _userConstants.USER_LOGOUT
+        });
     }
 ;
 
@@ -41036,7 +41168,7 @@ const Message = ({ variant , children  })=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Alert, {
         variant: variant,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Message\\message.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Message\\message.js",
             lineNumber: 5
         },
         __self: undefined
@@ -41078,14 +41210,14 @@ const Loader = ()=>{
             display: 'block'
         },
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Loader\\loader.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Loader\\loader.js",
             lineNumber: 6
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("span", {
         className: "sr-only",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Loader\\loader.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Loader\\loader.js",
             lineNumber: 11
         },
         __self: undefined
@@ -41101,7 +41233,7 @@ $RefreshReg$(_c, "Loader");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"R51Uo":[function() {},{}],"2PCZy":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2PCZy":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41116,46 +41248,46 @@ const Showcase = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "showcase",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
             lineNumber: 4
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
             lineNumber: 5
         },
         __self: undefined
     }, "DIscover an Adventure"), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
             lineNumber: 6
         },
         __self: undefined
     }, "SLIIT ICAC"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
             lineNumber: 7
         },
         __self: undefined
     }, "Lorem ispum dolor sit amet, combdhsw, sadisdnsb, elit. Resbmnfdmf ex lobkdnsdmi asj."), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "showcase__buttons",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
             lineNumber: 12
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("button", {
         className: "showcase__btn-service",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
             lineNumber: 13
         },
         __self: undefined
     }, "SERVICES"), /*#__PURE__*/ _reactDefault.default.createElement("button", {
         className: "showcase__btn-about",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Showcase\\showcase.js",
             lineNumber: 14
         },
         __self: undefined
@@ -41183,12 +41315,18 @@ parcelHelpers.export(exports, "unappConList", ()=>unappConList
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _conferenceConstants = require("../constants/conferenceConstants");
-const listConDetails = ()=>async (dispatch)=>{
+const listConDetails = ()=>async (dispatch, getState)=>{
         try {
             dispatch({
                 type: _conferenceConstants.CONFERENCE_LIST_REQUEST
             });
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/');
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/', config);
             dispatch({
                 type: _conferenceConstants.CONFERENCE_LIST_SUCCESS,
                 payload: data
@@ -41201,12 +41339,18 @@ const listConDetails = ()=>async (dispatch)=>{
         }
     }
 ;
-const appConList = ()=>async (dispatch)=>{
+const appConList = ()=>async (dispatch, getState)=>{
         try {
             dispatch({
                 type: _conferenceConstants.CONFERENCE_APPROVED_LIST_REQUEST
             });
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/approvedCon');
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/approvedCon', config);
             dispatch({
                 type: _conferenceConstants.CONFERENCE_APPROVED_LIST_SUCCESS,
                 payload: data
@@ -41219,12 +41363,18 @@ const appConList = ()=>async (dispatch)=>{
         }
     }
 ;
-const unappConList = ()=>async (dispatch)=>{
+const unappConList = ()=>async (dispatch, getState)=>{
         try {
             dispatch({
                 type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_REQUEST
             });
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/unAprrovedCon');
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/unAprrovedCon', config);
             dispatch({
                 type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_SUCCESS,
                 payload: data
@@ -41281,7 +41431,7 @@ const CONFERENCE_UNAPPROVED_LIST_SUCCESS = 'CONFERENCE_UNAPPROVED_LIST_SUCCESS';
 const CONFERENCE_UNAPPROVED_LIST_FAIL = 'CONFERENCE_UNAPPROVED_LIST_FAIL';
 const CONFERENCE_UNAPPROVED_LIST_RESET = 'CONFERENCE_UNAPPROVED_LIST_RESET';
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"yo9U2":[function() {},{}],"7xglY":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"2Ihqr":[function() {},{}],"7xglY":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41301,54 +41451,54 @@ var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
 const registerScreen = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 11
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "wrapper",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 13
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "ni",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 14
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "content",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 17
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 18
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         align: "center",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 19
         },
         __self: undefined
     }, "Sign Up"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 21
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 22
         },
         __self: undefined
@@ -41357,20 +41507,20 @@ const registerScreen = ()=>{
         className: "form-control",
         placeholder: "First name",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 23
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 26
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 27
         },
         __self: undefined
@@ -41379,20 +41529,20 @@ const registerScreen = ()=>{
         className: "form-control",
         placeholder: "Last name",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 28
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 31
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 32
         },
         __self: undefined
@@ -41401,20 +41551,20 @@ const registerScreen = ()=>{
         className: "form-control",
         placeholder: "Enter email",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 33
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 36
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 37
         },
         __self: undefined
@@ -41423,7 +41573,7 @@ const registerScreen = ()=>{
         className: "form-control",
         placeholder: "Enter password",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 38
         },
         __self: undefined
@@ -41431,27 +41581,27 @@ const registerScreen = ()=>{
         type: "submit",
         className: "btn btn-primary btn-block ",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 41
         },
         __self: undefined
     }, "Sign Up"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         className: "forgot-password text-right",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 42
         },
         __self: undefined
     }, "Already registered ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/login",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 43
         },
         __self: undefined
     }, "sign in?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
             lineNumber: 51
         },
         __self: undefined
@@ -41464,8 +41614,8 @@ exports.default = registerScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","./registerscreen.css":"1Bu1U","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1Bu1U":[function() {},{}],"3WbXB":[function(require,module,exports) {
-var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-bootstrap":"4n7hB","./registerscreen.css":"TbhEH","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI"}],"TbhEH":[function() {},{}],"3lNMi":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
@@ -41475,6 +41625,17 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactBootstrap = require("react-bootstrap");
+var _reactRedux = require("react-redux");
+var _message = require("../../components/Message/message");
+var _messageDefault = parcelHelpers.interopDefault(_message);
+var _loader = require("../../components/Loader/loader");
+var _loaderDefault = parcelHelpers.interopDefault(_loader);
+var _conferenceAction = require("../../action/conferenceAction");
+var _navbarJs = require("../../components/Navbar/navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
+var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
 var _clsx = require("clsx");
 var _clsxDefault = parcelHelpers.interopDefault(_clsx);
 var _styles = require("@material-ui/core/styles");
@@ -41512,8 +41673,9 @@ var _chevronLeft = require("@material-ui/icons/ChevronLeft");
 var _chevronLeftDefault = parcelHelpers.interopDefault(_chevronLeft);
 var _notifications = require("@material-ui/icons/Notifications");
 var _notificationsDefault = parcelHelpers.interopDefault(_notifications);
-var _listItems = require("./listItems");
+var _listitems1 = require("./Editor dashboard/listitems1");
 var _s = $RefreshSig$();
+<<<<<<< HEAD
 function Copyright() {
     return(/*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
         variant: "body2",
@@ -41535,6 +41697,8 @@ function Copyright() {
     }, "Agasthi Sankalana"), ' ', new Date().getFullYear(), '.'));
 }
 _c = Copyright;
+=======
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
 const drawerWidth = 240;
 const useStyles = _styles.makeStyles((theme)=>({
         root: {
@@ -41621,7 +41785,7 @@ const useStyles = _styles.makeStyles((theme)=>({
         }
     })
 );
-function Dashboard() {
+const appconlistScreen = ()=>{
     _s();
     const classes = useStyles();
     const [open, setOpen] = _reactDefault.default.useState(true);
@@ -41632,51 +41796,61 @@ function Dashboard() {
         setOpen(false);
     };
     const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
-    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+    const dispatch = _reactRedux.useDispatch();
+    const appCon = _reactRedux.useSelector((state)=>state.appCon
+    );
+    const { loading , error , conferencedetails  } = appCon;
+    _react.useEffect(()=>{
+        dispatch(_conferenceAction.appConList());
+    }, [
+        dispatch
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.root,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 131
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 148
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 132
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 149
         },
-        __self: this
+        __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
         position: "absolute",
         className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 133
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 150
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
         className: classes.toolbar,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 134
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 151
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
         edge: "start",
+        color: "inherit",
         color: "inherit",
         "aria-label": "open drawer",
         onClick: handleDrawerOpen,
         className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 135
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 152
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 142
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 160
         },
-        __self: this
+        __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
         component: "h1",
         variant: "h6",
@@ -41684,31 +41858,31 @@ function Dashboard() {
         noWrap: true,
         className: classes.title,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 144
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 162
         },
-        __self: this
-    }, "Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        __self: undefined
+    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
         color: "inherit",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 147
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 165
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
         badgeContent: 4,
         color: "secondary",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 148
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 166
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 149
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 167
         },
-        __self: this
+        __self: undefined
     }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
         variant: "permanent",
         classes: {
@@ -41716,165 +41890,289 @@ function Dashboard() {
         },
         open: open,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 154
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 172
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.toolbarIcon,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 161
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 179
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
         onClick: handleDrawerClose,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 162
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 180
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 163
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 181
         },
-        __self: this
+        __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 166
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 184
         },
-        __self: this
+        __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 167
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 185
         },
-        __self: this
-    }, _listItems.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __self: undefined
+    }, _listitems1.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 168
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 186
         },
-        __self: this
+        __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 169
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 187
         },
-        __self: this
-    }, _listItems.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
+        __self: undefined
+    }, _listitems1.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
         className: classes.content,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 172
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 190
         },
-        __self: this
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.appBarSpacer,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 173
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 191
         },
-        __self: this
+        __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
         maxWidth: "lg",
         className: classes.container,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 174
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 192
         },
-        __self: this
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_gridDefault.default, {
-        container: true,
-        spacing: 3,
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 175
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 193
         },
-        __self: this
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_gridDefault.default, {
-        item: true,
-        xs: 12,
-        md: 8,
-        lg: 9,
+        __self: undefined
+    }, "All Approved Conference Details"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 177
-        },
-        __self: this
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_paperDefault.default, {
-        className: fixedHeightPaper,
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 178
-        },
-        __self: this
-    })), /*#__PURE__*/ _reactDefault.default.createElement(_gridDefault.default, {
-        item: true,
-        xs: 12,
-        md: 4,
-        lg: 3,
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 183
-        },
-        __self: this
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_paperDefault.default, {
-        className: fixedHeightPaper,
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 184
-        },
-        __self: this
-    })), /*#__PURE__*/ _reactDefault.default.createElement(_gridDefault.default, {
-        item: true,
-        xs: 12,
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 189
-        },
-        __self: this
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_paperDefault.default, {
-        className: classes.paper,
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
-            lineNumber: 190
-        },
-        __self: this
-    }))), /*#__PURE__*/ _reactDefault.default.createElement(_boxDefault.default, {
-        pt: 4,
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
             lineNumber: 195
         },
-        __self: this
-    }, /*#__PURE__*/ _reactDefault.default.createElement(Copyright, {
+        __self: undefined
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "danger",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
             lineNumber: 196
         },
-        __self: this
-    }))))));
-}
-exports.default = Dashboard;
-_s(Dashboard, "ZbauVcu/I6GQoZvFWe0/Vd1mXmg=", false, function() {
+        __self: undefined
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
+        striped: true,
+        bordered: true,
+        hover: true,
+        responsive: true,
+        variant: "light",
+        className: "table-sm",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 198
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 199
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 200
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 201
+        },
+        __self: undefined
+    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 202
+        },
+        __self: undefined
+    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 203
+        },
+        __self: undefined
+    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 204
+        },
+        __self: undefined
+    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 205
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 208
+        },
+        __self: undefined
+    }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            key: con._id,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 210
+            },
+            __self: undefined
+        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 211
+            },
+            __self: undefined
+        }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 212
+            },
+            __self: undefined
+        }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 213
+            },
+            __self: undefined
+        }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 214
+            },
+            __self: undefined
+        }, con.phone))
+    ))))))));
+};
+_s(appconlistScreen, "IvmkH6gyD9MhN13FD2HDbf6C/Oc=", false, function() {
     return [
-        useStyles
-    ];
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
 });
-_c1 = Dashboard;
-var _c, _c1;
-$RefreshReg$(_c, "Copyright");
-$RefreshReg$(_c1, "Dashboard");
+exports.default = appconlistScreen;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./listItems":"7f4ea"}],"29lTl":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../action/conferenceAction":"7CqFH","../../components/Navbar/navbar.js":"5c3hR","../../components/EditorNav/editorNavbar.js":"56S2h","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./Editor dashboard/listitems1":"1TblZ"}],"56S2h":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _nav = require("react-bootstrap/Nav");
+var _navDefault = parcelHelpers.interopDefault(_nav);
+const Editornavbar = ()=>{
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default, {
+        fill: true,
+        variant: "tabs",
+        defaultActiveKey: "/home",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 7
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 8
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
+        href: "/editor",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 9
+        },
+        __self: undefined
+    }, "All")), /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 11
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
+        href: "/applist",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 12
+        },
+        __self: undefined
+    }, "Approved list")), /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 14
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
+        href: "/unapplist",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 15
+        },
+        __self: undefined
+    }, "UnApproved list")), /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 17
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
+        eventKey: "disabled",
+        disabled: true,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
+            lineNumber: 18
+        },
+        __self: undefined
+    }, "Disabled"))));
+};
+_c = Editornavbar;
+exports.default = Editornavbar;
+var _c;
+$RefreshReg$(_c, "Editornavbar");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-bootstrap/Nav":"3T3v1"}],"29lTl":[function(require,module,exports) {
 function toVal(mix) {
     var k, y, str = '';
     if (typeof mix === 'string' || typeof mix === 'number') str += mix;
@@ -55300,7 +55598,7 @@ var _default = _createSvgIcon.default(/*#__PURE__*/ React.createElement("path", 
 }), 'Notifications');
 exports.default = _default;
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","./utils/createSvgIcon":"1M7MC"}],"7f4ea":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","./utils/createSvgIcon":"1M7MC"}],"1TblZ":[function(require,module,exports) {
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -55335,232 +55633,254 @@ var _layers = require("@material-ui/icons/Layers");
 var _layersDefault = parcelHelpers.interopDefault(_layers);
 var _assignment = require("@material-ui/icons/Assignment");
 var _assignmentDefault = parcelHelpers.interopDefault(_assignment);
+var _reactRouterDom = require("react-router-dom");
 const mainListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 14
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 16
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/editor",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 17
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 15
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 18
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 16
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 19
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_dashboardDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 17
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 20
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Dashboard",
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 19
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 22
     },
     __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/applist",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 25
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 21
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 26
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 22
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 27
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_shoppingCartDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 23
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 28
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
-    primary: "Orders",
+    primary: "Approved Con details",
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 25
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 31
     },
     __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/unapplist",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 34
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 27
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 35
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 28
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 36
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_peopleDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 29
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 37
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
-    primary: "Customers",
+    primary: "Unapproved con details",
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 31
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 39
     },
     __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 33
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 42
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 34
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 43
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_barChartDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 35
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 44
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Reports",
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 37
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 46
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 39
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 48
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 40
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 49
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_layersDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 41
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 50
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Integrations",
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 43
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 52
     },
     __self: undefined
 })));
 const secondaryListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 49
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 58
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listSubheaderDefault.default, {
     inset: true,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 50
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 59
     },
     __self: undefined
 }, "Saved reports"), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 51
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 60
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 52
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 61
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 53
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 62
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Current month",
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 55
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 64
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 57
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 66
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 58
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 67
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 59
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 68
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Last quarter",
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 61
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 70
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 63
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 72
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 64
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 73
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 65
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 74
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Year-end sale",
     __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
-        lineNumber: 67
+        fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 76
     },
     __self: undefined
 })));
@@ -55570,7 +55890,7 @@ const secondaryListItems = /*#__PURE__*/ _reactDefault.default.createElement("di
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@material-ui/core/ListItem":"2DNb3","@material-ui/core/ListItemIcon":"5siUZ","@material-ui/core/ListItemText":"7t7nz","@material-ui/core/ListSubheader":"505Dd","@material-ui/icons/Dashboard":"5Q3Fn","@material-ui/icons/ShoppingCart":"6WIpv","@material-ui/icons/People":"4QwVK","@material-ui/icons/BarChart":"1075F","@material-ui/icons/Layers":"5vTqU","@material-ui/icons/Assignment":"3UO7R","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2DNb3":[function(require,module,exports) {
+},{"react":"3b2NM","@material-ui/core/ListItem":"2DNb3","@material-ui/core/ListItemIcon":"5siUZ","@material-ui/core/ListItemText":"7t7nz","@material-ui/core/ListSubheader":"505Dd","@material-ui/icons/Dashboard":"5Q3Fn","@material-ui/icons/ShoppingCart":"6WIpv","@material-ui/icons/People":"4QwVK","@material-ui/icons/BarChart":"1075F","@material-ui/icons/Layers":"5vTqU","@material-ui/icons/Assignment":"3UO7R","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2DNb3":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "default", ()=>_listItemDefault.default
@@ -56221,281 +56541,7 @@ var _default = _createSvgIcon.default(/*#__PURE__*/ React.createElement("path", 
 }), 'Assignment');
 exports.default = _default;
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","./utils/createSvgIcon":"1M7MC"}],"3WoBG":[function(require,module,exports) {
-var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRedux = require("react-redux");
-var _reactBootstrap = require("react-bootstrap");
-var _conferenceActionJs = require("../../action/conferenceAction.js");
-var _loaderJs = require("../../components/Loader/loader.js");
-var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
-var _messageJs = require("../../components/Message/message.js");
-var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
-var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
-var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
-var _navbarJs = require("../../components/Navbar/navbar.js");
-var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
-var _footerJs = require("../../components/Footer/footer.js");
-var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
-var _s = $RefreshSig$();
-const EditorScreen = ()=>{
-    _s();
-    const dispatch = _reactRedux.useDispatch();
-    const listCon = _reactRedux.useSelector((state)=>state.listCon
-    );
-    const { loading , error , conferencedetails  } = listCon;
-    _react.useEffect(()=>{
-        dispatch(_conferenceActionJs.listConDetails());
-    }, [
-        dispatch
-    ]);
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 22
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 23
-        },
-        __self: undefined
-    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_editorNavbarJsDefault.default, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 24
-        },
-        __self: undefined
-    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 25
-        },
-        __self: undefined
-    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
-        variant: "danger",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 26
-        },
-        __self: undefined
-    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
-        striped: true,
-        bordered: true,
-        hover: true,
-        responsive: true,
-        variant: "dark",
-        className: "table-sm",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 28
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 29
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 30
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 31
-        },
-        __self: undefined
-    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 32
-        },
-        __self: undefined
-    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 33
-        },
-        __self: undefined
-    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 34
-        },
-        __self: undefined
-    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 35
-        },
-        __self: undefined
-    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 38
-        },
-        __self: undefined
-    }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
-            key: con._id,
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 40
-            },
-            __self: undefined
-        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 41
-            },
-            __self: undefined
-        }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 42
-            },
-            __self: undefined
-        }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 43
-            },
-            __self: undefined
-        }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 44
-            },
-            __self: undefined
-        }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 45
-            },
-            __self: undefined
-        }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 46
-            },
-            __self: undefined
-        }, con.venue))
-    )))));
-};
-_s(EditorScreen, "/uTQqnyawgFaoXO5LcEC6bed1ZY=", false, function() {
-    return [_reactRedux.useDispatch, _reactRedux.useSelector];
-});
-_c = EditorScreen;
-exports.default = EditorScreen;
-var _c;
-$RefreshReg$(_c, "EditorScreen");
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../action/conferenceAction.js":"7CqFH","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","../../components/EditorNav/editorNavbar.js":"56S2h","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"56S2h":[function(require,module,exports) {
-var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _nav = require("react-bootstrap/Nav");
-var _navDefault = parcelHelpers.interopDefault(_nav);
-const Editornavbar = ()=>{
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default, {
-        fill: true,
-        variant: "tabs",
-        defaultActiveKey: "/home",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
-            lineNumber: 7
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
-            lineNumber: 8
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
-        href: "/editor",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
-            lineNumber: 9
-        },
-        __self: undefined
-    }, "All")), /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
-            lineNumber: 11
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
-        href: "/applist",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
-            lineNumber: 12
-        },
-        __self: undefined
-    }, "Approved list")), /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
-            lineNumber: 14
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
-        href: "/unapplist",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
-            lineNumber: 15
-        },
-        __self: undefined
-    }, "UnApproved list")), /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Item, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
-            lineNumber: 17
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_navDefault.default.Link, {
-        eventKey: "disabled",
-        disabled: true,
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\EditorNav\\editorNavbar.js",
-            lineNumber: 18
-        },
-        __self: undefined
-    }, "Disabled"))));
-};
-_c = Editornavbar;
-exports.default = Editornavbar;
-var _c;
-$RefreshReg$(_c, "Editornavbar");
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","react-bootstrap/Nav":"3T3v1","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3lNMi":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","./utils/createSvgIcon":"1M7MC"}],"5BaDu":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56513,194 +56559,142 @@ var _messageDefault = parcelHelpers.interopDefault(_message);
 var _loader = require("../../components/Loader/loader");
 var _loaderDefault = parcelHelpers.interopDefault(_loader);
 var _conferenceAction = require("../../action/conferenceAction");
-var _navbarJs = require("../../components/Navbar/navbar.js");
-var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
-var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
-var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _styles = require("@material-ui/core/styles");
+var _cssBaseline = require("@material-ui/core/CssBaseline");
+var _cssBaselineDefault = parcelHelpers.interopDefault(_cssBaseline);
+var _drawer = require("@material-ui/core/Drawer");
+var _drawerDefault = parcelHelpers.interopDefault(_drawer);
+var _box = require("@material-ui/core/Box");
+var _boxDefault = parcelHelpers.interopDefault(_box);
+var _appBar = require("@material-ui/core/AppBar");
+var _appBarDefault = parcelHelpers.interopDefault(_appBar);
+var _toolbar = require("@material-ui/core/Toolbar");
+var _toolbarDefault = parcelHelpers.interopDefault(_toolbar);
+var _list = require("@material-ui/core/List");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _typography = require("@material-ui/core/Typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _divider = require("@material-ui/core/Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _iconButton = require("@material-ui/core/IconButton");
+var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);
+var _badge = require("@material-ui/core/Badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
+var _container = require("@material-ui/core/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _grid = require("@material-ui/core/Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _paper = require("@material-ui/core/Paper");
+var _paperDefault = parcelHelpers.interopDefault(_paper);
+var _link = require("@material-ui/core/Link");
+var _linkDefault = parcelHelpers.interopDefault(_link);
+var _menu = require("@material-ui/icons/Menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _chevronLeft = require("@material-ui/icons/ChevronLeft");
+var _chevronLeftDefault = parcelHelpers.interopDefault(_chevronLeft);
+var _notifications = require("@material-ui/icons/Notifications");
+var _notificationsDefault = parcelHelpers.interopDefault(_notifications);
+var _listitems1 = require("./Editor dashboard/listitems1");
 var _s = $RefreshSig$();
-const appconlistScreen = ()=>{
-    _s();
-    const dispatch = _reactRedux.useDispatch();
-    const appCon = _reactRedux.useSelector((state)=>state.appCon
-    );
-    const { loading , error , conferencedetails  } = appCon;
-    _react.useEffect(()=>{
-        dispatch(_conferenceAction.appConList());
-    }, [
-        dispatch
-    ]);
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 23
+const drawerWidth = 240;
+const useStyles = _styles.makeStyles((theme)=>({
+        root: {
+            display: 'flex'
         },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 24
+        toolbar: {
+            paddingRight: 24
         },
-        __self: undefined
-    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_editorNavbarJsDefault.default, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 25
+        toolbarIcon: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            padding: '0 8px',
+            ...theme.mixins.toolbar
         },
-        __self: undefined
-    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 26
+        appBar: {
+            zIndex: theme.zIndex.drawer + 1,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            })
         },
-        __self: undefined
-    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
-        variant: "danger",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 27
+        appBarShift: {
+            marginLeft: drawerWidth,
+            width: `calc(100% - ${drawerWidth}px)`,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
         },
-        __self: undefined
-    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
-        striped: true,
-        bordered: true,
-        hover: true,
-        responsive: true,
-        variant: "dark",
-        className: "table-sm",
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 29
+        menuButton: {
+            marginRight: 36
         },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 30
+        menuButtonHidden: {
+            display: 'none'
         },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 31
+        title: {
+            flexGrow: 1
         },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 32
+        drawerPaper: {
+            position: 'relative',
+            whiteSpace: 'nowrap',
+            width: drawerWidth,
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
         },
-        __self: undefined
-    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 33
+        drawerPaperClose: {
+            overflowX: 'hidden',
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            }),
+            width: theme.spacing(7),
+            [theme.breakpoints.up('sm')]: {
+                width: theme.spacing(9)
+            }
         },
-        __self: undefined
-    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 34
+        appBarSpacer: theme.mixins.toolbar,
+        content: {
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto'
         },
-        __self: undefined
-    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 35
+        container: {
+            paddingTop: theme.spacing(4),
+            paddingBottom: theme.spacing(4)
         },
-        __self: undefined
-    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 36
+        paper: {
+            padding: theme.spacing(2),
+            display: 'flex',
+            overflow: 'auto',
+            flexDirection: 'column'
         },
-        __self: undefined
-    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 39
-        },
-        __self: undefined
-    }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
-            key: con._id,
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 41
-            },
-            __self: undefined
-        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 42
-            },
-            __self: undefined
-        }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 43
-            },
-            __self: undefined
-        }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 44
-            },
-            __self: undefined
-        }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 45
-            },
-            __self: undefined
-        }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 46
-            },
-            __self: undefined
-        }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 47
-            },
-            __self: undefined
-        }, con.venue))
-    )))));
-};
-_s(appconlistScreen, "mUPm43AvAAwIM2xT+EVZ+NXI1Ps=", false, function() {
-    return [_reactRedux.useDispatch, _reactRedux.useSelector];
-});
-exports.default = appconlistScreen;
-
-  helpers.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","../../action/conferenceAction":"7CqFH","../../components/Navbar/navbar.js":"5c3hR","../../components/EditorNav/editorNavbar.js":"56S2h","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5BaDu":[function(require,module,exports) {
-var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-helpers.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactBootstrap = require("react-bootstrap");
-var _reactRedux = require("react-redux");
-var _message = require("../../components/Message/message");
-var _messageDefault = parcelHelpers.interopDefault(_message);
-var _loader = require("../../components/Loader/loader");
-var _loaderDefault = parcelHelpers.interopDefault(_loader);
-var _conferenceAction = require("../../action/conferenceAction");
-var _navbarJs = require("../../components/Navbar/navbar.js");
-var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
-var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
-var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
-var _s = $RefreshSig$();
+        fixedHeight: {
+            height: 240
+        }
+    })
+);
 const unappconlistScreen = ()=>{
     _s();
+    const classes = useStyles();
+    const [open, setOpen] = _reactDefault.default.useState(true);
+    const handleDrawerOpen = ()=>{
+        setOpen(true);
+    };
+    const handleDrawerClose = ()=>{
+        setOpen(false);
+    };
+    const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
     const dispatch = _reactRedux.useDispatch();
     const unappCon = _reactRedux.useSelector((state)=>state.unappCon
     );
@@ -56710,35 +56704,178 @@ const unappconlistScreen = ()=>{
     }, [
         dispatch
     ]);
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.root,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 24
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 141
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 25
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 142
         },
         __self: undefined
-    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_editorNavbarJsDefault.default, {
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
+        position: "absolute",
+        className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 26
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 143
         },
         __self: undefined
-    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
+        className: classes.toolbar,
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 27
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 144
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        edge: "start",
+        color: "inherit",
+        color: "inherit",
+        "aria-label": "open drawer",
+        onClick: handleDrawerOpen,
+        className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 145
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 153
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        component: "h1",
+        variant: "h6",
+        color: "inherit",
+        noWrap: true,
+        className: classes.title,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 155
+        },
+        __self: undefined
+    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        color: "inherit",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 158
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
+        badgeContent: 4,
+        color: "secondary",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 159
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 160
+        },
+        __self: undefined
+    }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
+        variant: "permanent",
+        classes: {
+            paper: _clsxDefault.default(classes.drawerPaper, !open && classes.drawerPaperClose)
+        },
+        open: open,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 165
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.toolbarIcon,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 172
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        onClick: handleDrawerClose,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 173
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 174
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 177
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 178
+        },
+        __self: undefined
+    }, _listitems1.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 179
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 180
+        },
+        __self: undefined
+    }, _listitems1.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
+        className: classes.content,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 183
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.appBarSpacer,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 184
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
+        maxWidth: "lg",
+        className: classes.container,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 185
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 186
+        },
+        __self: undefined
+    }, "All Unapproved Conference Details"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 187
         },
         __self: undefined
     }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
         variant: "danger",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 28
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 188
         },
         __self: undefined
     }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
@@ -56746,73 +56883,98 @@ const unappconlistScreen = ()=>{
         bordered: true,
         hover: true,
         responsive: true,
-        variant: "dark",
+        variant: "light",
         className: "table-sm",
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 30
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 190
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 31
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 191
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 34
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 192
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 193
+        },
+        __self: undefined
+    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 194
+        },
+        __self: undefined
+    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 195
+        },
+        __self: undefined
+    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 196
+        },
+        __self: undefined
+    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 197
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 200
         },
         __self: undefined
     }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
             key: con._id,
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 36
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+                lineNumber: 202
             },
             __self: undefined
         }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 37
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+                lineNumber: 203
             },
             __self: undefined
         }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 38
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+                lineNumber: 204
             },
             __self: undefined
         }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 39
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+                lineNumber: 205
             },
             __self: undefined
         }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 40
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+                lineNumber: 206
             },
             __self: undefined
-        }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 41
-            },
-            __self: undefined
-        }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 42
-            },
-            __self: undefined
-        }, con.venue))
-    )))));
+        }, con.phone))
+    ))))))));
 };
-_s(unappconlistScreen, "4LqE11CV60i6Yksw7cOnTI7PCQA=", false, function() {
-    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+_s(unappconlistScreen, "91qFf737wLF5WA+LFzZOSVg/tQQ=", false, function() {
+    return [
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
 });
 exports.default = unappconlistScreen;
 
@@ -56821,6 +56983,1177 @@ exports.default = unappconlistScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
+},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","../../action/conferenceAction":"7CqFH","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./Editor dashboard/listitems1":"1TblZ"}],"3WbXB":[function(require,module,exports) {
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _styles = require("@material-ui/core/styles");
+var _cssBaseline = require("@material-ui/core/CssBaseline");
+var _cssBaselineDefault = parcelHelpers.interopDefault(_cssBaseline);
+var _drawer = require("@material-ui/core/Drawer");
+var _drawerDefault = parcelHelpers.interopDefault(_drawer);
+var _box = require("@material-ui/core/Box");
+var _boxDefault = parcelHelpers.interopDefault(_box);
+var _appBar = require("@material-ui/core/AppBar");
+var _appBarDefault = parcelHelpers.interopDefault(_appBar);
+var _toolbar = require("@material-ui/core/Toolbar");
+var _toolbarDefault = parcelHelpers.interopDefault(_toolbar);
+var _list = require("@material-ui/core/List");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _typography = require("@material-ui/core/Typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _divider = require("@material-ui/core/Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _iconButton = require("@material-ui/core/IconButton");
+var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);
+var _badge = require("@material-ui/core/Badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
+var _container = require("@material-ui/core/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _grid = require("@material-ui/core/Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _paper = require("@material-ui/core/Paper");
+var _paperDefault = parcelHelpers.interopDefault(_paper);
+var _link = require("@material-ui/core/Link");
+var _linkDefault = parcelHelpers.interopDefault(_link);
+var _menu = require("@material-ui/icons/Menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _chevronLeft = require("@material-ui/icons/ChevronLeft");
+var _chevronLeftDefault = parcelHelpers.interopDefault(_chevronLeft);
+var _notifications = require("@material-ui/icons/Notifications");
+var _notificationsDefault = parcelHelpers.interopDefault(_notifications);
+var _listItems = require("./listItems");
+var _s = $RefreshSig$();
+function Copyright() {
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        variant: "body2",
+        color: "textSecondary",
+        align: "center",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 26
+        },
+        __self: this
+    }, 'Copyright © ', /*#__PURE__*/ _reactDefault.default.createElement(_linkDefault.default, {
+        color: "inherit",
+        href: "",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 28
+        },
+        __self: this
+    }, "Your Website"), ' ', new Date().getFullYear(), '.'));
+}
+_c = Copyright;
+const drawerWidth = 240;
+const useStyles = _styles.makeStyles((theme)=>({
+        root: {
+            display: 'flex'
+        },
+        toolbar: {
+            paddingRight: 24
+        },
+        toolbarIcon: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            padding: '0 8px',
+            ...theme.mixins.toolbar
+        },
+        appBar: {
+            zIndex: theme.zIndex.drawer + 1,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            })
+        },
+        appBarShift: {
+            marginLeft: drawerWidth,
+            width: `calc(100% - ${drawerWidth}px)`,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        menuButton: {
+            marginRight: 36
+        },
+        menuButtonHidden: {
+            display: 'none'
+        },
+        title: {
+            flexGrow: 1
+        },
+        drawerPaper: {
+            position: 'relative',
+            whiteSpace: 'nowrap',
+            width: drawerWidth,
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        drawerPaperClose: {
+            overflowX: 'hidden',
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            }),
+            width: theme.spacing(7),
+            [theme.breakpoints.up('sm')]: {
+                width: theme.spacing(9)
+            }
+        },
+        appBarSpacer: theme.mixins.toolbar,
+        content: {
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto'
+        },
+        container: {
+            paddingTop: theme.spacing(4),
+            paddingBottom: theme.spacing(4)
+        },
+        paper: {
+            padding: theme.spacing(2),
+            display: 'flex',
+            overflow: 'auto',
+            flexDirection: 'column'
+        },
+        fixedHeight: {
+            height: 240
+        }
+    })
+);
+function Dashboard() {
+    _s();
+    const classes = useStyles();
+    const [open, setOpen] = _reactDefault.default.useState(true);
+    const handleDrawerOpen = ()=>{
+        setOpen(true);
+    };
+    const handleDrawerClose = ()=>{
+        setOpen(false);
+    };
+    const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.root,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 131
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 132
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
+        position: "absolute",
+        className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 133
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
+        className: classes.toolbar,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 134
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        edge: "start",
+        color: "inherit",
+        "aria-label": "open drawer",
+        onClick: handleDrawerOpen,
+        className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 135
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 142
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        component: "h1",
+        variant: "h6",
+        color: "inherit",
+        noWrap: true,
+        className: classes.title,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 144
+        },
+        __self: this
+    }, "Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        color: "inherit",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 147
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
+        badgeContent: 4,
+        color: "secondary",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 148
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 149
+        },
+        __self: this
+    }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
+        variant: "permanent",
+        classes: {
+            paper: _clsxDefault.default(classes.drawerPaper, !open && classes.drawerPaperClose)
+        },
+        open: open,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 154
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.toolbarIcon,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 161
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        onClick: handleDrawerClose,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 162
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 163
+        },
+        __self: this
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 166
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 167
+        },
+        __self: this
+    }, _listItems.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 168
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 169
+        },
+        __self: this
+    }, _listItems.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
+        className: classes.content,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 172
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.appBarSpacer,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 173
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
+        maxWidth: "lg",
+        className: classes.container,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 174
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_gridDefault.default, {
+        container: true,
+        spacing: 3,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 175
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_gridDefault.default, {
+        item: true,
+        xs: 12,
+        md: 8,
+        lg: 9,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 177
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_paperDefault.default, {
+        className: fixedHeightPaper,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 178
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_gridDefault.default, {
+        item: true,
+        xs: 12,
+        md: 4,
+        lg: 3,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 183
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_paperDefault.default, {
+        className: fixedHeightPaper,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 184
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_gridDefault.default, {
+        item: true,
+        xs: 12,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 189
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_paperDefault.default, {
+        className: classes.paper,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 190
+        },
+        __self: this
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_boxDefault.default, {
+        pt: 4,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 195
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(Copyright, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\adminDashboard.js",
+            lineNumber: 196
+        },
+        __self: this
+    }))))));
+}
+exports.default = Dashboard;
+_s(Dashboard, "ZbauVcu/I6GQoZvFWe0/Vd1mXmg=", false, function() {
+    return [
+        useStyles
+    ];
+});
+_c1 = Dashboard;
+var _c, _c1;
+$RefreshReg$(_c, "Copyright");
+$RefreshReg$(_c1, "Dashboard");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./listItems":"7f4ea","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7f4ea":[function(require,module,exports) {
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "mainListItems", ()=>mainListItems
+);
+parcelHelpers.export(exports, "secondaryListItems", ()=>secondaryListItems
+);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _listItem = require("@material-ui/core/ListItem");
+var _listItemDefault = parcelHelpers.interopDefault(_listItem);
+var _listItemIcon = require("@material-ui/core/ListItemIcon");
+var _listItemIconDefault = parcelHelpers.interopDefault(_listItemIcon);
+var _listItemText = require("@material-ui/core/ListItemText");
+var _listItemTextDefault = parcelHelpers.interopDefault(_listItemText);
+var _listSubheader = require("@material-ui/core/ListSubheader");
+var _listSubheaderDefault = parcelHelpers.interopDefault(_listSubheader);
+var _dashboard = require("@material-ui/icons/Dashboard");
+var _dashboardDefault = parcelHelpers.interopDefault(_dashboard);
+var _shoppingCart = require("@material-ui/icons/ShoppingCart");
+var _shoppingCartDefault = parcelHelpers.interopDefault(_shoppingCart);
+var _people = require("@material-ui/icons/People");
+var _peopleDefault = parcelHelpers.interopDefault(_people);
+var _barChart = require("@material-ui/icons/BarChart");
+var _barChartDefault = parcelHelpers.interopDefault(_barChart);
+var _layers = require("@material-ui/icons/Layers");
+var _layersDefault = parcelHelpers.interopDefault(_layers);
+var _assignment = require("@material-ui/icons/Assignment");
+var _assignmentDefault = parcelHelpers.interopDefault(_assignment);
+const mainListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 14
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 15
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 16
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_dashboardDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 17
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Dashboard",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 19
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 21
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 22
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_shoppingCartDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 23
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Orders",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 25
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 27
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 28
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_peopleDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 29
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Customers",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 31
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 33
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 34
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_barChartDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 35
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Reports",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 37
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 39
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 40
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_layersDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 41
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Integrations",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 43
+    },
+    __self: undefined
+})));
+const secondaryListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 49
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listSubheaderDefault.default, {
+    inset: true,
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 50
+    },
+    __self: undefined
+}, "Saved reports"), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 51
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 52
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 53
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Current month",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 55
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 57
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 58
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 59
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Last quarter",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 61
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 63
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 64
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 65
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Year-end sale",
+    __source: {
+        fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listItems.js",
+        lineNumber: 67
+    },
+    __self: undefined
+})));
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","@material-ui/core/ListItem":"2DNb3","@material-ui/core/ListItemIcon":"5siUZ","@material-ui/core/ListItemText":"7t7nz","@material-ui/core/ListSubheader":"505Dd","@material-ui/icons/Dashboard":"5Q3Fn","@material-ui/icons/ShoppingCart":"6WIpv","@material-ui/icons/People":"4QwVK","@material-ui/icons/BarChart":"1075F","@material-ui/icons/Layers":"5vTqU","@material-ui/icons/Assignment":"3UO7R","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1Pedk":[function(require,module,exports) {
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRedux = require("react-redux");
+var _reactBootstrap = require("react-bootstrap");
+var _conferenceAction = require("../../../action/conferenceAction");
+var _loaderJs = require("../../../components/Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _messageJs = require("../../../components/Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _styles = require("@material-ui/core/styles");
+var _cssBaseline = require("@material-ui/core/CssBaseline");
+var _cssBaselineDefault = parcelHelpers.interopDefault(_cssBaseline);
+var _drawer = require("@material-ui/core/Drawer");
+var _drawerDefault = parcelHelpers.interopDefault(_drawer);
+var _box = require("@material-ui/core/Box");
+var _boxDefault = parcelHelpers.interopDefault(_box);
+var _appBar = require("@material-ui/core/AppBar");
+var _appBarDefault = parcelHelpers.interopDefault(_appBar);
+var _toolbar = require("@material-ui/core/Toolbar");
+var _toolbarDefault = parcelHelpers.interopDefault(_toolbar);
+var _list = require("@material-ui/core/List");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _typography = require("@material-ui/core/Typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _divider = require("@material-ui/core/Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _iconButton = require("@material-ui/core/IconButton");
+var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);
+var _badge = require("@material-ui/core/Badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
+var _container = require("@material-ui/core/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _grid = require("@material-ui/core/Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _paper = require("@material-ui/core/Paper");
+var _paperDefault = parcelHelpers.interopDefault(_paper);
+var _link = require("@material-ui/core/Link");
+var _linkDefault = parcelHelpers.interopDefault(_link);
+var _menu = require("@material-ui/icons/Menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _chevronLeft = require("@material-ui/icons/ChevronLeft");
+var _chevronLeftDefault = parcelHelpers.interopDefault(_chevronLeft);
+var _notifications = require("@material-ui/icons/Notifications");
+var _notificationsDefault = parcelHelpers.interopDefault(_notifications);
+var _listitems1 = require("./listitems1");
+var _s = $RefreshSig$();
+// function Copyright() {
+//       return (
+//             <Typography variant="body2" color="textSecondary" align="center">
+//                   {'Copyright © '}
+//                   <Link color="inherit" href="">
+//                         Madusanka Gajadeera
+//                   </Link>{' '}
+//                   {new Date().getFullYear()}
+//                   {'.'}
+//             </Typography>
+//       );
+// }
+const drawerWidth = 240;
+const useStyles = _styles.makeStyles((theme)=>({
+        root: {
+            display: 'flex'
+        },
+        toolbar: {
+            paddingRight: 24
+        },
+        toolbarIcon: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            padding: '0 8px',
+            ...theme.mixins.toolbar
+        },
+        appBar: {
+            zIndex: theme.zIndex.drawer + 1,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            })
+        },
+        appBarShift: {
+            marginLeft: drawerWidth,
+            width: `calc(100% - ${drawerWidth}px)`,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        menuButton: {
+            marginRight: 36
+        },
+        menuButtonHidden: {
+            display: 'none'
+        },
+        title: {
+            flexGrow: 1
+        },
+        drawerPaper: {
+            position: 'relative',
+            whiteSpace: 'nowrap',
+            width: drawerWidth,
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        drawerPaperClose: {
+            overflowX: 'hidden',
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            }),
+            width: theme.spacing(7),
+            [theme.breakpoints.up('sm')]: {
+                width: theme.spacing(9)
+            }
+        },
+        appBarSpacer: theme.mixins.toolbar,
+        content: {
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto'
+        },
+        container: {
+            paddingTop: theme.spacing(4),
+            paddingBottom: theme.spacing(4)
+        },
+        paper: {
+            padding: theme.spacing(2),
+            display: 'flex',
+            overflow: 'auto',
+            flexDirection: 'column'
+        },
+        fixedHeight: {
+            height: 240
+        }
+    })
+);
+function Dashboard() {
+    _s();
+    const classes = useStyles();
+    const [open, setOpen] = _reactDefault.default.useState(true);
+    const handleDrawerOpen = ()=>{
+        setOpen(true);
+    };
+    const handleDrawerClose = ()=>{
+        setOpen(false);
+    };
+    const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
+    const dispatch = _reactRedux.useDispatch();
+    const listCon = _reactRedux.useSelector((state)=>state.listCon
+    );
+    const { loading , error , conferencedetails  } = listCon;
+    _react.useEffect(()=>{
+        dispatch(_conferenceAction.listConDetails());
+    }, [
+        dispatch
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.root,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 146
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 147
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
+        position: "absolute",
+        className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 148
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
+        className: classes.toolbar,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 149
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        edge: "start",
+        color: "inherit",
+        color: "inherit",
+        "aria-label": "open drawer",
+        onClick: handleDrawerOpen,
+        className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 150
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 158
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        component: "h1",
+        variant: "h6",
+        color: "inherit",
+        noWrap: true,
+        className: classes.title,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 160
+        },
+        __self: this
+    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        color: "inherit",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 163
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
+        badgeContent: 4,
+        color: "secondary",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 164
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 165
+        },
+        __self: this
+    }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
+        variant: "permanent",
+        classes: {
+            paper: _clsxDefault.default(classes.drawerPaper, !open && classes.drawerPaperClose)
+        },
+        open: open,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 170
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.toolbarIcon,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 177
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        onClick: handleDrawerClose,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 178
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 179
+        },
+        __self: this
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 182
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 183
+        },
+        __self: this
+    }, _listitems1.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 184
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 185
+        },
+        __self: this
+    }, _listitems1.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
+        className: classes.content,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 188
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.appBarSpacer,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 189
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
+        maxWidth: "lg",
+        className: classes.container,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 190
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 192
+        },
+        __self: this
+    }, "All conference Details"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 193
+        },
+        __self: this
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 194
+        },
+        __self: this
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
+        striped: true,
+        bordered: true,
+        hover: true,
+        responsive: true,
+        variant: "light",
+        className: "table-sm",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 196
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 197
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 198
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 199
+        },
+        __self: this
+    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 200
+        },
+        __self: this
+    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 201
+        },
+        __self: this
+    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 202
+        },
+        __self: this
+    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 203
+        },
+        __self: this
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 206
+        },
+        __self: this
+    }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            key: con._id,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 208
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 209
+            },
+            __self: this
+        }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 210
+            },
+            __self: this
+        }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 211
+            },
+            __self: this
+        }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 212
+            },
+            __self: this
+        }, con.phone))
+    )))))));
+}
+exports.default = Dashboard;
+_s(Dashboard, "YiUmAMFtLH0e6JMEx79H2nMEBjE=", false, function() {
+    return [
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
+});
+_c = Dashboard;
+var _c;
+$RefreshReg$(_c, "Dashboard");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../../action/conferenceAction":"7CqFH","../../../components/Loader/loader.js":"68bDI","../../../components/Message/message.js":"6fMfw","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./listitems1":"1TblZ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5pJ4O":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactBootstrap = require("react-bootstrap");
+var _navbarJs = require("../../components/Navbar/navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+const LoggedinHomeScreen = ()=>{
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\loggedinHomeScreen\\lggedInHomeScreen.js",
+            lineNumber: 9
+        },
+        __self: undefined
+    })));
+};
+_c = LoggedinHomeScreen;
+exports.default = LoggedinHomeScreen;
+var _c;
+$RefreshReg$(_c, "LoggedinHomeScreen");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+<<<<<<< HEAD
 },{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","../../action/conferenceAction":"7CqFH","../../components/Navbar/navbar.js":"5c3hR","../../components/EditorNav/editorNavbar.js":"56S2h","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4pxqo":[function(require,module,exports) {
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
@@ -57344,6 +58677,9 @@ LinkContainer1.defaultProps = {
 exports.default = _reactRouterDom.withRouter(LinkContainer1);
 
 },{"react":"3b2NM","prop-types":"4dfy5","react-router-dom":"1PMSK"}],"6DxLW":[function() {},{}],"4av32":[function(require,module,exports) {
+=======
+},{"react":"3b2NM","react-bootstrap":"4n7hB","../../components/Navbar/navbar.js":"5c3hR","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"24gh2":[function() {},{}],"4av32":[function(require,module,exports) {
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -57370,7 +58706,11 @@ const middleware = [_reduxThunkDefault.default];
 const store = _redux.createStore(reducer, initialState, _reduxDevtoolsExtension.composeWithDevTools(_redux.applyMiddleware(...middleware)));
 exports.default = store;
 
+<<<<<<< HEAD
 },{"redux":"7panR","redux-thunk":"2oNwf","redux-devtools-extension":"3vUkb","../src/reducers/userReducers.js":"2BaWm","../src/reducers/conferenceReducer.js":"2dHIK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../src/reducers/adminConferenceReducer.js":"6xwzG"}],"7panR":[function(require,module,exports) {
+=======
+},{"redux":"7panR","redux-thunk":"2oNwf","redux-devtools-extension":"3vUkb","../src/reducers/userReducers.js":"2BaWm","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../src/reducers/conferenceReducer.js":"2dHIK"}],"7panR":[function(require,module,exports) {
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
 'use strict';
 Object.defineProperty(exports, '__esModule', {
     value: true
@@ -58058,6 +59398,7 @@ const conUnApprovedReduceer = (state = {
     }
 };
 
+<<<<<<< HEAD
 },{"../constants/conferenceConstants.js":"5LNy7","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"6xwzG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -58120,5 +59461,8 @@ const conferenceApprovedReduceer = (state = {
 };
 
 },{"../constants/adminConstants":"DJzj8","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}]},["1j6wU","6iKAK","5rkFb"], "5rkFb", "parcelRequire0de8")
+=======
+},{"../constants/conferenceConstants.js":"5LNy7","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}]},["1j6wU","39Mbm","5rkFb"], "5rkFb", "parcelRequire0de8")
+>>>>>>> ee13442350902d25f8fc1e4e46740eb6e379e6a9
 
 //# sourceMappingURL=index.3fafb3e2.js.map

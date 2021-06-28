@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Form } from 'react-bootstrap';
+import { Button, Form, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import './loginscreen.css'
@@ -19,12 +19,14 @@ const Loginscreen = ({ location, history }) => {
       const userLogin = useSelector(state => state.userLogin)
       const { loading, error, userInfo } = userLogin
 
-      const redirect = location.search ? location.search.split('=')[1] : '/'
+      const redirect = location.search ? location.search.split('=')[1] : '/loggedInHome'
+
 
       useEffect(() => {
             if (userInfo) {
-                  history.pushState(redirect)
+                  history.push(redirect)
             }
+
       }, [history, userInfo, redirect])
 
       const submitHandler = (e) => {
@@ -66,12 +68,12 @@ const Loginscreen = ({ location, history }) => {
                                           </div>
                                     </Form.Group>
 
-                                    <div className="form-group bn">
-                                          <div className="custom-control custom-checkbox">
-                                                <input type="checkbox" className="custom-control-input" id="customCheck1" />
-                                                <label className="custom-control-label" htmlFor="customCheck1">Remember me</label>
-                                          </div>
-                                    </div>
+                                    <Row>
+                                          <Col>
+                                                New User? <Link to={redirect ? `/register?redirect=${redirect}` : '/register'}>Register Now</Link>
+                                          </Col>
+                                    </Row>
+
 
                                     <Button type="submit" className="btn btn-primary btn-block">Submit</Button>
                                     <p className="forgot-password text-right">

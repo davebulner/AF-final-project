@@ -81,4 +81,17 @@ const getUnApprovedConDetails = asyncHandler(async (req, res) => {
 
 })
 
-export { addConDetails, getAllConDetails, updateConDetails, getApprovedConDetails, getUnApprovedConDetails }
+const deleteConDetails = asyncHandler(async (req, res) => {
+      const conDetails = await ConferenceDetails.findById(req.params.id)
+
+      if (conDetails) {
+            await conDetails.remove()
+            res.json({ message: 'Conference Details removed' })
+      } else {
+            res.status(404)
+            throw new Error('Conference details not found')
+      }
+
+})
+
+export { addConDetails, getAllConDetails, updateConDetails, getApprovedConDetails, getUnApprovedConDetails, deleteConDetails }
