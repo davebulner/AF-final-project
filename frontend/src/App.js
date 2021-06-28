@@ -6,6 +6,7 @@ import LoginScreen from './Screens/LoginScreen/loginScreen'
 import RegisterScreen from './Screens/RegisterScreen/registerScreen'
 import EditorScreen from './Screens/EditorScreen/editorScreen'
 import appconlistScreen from './Screens/EditorScreen/approvedScreen'
+import unappconlistScreen from './Screens/EditorScreen/unapprovedScreen'
 
 const App = () => {
       return (
@@ -16,6 +17,7 @@ const App = () => {
                         <Route path="/register" component={RegisterScreen} />
                         <Route path="/editor" component={EditorScreen} />
                         <Route path="/applist" component={appconlistScreen} />
+                        <Route path="/unapplist" component={unappconlistScreen} />
                   </div>
             </Router>
       )

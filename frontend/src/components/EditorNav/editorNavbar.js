@@ -9,10 +9,10 @@ const Editornavbar = () => {
                         <Nav.Link href="/editor">All</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                        <Nav.Link href="/applist">Loooonger NavLink</Nav.Link>
+                        <Nav.Link href="/applist">Approved list</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
-                        <Nav.Link eventKey="link-2">Link</Nav.Link>
+                        <Nav.Link href="/unapplist">UnApproved list</Nav.Link>
                   </Nav.Item>
                   <Nav.Item>
                         <Nav.Link eventKey="disabled" disabled>
