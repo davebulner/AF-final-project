@@ -81,11 +81,10 @@ const Appbar = () => {
 
                               {userInfo && userInfo.isEditor && (
                                     <NavDropdown>
-                                          <li className="link"><a href="/editor">Contact us</a>
-                                                <NavDropdown.Item>
-                                                      editor
-                                                </NavDropdown.Item>
-                                          </li>
+                                         <Link to= '/editor'>
+                                               editor
+                                         </Link>
+
                                     </NavDropdown>
                               )}
 
