@@ -3,10 +3,6 @@ import {
     CONFERENCE_LIST_SUCCESS_ADMIN,
     CONFERENCE_LIST_FAIL_ADMIN,
     CONFERENCE_LIST_RESET_ADMIN,
-    CONFERENCE_APPROVED_LIST_REQUEST_ADMIN,
-    CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN,
-    CONFERENCE_APPROVED_LIST_FAIL_ADMIN,
-    CONFERENCE_APPROVED_LIST_RESET_ADMIN,
     EDITORS_LIST_REQUEST_ADMIN,
     EDITORS_LIST_SUCCESS_ADMIN,
     EDITORS_LIST_FAIL_ADMIN,
@@ -15,10 +11,7 @@ import {
     REVIWER_LIST_SUCCESS_ADMIN,
     REVIWER_LIST_FAIL_ADMIN,
     REVIWER_LIST_RESET_ADMIN,
-    ADMIN_CONFERENCE_DETAILS_BYID_REQUEST,
-    ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS,
-    ADMIN_CONFERENCE_DETAILS_BYID_FAIL,
-    ADMIN_CONFERENCE_DETAILS_BYID_RESET
+
  
 } from '../constants/adminConstants'
 
@@ -32,27 +25,13 @@ export const conferenceReducer = (state = { conferencedetails: [] }, action) => 
           case CONFERENCE_LIST_FAIL_ADMIN:
                 return { loading: false, error: action.payload }
           case CONFERENCE_LIST_RESET_ADMIN:
-                return { conferencedetails: [] }
+                return {}
           default:
                 return state
 
     }
 }
 
-export const conferenceApprovedReduceer = (state = { conferencedetails: [] }, action) => {
-    switch (action.type) {
-          case CONFERENCE_APPROVED_LIST_REQUEST_ADMIN:
-                return { loading: true }
-          case CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN:
-                return { loading: false, conferencedetails: action.payload }
-          case CONFERENCE_APPROVED_LIST_FAIL_ADMIN:
-                return { loading: false, error: action.payload }
-          case CONFERENCE_APPROVED_LIST_RESET_ADMIN:
-                return { conferencedetails: [] }
-          default:
-                return state
-    }
-}
 
 
 export const getEditorReducer = (state = { users: [] }, action) => {
@@ -85,18 +64,6 @@ export const getEditorReducer = (state = { users: [] }, action) => {
       }
   }
 
-  export const conferenceDetailsReducerbyId = (state = { conferencedetails: {} }, action) => {
-      switch (action.type) {
-            case ADMIN_CONFERENCE_DETAILS_BYID_REQUEST:
-                  return { ...state, loading: true }
-            case ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS:
-                  return { loading: false, conferencedetails: action.payload }
-            case ADMIN_CONFERENCE_DETAILS_BYID_FAIL:
-                  return { loading: false, error: action.payload }
-            case ADMIN_CONFERENCE_DETAILS_BYID_RESET:
-                  return { conferencedetails: {} }
-            default:
-                  return state
-      }
-}
+ 
+
 

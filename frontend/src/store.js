@@ -20,7 +20,8 @@ const reducer = combineReducers({
     updateCon: conDetailsUpdateReducer,
     ConsDetails: conDetailsReducer,
     createConferenceDetails: conCreateReducer,
-    reviwer: getReviwerReducer
+    reviwer: getReviwerReducer,
+
 
 })
 

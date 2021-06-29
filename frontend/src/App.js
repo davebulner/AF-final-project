@@ -15,6 +15,7 @@ import getAdminEditor from './components/Admin/adminUserDetails/adminEditorsList
 import getAdminReviwer from './components/Admin/adminUserDetails/adminReviwer.js'
 import ConferenceDetailsUpdate from './Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js'
 
+
 const App = () => {
       return (
             <Router>
@@ -31,6 +32,7 @@ const App = () => {
                         <Route path="/adminEditors" component={getAdminEditor} />
                         <Route path="/adminReviwer" component={getAdminReviwer} />
                         <Route path="/con/:id" component={ConferenceDetailsUpdate} />
+                  
                   </div>
             </Router>
       )
