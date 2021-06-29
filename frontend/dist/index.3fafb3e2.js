@@ -58323,65 +58323,54 @@ var _layers = require("@material-ui/icons/Layers");
 var _layersDefault = parcelHelpers.interopDefault(_layers);
 var _assignment = require("@material-ui/icons/Assignment");
 var _assignmentDefault = parcelHelpers.interopDefault(_assignment);
+var _reactRouterDom = require("react-router-dom");
 const mainListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 14
+        lineNumber: 16
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "#",
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 17
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 15
+        lineNumber: 18
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 16
+        lineNumber: 19
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_dashboardDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 17
+        lineNumber: 20
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Dashboard",
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 19
-    },
-    __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
-    button: true,
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 21
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
         lineNumber: 22
     },
     __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_shoppingCartDefault.default, {
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/adminCon",
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 23
+        lineNumber: 26
     },
     __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
-    primary: "Orders",
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 25
-    },
-    __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
@@ -58394,161 +58383,201 @@ const mainListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
         lineNumber: 28
     },
     __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_peopleDefault.default, {
+}, /*#__PURE__*/ _reactDefault.default.createElement(_shoppingCartDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
         lineNumber: 29
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
-    primary: "Customers",
+    primary: "Conference Detalis",
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
         lineNumber: 31
     },
     __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
-    button: true,
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 33
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 34
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_barChartDefault.default, {
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/adminEditors",
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
         lineNumber: 35
     },
     __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
-    primary: "Reports",
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 37
-    },
-    __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 39
+        lineNumber: 36
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 37
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_peopleDefault.default, {
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 38
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Editors List",
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
         lineNumber: 40
+    },
+    __self: undefined
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/adminReviwer",
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 44
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 45
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 46
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_barChartDefault.default, {
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 47
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Reviwers List",
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 49
+    },
+    __self: undefined
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 53
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
+        lineNumber: 54
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_layersDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 41
+        lineNumber: 55
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Integrations",
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 43
+        lineNumber: 57
     },
     __self: undefined
 })));
 const secondaryListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 49
+        lineNumber: 63
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listSubheaderDefault.default, {
     inset: true,
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 50
+        lineNumber: 64
     },
     __self: undefined
 }, "Saved reports"), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 51
+        lineNumber: 65
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 52
+        lineNumber: 66
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 53
+        lineNumber: 67
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Current month",
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 55
+        lineNumber: 69
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 57
+        lineNumber: 71
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 58
+        lineNumber: 72
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 59
+        lineNumber: 73
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Last quarter",
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 61
+        lineNumber: 75
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
     button: true,
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 63
+        lineNumber: 77
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 64
+        lineNumber: 78
     },
     __self: undefined
 }, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 65
+        lineNumber: 79
     },
     __self: undefined
 })), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
     primary: "Year-end sale",
     __source: {
         fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems.js",
-        lineNumber: 67
+        lineNumber: 81
     },
     __self: undefined
 })));
@@ -58558,7 +58587,7 @@ const secondaryListItems = /*#__PURE__*/ _reactDefault.default.createElement("di
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@material-ui/core/ListItem":"2DNb3","@material-ui/core/ListItemIcon":"5siUZ","@material-ui/core/ListItemText":"7t7nz","@material-ui/core/ListSubheader":"505Dd","@material-ui/icons/Dashboard":"5Q3Fn","@material-ui/icons/ShoppingCart":"6WIpv","@material-ui/icons/People":"4QwVK","@material-ui/icons/BarChart":"1075F","@material-ui/icons/Layers":"5vTqU","@material-ui/icons/Assignment":"3UO7R","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5pJ4O":[function(require,module,exports) {
+},{"react":"3b2NM","@material-ui/core/ListItem":"2DNb3","@material-ui/core/ListItemIcon":"5siUZ","@material-ui/core/ListItemText":"7t7nz","@material-ui/core/ListSubheader":"505Dd","@material-ui/icons/Dashboard":"5Q3Fn","@material-ui/icons/ShoppingCart":"6WIpv","@material-ui/icons/People":"4QwVK","@material-ui/icons/BarChart":"1075F","@material-ui/icons/Layers":"5vTqU","@material-ui/icons/Assignment":"3UO7R","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK"}],"5pJ4O":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
