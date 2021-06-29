@@ -10,6 +10,8 @@ import EditorScreen from './Screens/EditorScreen/Editor dashboard/editorDashboar
 import appconlistScreen from './Screens/EditorScreen/approvedScreen'
 import unappconlistScreen from './Screens/EditorScreen/unapprovedScreen'
 import profileScreen from './Screens/ProfileScreen/profileScreen'
+import AdminConference from './components/Admin/adminConferenceDetails/adminConferenceDetails.js'
+import ConferenceDetailsUpdate from './Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js'
 
 const App = () => {
       return (
@@ -23,9 +25,8 @@ const App = () => {
                         <Route path="/editor" component={EditorScreen} />
                         <Route path="/applist" component={appconlistScreen} />
                         <Route path="/unapplist" component={unappconlistScreen} />
-                        <Route path="/profile" component={profileScreen} />
-
-
+                        <Route path="/adminCon" component={AdminConference} />
+                        <Route path="/con/:id" component={ConferenceDetailsUpdate} />
                   </div>
             </Router>
       )

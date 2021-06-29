@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Button, Form, Table } from 'react-bootstrap';
-import { listConDetails } from '../../../action/conferenceAction'
+import { listConDetails, deleteConDetails } from '../../../action/conferenceAction'
 import Loader from '../../../components/Loader/loader.js'
 import Message from '../../../components/Message/message.js'
 import clsx from 'clsx';
@@ -24,6 +24,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listitems1';
+import { Link } from "react-router-dom";
 
 
 
@@ -138,9 +139,24 @@ export default function Dashboard() {
       const listCon = useSelector(state => state.listCon)
       const { loading, error, conferencedetails } = listCon
 
+      // const userLogin = useSelector((state) => state.userLogin)
+      // const { userInfo } = userLogin
+
+      const deleteCon = useSelector((state) => state.deleteCon)
+      const { success: successDelete } = deleteCon
+
+
       useEffect(() => {
+
             dispatch(listConDetails())
-      }, [dispatch])
+
+      }, [dispatch, successDelete])
+
+      const deleteHandler = (id) => {
+            if (window.confirm('Are you sure')) [
+                  dispatch(deleteConDetails(id))
+            ]
+      }
 
       return (
             <div className={classes.root}>
@@ -210,6 +226,23 @@ export default function Dashboard() {
                                                             <td>{con.description}</td>
                                                             <td>{con.organizer}</td>
                                                             <td>{con.phone}</td>
+                                                            <td>{con.isApproved ? (
+                                                                  <i className='fas fa-check' style={{ color: 'green' }}></i>
+                                                            ) : (
+                                                                  <i className='fas fa-times' style={{ color: 'red' }}></i>
+                                                            )}</td>
+                                                            <td>
+                                                                  <Link to={`/con/${con._id}`}>
+                                                                        <Button variant='light' className='btn-sm'>
+                                                                              <i className='fas fa-edit'></i>
+                                                                        </Button>
+                                                                  </Link>
+                                                                  <Button
+                                                                        variant='danger'
+                                                                        className='btn-sm'
+                                                                        onClick={() => deleteHandler(con._id)}
+                                                                  ><i className='fas fa-trash'></i></Button>
+                                                            </td>
                                                       </tr>
                                                 ))}
                                           </tbody>
