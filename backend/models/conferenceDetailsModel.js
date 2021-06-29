@@ -3,7 +3,7 @@ import mongoose from 'mongoose'
 const conferenceDetailsSchema = mongoose.Schema({
       user: {
             type: mongoose.Schema.Types.ObjectId,
-            // required: true,
+            required: true,
             ref: 'User'
       },
       conname: {
@@ -38,8 +38,9 @@ const conferenceDetailsSchema = mongoose.Schema({
       },
       isApproved: {
             type: Boolean,
-            required: true
-      }
+            required: false
+      },
+
 
 }, {
       timestamps: true

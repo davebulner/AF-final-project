@@ -25,6 +25,29 @@ const getAllConDetails = asyncHandler(async (req, res) => {
       res.json(conDetails)
 })
 
+const getCondetailsById = asyncHandler(async (req, res) => {
+      const conDetails = await ConferenceDetails.findById(req.params.id)
+
+      if (conDetails) {
+            res.json({
+                  _id: conDetails._id,
+                  conname: conDetails.conname,
+                  description: conDetails.description,
+                  organizer: conDetails.organizer,
+                  phone: conDetails.phone,
+                  email: conDetails.email,
+                  startDate: conDetails.startDate,
+                  endDate: conDetails.endDate,
+                  venue: conDetails.venue,
+                  isApproved: conDetails.isApproved,
+
+            })
+      } else {
+            res.status(404)
+            throw new Error('Conference Details not found')
+      }
+})
+
 const updateConDetails = asyncHandler(async (req, res) => {
       const {
             conname,
@@ -81,4 +104,17 @@ const getUnApprovedConDetails = asyncHandler(async (req, res) => {
 
 })
 
-export { addConDetails, getAllConDetails, updateConDetails, getApprovedConDetails, getUnApprovedConDetails }
+const deleteConDetails = asyncHandler(async (req, res) => {
+      const conDetails = await ConferenceDetails.findById(req.params.id)
+
+      if (conDetails) {
+            await conDetails.remove()
+            res.json({ message: 'Conference Details removed' })
+      } else {
+            res.status(404)
+            throw new Error('Conference details not found')
+      }
+
+})
+
+export { addConDetails, getAllConDetails, getCondetailsById, updateConDetails, getApprovedConDetails, getUnApprovedConDetails, deleteConDetails }
