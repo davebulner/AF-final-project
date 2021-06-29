@@ -5,16 +5,7 @@ const getAllReviewerDetails = async (req,res) => {
         res.json(rev);
 };
 
-//const getReviewer = async (req,res) => {
-  //  await Reviewer.findById(req.params.id)
-  //.populate('vehicle','code model type name')
-  //.then(data => {
-    //  res.status(200).send({ vehicle: data.vehicle })
-  //})
-  //.catch(error => {
-    //  res.status(500).send({ error: error.message })
-  //})
-//}
+
 
 const getReviewerDetails = async (req, res) => {
   try {
