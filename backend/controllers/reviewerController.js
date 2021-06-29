@@ -21,12 +21,7 @@ const getReviewerDetails = async (req, res) => {
 
 
 
-/*const researcher = await Researcher.findById(req.params.id)
-
-if(researcher){
-  researcher.researcherEmail = researcherEmail
-  researcher.researcherPhoneNo = researcherPhoneNo
-  researcher.researchPaper = researchPaper
+/*
 
     const updateResearcher = await researcher.save()
    res.json(updateResearcher)
