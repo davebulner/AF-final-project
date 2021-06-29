@@ -11,8 +11,8 @@ import appconlistScreen from './Screens/EditorScreen/approvedScreen'
 import unappconlistScreen from './Screens/EditorScreen/unapprovedScreen'
 import profileScreen from './Screens/ProfileScreen/profileScreen'
 import AdminConference from './components/Admin/adminConferenceDetails/adminConferenceDetails.js'
-import GetAdminEditors from './components/Admin/adminUserDetails/adminEditorsList.js'
-
+import getAdminEditor from './components/Admin/adminUserDetails/adminEditorsList.js'
+import getAdminReviwer from './components/Admin/adminUserDetails/adminReviwer.js'
 import ConferenceDetailsUpdate from './Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js'
 
 const App = () => {
@@ -28,7 +28,8 @@ const App = () => {
                         <Route path="/applist" component={appconlistScreen} />
                         <Route path="/unapplist" component={unappconlistScreen} />
                         <Route path="/adminCon" component={AdminConference} />
-                        <Route path="/adminEditors" component={GetAdminEditors} />
+                        <Route path="/adminEditors" component={getAdminEditor} />
+                        <Route path="/adminReviwer" component={getAdminReviwer} />
                         <Route path="/con/:id" component={ConferenceDetailsUpdate} />
                   </div>
             </Router>

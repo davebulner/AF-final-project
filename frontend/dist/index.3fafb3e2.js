@@ -21880,6 +21880,8 @@ var _adminConferenceDetailsJs = require("./components/Admin/adminConferenceDetai
 var _adminConferenceDetailsJsDefault = parcelHelpers.interopDefault(_adminConferenceDetailsJs);
 var _adminEditorsListJs = require("./components/Admin/adminUserDetails/adminEditorsList.js");
 var _adminEditorsListJsDefault = parcelHelpers.interopDefault(_adminEditorsListJs);
+var _adminReviwerJs = require("./components/Admin/adminUserDetails/adminReviwer.js");
+var _adminReviwerJsDefault = parcelHelpers.interopDefault(_adminReviwerJs);
 var _conferenceDetailsEditScreenJs = require("./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js");
 var _conferenceDetailsEditScreenJsDefault = parcelHelpers.interopDefault(_conferenceDetailsEditScreenJs);
 const App = ()=>{
@@ -21978,11 +21980,19 @@ const App = ()=>{
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/adminReviwer",
+        component: _adminReviwerJsDefault.default,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 32
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/con/:id",
         component: _conferenceDetailsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 32
+            lineNumber: 33
         },
         __self: undefined
     }))));
@@ -21997,7 +22007,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./App.css":"3lxWH","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/RegisterScreen/registerScreen":"7xglY","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./Screens/ProfileScreen/profileScreen":"5EbTp","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT"}],"3lxWH":[function() {},{}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"3lxWH","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/RegisterScreen/registerScreen":"7xglY","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./Screens/ProfileScreen/profileScreen":"5EbTp","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./components/Admin/adminUserDetails/adminReviwer.js":"3xKCG"}],"3lxWH":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -58124,6 +58134,8 @@ parcelHelpers.export(exports, "approvedByAdmin", ()=>approvedByAdmin
 );
 parcelHelpers.export(exports, "getEditorsList", ()=>getEditorsList
 );
+parcelHelpers.export(exports, "getReviwerList", ()=>getReviwerList
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _adminConstantsJs = require("../constants/adminConstants.js");
@@ -58186,7 +58198,7 @@ const getEditorsList = ()=>async (dispatch, getState)=>{
                     Authorization: `Bearer ${userInfo.token}`
                 }
             };
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/admin/', config);
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/admin/editor', config);
             dispatch({
                 type: _adminConstantsJs.EDITORS_LIST_SUCCESS_ADMIN,
                 payload: data
@@ -58194,6 +58206,30 @@ const getEditorsList = ()=>async (dispatch, getState)=>{
         } catch (error) {
             dispatch({
                 type: _adminConstantsJs.EDITORS_LIST_FAIL_ADMIN,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const getReviwerList = ()=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _adminConstantsJs.REVIWER_LIST_REQUEST_ADMIN
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/admin/reviwer', config);
+            dispatch({
+                type: _adminConstantsJs.REVIWER_LIST_SUCCESS_ADMIN,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _adminConstantsJs.REVIWER_LIST_FAIL_ADMIN,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
@@ -58227,6 +58263,14 @@ parcelHelpers.export(exports, "EDITORS_LIST_FAIL_ADMIN", ()=>EDITORS_LIST_FAIL_A
 );
 parcelHelpers.export(exports, "EDITORS_LIST_RESET_ADMIN", ()=>EDITORS_LIST_RESET_ADMIN
 );
+parcelHelpers.export(exports, "REVIWER_LIST_REQUEST_ADMIN", ()=>REVIWER_LIST_REQUEST_ADMIN
+);
+parcelHelpers.export(exports, "REVIWER_LIST_SUCCESS_ADMIN", ()=>REVIWER_LIST_SUCCESS_ADMIN
+);
+parcelHelpers.export(exports, "REVIWER_LIST_FAIL_ADMIN", ()=>REVIWER_LIST_FAIL_ADMIN
+);
+parcelHelpers.export(exports, "REVIWER_LIST_RESET_ADMIN", ()=>REVIWER_LIST_RESET_ADMIN
+);
 const CONFERENCE_APPROVED_LIST_REQUEST_ADMIN = 'CONFERENCE_APPROVED_LIST_REQUEST_ADMIN';
 const CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN = 'CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN';
 const CONFERENCE_APPROVED_LIST_FAIL_ADMIN = 'CONFERENCE_APPROVED_LIST_FAIL_ADMIN';
@@ -58239,6 +58283,10 @@ const EDITORS_LIST_REQUEST_ADMIN = 'EDITORS_LIST_REQUEST_ADMIN';
 const EDITORS_LIST_SUCCESS_ADMIN = 'EDITORS_LIST_SUCCESS_ADMIN';
 const EDITORS_LIST_FAIL_ADMIN = 'EDITORS_LIST_FAIL_ADMIN';
 const EDITORS_LIST_RESET_ADMIN = 'EDITORS_LIST_RESET_ADMIN';
+const REVIWER_LIST_REQUEST_ADMIN = 'REVIWER_LIST_REQUEST_ADMIN';
+const REVIWER_LIST_SUCCESS_ADMIN = 'REVIWER_LIST_SUCCESS_ADMIN';
+const REVIWER_LIST_FAIL_ADMIN = 'REVIWER_LIST_FAIL_ADMIN';
+const REVIWER_LIST_RESET_ADMIN = 'REVIWER_LIST_RESET_ADMIN';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"3WDQu":[function(require,module,exports) {
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -59981,7 +60029,450 @@ $RefreshReg$(_c, "FormContainer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6DxLW":[function() {},{}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3xKCG":[function(require,module,exports) {
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _styles = require("@material-ui/core/styles");
+var _cssBaseline = require("@material-ui/core/CssBaseline");
+var _cssBaselineDefault = parcelHelpers.interopDefault(_cssBaseline);
+var _drawer = require("@material-ui/core/Drawer");
+var _drawerDefault = parcelHelpers.interopDefault(_drawer);
+var _appBar = require("@material-ui/core/AppBar");
+var _appBarDefault = parcelHelpers.interopDefault(_appBar);
+var _toolbar = require("@material-ui/core/Toolbar");
+var _toolbarDefault = parcelHelpers.interopDefault(_toolbar);
+var _list = require("@material-ui/core/List");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _typography = require("@material-ui/core/Typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _divider = require("@material-ui/core/Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _iconButton = require("@material-ui/core/IconButton");
+var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);
+var _badge = require("@material-ui/core/Badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
+var _container = require("@material-ui/core/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _link = require("@material-ui/core/Link");
+var _linkDefault = parcelHelpers.interopDefault(_link);
+var _menu = require("@material-ui/icons/Menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _chevronLeft = require("@material-ui/icons/ChevronLeft");
+var _chevronLeftDefault = parcelHelpers.interopDefault(_chevronLeft);
+var _notifications = require("@material-ui/icons/Notifications");
+var _notificationsDefault = parcelHelpers.interopDefault(_notifications);
+var _listitems = require("../adminDashboard/listitems");
+var _reactRouterBootstrap = require("react-router-bootstrap");
+var _reactBootstrap = require("react-bootstrap");
+var _reactRedux = require("react-redux");
+var _messageJs = require("../../Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _loaderJs = require("../../Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _adminActionJs = require("../../../action/adminAction.js");
+var _s = $RefreshSig$();
+function Copyright() {
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        variant: "body2",
+        color: "textSecondary",
+        align: "center",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 35
+        },
+        __self: this
+    }, 'Created By © ', /*#__PURE__*/ _reactDefault.default.createElement(_linkDefault.default, {
+        color: "inherit",
+        href: "#",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 37
+        },
+        __self: this
+    }, "Agasthi Sankalana"), ' ', new Date().getFullYear(), '.'));
+}
+_c = Copyright;
+const drawerWidth = 240;
+const useStyles = _styles.makeStyles((theme)=>({
+        root: {
+            display: 'flex'
+        },
+        toolbar: {
+            paddingRight: 24
+        },
+        toolbarIcon: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            padding: '0 8px',
+            ...theme.mixins.toolbar
+        },
+        appBar: {
+            zIndex: theme.zIndex.drawer + 1,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            })
+        },
+        appBarShift: {
+            marginLeft: drawerWidth,
+            width: `calc(100% - ${drawerWidth}px)`,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        menuButton: {
+            marginRight: 36
+        },
+        menuButtonHidden: {
+            display: 'none'
+        },
+        title: {
+            flexGrow: 1
+        },
+        drawerPaper: {
+            position: 'relative',
+            whiteSpace: 'nowrap',
+            width: drawerWidth,
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        drawerPaperClose: {
+            overflowX: 'hidden',
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            }),
+            width: theme.spacing(7),
+            [theme.breakpoints.up('sm')]: {
+                width: theme.spacing(9)
+            }
+        },
+        appBarSpacer: theme.mixins.toolbar,
+        content: {
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto'
+        },
+        container: {
+            paddingTop: theme.spacing(4),
+            paddingBottom: theme.spacing(4)
+        },
+        paper: {
+            padding: theme.spacing(2),
+            display: 'flex',
+            overflow: 'auto',
+            flexDirection: 'column'
+        },
+        fixedHeight: {
+            height: 240
+        }
+    })
+);
+function Dashboard() {
+    _s();
+    const classes = useStyles();
+    const [open, setOpen] = _reactDefault.default.useState(true);
+    const handleDrawerOpen = ()=>{
+        setOpen(true);
+    };
+    const handleDrawerClose = ()=>{
+        setOpen(false);
+    };
+    const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
+    const dispatch = _reactRedux.useDispatch();
+    const reviwer = _reactRedux.useSelector((state)=>state.reviwer
+    );
+    const { loading , error , users  } = reviwer;
+    _react.useEffect(()=>{
+        dispatch(_adminActionJs.getReviwerList());
+    }, [
+        dispatch
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.root,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 149
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 150
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
+        position: "absolute",
+        className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 151
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
+        className: classes.toolbar,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 152
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        edge: "start",
+        color: "inherit",
+        "aria-label": "open drawer",
+        onClick: handleDrawerOpen,
+        className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 153
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 160
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        component: "h1",
+        variant: "h6",
+        color: "inherit",
+        noWrap: true,
+        className: classes.title,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 162
+        },
+        __self: this
+    }, "Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        color: "inherit",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 165
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
+        badgeContent: 4,
+        color: "secondary",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 166
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 167
+        },
+        __self: this
+    }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
+        variant: "permanent",
+        classes: {
+            paper: _clsxDefault.default(classes.drawerPaper, !open && classes.drawerPaperClose)
+        },
+        open: open,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 172
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.toolbarIcon,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 179
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        onClick: handleDrawerClose,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 180
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 181
+        },
+        __self: this
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 184
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 185
+        },
+        __self: this
+    }, _listitems.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 186
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 187
+        },
+        __self: this
+    }, _listitems.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
+        className: classes.content,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 190
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.appBarSpacer,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 191
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
+        maxWidth: "lg",
+        className: classes.container,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 192
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 194
+        },
+        __self: this
+    }, "Admin Dashboard"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 195
+        },
+        __self: this
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 196
+        },
+        __self: this
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
+        striped: true,
+        bordered: true,
+        hover: true,
+        responsive: true,
+        variant: "light",
+        className: "table-sm",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 198
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 199
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 200
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 201
+        },
+        __self: this
+    }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 202
+        },
+        __self: this
+    }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 203
+        },
+        __self: this
+    }, "Password"))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+            lineNumber: 206
+        },
+        __self: this
+    }, users.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            key: con._id,
+            __source: {
+                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+                lineNumber: 208
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+                lineNumber: 209
+            },
+            __self: this
+        }, con.name), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+                lineNumber: 210
+            },
+            __self: this
+        }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminUserDetails\\adminReviwer.js",
+                lineNumber: 211
+            },
+            __self: this
+        }, con.password))
+    )))))));
+}
+exports.default = Dashboard;
+_s(Dashboard, "dDZjleFOPhwCI2FGAOEJGpb8l3M=", false, function() {
+    return [
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
+});
+_c1 = Dashboard;
+var _c, _c1;
+$RefreshReg$(_c, "Copyright");
+$RefreshReg$(_c1, "Dashboard");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","../adminDashboard/listitems":"3WDQu","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../Message/message.js":"6fMfw","../../Loader/loader.js":"68bDI","../../../action/adminAction.js":"18Cn4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6DxLW":[function() {},{}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -60001,7 +60492,8 @@ const reducer = _redux.combineReducers({
     deleteCon: _conferenceReducerJs.conDetailsDeleteReducer,
     editors: _adminReducersJs.getEditorReducer,
     updateCon: _conferenceReducerJs.conDetailsUpdateReducer,
-    ConsDetails: _conferenceReducerJs.conDetailsReducer
+    ConsDetails: _conferenceReducerJs.conDetailsReducer,
+    reviwer: _adminReducersJs.getReviwerReducer
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -60818,6 +61310,8 @@ parcelHelpers.export(exports, "conferenceApprovedReduceer", ()=>conferenceApprov
 );
 parcelHelpers.export(exports, "getEditorReducer", ()=>getEditorReducer
 );
+parcelHelpers.export(exports, "getReviwerReducer", ()=>getReviwerReducer
+);
 var _adminConstants = require("../constants/adminConstants");
 const conferenceReducer = (state = {
     conferencedetails: []
@@ -60890,6 +61384,32 @@ const getEditorReducer = (state = {
                 error: action.payload
             };
         case _adminConstants.EDITORS_LIST_RESET_ADMIN:
+            return {
+                users: []
+            };
+        default:
+            return state;
+    }
+};
+const getReviwerReducer = (state = {
+    users: []
+}, action)=>{
+    switch(action.type){
+        case _adminConstants.REVIWER_LIST_REQUEST_ADMIN:
+            return {
+                loading: true
+            };
+        case _adminConstants.REVIWER_LIST_SUCCESS_ADMIN:
+            return {
+                loading: false,
+                users: action.payload
+            };
+        case _adminConstants.REVIWER_LIST_FAIL_ADMIN:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        case _adminConstants.REVIWER_LIST_RESET_ADMIN:
             return {
                 users: []
             };

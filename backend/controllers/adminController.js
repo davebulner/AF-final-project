@@ -1,6 +1,6 @@
 import asyncHandler from 'express-async-handler'
 import ConferenceDetails from '../models/conferenceDetailsModel.js'
-import Editors from '../models/userModel.js'
+import User  from '../models/userModel.js'
 
 
 const updateConferenceDeatils = asyncHandler(async(req, res) => {
@@ -20,12 +20,19 @@ const updateConferenceDeatils = asyncHandler(async(req, res) => {
 
 
 const getEditorList = asyncHandler(async (req, res) => {
-    const editors = await Editors.find({
+    const editors = await User.find({
         isEditor: true,
     })
     res.json(editors)
 
 })
 
+const getReviwerList = asyncHandler(async (req, res) => {
+    const reviwer = await User.find({
+        isReviwer: true,
+    })
+    res.json(reviwer)
 
-export { updateConferenceDeatils, getEditorList }
+})
+
+export { updateConferenceDeatils, getEditorList, getReviwerList }
