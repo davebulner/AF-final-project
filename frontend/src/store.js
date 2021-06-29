@@ -22,11 +22,8 @@ const reducer = combineReducers({
     ConsDetails: conDetailsReducer,
     createConferenceDetails: conCreateReducer,
     reviwer: getReviwerReducer,
-<<<<<<< HEAD
 
-=======
     listNews: newsListReducer
->>>>>>> 62070b82faefca9a03d9f770c52d578131df0ad3
 
 })
 

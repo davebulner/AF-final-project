@@ -33,11 +33,8 @@ const App = () => {
                         <Route path="/adminEditors" component={getAdminEditor} />
                         <Route path="/adminReviwer" component={getAdminReviwer} />
                         <Route path="/con/:id" component={ConferenceDetailsUpdate} />
-<<<<<<< HEAD
                   
-=======
                         <Route path="/newslist" component={newsListScreen} />
->>>>>>> 62070b82faefca9a03d9f770c52d578131df0ad3
                   </div>
             </Router>
       )
