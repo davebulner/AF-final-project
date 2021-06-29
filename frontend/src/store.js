@@ -4,7 +4,7 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { userLoginReducer } from '../src/reducers/userReducers.js'
 import { conDetailsDeleteReducer, conListReducer, conUnApprovedReduceer } from '../src/reducers/conferenceReducer.js'
 import { conApprovedReduceer } from '../src/reducers/conferenceReducer.js'
-import { conferenceReducer } from '../src/reducers/adminConferenceReducer.js'
+import { conferenceReducer, getEditorReducer } from '../src/reducers/adminReducers.js'
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
@@ -13,6 +13,7 @@ const reducer = combineReducers({
     unappCon: conUnApprovedReduceer,
     appConference: conferenceReducer,
     deleteCon: conDetailsDeleteReducer,
+    editors: getEditorReducer
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo')

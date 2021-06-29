@@ -79,36 +79,36 @@ export const approvedByAdmin = (conferencedetails) => async (dispatch, getState)
       }
 }
 
-// export const getEditorsList = () => async(dispatch, getState) => {
-//       try {
-//             dispatch({
-//                   type: EDITORS_LIST_REQUEST_ADMIN,
-//             })
+export const getEditorsList = () => async(dispatch, getState) => {
+      try {
+            dispatch({
+                  type: EDITORS_LIST_REQUEST_ADMIN,
+            })
 
-//             const {
-//                   userLogin: { userInfo },
-//             } = getState()
+            const {
+                  userLogin: { userInfo },
+            } = getState()
 
-//             const config = {
-//                   headers: {
-//                         Authorization: `Bearer ${userInfo.token}`,
-//                   }
-//             }
+            const config = {
+                  headers: {
+                        Authorization: `Bearer ${userInfo.token}`,
+                  }
+            }
 
-//             const { data } = await axios.get('http://localhost:8040/api/conDetails/', config)
+            const { data } = await axios.get('http://localhost:8040/api/', config)
 
-//             dispatch({
-//                   type: EDITORS_LIST_SUCCESS_ADMIN,
-//                   payload: data
-//             })
-//       } catch (error) {
-//             dispatch({
-//                   type: EDITORS_LIST_FAIL_ADMIN,
-//                   payload:
-//                         error.response && error.response.data.message
-//                               ? error.response.data.message
-//                               : error.message,
-//             })
-//       }
-// }
+            dispatch({
+                  type: EDITORS_LIST_SUCCESS_ADMIN,
+                  payload: data
+            })
+      } catch (error) {
+            dispatch({
+                  type: EDITORS_LIST_FAIL_ADMIN,
+                  payload:
+                        error.response && error.response.data.message
+                              ? error.response.data.message
+                              : error.message,
+            })
+      }
+}
 
