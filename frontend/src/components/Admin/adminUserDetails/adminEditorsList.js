@@ -139,7 +139,7 @@ export default function Dashboard() {
     const dispatch = useDispatch()
 
     const editors = useSelector((state) => state.editors)
-    const { loading,error, User } = editors
+    const { loading,error, users } = editors
 
     useEffect(() => {
         dispatch(getEditorsList())
@@ -200,11 +200,11 @@ export default function Dashboard() {
                             <tr>
                                   <th>Name</th>
                                   <th>Email</th>
-                                  <th>Phone</th>
+                                  <th>Password</th>
                             </tr>
                       </thead>
                       <tbody>
-                            {User.map((con) => (
+                            {users.map((con) => (
                                   <tr key={con._id} >
                                         <td>{con.name}</td>
                                         <td>{con.email}</td>

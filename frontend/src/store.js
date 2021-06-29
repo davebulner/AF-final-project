@@ -2,8 +2,10 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { userLoginReducer } from '../src/reducers/userReducers.js'
-import { conDetailsDeleteReducer, conListReducer, conUnApprovedReduceer } from '../src/reducers/conferenceReducer.js'
+import { conDetailsDeleteReducer, conListReducer, conUnApprovedReduceer, conDetailsUpdateReducer, conDetailsReducer } from '../src/reducers/conferenceReducer.js'
 import { conApprovedReduceer } from '../src/reducers/conferenceReducer.js'
+import { conferenceReducer, getEditorReducer } from '../src/reducers/adminReducers.js'
+import { userRegisterReducer } from '../src/reducers/userReducers.js'
 import { conferenceReducer, getEditorReducer } from '../src/reducers/adminReducers.js'
 
 const reducer = combineReducers({
@@ -11,9 +13,12 @@ const reducer = combineReducers({
     listCon: conListReducer,
     appCon: conApprovedReduceer,
     unappCon: conUnApprovedReduceer,
+    userRegister: userRegisterReducer,
     appConference: conferenceReducer,
     deleteCon: conDetailsDeleteReducer,
-    editors: getEditorReducer
+    editors: getEditorReducer,
+    updateCon: conDetailsUpdateReducer,
+    ConsDetails: conDetailsReducer
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo')

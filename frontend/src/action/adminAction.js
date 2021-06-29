@@ -95,7 +95,7 @@ export const getEditorsList = () => async(dispatch, getState) => {
                   }
             }
 
-            const { data } = await axios.get('http://localhost:8040/api/', config)
+            const { data } = await axios.get('http://localhost:8040/api/admin/', config)
 
             dispatch({
                   type: EDITORS_LIST_SUCCESS_ADMIN,

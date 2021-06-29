@@ -47,16 +47,16 @@ export const conferenceApprovedReduceer = (state = { conferencedetails: [] }, ac
 }
 
 
-export const getEditorReducer = (state = { editors: [] }, action) => {
+export const getEditorReducer = (state = { users: [] }, action) => {
       switch (action.type) {
             case EDITORS_LIST_REQUEST_ADMIN:
                   return { loading: true }
             case EDITORS_LIST_SUCCESS_ADMIN:
-                  return { loading: false, editors: action.payload }
+                  return { loading: false, users: action.payload }
             case EDITORS_LIST_FAIL_ADMIN:
                   return { loading: false, error: action.payload }
             case EDITORS_LIST_RESET_ADMIN:
-                  return { editors: [] }
+                  return { users: [] }
             default:
                   return state
       }

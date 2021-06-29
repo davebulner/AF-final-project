@@ -14,6 +14,14 @@ import {
       CONFERENCE_DETAILS_DELETE_REQUEST,
       CONFERENCE_DETAILS_DELETE_SUCCESS,
       CONFERENCE_DETAILS_DELETE_FAIL,
+      CONFERENCE_DETAILS_UPDATE_REQUEST,
+      CONFERENCE_DETAILS_UPDATE_SUCCESS,
+      CONFERENCE_DETAILS_UPDATE_FAIL,
+      CONFERENCE_DETAILS_UPDATE_RESET,
+      CONFERENCE_DETAILS_BYID_REQUEST,
+      CONFERENCE_DETAILS_BYID_SUCCESS,
+      CONFERENCE_DETAILS_BYID_FAIL,
+      CONFERENCE_DETAILS_BYID_RESET,
 } from '../constants/conferenceConstants.js'
 
 
@@ -71,6 +79,36 @@ export const conDetailsDeleteReducer = (state = {}, action) => {
                   return { loading: false, success: true }
             case CONFERENCE_DETAILS_DELETE_FAIL:
                   return { loading: false, error: action.payload }
+            default:
+                  return state
+      }
+}
+
+export const conDetailsUpdateReducer = (state = { conferencedetails: {} }, action) => {
+      switch (action.type) {
+            case CONFERENCE_DETAILS_UPDATE_REQUEST:
+                  return { loading: true }
+            case CONFERENCE_DETAILS_UPDATE_SUCCESS:
+                  return { loading: false, success: true, conferencedetails: action.payload }
+            case CONFERENCE_DETAILS_UPDATE_FAIL:
+                  return { loading: false, error: action.payload }
+            case CONFERENCE_DETAILS_UPDATE_RESET:
+                  return { conferencedetails: {} }
+            default:
+                  return state
+      }
+}
+
+export const conDetailsReducer = (state = { conferencedetails: {} }, action) => {
+      switch (action.type) {
+            case CONFERENCE_DETAILS_BYID_REQUEST:
+                  return { ...state, loading: true }
+            case CONFERENCE_DETAILS_BYID_SUCCESS:
+                  return { loading: false, conferencedetails: action.payload }
+            case CONFERENCE_DETAILS_BYID_FAIL:
+                  return { loading: false, error: action.payload }
+            case CONFERENCE_DETAILS_BYID_RESET:
+                  return { conferencedetails: {} }
             default:
                   return state
       }
