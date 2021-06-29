@@ -20,17 +20,4 @@ const getReviewerDetails = async (req, res) => {
 };
 
 
-
-/*
-
-    const updateResearcher = await researcher.save()
-   res.json(updateResearcher)
-
-}else{
-    
-  res.status(404)
-  throw new Error('reviewer details not found')
-}
-*/
-
 export{ getAllReviewerDetails,getReviewerDetails }
