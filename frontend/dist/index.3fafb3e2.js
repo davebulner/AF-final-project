@@ -57643,8 +57643,6 @@ var _cssBaseline = require("@material-ui/core/CssBaseline");
 var _cssBaselineDefault = parcelHelpers.interopDefault(_cssBaseline);
 var _drawer = require("@material-ui/core/Drawer");
 var _drawerDefault = parcelHelpers.interopDefault(_drawer);
-var _box = require("@material-ui/core/Box");
-var _boxDefault = parcelHelpers.interopDefault(_box);
 var _appBar = require("@material-ui/core/AppBar");
 var _appBarDefault = parcelHelpers.interopDefault(_appBar);
 var _toolbar = require("@material-ui/core/Toolbar");
@@ -57661,10 +57659,6 @@ var _badge = require("@material-ui/core/Badge");
 var _badgeDefault = parcelHelpers.interopDefault(_badge);
 var _container = require("@material-ui/core/Container");
 var _containerDefault = parcelHelpers.interopDefault(_container);
-var _grid = require("@material-ui/core/Grid");
-var _gridDefault = parcelHelpers.interopDefault(_grid);
-var _paper = require("@material-ui/core/Paper");
-var _paperDefault = parcelHelpers.interopDefault(_paper);
 var _link = require("@material-ui/core/Link");
 var _linkDefault = parcelHelpers.interopDefault(_link);
 var _menu = require("@material-ui/icons/Menu");
@@ -57690,7 +57684,7 @@ function Copyright() {
         align: "center",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 38
+            lineNumber: 35
         },
         __self: this
     }, 'Created By © ', /*#__PURE__*/ _reactDefault.default.createElement(_linkDefault.default, {
@@ -57698,7 +57692,7 @@ function Copyright() {
         href: "#",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 40
+            lineNumber: 37
         },
         __self: this
     }, "Agasthi Sankalana"), ' ', new Date().getFullYear(), '.'));
@@ -57814,13 +57808,13 @@ function Dashboard() {
         className: classes.root,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 152
+            lineNumber: 149
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 153
+            lineNumber: 150
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
@@ -57828,14 +57822,14 @@ function Dashboard() {
         className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 154
+            lineNumber: 151
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
         className: classes.toolbar,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 155
+            lineNumber: 152
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
@@ -57846,13 +57840,13 @@ function Dashboard() {
         className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 156
+            lineNumber: 153
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 163
+            lineNumber: 160
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
@@ -57863,14 +57857,14 @@ function Dashboard() {
         className: classes.title,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 165
+            lineNumber: 162
         },
         __self: this
     }, "Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
         color: "inherit",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 168
+            lineNumber: 165
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
@@ -57878,13 +57872,13 @@ function Dashboard() {
         color: "secondary",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 169
+            lineNumber: 166
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 170
+            lineNumber: 167
         },
         __self: this
     }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
@@ -57895,65 +57889,65 @@ function Dashboard() {
         open: open,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 175
+            lineNumber: 172
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.toolbarIcon,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 182
+            lineNumber: 179
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
         onClick: handleDrawerClose,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 183
+            lineNumber: 180
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 184
+            lineNumber: 181
         },
         __self: this
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 187
+            lineNumber: 184
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 188
+            lineNumber: 185
         },
         __self: this
     }, _listitems.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 189
+            lineNumber: 186
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 190
+            lineNumber: 187
         },
         __self: this
     }, _listitems.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
         className: classes.content,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 193
+            lineNumber: 190
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.appBarSpacer,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 194
+            lineNumber: 191
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
@@ -57961,26 +57955,26 @@ function Dashboard() {
         className: classes.container,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 195
+            lineNumber: 192
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 197
+            lineNumber: 194
         },
         __self: this
     }, "Admin Dashboard"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 198
+            lineNumber: 195
         },
         __self: this
     }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 199
+            lineNumber: 196
         },
         __self: this
     }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
@@ -57992,92 +57986,92 @@ function Dashboard() {
         className: "table-sm",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 201
+            lineNumber: 198
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 202
+            lineNumber: 199
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 203
+            lineNumber: 200
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 204
+            lineNumber: 201
         },
         __self: this
     }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 205
+            lineNumber: 202
         },
         __self: this
     }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 206
+            lineNumber: 203
         },
         __self: this
     }, "Phone"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 207
+            lineNumber: 204
         },
         __self: this
     }, "Venue"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 208
+            lineNumber: 205
         },
         __self: this
     }, "isApproved"))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-            lineNumber: 211
+            lineNumber: 208
         },
         __self: this
     }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
             key: con._id,
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 213
+                lineNumber: 210
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 214
+                lineNumber: 211
             },
             __self: this
         }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 215
+                lineNumber: 212
             },
             __self: this
         }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 216
+                lineNumber: 213
             },
             __self: this
         }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 217
+                lineNumber: 214
             },
             __self: this
         }, con.venue), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 218
+                lineNumber: 215
             },
             __self: this
         }, con.isApproved ? /*#__PURE__*/ _reactDefault.default.createElement("i", {
@@ -58087,7 +58081,7 @@ function Dashboard() {
             },
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 219
+                lineNumber: 216
             },
             __self: this
         }, " ") : /*#__PURE__*/ _reactDefault.default.createElement("i", {
@@ -58097,20 +58091,20 @@ function Dashboard() {
             },
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 219
+                lineNumber: 216
             },
             __self: this
         }, " ")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 222
+                lineNumber: 219
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterBootstrap.LinkContainer, {
             to: `/conDetails/${con._id}`,
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 223
+                lineNumber: 220
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
@@ -58118,7 +58112,7 @@ function Dashboard() {
             className: "btn-sm",
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\adminConferenceDetails.js",
-                lineNumber: 224
+                lineNumber: 221
             },
             __self: this
         }, "Details"))))
@@ -58139,7 +58133,7 @@ $RefreshReg$(_c1, "Dashboard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../Message/message.js":"6fMfw","../../Loader/loader.js":"68bDI","../../../action/adminAction.js":"18Cn4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","../adminDashboard/listitems":"3WDQu"}],"LSFfJ":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../Message/message.js":"6fMfw","../../Loader/loader.js":"68bDI","../../../action/adminAction.js":"18Cn4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","../adminDashboard/listitems":"3WDQu"}],"LSFfJ":[function(require,module,exports) {
 'use strict';
 exports.__esModule = true;
 exports.LinkContainer = exports.IndexLinkContainer = undefined;
@@ -58425,6 +58419,34 @@ const approvedByAdmin = (conferencedetails)=>async (dispatch, getState)=>{
             });
         }
     }
+// export const getEditorsList = () => async(dispatch, getState) => {
+//       try {
+//             dispatch({
+//                   type: EDITORS_LIST_REQUEST_ADMIN,
+//             })
+//             const {
+//                   userLogin: { userInfo },
+//             } = getState()
+//             const config = {
+//                   headers: {
+//                         Authorization: `Bearer ${userInfo.token}`,
+//                   }
+//             }
+//             const { data } = await axios.get('http://localhost:8040/api/conDetails/', config)
+//             dispatch({
+//                   type: EDITORS_LIST_SUCCESS_ADMIN,
+//                   payload: data
+//             })
+//       } catch (error) {
+//             dispatch({
+//                   type: EDITORS_LIST_FAIL_ADMIN,
+//                   payload:
+//                         error.response && error.response.data.message
+//                               ? error.response.data.message
+//                               : error.message,
+//             })
+//       }
+// }
 ;
 
 },{"axios":"7rA65","../constants/adminConstants.js":"DJzj8","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"DJzj8":[function(require,module,exports) {
@@ -58446,6 +58468,14 @@ parcelHelpers.export(exports, "CONFERENCE_LIST_FAIL_ADMIN", ()=>CONFERENCE_LIST_
 );
 parcelHelpers.export(exports, "CONFERENCE_LIST_RESET_ADMIN", ()=>CONFERENCE_LIST_RESET_ADMIN
 );
+parcelHelpers.export(exports, "EDITORS_LIST_REQUEST_ADMIN", ()=>EDITORS_LIST_REQUEST_ADMIN
+);
+parcelHelpers.export(exports, "EDITORS_LIST_SUCCESS_ADMIN", ()=>EDITORS_LIST_SUCCESS_ADMIN
+);
+parcelHelpers.export(exports, "EDITORS_LIST_FAIL_ADMIN", ()=>EDITORS_LIST_FAIL_ADMIN
+);
+parcelHelpers.export(exports, "EDITORS_LIST_RESET_ADMIN", ()=>EDITORS_LIST_RESET_ADMIN
+);
 const CONFERENCE_APPROVED_LIST_REQUEST_ADMIN = 'CONFERENCE_APPROVED_LIST_REQUEST_ADMIN';
 const CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN = 'CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN';
 const CONFERENCE_APPROVED_LIST_FAIL_ADMIN = 'CONFERENCE_APPROVED_LIST_FAIL_ADMIN';
@@ -58454,6 +58484,10 @@ const CONFERENCE_LIST_REQUEST_ADMIN = 'CONFERENCE_LIST_REQUEST_ADMIN';
 const CONFERENCE_LIST_SUCCESS_ADMIN = 'CONFERENCE_LIST_SUCCESS_ADMIN';
 const CONFERENCE_LIST_FAIL_ADMIN = 'CONFERENCE_LIST_FAIL_ADMIN';
 const CONFERENCE_LIST_RESET_ADMIN = 'CONFERENCE_LIST_RESET_ADMIN';
+const EDITORS_LIST_REQUEST_ADMIN = 'EDITORS_LIST_REQUEST_ADMIN';
+const EDITORS_LIST_SUCCESS_ADMIN = 'EDITORS_LIST_SUCCESS_ADMIN';
+const EDITORS_LIST_FAIL_ADMIN = 'EDITORS_LIST_FAIL_ADMIN';
+const EDITORS_LIST_RESET_ADMIN = 'EDITORS_LIST_RESET_ADMIN';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"3WDQu":[function(require,module,exports) {
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
