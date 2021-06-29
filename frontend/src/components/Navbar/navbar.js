@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Nav, NavDropdown } from "react-bootstrap";
 import { logout } from "../../action/userAction.js";
 import { Link } from "react-router-dom";
+import { LinkContainer } from 'react-router-bootstrap'
 
 const Appbar = () => {
 
@@ -66,9 +67,10 @@ const Appbar = () => {
                               {userInfo ? (
 
 
-                                    <NavDropdown title={userInfo.name} id='username'>
-                                          <a href="#" />
-                                          <NavDropdown.Item>Profile</NavDropdown.Item>
+                                    <NavDropdown className="link" title={userInfo.name} id='username'>
+                                          <LinkContainer to="/profile">
+                                                <NavDropdown.Item class="link-dark">Profile</NavDropdown.Item>
+                                          </LinkContainer>
                                           <NavDropdown.Item onClick={logoutHandler}>
                                                 <li className="link">logout</li>
                                           </NavDropdown.Item>
@@ -80,14 +82,23 @@ const Appbar = () => {
 
 
                               {userInfo && userInfo.isEditor && (
-                                    <NavDropdown>
-                                          <Link to="/editor">
-                                                <NavDropdown.Item>
-                                                      editor
-                                                </NavDropdown.Item>
+                                    <NavDropdown className="link" title='Editor'>
+                                          <Link to='/editor'>
+                                                editor
                                           </Link>
+
                                     </NavDropdown>
                               )}
+
+                              {userInfo && userInfo.isReasearcher && (
+                                    <NavDropdown className="link" title='Researcher'>
+                                          <Link to='/editor'>
+                                                editor
+                                          </Link>
+
+                                    </NavDropdown>
+                              )}
+
 
                         </ul>
                         <div onClick={handleNavLinksToggle} className="hambuger-toggle">

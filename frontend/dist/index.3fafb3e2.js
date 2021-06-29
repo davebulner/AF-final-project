@@ -21868,24 +21868,26 @@ var _lggedInHomeScreen = require("./Screens/loggedinHomeScreen/lggedInHomeScreen
 var _lggedInHomeScreenDefault = parcelHelpers.interopDefault(_lggedInHomeScreen);
 var _adminDashboard = require("./components/Admin/adminDashboard/adminDashboard");
 var _adminDashboardDefault = parcelHelpers.interopDefault(_adminDashboard);
-var _editorScreen = require("./Screens/EditorScreen/editorScreen");
-var _editorScreenDefault = parcelHelpers.interopDefault(_editorScreen);
+var _editorDashboard = require("./Screens/EditorScreen/Editor dashboard/editorDashboard");
+var _editorDashboardDefault = parcelHelpers.interopDefault(_editorDashboard);
 var _approvedScreen = require("./Screens/EditorScreen/approvedScreen");
 var _approvedScreenDefault = parcelHelpers.interopDefault(_approvedScreen);
 var _unapprovedScreen = require("./Screens/EditorScreen/unapprovedScreen");
 var _unapprovedScreenDefault = parcelHelpers.interopDefault(_unapprovedScreen);
+var _profileScreen = require("./Screens/ProfileScreen/profileScreen");
+var _profileScreenDefault = parcelHelpers.interopDefault(_profileScreen);
 const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 15
+            lineNumber: 16
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "main",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 16
+            lineNumber: 17
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21894,7 +21896,7 @@ const App = ()=>{
         exact: true,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 17
+            lineNumber: 18
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21902,7 +21904,7 @@ const App = ()=>{
         component: _loginScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 18
+            lineNumber: 19
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21910,7 +21912,7 @@ const App = ()=>{
         component: _registerScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 19
+            lineNumber: 20
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21918,7 +21920,7 @@ const App = ()=>{
         component: _lggedInHomeScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 20
+            lineNumber: 21
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21926,15 +21928,15 @@ const App = ()=>{
         component: _adminDashboardDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 21
+            lineNumber: 22
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
         path: "/editor",
-        component: _editorScreenDefault.default,
+        component: _editorDashboardDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 22
+            lineNumber: 23
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21942,7 +21944,7 @@ const App = ()=>{
         component: _approvedScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 23
+            lineNumber: 24
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21950,7 +21952,15 @@ const App = ()=>{
         component: _unapprovedScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 24
+            lineNumber: 25
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/profile",
+        component: _profileScreenDefault.default,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\App.js",
+            lineNumber: 26
         },
         __self: undefined
     }))));
@@ -21965,7 +21975,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./App.css":"11ghl","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/editorScreen":"3WoBG","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu"}],"11ghl":[function() {},{}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"11ghl","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/ProfileScreen/profileScreen":"5EbTp"}],"11ghl":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -25251,6 +25261,7 @@ var _reactRedux = require("react-redux");
 var _reactBootstrap = require("react-bootstrap");
 var _userActionJs = require("../../action/userAction.js");
 var _reactRouterDom = require("react-router-dom");
+var _reactRouterBootstrap = require("react-router-bootstrap");
 var _s = $RefreshSig$();
 const Appbar = ()=>{
     _s();
@@ -25285,179 +25296,192 @@ const Appbar = ()=>{
         className: navbar ? 'navbar active' : 'navbar',
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 55
+            lineNumber: 56
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "logo",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 56
+            lineNumber: 57
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         className: "fas fa-mountain",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 57
+            lineNumber: 58
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("h4", {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 58
+            lineNumber: 59
         },
         __self: undefined
     }, "VCMS")), /*#__PURE__*/ _reactDefault.default.createElement("ul", {
         className: renderClasses(),
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 60
+            lineNumber: 61
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 62
+            lineNumber: 63
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 62
+            lineNumber: 63
         },
         __self: undefined
     }, "Home")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 63
+            lineNumber: 64
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/login",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 63
+            lineNumber: 64
         },
         __self: undefined
     }, " Login")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 64
+            lineNumber: 65
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/register",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 64
+            lineNumber: 65
         },
         __self: undefined
     }, "Register")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 65
+            lineNumber: 66
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 65
+            lineNumber: 66
         },
         __self: undefined
     }, "Contact us")), userInfo ? /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
+        className: "link",
         title: userInfo.name,
         id: "username",
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 69
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-        href: "#",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
             lineNumber: 70
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterBootstrap.LinkContainer, {
+        to: "/profile",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
             lineNumber: 71
         },
         __self: undefined
-    }, "Profile"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
-        onClick: logoutHandler,
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+        class: "link-dark",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
             lineNumber: 72
         },
         __self: undefined
+    }, "Profile")), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+        onClick: logoutHandler,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 74
+        },
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 73
+            lineNumber: 75
         },
         __self: undefined
     }, "logout"))) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Nav.Link, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 77
+            lineNumber: 79
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 78
+            lineNumber: 80
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 78
+            lineNumber: 80
         },
         __self: undefined
     }, "User"))), userInfo && userInfo.isEditor && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
+        className: "link",
+        title: "Editor",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 83
+            lineNumber: 85
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/editor",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 84
+            lineNumber: 86
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
+    }, "editor")), userInfo && userInfo.isReasearcher && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
+        className: "link",
+        title: "Researcher",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 85
+            lineNumber: 94
         },
         __self: undefined
-    }, "editor")))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/editor",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 95
+        },
+        __self: undefined
+    }, "editor"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         onClick: handleNavLinksToggle,
         className: "hambuger-toggle",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 93
+            lineNumber: 104
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         className: "fas fa-bars fa-lg",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 94
+            lineNumber: 105
         },
         __self: undefined
     })))));
@@ -25475,7 +25499,7 @@ $RefreshReg$(_c, "Appbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./navbar.css":"3rCie","../../Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../action/userAction.js":"7aL1U","react-router-dom":"1PMSK"}],"3rCie":[function() {},{}],"2EjbP":[function(require,module,exports) {
+},{"react":"3b2NM","./navbar.css":"3rCie","../../Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../action/userAction.js":"7aL1U","react-router-dom":"1PMSK","react-router-bootstrap":"LSFfJ"}],"3rCie":[function() {},{}],"2EjbP":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -25508,7 +25532,7 @@ const Loginscreen = ({ location , history  })=>{
     const userLogin = _reactRedux.useSelector((state)=>state.userLogin
     );
     const { loading , error , userInfo  } = userLogin;
-    const redirect = location.search ? location.search.split('=')[1] : '/loggedInHome';
+    const redirect = location.search ? location.search.split('=')[1] : '/';
     _react.useEffect(()=>{
         if (userInfo) history.push(redirect);
     }, [
@@ -39684,6 +39708,8 @@ parcelHelpers.export(exports, "login", ()=>login
 );
 parcelHelpers.export(exports, "logout", ()=>logout
 );
+parcelHelpers.export(exports, "register", ()=>register
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _userConstants = require("../constants/userConstants");
@@ -39719,6 +39745,42 @@ const logout = ()=>(dispatch)=>{
         dispatch({
             type: _userConstants.USER_LOGOUT
         });
+    }
+;
+const register = (name, email, password, isReasearcher, isWorkPresnter, isAtendee, insertDoc)=>async (dispatch)=>{
+        try {
+            dispatch({
+                type: _userConstants.USER_REGISTER_REQUEST
+            });
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            };
+            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/users/', {
+                name,
+                email,
+                password,
+                isReasearcher,
+                isWorkPresnter,
+                isAtendee,
+                insertDoc
+            }, config);
+            dispatch({
+                type: _userConstants.USER_REGISTER_SUCESS,
+                payload: data
+            });
+            dispatch({
+                type: _userConstants.USER_LOGIN_SUCESS,
+                payload: data
+            });
+            localStorage.setItem('userInfo', JSON.stringify(data));
+        } catch (error) {
+            dispatch({
+                type: _userConstants.USER_REGISTER_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
     }
 ;
 
@@ -41099,10 +41161,19 @@ parcelHelpers.export(exports, "USER_LOGIN_FAIL", ()=>USER_LOGIN_FAIL
 );
 parcelHelpers.export(exports, "USER_LOGOUT", ()=>USER_LOGOUT
 );
+parcelHelpers.export(exports, "USER_REGISTER_REQUEST", ()=>USER_REGISTER_REQUEST
+);
+parcelHelpers.export(exports, "USER_REGISTER_SUCESS", ()=>USER_REGISTER_SUCESS
+);
+parcelHelpers.export(exports, "USER_REGISTER_FAIL", ()=>USER_REGISTER_FAIL
+);
 const USER_LOGIN_REQUEST = 'USER_LOGIN_REQUEST';
 const USER_LOGIN_SUCESS = 'USER_LOGIN_SUCESS';
 const USER_LOGIN_FAIL = 'USER_LOGIN_FAIL';
 const USER_LOGOUT = 'USER_LOGOUT';
+const USER_REGISTER_REQUEST = 'USER_REGISTER_REQUEST';
+const USER_REGISTER_SUCESS = 'USER_REGISTER_SUCESS';
+const USER_REGISTER_FAIL = 'USER_REGISTER_FAIL';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"6fMfw":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -41185,7 +41256,236 @@ $RefreshReg$(_c, "Loader");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"2PCZy":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"LSFfJ":[function(require,module,exports) {
+'use strict';
+exports.__esModule = true;
+exports.LinkContainer = exports.IndexLinkContainer = undefined;
+var _IndexLinkContainer2 = require('./IndexLinkContainer');
+var _IndexLinkContainer3 = _interopRequireDefault(_IndexLinkContainer2);
+var _LinkContainer2 = require('./LinkContainer');
+var _LinkContainer3 = _interopRequireDefault(_LinkContainer2);
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+exports.IndexLinkContainer = _IndexLinkContainer3.default;
+exports.LinkContainer = _LinkContainer3.default;
+
+},{"./IndexLinkContainer":"kn0CY","./LinkContainer":"3sUrx"}],"kn0CY":[function(require,module,exports) {
+'use strict';
+exports.__esModule = true;
+exports.IndexLinkContainer = undefined;
+var _extends = Object.assign || function(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i];
+        for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+    }
+    return target;
+};
+var _react = require('react');
+var _react2 = _interopRequireDefault(_react);
+var _reactRouterDom = require('react-router-dom');
+var _LinkContainer = require('./LinkContainer');
+var _LinkContainer2 = _interopRequireDefault(_LinkContainer);
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _possibleConstructorReturn(self, call) {
+    if (!self) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            enumerable: false,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+// Don't use a stateless function, to allow users to set a ref.
+/* eslint-disable react/prefer-stateless-function */ var IndexLinkContainer1 = exports.IndexLinkContainer = function(_React$Component) {
+    _inherits(IndexLinkContainer2, _React$Component);
+    function IndexLinkContainer2() {
+        _classCallCheck(this, IndexLinkContainer2);
+        return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+    }
+    IndexLinkContainer2.prototype.render = function render() {
+        return _react2.default.createElement(_LinkContainer2.default, _extends({
+        }, this.props, {
+            exact: true
+        }));
+    };
+    return IndexLinkContainer2;
+}(_react2.default.Component);
+/* eslint-enable react/prefer-stateless-function */ exports.default = _reactRouterDom.withRouter(IndexLinkContainer1);
+
+},{"react":"3b2NM","react-router-dom":"1PMSK","./LinkContainer":"3sUrx"}],"3sUrx":[function(require,module,exports) {
+'use strict';
+exports.__esModule = true;
+exports.LinkContainer = undefined;
+var _extends = Object.assign || function(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i];
+        for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+    }
+    return target;
+};
+var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function(obj) {
+    return typeof obj;
+} : function(obj) {
+    return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+};
+var _react = require('react');
+var _react2 = _interopRequireDefault(_react);
+var _propTypes = require('prop-types');
+var _propTypes2 = _interopRequireDefault(_propTypes);
+var _reactRouterDom = require('react-router-dom');
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _objectWithoutProperties(obj, keys) {
+    var target = {
+    };
+    for(var i in obj){
+        if (keys.indexOf(i) >= 0) continue;
+        if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+        target[i] = obj[i];
+    }
+    return target;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _possibleConstructorReturn(self, call) {
+    if (!self) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return call && (typeof call === "object" || typeof call === "function") ? call : self;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            enumerable: false,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+}
+var isModifiedEvent = function isModifiedEvent1(event) {
+    return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+};
+var LinkContainer1 = exports.LinkContainer = function(_Component) {
+    _inherits(LinkContainer2, _Component);
+    function LinkContainer2() {
+        var _temp, _this, _ret;
+        _classCallCheck(this, LinkContainer2);
+        for(var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+        return _ret = (_temp = (_this = _possibleConstructorReturn(this, _Component.call.apply(_Component, [
+            this
+        ].concat(args))), _this), _this.handleClick = function(event) {
+            var _this$props = _this.props, children = _this$props.children, onClick = _this$props.onClick;
+            if (children.props.onClick) children.props.onClick(event);
+            if (onClick) onClick(event);
+            if (!event.defaultPrevented && event.button === 0 && !isModifiedEvent(event)) {
+                event.preventDefault();
+                var _this$props2 = _this.props, replace = _this$props2.replace, to = _this$props2.to, history = _this$props2.history;
+                if (replace) history.replace(to);
+                else history.push(to);
+            }
+        }, _temp), _possibleConstructorReturn(_this, _ret);
+    }
+    LinkContainer2.prototype.render = function render() {
+        var _this2 = this;
+        var _props = this.props, history = _props.history, _location = _props.location, _match = _props.match, _staticContext = _props.staticContext, children = _props.children, replace = _props.replace, to = _props.to, exact = _props.exact, strict = _props.strict, activeClassName = _props.activeClassName, className = _props.className, activeStyle = _props.activeStyle, style = _props.style, getIsActive = _props.isActive, props = _objectWithoutProperties(_props, [
+            'history',
+            'location',
+            'match',
+            'staticContext',
+            'children',
+            'replace',
+            'to',
+            'exact',
+            'strict',
+            'activeClassName',
+            'className',
+            'activeStyle',
+            'style',
+            'isActive'
+        ]);
+        var href = history.createHref(typeof to === 'string' ? {
+            pathname: to
+        } : to);
+        var child = _react2.default.Children.only(children);
+        return _react2.default.createElement(_reactRouterDom.Route, {
+            path: (typeof to === 'undefined' ? 'undefined' : _typeof(to)) === 'object' ? to.pathname : to,
+            exact: exact,
+            strict: strict,
+            children: function children1(_ref) {
+                var location = _ref.location, match = _ref.match;
+                var isActive = !!(getIsActive ? getIsActive(match, location) : match);
+                return _react2.default.cloneElement(child, _extends({
+                }, props, {
+                    className: [
+                        className,
+                        child.props.className,
+                        isActive ? activeClassName : null
+                    ].join(' ').trim(),
+                    style: isActive ? _extends({
+                    }, style, activeStyle) : style,
+                    href: href,
+                    onClick: _this2.handleClick
+                }));
+            }
+        });
+    };
+    return LinkContainer2;
+}(_react.Component);
+LinkContainer1.propTypes = {
+    history: _propTypes2.default.shape({
+        push: _propTypes2.default.func.isRequired,
+        replace: _propTypes2.default.func.isRequired,
+        createHref: _propTypes2.default.func.isRequired
+    }).isRequired,
+    location: _propTypes2.default.object,
+    match: _propTypes2.default.object,
+    staticContext: _propTypes2.default.object,
+    children: _propTypes2.default.element.isRequired,
+    onClick: _propTypes2.default.func,
+    replace: _propTypes2.default.bool,
+    to: _propTypes2.default.oneOfType([
+        _propTypes2.default.string,
+        _propTypes2.default.object
+    ]).isRequired,
+    exact: _propTypes2.default.bool,
+    strict: _propTypes2.default.bool,
+    className: _propTypes2.default.string,
+    activeClassName: _propTypes2.default.string,
+    style: _propTypes2.default.object,
+    activeStyle: _propTypes2.default.object,
+    isActive: _propTypes2.default.func
+};
+LinkContainer1.defaultProps = {
+    replace: false,
+    exact: false,
+    strict: false,
+    activeClassName: 'active'
+};
+exports.default = _reactRouterDom.withRouter(LinkContainer1);
+
+},{"react":"3b2NM","prop-types":"4dfy5","react-router-dom":"1PMSK"}],"2PCZy":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -41375,169 +41675,416 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactBootstrap = require("react-bootstrap");
 var _registerscreenCss = require("./registerscreen.css");
+var _reactRouterDom = require("react-router-dom");
+var _reactRedux = require("react-redux");
 var _navbarJs = require("../../components/Navbar/navbar.js");
 var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
 var _footerJs = require("../../components/Footer/footer.js");
 var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
-const registerScreen = ()=>{
+var _userActionJs = require("../../action/userAction.js");
+var _messageJs = require("../../components/Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _loaderJs = require("../../components/Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _s = $RefreshSig$();
+const registerScreen = ({ location , history  })=>{
+    _s();
+    const [name, setName] = _react.useState('');
+    const [email, setEmail] = _react.useState('');
+    const [password, setPassword] = _react.useState('');
+    const [confirmPassword, setConfirmPassword] = _react.useState('');
+    const [isReasearcher, setisReasearcher] = _react.useState(false);
+    const [isWorkPresnter, setisWorkPresnter] = _react.useState(false);
+    const [isAtendee, setisAtendee] = _react.useState(false);
+    const [message, setMessage] = _react.useState(null);
+    const [insertDoc, setInsertDoc] = _react.useState('');
+    const [uploading, setUploading] = _react.useState(false);
+    const dispatch = _reactRedux.useDispatch();
+    const userRegister = _reactRedux.useSelector((state)=>state.userLogin
+    );
+    const { loading , error , userInfo  } = userRegister;
+    const redirect = location.search ? location.search.split('=')[1] : '/';
+    _react.useEffect(()=>{
+        if (userInfo) history.push(redirect);
+    }, [
+        history,
+        userInfo,
+        redirect
+    ]);
+    const submitHandler = (e)=>{
+        e.preventDefault();
+        if (password !== confirmPassword) setMessage('Password do not match');
+        else dispatch(_userActionJs.register(name, email, password, isReasearcher, isWorkPresnter, isAtendee, insertDoc));
+    };
+    const uploadFileHandler = async (e)=>{
+        const file = e.target.files[0];
+        const formData = new FormData();
+        formData.append('document', file);
+        setUploading(true);
+        try {
+            const config = {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            };
+            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/uploads/document', formData, config);
+            setInsertDoc(data);
+            setUploading(false);
+        } catch (error1) {
+            console.error(error1);
+            setUploading(false);
+        }
+    };
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 11
+            lineNumber: 76
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "wrapper",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 13
+            lineNumber: 78
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
-        className: "ni",
+        className: "nm",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 14
+            lineNumber: 79
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }, error && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 80
+        },
+        __self: undefined
+    }, message), error && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 81
+        },
+        __self: undefined
+    }, error), loading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 82
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "content",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 17
+            lineNumber: 84
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form, {
+        onSubmit: submitHandler,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 18
+            lineNumber: 86
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         align: "center",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 19
+            lineNumber: 87
         },
         __self: undefined
-    }, "Sign Up"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }, "Register"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "name",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 89
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 21
+            lineNumber: 90
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 22
+            lineNumber: 91
         },
         __self: undefined
-    }, "First name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+    }, "User Name"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
         type: "text",
         className: "form-control",
-        placeholder: "First name",
+        placeholder: "Enter Name",
+        value: name,
+        onChange: (e)=>setName(e.target.value)
+        ,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 23
+            lineNumber: 92
         },
         __self: undefined
-    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "radioList",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 99
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 26
+            lineNumber: 100
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 27
+            lineNumber: 101
         },
         __self: undefined
-    }, "Last name"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
-        type: "text",
-        className: "form-control",
-        placeholder: "Last name",
+    }, "User Type"), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 28
+            lineNumber: 102
         },
         __self: undefined
-    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "radio",
+        value: "true",
+        name: "isReasearcher",
+        onChange: (e)=>setisReasearcher(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 103
+        },
+        __self: undefined
+    }), " researcher", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "radio",
+        value: "true",
+        name: "isWorkPresnter",
+        onChange: (e)=>setisWorkPresnter(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 104
+        },
+        __self: undefined
+    }), " Workshop Presenter", /*#__PURE__*/ _reactDefault.default.createElement("input", {
+        type: "radio",
+        value: "true",
+        name: "isAtendee",
+        onChange: (e)=>setisAtendee(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 105
+        },
+        __self: undefined
+    }), " Atendee"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "radio",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 110
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 31
+            lineNumber: 111
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 32
+            lineNumber: 112
         },
         __self: undefined
-    }, "Email address"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+    }, "Researcher"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
         type: "email",
         className: "form-control",
         placeholder: "Enter email",
+        value: email,
+        onChange: (e)=>setEmail(e.target.value)
+        ,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 33
+            lineNumber: 113
         },
         __self: undefined
-    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "password",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 120
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 36
+            lineNumber: 121
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("label", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 37
+            lineNumber: 122
         },
         __self: undefined
-    }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement("input", {
+    }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
         type: "password",
         className: "form-control",
         placeholder: "Enter password",
+        value: password,
+        onChange: (e)=>setPassword(e.target.value)
+        ,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 38
+            lineNumber: 123
         },
         __self: undefined
-    })), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "confirmPassword",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 130
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 131
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 132
+        },
+        __self: undefined
+    }, "Confirm Password"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "password",
+        className: "form-control",
+        placeholder: "Enter password",
+        value: confirmPassword,
+        onChange: (e)=>setConfirmPassword(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 133
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "image",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 140
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 141
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 142
+        },
+        __self: undefined
+    }, "Upload Document"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "text",
+        className: "form-control",
+        placeholder: "Enter Document URL",
+        value: insertDoc,
+        onChange: (e)=>setInsertDoc(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 143
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.File, {
+        id: "file",
+        label: "Choose File",
+        custom: true,
+        onChange: uploadFileHandler,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 148
+        },
+        __self: undefined
+    }), uploading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 149
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 152
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 153
+        },
+        __self: undefined
+    }, "Have An Account? ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: redirect ? `/login?redirect=${redirect}` : '/login',
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
+            lineNumber: 154
+        },
+        __self: undefined
+    }, "Login"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
         type: "submit",
-        className: "btn btn-primary btn-block ",
+        className: "btn btn-primary btn-block",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 41
+            lineNumber: 159
         },
         __self: undefined
-    }, "Sign Up"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+    }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         className: "forgot-password text-right",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 42
+            lineNumber: 160
         },
         __self: undefined
-    }, "Already registered ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
-        href: "/login",
+    }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "#",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 43
+            lineNumber: 161
         },
         __self: undefined
-    }, "sign in?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
+    }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\RegisterScreen\\registerScreen.js",
-            lineNumber: 51
+            lineNumber: 169
         },
         __self: undefined
     })));
 };
+_s(registerScreen, "wj0u69W/odxaMF1GdKtrQhVBF8c=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
 exports.default = registerScreen;
 
   helpers.postlude(module);
@@ -41545,7 +42092,7 @@ exports.default = registerScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","./registerscreen.css":"1tP1S","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1tP1S":[function() {},{}],"5pJ4O":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-router-dom":"1PMSK","react-redux":"7GDa4","../../action/userAction.js":"7aL1U","../../components/Message/message.js":"6fMfw","../../components/Loader/loader.js":"68bDI","./registerscreen.css":"1tP1S","axios":"7rA65"}],"1tP1S":[function() {},{}],"5pJ4O":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56335,7 +56882,7 @@ var _default = _createSvgIcon.default(/*#__PURE__*/ React.createElement("path", 
 }), 'Assignment');
 exports.default = _default;
 
-},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","./utils/createSvgIcon":"1M7MC"}],"3WoBG":[function(require,module,exports) {
+},{"@babel/runtime/helpers/interopRequireDefault":"4ttVj","@babel/runtime/helpers/interopRequireWildcard":"28En5","react":"3b2NM","./utils/createSvgIcon":"1M7MC"}],"3lNMi":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56346,60 +56893,334 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRedux = require("react-redux");
 var _reactBootstrap = require("react-bootstrap");
-var _conferenceActionJs = require("../../action/conferenceAction.js");
-var _loaderJs = require("../../components/Loader/loader.js");
-var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
-var _messageJs = require("../../components/Message/message.js");
-var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
-var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
-var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
+var _reactRedux = require("react-redux");
+var _message = require("../../components/Message/message");
+var _messageDefault = parcelHelpers.interopDefault(_message);
+var _loader = require("../../components/Loader/loader");
+var _loaderDefault = parcelHelpers.interopDefault(_loader);
+var _conferenceAction = require("../../action/conferenceAction");
 var _navbarJs = require("../../components/Navbar/navbar.js");
 var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
-var _footerJs = require("../../components/Footer/footer.js");
-var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
+var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
+var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _styles = require("@material-ui/core/styles");
+var _cssBaseline = require("@material-ui/core/CssBaseline");
+var _cssBaselineDefault = parcelHelpers.interopDefault(_cssBaseline);
+var _drawer = require("@material-ui/core/Drawer");
+var _drawerDefault = parcelHelpers.interopDefault(_drawer);
+var _box = require("@material-ui/core/Box");
+var _boxDefault = parcelHelpers.interopDefault(_box);
+var _appBar = require("@material-ui/core/AppBar");
+var _appBarDefault = parcelHelpers.interopDefault(_appBar);
+var _toolbar = require("@material-ui/core/Toolbar");
+var _toolbarDefault = parcelHelpers.interopDefault(_toolbar);
+var _list = require("@material-ui/core/List");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _typography = require("@material-ui/core/Typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _divider = require("@material-ui/core/Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _iconButton = require("@material-ui/core/IconButton");
+var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);
+var _badge = require("@material-ui/core/Badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
+var _container = require("@material-ui/core/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _grid = require("@material-ui/core/Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _paper = require("@material-ui/core/Paper");
+var _paperDefault = parcelHelpers.interopDefault(_paper);
+var _link = require("@material-ui/core/Link");
+var _linkDefault = parcelHelpers.interopDefault(_link);
+var _menu = require("@material-ui/icons/Menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _chevronLeft = require("@material-ui/icons/ChevronLeft");
+var _chevronLeftDefault = parcelHelpers.interopDefault(_chevronLeft);
+var _notifications = require("@material-ui/icons/Notifications");
+var _notificationsDefault = parcelHelpers.interopDefault(_notifications);
+var _listitems1 = require("./Editor dashboard/listitems1");
 var _s = $RefreshSig$();
-const EditorScreen = ()=>{
+const drawerWidth = 240;
+const useStyles = _styles.makeStyles((theme)=>({
+        root: {
+            display: 'flex'
+        },
+        toolbar: {
+            paddingRight: 24
+        },
+        toolbarIcon: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            padding: '0 8px',
+            ...theme.mixins.toolbar
+        },
+        appBar: {
+            zIndex: theme.zIndex.drawer + 1,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            })
+        },
+        appBarShift: {
+            marginLeft: drawerWidth,
+            width: `calc(100% - ${drawerWidth}px)`,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        menuButton: {
+            marginRight: 36
+        },
+        menuButtonHidden: {
+            display: 'none'
+        },
+        title: {
+            flexGrow: 1
+        },
+        drawerPaper: {
+            position: 'relative',
+            whiteSpace: 'nowrap',
+            width: drawerWidth,
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        drawerPaperClose: {
+            overflowX: 'hidden',
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            }),
+            width: theme.spacing(7),
+            [theme.breakpoints.up('sm')]: {
+                width: theme.spacing(9)
+            }
+        },
+        appBarSpacer: theme.mixins.toolbar,
+        content: {
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto'
+        },
+        container: {
+            paddingTop: theme.spacing(4),
+            paddingBottom: theme.spacing(4)
+        },
+        paper: {
+            padding: theme.spacing(2),
+            display: 'flex',
+            overflow: 'auto',
+            flexDirection: 'column'
+        },
+        fixedHeight: {
+            height: 240
+        }
+    })
+);
+const appconlistScreen = ()=>{
     _s();
+    const classes = useStyles();
+    const [open, setOpen] = _reactDefault.default.useState(true);
+    const handleDrawerOpen = ()=>{
+        setOpen(true);
+    };
+    const handleDrawerClose = ()=>{
+        setOpen(false);
+    };
+    const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
     const dispatch = _reactRedux.useDispatch();
-    const listCon = _reactRedux.useSelector((state)=>state.listCon
+    const appCon = _reactRedux.useSelector((state)=>state.appCon
     );
-    const { loading , error , conferencedetails  } = listCon;
+    const { loading , error , conferencedetails  } = appCon;
     _react.useEffect(()=>{
-        dispatch(_conferenceActionJs.listConDetails());
+        dispatch(_conferenceAction.appConList());
     }, [
         dispatch
     ]);
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.root,
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 22
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 148
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 23
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 149
         },
         __self: undefined
-    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_editorNavbarJsDefault.default, {
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
+        position: "absolute",
+        className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 24
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 150
         },
         __self: undefined
-    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
+        className: classes.toolbar,
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 25
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 151
         },
         __self: undefined
-    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        edge: "start",
+        color: "inherit",
+        color: "inherit",
+        "aria-label": "open drawer",
+        onClick: handleDrawerOpen,
+        className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 152
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 160
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        component: "h1",
+        variant: "h6",
+        color: "inherit",
+        noWrap: true,
+        className: classes.title,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 162
+        },
+        __self: undefined
+    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        color: "inherit",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 165
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
+        badgeContent: 4,
+        color: "secondary",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 166
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 167
+        },
+        __self: undefined
+    }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
+        variant: "permanent",
+        classes: {
+            paper: _clsxDefault.default(classes.drawerPaper, !open && classes.drawerPaperClose)
+        },
+        open: open,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 172
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.toolbarIcon,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 179
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        onClick: handleDrawerClose,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 180
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 181
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 184
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 185
+        },
+        __self: undefined
+    }, _listitems1.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 186
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 187
+        },
+        __self: undefined
+    }, _listitems1.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
+        className: classes.content,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 190
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.appBarSpacer,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 191
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
+        maxWidth: "lg",
+        className: classes.container,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 192
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 193
+        },
+        __self: undefined
+    }, "All Approved Conference Details"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 195
+        },
+        __self: undefined
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
         variant: "danger",
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 26
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 196
         },
         __self: undefined
     }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
@@ -56407,121 +57228,107 @@ const EditorScreen = ()=>{
         bordered: true,
         hover: true,
         responsive: true,
-        variant: "dark",
+        variant: "light",
         className: "table-sm",
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 28
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 198
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 29
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 199
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 30
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 200
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 31
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 201
         },
         __self: undefined
     }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 32
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 202
         },
         __self: undefined
     }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 33
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 203
         },
         __self: undefined
     }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 34
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 204
         },
         __self: undefined
     }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 35
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 205
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
         __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-            lineNumber: 38
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+            lineNumber: 208
         },
         __self: undefined
     }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
             key: con._id,
             __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 40
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 210
             },
             __self: undefined
         }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 41
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 211
             },
             __self: undefined
         }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 42
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 212
             },
             __self: undefined
         }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 43
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 213
             },
             __self: undefined
         }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 44
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
+                lineNumber: 214
             },
             __self: undefined
-        }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 45
-            },
-            __self: undefined
-        }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\editorScreen.js",
-                lineNumber: 46
-            },
-            __self: undefined
-        }, con.venue))
-    )))));
+        }, con.phone))
+    ))))))));
 };
-_s(EditorScreen, "/uTQqnyawgFaoXO5LcEC6bed1ZY=", false, function() {
-    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+_s(appconlistScreen, "IvmkH6gyD9MhN13FD2HDbf6C/Oc=", false, function() {
+    return [
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
 });
-_c = EditorScreen;
-exports.default = EditorScreen;
-var _c;
-$RefreshReg$(_c, "EditorScreen");
+exports.default = appconlistScreen;
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../action/conferenceAction.js":"7CqFH","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","../../components/EditorNav/editorNavbar.js":"56S2h","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"56S2h":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","../../action/conferenceAction":"7CqFH","../../components/Navbar/navbar.js":"5c3hR","../../components/EditorNav/editorNavbar.js":"56S2h","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./Editor dashboard/listitems1":"1TblZ"}],"56S2h":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56609,8 +57416,8 @@ $RefreshReg$(_c, "Editornavbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap/Nav":"3T3v1","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"3lNMi":[function(require,module,exports) {
-var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react":"3b2NM","react-bootstrap/Nav":"3T3v1","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"1TblZ":[function(require,module,exports) {
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
 helpers.prelude(module);
@@ -56618,179 +57425,290 @@ helpers.prelude(module);
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "mainListItems", ()=>mainListItems
+);
+parcelHelpers.export(exports, "secondaryListItems", ()=>secondaryListItems
+);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactBootstrap = require("react-bootstrap");
-var _reactRedux = require("react-redux");
-var _message = require("../../components/Message/message");
-var _messageDefault = parcelHelpers.interopDefault(_message);
-var _loader = require("../../components/Loader/loader");
-var _loaderDefault = parcelHelpers.interopDefault(_loader);
-var _conferenceAction = require("../../action/conferenceAction");
-var _navbarJs = require("../../components/Navbar/navbar.js");
-var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
-var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
-var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
-var _s = $RefreshSig$();
-const appconlistScreen = ()=>{
-    _s();
-    const dispatch = _reactRedux.useDispatch();
-    const appCon = _reactRedux.useSelector((state)=>state.appCon
-    );
-    const { loading , error , conferencedetails  } = appCon;
-    _react.useEffect(()=>{
-        dispatch(_conferenceAction.appConList());
-    }, [
-        dispatch
-    ]);
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 23
-        },
-        __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 24
-        },
-        __self: undefined
-    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_editorNavbarJsDefault.default, {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 25
-        },
-        __self: undefined
-    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 26
-        },
-        __self: undefined
-    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
-        variant: "danger",
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 27
-        },
-        __self: undefined
-    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
-        striped: true,
-        bordered: true,
-        hover: true,
-        responsive: true,
-        variant: "dark",
-        className: "table-sm",
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 29
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 30
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 31
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 32
-        },
-        __self: undefined
-    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 33
-        },
-        __self: undefined
-    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 34
-        },
-        __self: undefined
-    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 35
-        },
-        __self: undefined
-    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 36
-        },
-        __self: undefined
-    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-            lineNumber: 39
-        },
-        __self: undefined
-    }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
-            key: con._id,
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 41
-            },
-            __self: undefined
-        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 42
-            },
-            __self: undefined
-        }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 43
-            },
-            __self: undefined
-        }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 44
-            },
-            __self: undefined
-        }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 45
-            },
-            __self: undefined
-        }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 46
-            },
-            __self: undefined
-        }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\approvedScreen.js",
-                lineNumber: 47
-            },
-            __self: undefined
-        }, con.venue))
-    )))));
-};
-_s(appconlistScreen, "mUPm43AvAAwIM2xT+EVZ+NXI1Ps=", false, function() {
-    return [_reactRedux.useDispatch, _reactRedux.useSelector];
-});
-exports.default = appconlistScreen;
+var _listItem = require("@material-ui/core/ListItem");
+var _listItemDefault = parcelHelpers.interopDefault(_listItem);
+var _listItemIcon = require("@material-ui/core/ListItemIcon");
+var _listItemIconDefault = parcelHelpers.interopDefault(_listItemIcon);
+var _listItemText = require("@material-ui/core/ListItemText");
+var _listItemTextDefault = parcelHelpers.interopDefault(_listItemText);
+var _listSubheader = require("@material-ui/core/ListSubheader");
+var _listSubheaderDefault = parcelHelpers.interopDefault(_listSubheader);
+var _dashboard = require("@material-ui/icons/Dashboard");
+var _dashboardDefault = parcelHelpers.interopDefault(_dashboard);
+var _shoppingCart = require("@material-ui/icons/ShoppingCart");
+var _shoppingCartDefault = parcelHelpers.interopDefault(_shoppingCart);
+var _people = require("@material-ui/icons/People");
+var _peopleDefault = parcelHelpers.interopDefault(_people);
+var _barChart = require("@material-ui/icons/BarChart");
+var _barChartDefault = parcelHelpers.interopDefault(_barChart);
+var _layers = require("@material-ui/icons/Layers");
+var _layersDefault = parcelHelpers.interopDefault(_layers);
+var _assignment = require("@material-ui/icons/Assignment");
+var _assignmentDefault = parcelHelpers.interopDefault(_assignment);
+var _reactRouterDom = require("react-router-dom");
+const mainListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 16
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/editor",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 17
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 18
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 19
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_dashboardDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 20
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Dashboard",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 22
+    },
+    __self: undefined
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/applist",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 25
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 26
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 27
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_shoppingCartDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 28
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Approved Con details",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 31
+    },
+    __self: undefined
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+    to: "/unapplist",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 34
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 35
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 36
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_peopleDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 37
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Unapproved con details",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 39
+    },
+    __self: undefined
+}))), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 42
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 43
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_barChartDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 44
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Reports",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 46
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 48
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 49
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_layersDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 50
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Integrations",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 52
+    },
+    __self: undefined
+})));
+const secondaryListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 58
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listSubheaderDefault.default, {
+    inset: true,
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 59
+    },
+    __self: undefined
+}, "Saved reports"), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 60
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 61
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 62
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Current month",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 64
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 66
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 67
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 68
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Last quarter",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 70
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
+    button: true,
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 72
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 73
+    },
+    __self: undefined
+}, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 74
+    },
+    __self: undefined
+})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
+    primary: "Year-end sale",
+    __source: {
+        fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\listitems1.js",
+        lineNumber: 76
+    },
+    __self: undefined
+})));
 
   helpers.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","../../action/conferenceAction":"7CqFH","../../components/Navbar/navbar.js":"5c3hR","../../components/EditorNav/editorNavbar.js":"56S2h","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5BaDu":[function(require,module,exports) {
+},{"react":"3b2NM","@material-ui/core/ListItem":"2DNb3","@material-ui/core/ListItemIcon":"5siUZ","@material-ui/core/ListItemText":"7t7nz","@material-ui/core/ListSubheader":"505Dd","@material-ui/icons/Dashboard":"5Q3Fn","@material-ui/icons/ShoppingCart":"6WIpv","@material-ui/icons/People":"4QwVK","@material-ui/icons/BarChart":"1075F","@material-ui/icons/Layers":"5vTqU","@material-ui/icons/Assignment":"3UO7R","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5BaDu":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -56808,13 +57726,142 @@ var _messageDefault = parcelHelpers.interopDefault(_message);
 var _loader = require("../../components/Loader/loader");
 var _loaderDefault = parcelHelpers.interopDefault(_loader);
 var _conferenceAction = require("../../action/conferenceAction");
-var _navbarJs = require("../../components/Navbar/navbar.js");
-var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
-var _editorNavbarJs = require("../../components/EditorNav/editorNavbar.js");
-var _editorNavbarJsDefault = parcelHelpers.interopDefault(_editorNavbarJs);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _styles = require("@material-ui/core/styles");
+var _cssBaseline = require("@material-ui/core/CssBaseline");
+var _cssBaselineDefault = parcelHelpers.interopDefault(_cssBaseline);
+var _drawer = require("@material-ui/core/Drawer");
+var _drawerDefault = parcelHelpers.interopDefault(_drawer);
+var _box = require("@material-ui/core/Box");
+var _boxDefault = parcelHelpers.interopDefault(_box);
+var _appBar = require("@material-ui/core/AppBar");
+var _appBarDefault = parcelHelpers.interopDefault(_appBar);
+var _toolbar = require("@material-ui/core/Toolbar");
+var _toolbarDefault = parcelHelpers.interopDefault(_toolbar);
+var _list = require("@material-ui/core/List");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _typography = require("@material-ui/core/Typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _divider = require("@material-ui/core/Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _iconButton = require("@material-ui/core/IconButton");
+var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);
+var _badge = require("@material-ui/core/Badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
+var _container = require("@material-ui/core/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _grid = require("@material-ui/core/Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _paper = require("@material-ui/core/Paper");
+var _paperDefault = parcelHelpers.interopDefault(_paper);
+var _link = require("@material-ui/core/Link");
+var _linkDefault = parcelHelpers.interopDefault(_link);
+var _menu = require("@material-ui/icons/Menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _chevronLeft = require("@material-ui/icons/ChevronLeft");
+var _chevronLeftDefault = parcelHelpers.interopDefault(_chevronLeft);
+var _notifications = require("@material-ui/icons/Notifications");
+var _notificationsDefault = parcelHelpers.interopDefault(_notifications);
+var _listitems1 = require("./Editor dashboard/listitems1");
 var _s = $RefreshSig$();
+const drawerWidth = 240;
+const useStyles = _styles.makeStyles((theme)=>({
+        root: {
+            display: 'flex'
+        },
+        toolbar: {
+            paddingRight: 24
+        },
+        toolbarIcon: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            padding: '0 8px',
+            ...theme.mixins.toolbar
+        },
+        appBar: {
+            zIndex: theme.zIndex.drawer + 1,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            })
+        },
+        appBarShift: {
+            marginLeft: drawerWidth,
+            width: `calc(100% - ${drawerWidth}px)`,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        menuButton: {
+            marginRight: 36
+        },
+        menuButtonHidden: {
+            display: 'none'
+        },
+        title: {
+            flexGrow: 1
+        },
+        drawerPaper: {
+            position: 'relative',
+            whiteSpace: 'nowrap',
+            width: drawerWidth,
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        drawerPaperClose: {
+            overflowX: 'hidden',
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            }),
+            width: theme.spacing(7),
+            [theme.breakpoints.up('sm')]: {
+                width: theme.spacing(9)
+            }
+        },
+        appBarSpacer: theme.mixins.toolbar,
+        content: {
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto'
+        },
+        container: {
+            paddingTop: theme.spacing(4),
+            paddingBottom: theme.spacing(4)
+        },
+        paper: {
+            padding: theme.spacing(2),
+            display: 'flex',
+            overflow: 'auto',
+            flexDirection: 'column'
+        },
+        fixedHeight: {
+            height: 240
+        }
+    })
+);
 const unappconlistScreen = ()=>{
     _s();
+    const classes = useStyles();
+    const [open, setOpen] = _reactDefault.default.useState(true);
+    const handleDrawerOpen = ()=>{
+        setOpen(true);
+    };
+    const handleDrawerClose = ()=>{
+        setOpen(false);
+    };
+    const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
     const dispatch = _reactRedux.useDispatch();
     const unappCon = _reactRedux.useSelector((state)=>state.unappCon
     );
@@ -56824,35 +57871,178 @@ const unappconlistScreen = ()=>{
     }, [
         dispatch
     ]);
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.root,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 24
+            lineNumber: 141
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 25
+            lineNumber: 142
         },
         __self: undefined
-    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_editorNavbarJsDefault.default, {
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
+        position: "absolute",
+        className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 26
+            lineNumber: 143
         },
         __self: undefined
-    }), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
+        className: classes.toolbar,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 27
+            lineNumber: 144
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        edge: "start",
+        color: "inherit",
+        color: "inherit",
+        "aria-label": "open drawer",
+        onClick: handleDrawerOpen,
+        className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 145
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 153
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        component: "h1",
+        variant: "h6",
+        color: "inherit",
+        noWrap: true,
+        className: classes.title,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 155
+        },
+        __self: undefined
+    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        color: "inherit",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 158
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
+        badgeContent: 4,
+        color: "secondary",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 159
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 160
+        },
+        __self: undefined
+    }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
+        variant: "permanent",
+        classes: {
+            paper: _clsxDefault.default(classes.drawerPaper, !open && classes.drawerPaperClose)
+        },
+        open: open,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 165
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.toolbarIcon,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 172
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        onClick: handleDrawerClose,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 173
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 174
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 177
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 178
+        },
+        __self: undefined
+    }, _listitems1.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 179
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 180
+        },
+        __self: undefined
+    }, _listitems1.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
+        className: classes.content,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 183
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.appBarSpacer,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 184
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
+        maxWidth: "lg",
+        className: classes.container,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 185
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 186
+        },
+        __self: undefined
+    }, "All Unapproved Conference Details"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 187
         },
         __self: undefined
     }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 28
+            lineNumber: 188
         },
         __self: undefined
     }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
@@ -56860,73 +58050,98 @@ const unappconlistScreen = ()=>{
         bordered: true,
         hover: true,
         responsive: true,
-        variant: "dark",
+        variant: "light",
         className: "table-sm",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 30
+            lineNumber: 190
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 31
+            lineNumber: 191
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-            lineNumber: 34
+            lineNumber: 192
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 193
+        },
+        __self: undefined
+    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 194
+        },
+        __self: undefined
+    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 195
+        },
+        __self: undefined
+    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 196
+        },
+        __self: undefined
+    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 197
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
+            lineNumber: 200
         },
         __self: undefined
     }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
             key: con._id,
             __source: {
                 fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 36
+                lineNumber: 202
             },
             __self: undefined
         }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 37
+                lineNumber: 203
             },
             __self: undefined
         }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 38
+                lineNumber: 204
             },
             __self: undefined
         }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 39
+                lineNumber: 205
             },
             __self: undefined
         }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
             __source: {
                 fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 40
+                lineNumber: 206
             },
             __self: undefined
-        }, con.phone), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 41
-            },
-            __self: undefined
-        }, con.email), /*#__PURE__*/ _reactDefault.default.createElement("td", {
-            __source: {
-                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\unapprovedScreen.js",
-                lineNumber: 42
-            },
-            __self: undefined
-        }, con.venue))
-    )))));
+        }, con.phone))
+    ))))))));
 };
-_s(unappconlistScreen, "4LqE11CV60i6Yksw7cOnTI7PCQA=", false, function() {
-    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+_s(unappconlistScreen, "91qFf737wLF5WA+LFzZOSVg/tQQ=", false, function() {
+    return [
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
 });
 exports.default = unappconlistScreen;
 
@@ -56935,7 +58150,502 @@ exports.default = unappconlistScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","../../action/conferenceAction":"7CqFH","../../components/Navbar/navbar.js":"5c3hR","../../components/EditorNav/editorNavbar.js":"56S2h","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","../../action/conferenceAction":"7CqFH","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./Editor dashboard/listitems1":"1TblZ"}],"1Pedk":[function(require,module,exports) {
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRedux = require("react-redux");
+var _reactBootstrap = require("react-bootstrap");
+var _conferenceAction = require("../../../action/conferenceAction");
+var _loaderJs = require("../../../components/Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _messageJs = require("../../../components/Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _styles = require("@material-ui/core/styles");
+var _cssBaseline = require("@material-ui/core/CssBaseline");
+var _cssBaselineDefault = parcelHelpers.interopDefault(_cssBaseline);
+var _drawer = require("@material-ui/core/Drawer");
+var _drawerDefault = parcelHelpers.interopDefault(_drawer);
+var _box = require("@material-ui/core/Box");
+var _boxDefault = parcelHelpers.interopDefault(_box);
+var _appBar = require("@material-ui/core/AppBar");
+var _appBarDefault = parcelHelpers.interopDefault(_appBar);
+var _toolbar = require("@material-ui/core/Toolbar");
+var _toolbarDefault = parcelHelpers.interopDefault(_toolbar);
+var _list = require("@material-ui/core/List");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _typography = require("@material-ui/core/Typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _divider = require("@material-ui/core/Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _iconButton = require("@material-ui/core/IconButton");
+var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);
+var _badge = require("@material-ui/core/Badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
+var _container = require("@material-ui/core/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _grid = require("@material-ui/core/Grid");
+var _gridDefault = parcelHelpers.interopDefault(_grid);
+var _paper = require("@material-ui/core/Paper");
+var _paperDefault = parcelHelpers.interopDefault(_paper);
+var _link = require("@material-ui/core/Link");
+var _linkDefault = parcelHelpers.interopDefault(_link);
+var _menu = require("@material-ui/icons/Menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _chevronLeft = require("@material-ui/icons/ChevronLeft");
+var _chevronLeftDefault = parcelHelpers.interopDefault(_chevronLeft);
+var _notifications = require("@material-ui/icons/Notifications");
+var _notificationsDefault = parcelHelpers.interopDefault(_notifications);
+var _listitems1 = require("./listitems1");
+var _s = $RefreshSig$();
+// function Copyright() {
+//       return (
+//             <Typography variant="body2" color="textSecondary" align="center">
+//                   {'Copyright © '}
+//                   <Link color="inherit" href="">
+//                         Madusanka Gajadeera
+//                   </Link>{' '}
+//                   {new Date().getFullYear()}
+//                   {'.'}
+//             </Typography>
+//       );
+// }
+const drawerWidth = 240;
+const useStyles = _styles.makeStyles((theme)=>({
+        root: {
+            display: 'flex'
+        },
+        toolbar: {
+            paddingRight: 24
+        },
+        toolbarIcon: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            padding: '0 8px',
+            ...theme.mixins.toolbar
+        },
+        appBar: {
+            zIndex: theme.zIndex.drawer + 1,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            })
+        },
+        appBarShift: {
+            marginLeft: drawerWidth,
+            width: `calc(100% - ${drawerWidth}px)`,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        menuButton: {
+            marginRight: 36
+        },
+        menuButtonHidden: {
+            display: 'none'
+        },
+        title: {
+            flexGrow: 1
+        },
+        drawerPaper: {
+            position: 'relative',
+            whiteSpace: 'nowrap',
+            width: drawerWidth,
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        drawerPaperClose: {
+            overflowX: 'hidden',
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            }),
+            width: theme.spacing(7),
+            [theme.breakpoints.up('sm')]: {
+                width: theme.spacing(9)
+            }
+        },
+        appBarSpacer: theme.mixins.toolbar,
+        content: {
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto'
+        },
+        container: {
+            paddingTop: theme.spacing(4),
+            paddingBottom: theme.spacing(4)
+        },
+        paper: {
+            padding: theme.spacing(2),
+            display: 'flex',
+            overflow: 'auto',
+            flexDirection: 'column'
+        },
+        fixedHeight: {
+            height: 240
+        }
+    })
+);
+function Dashboard() {
+    _s();
+    const classes = useStyles();
+    const [open, setOpen] = _reactDefault.default.useState(true);
+    const handleDrawerOpen = ()=>{
+        setOpen(true);
+    };
+    const handleDrawerClose = ()=>{
+        setOpen(false);
+    };
+    const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
+    const dispatch = _reactRedux.useDispatch();
+    const listCon = _reactRedux.useSelector((state)=>state.listCon
+    );
+    const { loading , error , conferencedetails  } = listCon;
+    _react.useEffect(()=>{
+        dispatch(_conferenceAction.listConDetails());
+    }, [
+        dispatch
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.root,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 146
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 147
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
+        position: "absolute",
+        className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 148
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
+        className: classes.toolbar,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 149
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        edge: "start",
+        color: "inherit",
+        color: "inherit",
+        "aria-label": "open drawer",
+        onClick: handleDrawerOpen,
+        className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 150
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 158
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        component: "h1",
+        variant: "h6",
+        color: "inherit",
+        noWrap: true,
+        className: classes.title,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 160
+        },
+        __self: this
+    }, "Editor Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        color: "inherit",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 163
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
+        badgeContent: 4,
+        color: "secondary",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 164
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 165
+        },
+        __self: this
+    }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
+        variant: "permanent",
+        classes: {
+            paper: _clsxDefault.default(classes.drawerPaper, !open && classes.drawerPaperClose)
+        },
+        open: open,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 170
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.toolbarIcon,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 177
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        onClick: handleDrawerClose,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 178
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 179
+        },
+        __self: this
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 182
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 183
+        },
+        __self: this
+    }, _listitems1.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 184
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 185
+        },
+        __self: this
+    }, _listitems1.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
+        className: classes.content,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 188
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.appBarSpacer,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 189
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
+        maxWidth: "lg",
+        className: classes.container,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 190
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 192
+        },
+        __self: this
+    }, "All conference Details"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 193
+        },
+        __self: this
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 194
+        },
+        __self: this
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
+        striped: true,
+        bordered: true,
+        hover: true,
+        responsive: true,
+        variant: "light",
+        className: "table-sm",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 196
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 197
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 198
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 199
+        },
+        __self: this
+    }, "ID"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 200
+        },
+        __self: this
+    }, "NAME"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 201
+        },
+        __self: this
+    }, "EMAIL"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 202
+        },
+        __self: this
+    }, "ADMIN"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 203
+        },
+        __self: this
+    }))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+            lineNumber: 206
+        },
+        __self: this
+    }, conferencedetails.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            key: con._id,
+            __source: {
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 208
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 209
+            },
+            __self: this
+        }, con.conname), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 210
+            },
+            __self: this
+        }, con.description), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 211
+            },
+            __self: this
+        }, con.organizer), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF final project\\frontend\\src\\Screens\\EditorScreen\\Editor dashboard\\editorDashboard.js",
+                lineNumber: 212
+            },
+            __self: this
+        }, con.phone))
+    )))))));
+}
+exports.default = Dashboard;
+_s(Dashboard, "YiUmAMFtLH0e6JMEx79H2nMEBjE=", false, function() {
+    return [
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
+});
+_c = Dashboard;
+var _c;
+$RefreshReg$(_c, "Dashboard");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-redux":"7GDa4","react-bootstrap":"4n7hB","../../../action/conferenceAction":"7CqFH","../../../components/Loader/loader.js":"68bDI","../../../components/Message/message.js":"6fMfw","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./listitems1":"1TblZ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"5EbTp":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactBootstrap = require("react-bootstrap");
+var _navbarJs = require("../../components/Navbar/navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _footerJs = require("../../components/Footer/footer.js");
+var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
+const profileScreen = ()=>{
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
+            lineNumber: 10
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
+            lineNumber: 14
+        },
+        __self: undefined
+    })));
+};
+exports.default = profileScreen;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-bootstrap":"4n7hB","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -56948,7 +58658,8 @@ const reducer = _redux.combineReducers({
     userLogin: _userReducersJs.userLoginReducer,
     listCon: _conferenceReducerJs.conListReducer,
     appCon: _conferenceReducerJs.conApprovedReduceer,
-    unappCon: _conferenceReducerJs.conUnApprovedReduceer
+    unappCon: _conferenceReducerJs.conUnApprovedReduceer,
+    userRegister: _userReducersJs.userRegisterReducer
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -57533,6 +59244,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "userLoginReducer", ()=>userLoginReducer
 );
+parcelHelpers.export(exports, "userRegisterReducer", ()=>userRegisterReducer
+);
 var _userConstantsJs = require("../constants/userConstants.js");
 const userLoginReducer = (state = {
 }, action)=>{
@@ -57553,6 +59266,27 @@ const userLoginReducer = (state = {
             };
         case _userConstantsJs.USER_LOGOUT:
             return {
+            };
+        default:
+            return state;
+    }
+};
+const userRegisterReducer = (state = {
+}, action)=>{
+    switch(action.type){
+        case _userConstantsJs.USER_REGISTER_REQUEST:
+            return {
+                loading: true
+            };
+        case _userConstantsJs.USER_REGISTER_SUCESS:
+            return {
+                loading: false,
+                userInfo: action.payload
+            };
+        case _userConstantsJs.USER_REGISTER_FAIL:
+            return {
+                loading: false,
+                error: action.payload
             };
         default:
             return state;
