@@ -124,7 +124,7 @@ export const conCreateReducer = (state = {}, action) => {
                   return { loading: true }
             case CONFERENCE_DETAILS_CREATE_SUCCESS:
                   return { loading: false, success: true, conferencedetails: action.payload }
-            case CONFERENCE_DETAILS_DELETE_FAIL:
+            case CONFERENCE_DETAILS_CREATE_FAIL:
                   return { loading: false, error: action.payload }
             case CONFERENCE_DETAILS_CREATE_RESET:
                   return {}

@@ -39,12 +39,14 @@ export const mainListItems = (
                         <ListItemText primary="Unapproved con details" />
                   </ListItem>
             </Link>
-            <ListItem button>
-                  <ListItemIcon>
-                        <BarChartIcon />
-                  </ListItemIcon>
-                  <ListItemText primary="Reports" />
-            </ListItem>
+            <Link to="/newslist">
+                  <ListItem button>
+                        <ListItemIcon>
+                              <BarChartIcon />
+                        </ListItemIcon>
+                        <ListItemText primary="Reports" />
+                  </ListItem>
+            </Link>
             <ListItem button>
                   <ListItemIcon>
                         <LayersIcon />

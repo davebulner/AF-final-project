@@ -7,6 +7,7 @@ import { conApprovedReduceer } from '../src/reducers/conferenceReducer.js'
 import { conferenceReducer, getEditorReducer } from '../src/reducers/adminReducers.js'
 import { userRegisterReducer } from '../src/reducers/userReducers.js'
 import { conferenceReducer, getEditorReducer, getReviwerReducer } from '../src/reducers/adminReducers.js'
+import { newsListReducer } from '../src/reducers/newsReducers.js'
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
@@ -21,7 +22,11 @@ const reducer = combineReducers({
     ConsDetails: conDetailsReducer,
     createConferenceDetails: conCreateReducer,
     reviwer: getReviwerReducer,
+<<<<<<< HEAD
 
+=======
+    listNews: newsListReducer
+>>>>>>> 62070b82faefca9a03d9f770c52d578131df0ad3
 
 })
 
