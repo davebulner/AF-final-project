@@ -149,7 +149,7 @@ export const deleteConDetails = (id) => async (dispatch, getState) => {
 
       } catch (error) {
             dispatch({
-                  type: CONFERENCE_DETAILS_DELETE_FAIL,
+                  type: CONFERENCE_DETAILS_CREATE_FAIL,
                   payload:
                         error.response && error.response.data.message
                               ? error.response.data.message
