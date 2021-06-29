@@ -11,6 +11,8 @@ import userRoutes from './routes/userRoutes.js'
 import researcherRoutes from './routes/researchRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 import workPresenterRoutes from './routes/workPresenterRoutes.js'
+import researchpapers from './routes/researchpaperRoutes.js'
+import reviewDetails from './routes/reviewerRoute.js'
 
 dotenv.config()
 
@@ -30,6 +32,8 @@ app.use('/api/users', userRoutes)
 app.use('/api/researcher', researcherRoutes)
 app.use('/api/presenter', workPresenterRoutes)
 app.use('/api/uploads', uploadRoutes)
+app.use('/api/researchpapers',researchpapers)
+app.use('/api/reviewdetails',reviewDetails)
 
 const __dirname = path.resolve()
 app.use('/documents', express.static(path.join(__dirname, '/documents')))
