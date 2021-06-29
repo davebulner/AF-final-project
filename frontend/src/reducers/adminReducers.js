@@ -14,7 +14,11 @@ import {
     REVIWER_LIST_REQUEST_ADMIN,
     REVIWER_LIST_SUCCESS_ADMIN,
     REVIWER_LIST_FAIL_ADMIN,
-    REVIWER_LIST_RESET_ADMIN
+    REVIWER_LIST_RESET_ADMIN,
+    ADMIN_CONFERENCE_DETAILS_BYID_REQUEST,
+    ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS,
+    ADMIN_CONFERENCE_DETAILS_BYID_FAIL,
+    ADMIN_CONFERENCE_DETAILS_BYID_RESET
  
 } from '../constants/adminConstants'
 
@@ -80,4 +84,19 @@ export const getEditorReducer = (state = { users: [] }, action) => {
                   return state
       }
   }
+
+  export const conferenceDetailsReducerbyId = (state = { conferencedetails: {} }, action) => {
+      switch (action.type) {
+            case ADMIN_CONFERENCE_DETAILS_BYID_REQUEST:
+                  return { ...state, loading: true }
+            case ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS:
+                  return { loading: false, conferencedetails: action.payload }
+            case ADMIN_CONFERENCE_DETAILS_BYID_FAIL:
+                  return { loading: false, error: action.payload }
+            case ADMIN_CONFERENCE_DETAILS_BYID_RESET:
+                  return { conferencedetails: {} }
+            default:
+                  return state
+      }
+}
 

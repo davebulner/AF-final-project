@@ -58175,6 +58175,8 @@ parcelHelpers.export(exports, "getEditorsList", ()=>getEditorsList
 );
 parcelHelpers.export(exports, "getReviwerList", ()=>getReviwerList
 );
+parcelHelpers.export(exports, "getConferenceDetailsbyId", ()=>getConferenceDetailsbyId
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _adminConstantsJs = require("../constants/adminConstants.js");
@@ -58274,6 +58276,31 @@ const getReviwerList = ()=>async (dispatch, getState)=>{
         }
     }
 ;
+const getConferenceDetailsbyId = (id)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_BYID_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get(`localhost:8040/api/admin/${id}`, config);
+            dispatch({
+                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_BYID_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
 
 },{"axios":"7rA65","../constants/adminConstants.js":"DJzj8","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"DJzj8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -58310,6 +58337,14 @@ parcelHelpers.export(exports, "REVIWER_LIST_FAIL_ADMIN", ()=>REVIWER_LIST_FAIL_A
 );
 parcelHelpers.export(exports, "REVIWER_LIST_RESET_ADMIN", ()=>REVIWER_LIST_RESET_ADMIN
 );
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_REQUEST", ()=>ADMIN_CONFERENCE_DETAILS_BYID_REQUEST
+);
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS", ()=>ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS
+);
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_FAIL", ()=>ADMIN_CONFERENCE_DETAILS_BYID_FAIL
+);
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_RESET", ()=>ADMIN_CONFERENCE_DETAILS_BYID_RESET
+);
 const CONFERENCE_APPROVED_LIST_REQUEST_ADMIN = 'CONFERENCE_APPROVED_LIST_REQUEST_ADMIN';
 const CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN = 'CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN';
 const CONFERENCE_APPROVED_LIST_FAIL_ADMIN = 'CONFERENCE_APPROVED_LIST_FAIL_ADMIN';
@@ -58326,6 +58361,10 @@ const REVIWER_LIST_REQUEST_ADMIN = 'REVIWER_LIST_REQUEST_ADMIN';
 const REVIWER_LIST_SUCCESS_ADMIN = 'REVIWER_LIST_SUCCESS_ADMIN';
 const REVIWER_LIST_FAIL_ADMIN = 'REVIWER_LIST_FAIL_ADMIN';
 const REVIWER_LIST_RESET_ADMIN = 'REVIWER_LIST_RESET_ADMIN';
+const ADMIN_CONFERENCE_DETAILS_BYID_REQUEST = 'ADMIN_CONFERENCE_DETAILS_BYID_REQUEST';
+const ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS = 'ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS';
+const ADMIN_CONFERENCE_DETAILS_BYID_FAIL = 'ADMIN_CONFERENCE_DETAILS_BYID_FAIL';
+const ADMIN_CONFERENCE_DETAILS_BYID_RESET = 'ADMIN_CONFERENCE_DETAILS_BYID_RESET';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"3WDQu":[function(require,module,exports) {
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -61463,6 +61502,8 @@ parcelHelpers.export(exports, "getEditorReducer", ()=>getEditorReducer
 );
 parcelHelpers.export(exports, "getReviwerReducer", ()=>getReviwerReducer
 );
+parcelHelpers.export(exports, "conferenceDetailsReducerbyId", ()=>conferenceDetailsReducerbyId
+);
 var _adminConstants = require("../constants/adminConstants");
 const conferenceReducer = (state = {
     conferencedetails: []
@@ -61563,6 +61604,35 @@ const getReviwerReducer = (state = {
         case _adminConstants.REVIWER_LIST_RESET_ADMIN:
             return {
                 users: []
+            };
+        default:
+            return state;
+    }
+};
+const conferenceDetailsReducerbyId = (state = {
+    conferencedetails: {
+    }
+}, action)=>{
+    switch(action.type){
+        case _adminConstants.ADMIN_CONFERENCE_DETAILS_BYID_REQUEST:
+            return {
+                ...state,
+                loading: true
+            };
+        case _adminConstants.ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS:
+            return {
+                loading: false,
+                conferencedetails: action.payload
+            };
+        case _adminConstants.ADMIN_CONFERENCE_DETAILS_BYID_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        case _adminConstants.ADMIN_CONFERENCE_DETAILS_BYID_RESET:
+            return {
+                conferencedetails: {
+                }
             };
         default:
             return state;
