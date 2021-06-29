@@ -52,6 +52,23 @@ const getAllNews = asyncHandler(async (req, res) => {
       res.json(news)
 })
 
+const getNewsById = asyncHandler(async (req, res) => {
+      const news = await News.findById(req.params.id)
+
+      if (news) {
+            res.json({
+                  _id: news._id,
+                  date: news.date,
+                  message: news.message,
+                  isApproved: news.isApproved
+
+            })
+      } else {
+            res.status(404)
+            throw new Error('News not found')
+      }
+})
+
 const getAprrovedNews = asyncHandler(async (req, res) => {
       const news = await News.find({
             isApproved: true,
@@ -59,11 +76,13 @@ const getAprrovedNews = asyncHandler(async (req, res) => {
       res.json(news)
 })
 
-const getUnAprrovedNews = asyncHandler(async (req, res) => {
-      const news = await News.find({
-            isApproved: false,
-      })
-      res.json(news)
-})
+// const getUnAprrovedNews = asyncHandler(async (req, res) => {
+//       const news = await News.find({
+//             isApproved: false,
+//       })
+//       res.json(news)
+// })
 
-export { createNews, updateNews, deleteNews, getAllNews, getAprrovedNews, getUnAprrovedNews }
+
+
+export { createNews, updateNews, deleteNews, getAllNews, getNewsById, getAprrovedNews }

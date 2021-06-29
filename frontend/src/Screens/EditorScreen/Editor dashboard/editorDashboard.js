@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Button, Form, Table } from 'react-bootstrap';
-import { listConDetails, deleteConDetails } from '../../../action/conferenceAction'
+import { Button, Form, Table, Row, Col } from 'react-bootstrap';
+import { listConDetails, deleteConDetails, createConDetails } from '../../../action/conferenceAction'
 import Loader from '../../../components/Loader/loader.js'
 import Message from '../../../components/Message/message.js'
 import clsx from 'clsx';
@@ -25,6 +25,7 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listitems1';
 import { Link } from "react-router-dom";
+import { CONFERENCE_DETAILS_CREATE_RESET } from '../../../constants/conferenceConstants'
 
 
 
@@ -123,7 +124,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function Dashboard() {
+export default function Dashboard({ history }) {
       const classes = useStyles();
       const [open, setOpen] = React.useState(true);
       const handleDrawerOpen = () => {
@@ -145,17 +146,30 @@ export default function Dashboard() {
       const deleteCon = useSelector((state) => state.deleteCon)
       const { success: successDelete } = deleteCon
 
+      const createConferenceDetails = useSelector((state) => state.createConferenceDetails)
+      const { loading: loadingCreate, error: errorCreate, success: successCreate, conferencedetails: addConDetails } = createConferenceDetails
+
 
       useEffect(() => {
 
             dispatch(listConDetails())
 
-      }, [dispatch, successDelete])
+            dispatch({ type: CONFERENCE_DETAILS_CREATE_RESET })
+
+            if (successCreate) {
+                  history.push(`/con/${addConDetails._id}`)
+            }
+
+      }, [dispatch, successDelete, successCreate, addConDetails])
 
       const deleteHandler = (id) => {
             if (window.confirm('Are you sure')) [
                   dispatch(deleteConDetails(id))
             ]
+      }
+
+      const createConHandler = () => {
+            dispatch(createConDetails())
       }
 
       return (
@@ -204,8 +218,17 @@ export default function Dashboard() {
                   <main className={classes.content}>
                         <div className={classes.appBarSpacer} />
                         <Container maxWidth="lg" className={classes.container}>
+                              <Row className='align-items-center'>
 
+                                    <Col className='text-right'>
+                                          <Button className='my-3' onClick={createConHandler}>
+                                                <i className='fas fa-plus'>Create Conference Details</i>
+                                          </Button>
+                                    </Col>
+                              </Row>
                               <h1>All conference Details</h1>
+                              {loadingCreate && <Loader />}
+                              {errorCreate && <Message variant='danger'>{errorCreate} </Message>}
                               {loading ? (<Loader />) : error ? (
                                     <Message variant='danger'>{error}</Message>
                               ) : (
