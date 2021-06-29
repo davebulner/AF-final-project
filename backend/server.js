@@ -12,6 +12,8 @@ import userRoutes from './routes/userRoutes.js'
 import researcherRoutes from './routes/researchRoutes.js'
 import uploadRoutes from './routes/uploadRoutes.js'
 import workPresenterRoutes from './routes/workPresenterRoutes.js'
+import researchpapers from './routes/researchpaperRoutes.js'
+import reviewDetails from './routes/reviewerRoute.js'
 import adminRoutes from './routes/adminRoutes.js'
 import newsRoutes from './routes/newsRoutes.js'
 
@@ -40,6 +42,8 @@ app.use('/api/users', userRoutes)
 app.use('/api/researcher', researcherRoutes)
 app.use('/api/presenter', workPresenterRoutes)
 app.use('/api/uploads', uploadRoutes)
+app.use('/api/researchpapers',researchpapers)
+app.use('/api/reviewdetails',reviewDetails)
 app.use('/api/admin', adminRoutes)
 app.use('/api/news', newsRoutes)
 
