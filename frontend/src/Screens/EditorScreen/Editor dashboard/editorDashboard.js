@@ -24,6 +24,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listitems1';
+import { Link } from "react-router-dom";
 
 
 
@@ -231,6 +232,11 @@ export default function Dashboard() {
                                                                   <i className='fas fa-times' style={{ color: 'red' }}></i>
                                                             )}</td>
                                                             <td>
+                                                                  <Link to={`/con/${con._id}`}>
+                                                                        <Button variant='light' className='btn-sm'>
+                                                                              <i className='fas fa-edit'></i>
+                                                                        </Button>
+                                                                  </Link>
                                                                   <Button
                                                                         variant='danger'
                                                                         className='btn-sm'

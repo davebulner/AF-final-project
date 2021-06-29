@@ -14,7 +14,16 @@ import {
       CONFERENCE_UNAPPROVED_LIST_RESET,
       CONFERENCE_DETAILS_DELETE_REQUEST,
       CONFERENCE_DETAILS_DELETE_SUCCESS,
-      CONFERENCE_DETAILS_DELETE_FAIL
+      CONFERENCE_DETAILS_DELETE_FAIL,
+      CONFERENCE_DETAILS_UPDATE_REQUEST,
+      CONFERENCE_DETAILS_UPDATE_SUCCESS,
+      CONFERENCE_DETAILS_UPDATE_FAIL,
+      CONFERENCE_DETAILS_UPDATE_RESET,
+      CONFERENCE_DETAILS_BYID_RESET,
+      CONFERENCE_DETAILS_BYID_REQUEST,
+      CONFERENCE_DETAILS_BYID_FAIL,
+      CONFERENCE_DETAILS_BYID_SUCCESS
+
 
 } from '../constants/conferenceConstants'
 
@@ -138,6 +147,77 @@ export const deleteConDetails = (id) => async (dispatch, getState) => {
       } catch (error) {
             dispatch({
                   type: CONFERENCE_DETAILS_DELETE_FAIL,
+                  payload:
+                        error.response && error.response.data.message
+                              ? error.response.data.message
+                              : error.message,
+            })
+      }
+}
+
+
+
+export const getConferenceDetails = (id) => async (dispatch, getState) => {
+      try {
+            dispatch({
+                  type: CONFERENCE_DETAILS_BYID_REQUEST,
+            })
+            const {
+                  userLogin: { userInfo },
+            } = getState()
+
+            const config = {
+                  headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${userInfo.token}`,
+                  },
+            }
+
+            const { data } = await axios.get(`http://localhost:8040/api/conDetails/${id}`, config)
+
+            dispatch({
+                  type: CONFERENCE_DETAILS_BYID_SUCCESS,
+                  payload: data
+            })
+
+      } catch (error) {
+            dispatch({
+                  type: CONFERENCE_DETAILS_BYID_FAIL,
+                  payload:
+                        error.response && error.response.data.message
+                              ? error.response.data.message
+                              : error.message,
+            })
+      }
+}
+
+export const updateConDetails = (conferencedetails) => async (dispatch, getState) => {
+      try {
+            dispatch({
+                  type: CONFERENCE_DETAILS_UPDATE_REQUEST
+            })
+
+            const {
+                  userLogin: { userInfo },
+            } = getState()
+
+            const config = {
+                  headers: {
+                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${userInfo.token}`,
+                  },
+            }
+
+            const { data } = await axios.put(`http://localhost:8040/api/conDetails/${conferencedetails._id}`, conferencedetails, config)
+
+
+
+            dispatch({ type: CONFERENCE_DETAILS_UPDATE_SUCCESS, payload: data })
+
+
+      } catch (error) {
+            dispatch({
+                  type: CONFERENCE_DETAILS_UPDATE_FAIL,
                   payload:
                         error.response && error.response.data.message
                               ? error.response.data.message
