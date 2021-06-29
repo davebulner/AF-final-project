@@ -4,18 +4,24 @@ import { composeWithDevTools } from 'redux-devtools-extension'
 import { userLoginReducer } from '../src/reducers/userReducers.js'
 import { conDetailsDeleteReducer, conListReducer, conUnApprovedReduceer, conDetailsUpdateReducer, conDetailsReducer, conCreateReducer } from '../src/reducers/conferenceReducer.js'
 import { conApprovedReduceer } from '../src/reducers/conferenceReducer.js'
-import { conferenceReducer } from '../src/reducers/adminConferenceReducer.js'
+import { conferenceReducer, getEditorReducer } from '../src/reducers/adminReducers.js'
+import { userRegisterReducer } from '../src/reducers/userReducers.js'
+import { conferenceReducer, getEditorReducer, getReviwerReducer } from '../src/reducers/adminReducers.js'
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
     listCon: conListReducer,
     appCon: conApprovedReduceer,
     unappCon: conUnApprovedReduceer,
+    userRegister: userRegisterReducer,
     appConference: conferenceReducer,
     deleteCon: conDetailsDeleteReducer,
+    editors: getEditorReducer,
     updateCon: conDetailsUpdateReducer,
     ConsDetails: conDetailsReducer,
-    createConferenceDetails: conCreateReducer
+    createConferenceDetails: conCreateReducer,
+    reviwer: getReviwerReducer
+
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo')

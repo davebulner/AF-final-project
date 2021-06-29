@@ -27,7 +27,7 @@ import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../../Message/message.js'
 import Loader from '../../Loader/loader.js'
-import { AdminconferenceList } from '../../../action/adminAction.js'
+
 
 
 function Copyright() {

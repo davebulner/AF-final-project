@@ -10,21 +10,21 @@ const storage = multer.diskStorage({
     destination(req, file, cb) {
         cb(null, 'documents/')
     },
-    filename(req, file, cb){
+    filename(req, file, cb) {
         cb(null, `${file.fieldname}-${Date.now()}${path.extname(file.originalname)}`)
     }
 
 })
 
-function checkFileType(file, cb){
-    const filetype = /docx|pdf|xlsx/
+function checkFileType(file, cb) {
+    const filetype = /png|pdf|docx|xlsx/
     const extname = filetype.test(path.extname(file.originalname).toLowerCase())
     const mimetype = filetype.test(file.mimetype)
 
-    if(extname && mimetype){
+    if (extname && mimetype) {
         return cb(null, true)
 
-    } else{
+    } else {
         cb('Documents only')
     }
 }
@@ -32,13 +32,13 @@ function checkFileType(file, cb){
 const upload = multer({
 
     storage,
-    fileFilter: function(req, file, cb){
+    fileFilter: function (req, file, cb) {
         checkFileType(file, cb)
     }
 
 })
 
-router.post('/', upload.single('document'), (req, res) => {
+router.post('/document', upload.single('document'), (req, res) => {
     res.send(`/${req.file.path}`)
 })
 
