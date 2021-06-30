@@ -22,6 +22,7 @@ import AdminApproveScreen from './components/Admin/adminConferenceDetails/approv
 import AdminNewsDetails from './components/Admin/adminNewsDetails/adminNewsDetails.js'
 import AdminNewsApprove from './components/Admin/adminNewsDetails/adminNewsApprove.js'
 import WorkshopList from './Screens/ReviwerScreen/reviewerdashboard/reviewerdashboard.js'
+import Reasearcher from './Screens/ReviwerScreen/reviewerdashboard/reviwerResearch.js'
 
 
 const App = () => {
@@ -50,6 +51,7 @@ const App = () => {
                         <Route path="/newsAdmin" component={AdminNewsDetails} />
                         <Route path="/adminNews/:id" component={AdminNewsApprove} />
                         <Route path="/reviwer" component={WorkshopList} />
+                        <Route path="/research" component={Reasearcher} />
 
                   </div>
             </Router>

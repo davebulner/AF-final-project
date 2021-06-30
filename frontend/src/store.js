@@ -14,7 +14,7 @@ import { newsListReducer, newsDeleteReducer, newsgetReducer, newsUpadateReducer,
 
 import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, conferenceApprovedReducer, conferenceDeclinedReducer, newsReducer, adminNewsReducer, getNewsDetailsById } from '../src/reducers/adminReducers.js'
 import { newsListReducer } from '../src/reducers/newsReducers.js'
-import { getAllWorkshop } from '../src/reducers/reviwerReducer.js'
+import { getAllWorkshop, getAllResearch } from '../src/reducers/reviwerReducer.js'
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
@@ -44,7 +44,8 @@ const reducer = combineReducers({
     userDetailsReducer: userDetailsReducer,
     newsApproved: adminNewsReducer,
     nDetails: getNewsDetailsById,
-    listWorkshops: getAllWorkshop
+    listWorkshops: getAllWorkshop,
+    listResearchers: getAllResearch
 
 })
 

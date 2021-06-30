@@ -21900,18 +21900,20 @@ var _adminNewsApproveJs = require("./components/Admin/adminNewsDetails/adminNews
 var _adminNewsApproveJsDefault = parcelHelpers.interopDefault(_adminNewsApproveJs);
 var _reviewerdashboardJs = require("./Screens/ReviwerScreen/reviewerdashboard/reviewerdashboard.js");
 var _reviewerdashboardJsDefault = parcelHelpers.interopDefault(_reviewerdashboardJs);
+var _reviwerResearchJs = require("./Screens/ReviwerScreen/reviewerdashboard/reviwerResearch.js");
+var _reviwerResearchJsDefault = parcelHelpers.interopDefault(_reviwerResearchJs);
 const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 29
+            lineNumber: 30
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "main",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 30
+            lineNumber: 31
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21920,7 +21922,7 @@ const App = ()=>{
         exact: true,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 31
+            lineNumber: 32
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21928,7 +21930,7 @@ const App = ()=>{
         component: _loginScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 32
+            lineNumber: 33
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21936,7 +21938,7 @@ const App = ()=>{
         component: _registerScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 33
+            lineNumber: 34
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21944,7 +21946,7 @@ const App = ()=>{
         component: _lggedInHomeScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 34
+            lineNumber: 35
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21952,7 +21954,7 @@ const App = ()=>{
         component: _adminDashboardDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 35
+            lineNumber: 36
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21960,7 +21962,7 @@ const App = ()=>{
         component: _editorDashboardDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 36
+            lineNumber: 37
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21968,7 +21970,7 @@ const App = ()=>{
         component: _approvedScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 37
+            lineNumber: 38
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21976,7 +21978,7 @@ const App = ()=>{
         component: _unapprovedScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 38
+            lineNumber: 39
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21984,7 +21986,7 @@ const App = ()=>{
         component: _adminConferenceDetailsJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 39
+            lineNumber: 40
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21992,7 +21994,7 @@ const App = ()=>{
         component: _adminEditorsListJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 40
+            lineNumber: 41
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22000,7 +22002,7 @@ const App = ()=>{
         component: _adminReviwerJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 41
+            lineNumber: 42
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22008,7 +22010,7 @@ const App = ()=>{
         component: _conferenceDetailsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 42
+            lineNumber: 43
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22016,7 +22018,7 @@ const App = ()=>{
         component: _researcherScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 43
+            lineNumber: 44
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22024,7 +22026,7 @@ const App = ()=>{
         component: _workShopScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 44
+            lineNumber: 45
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22032,7 +22034,7 @@ const App = ()=>{
         component: _approveScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 45
+            lineNumber: 46
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22040,7 +22042,7 @@ const App = ()=>{
         component: _newsListScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 46
+            lineNumber: 47
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22048,7 +22050,7 @@ const App = ()=>{
         component: _newsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 47
+            lineNumber: 48
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22056,7 +22058,7 @@ const App = ()=>{
         component: _adminNewsDetailsJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 48
+            lineNumber: 49
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22064,7 +22066,7 @@ const App = ()=>{
         component: _profileScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 49
+            lineNumber: 50
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22072,7 +22074,7 @@ const App = ()=>{
         component: _adminNewsDetailsJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 50
+            lineNumber: 51
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22080,7 +22082,7 @@ const App = ()=>{
         component: _adminNewsApproveJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 51
+            lineNumber: 52
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22088,7 +22090,15 @@ const App = ()=>{
         component: _reviewerdashboardJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 52
+            lineNumber: 53
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/research",
+        component: _reviwerResearchJsDefault.default,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 54
         },
         __self: undefined
     }))));
@@ -22103,7 +22113,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./Screens/ProfileScreen/profileScreen":"5EbTp","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./components/Admin/adminUserDetails/adminReviwer.js":"3xKCG","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./Screens/NewsListScreen/newsListScreen":"9EX0B","./Screens/NewsEditScreen/newsEditScreen.js":"5e4OZ","./components/Admin/adminConferenceDetails/approveScreen.js":"v3seJ","./components/Admin/adminNewsDetails/adminNewsDetails.js":"6edcv","./components/Admin/adminNewsDetails/adminNewsApprove.js":"mlup2","./Screens/ResearcherScreen/researcherScreen.js":"34NXB","./Screens/WorkShopScreen/workShopScreen":"5YKsY","./Screens/ReviwerScreen/reviewerdashboard/reviewerdashboard.js":"7I92J"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./Screens/ProfileScreen/profileScreen":"5EbTp","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./components/Admin/adminUserDetails/adminReviwer.js":"3xKCG","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./Screens/NewsListScreen/newsListScreen":"9EX0B","./Screens/NewsEditScreen/newsEditScreen.js":"5e4OZ","./components/Admin/adminConferenceDetails/approveScreen.js":"v3seJ","./components/Admin/adminNewsDetails/adminNewsDetails.js":"6edcv","./components/Admin/adminNewsDetails/adminNewsApprove.js":"mlup2","./Screens/ResearcherScreen/researcherScreen.js":"34NXB","./Screens/WorkShopScreen/workShopScreen":"5YKsY","./Screens/ReviwerScreen/reviewerdashboard/reviewerdashboard.js":"7I92J","./Screens/ReviwerScreen/reviewerdashboard/reviwerResearch.js":"1r5K9"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -64209,7 +64219,7 @@ function Dashboard() {
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterBootstrap.LinkContainer, {
-            to: `/conDetails/${con._id}`,
+            to: `/workshopDetails/${con._id}`,
             __source: {
                 fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
                 lineNumber: 213
@@ -64539,7 +64549,511 @@ const RESEARCH_LIST_SUCCESS_REVIWER = 'RESEARCH_LIST_SUCCESS_REVIWER';
 const RESEARCH_LIST_FAIL_REVIWER = 'RESEARCH_LIST_FAIL_REVIWER';
 const RESEARCH_LIST_RESET_REVIWER = 'RESEARCH_LIST_RESET_REVIWER';
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"4av32":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"1r5K9":[function(require,module,exports) {
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _clsx = require("clsx");
+var _clsxDefault = parcelHelpers.interopDefault(_clsx);
+var _styles = require("@material-ui/core/styles");
+var _cssBaseline = require("@material-ui/core/CssBaseline");
+var _cssBaselineDefault = parcelHelpers.interopDefault(_cssBaseline);
+var _drawer = require("@material-ui/core/Drawer");
+var _drawerDefault = parcelHelpers.interopDefault(_drawer);
+var _appBar = require("@material-ui/core/AppBar");
+var _appBarDefault = parcelHelpers.interopDefault(_appBar);
+var _toolbar = require("@material-ui/core/Toolbar");
+var _toolbarDefault = parcelHelpers.interopDefault(_toolbar);
+var _list = require("@material-ui/core/List");
+var _listDefault = parcelHelpers.interopDefault(_list);
+var _typography = require("@material-ui/core/Typography");
+var _typographyDefault = parcelHelpers.interopDefault(_typography);
+var _divider = require("@material-ui/core/Divider");
+var _dividerDefault = parcelHelpers.interopDefault(_divider);
+var _iconButton = require("@material-ui/core/IconButton");
+var _iconButtonDefault = parcelHelpers.interopDefault(_iconButton);
+var _badge = require("@material-ui/core/Badge");
+var _badgeDefault = parcelHelpers.interopDefault(_badge);
+var _container = require("@material-ui/core/Container");
+var _containerDefault = parcelHelpers.interopDefault(_container);
+var _link = require("@material-ui/core/Link");
+var _linkDefault = parcelHelpers.interopDefault(_link);
+var _menu = require("@material-ui/icons/Menu");
+var _menuDefault = parcelHelpers.interopDefault(_menu);
+var _chevronLeft = require("@material-ui/icons/ChevronLeft");
+var _chevronLeftDefault = parcelHelpers.interopDefault(_chevronLeft);
+var _notifications = require("@material-ui/icons/Notifications");
+var _notificationsDefault = parcelHelpers.interopDefault(_notifications);
+var _listitemsReviewerJs = require("./listitemsReviewer.js");
+var _reactRouterBootstrap = require("react-router-bootstrap");
+var _reactBootstrap = require("react-bootstrap");
+var _reactRedux = require("react-redux");
+var _messageJs = require("../../../components/Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _loaderJs = require("../../../components/Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _reviwerActionJs = require("../../../action/reviwerAction.js");
+var _s = $RefreshSig$();
+const drawerWidth = 240;
+const useStyles = _styles.makeStyles((theme)=>({
+        root: {
+            display: 'flex'
+        },
+        toolbar: {
+            paddingRight: 24
+        },
+        toolbarIcon: {
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'flex-end',
+            padding: '0 8px',
+            ...theme.mixins.toolbar
+        },
+        appBar: {
+            zIndex: theme.zIndex.drawer + 1,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            })
+        },
+        appBarShift: {
+            marginLeft: drawerWidth,
+            width: `calc(100% - ${drawerWidth}px)`,
+            transition: theme.transitions.create([
+                'width',
+                'margin'
+            ], {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        menuButton: {
+            marginRight: 36
+        },
+        menuButtonHidden: {
+            display: 'none'
+        },
+        title: {
+            flexGrow: 1
+        },
+        drawerPaper: {
+            position: 'relative',
+            whiteSpace: 'nowrap',
+            width: drawerWidth,
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.enteringScreen
+            })
+        },
+        drawerPaperClose: {
+            overflowX: 'hidden',
+            transition: theme.transitions.create('width', {
+                easing: theme.transitions.easing.sharp,
+                duration: theme.transitions.duration.leavingScreen
+            }),
+            width: theme.spacing(7),
+            [theme.breakpoints.up('sm')]: {
+                width: theme.spacing(9)
+            }
+        },
+        appBarSpacer: theme.mixins.toolbar,
+        content: {
+            flexGrow: 1,
+            height: '100vh',
+            overflow: 'auto'
+        },
+        container: {
+            paddingTop: theme.spacing(4),
+            paddingBottom: theme.spacing(4)
+        },
+        paper: {
+            padding: theme.spacing(2),
+            display: 'flex',
+            overflow: 'auto',
+            flexDirection: 'column'
+        },
+        fixedHeight: {
+            height: 240
+        }
+    })
+);
+function Dashboard() {
+    _s();
+    const classes = useStyles();
+    const [open, setOpen] = _reactDefault.default.useState(true);
+    const handleDrawerOpen = ()=>{
+        setOpen(true);
+    };
+    const handleDrawerClose = ()=>{
+        setOpen(false);
+    };
+    const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
+    const dispatch = _reactRedux.useDispatch();
+    const listResearchers = _reactRedux.useSelector((state)=>state.listResearchers
+    );
+    const { loading , error , researchers  } = listResearchers;
+    _react.useEffect(()=>{
+        dispatch(_reviwerActionJs.getAllResearch());
+    }, [
+        dispatch
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.root,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 138
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 139
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
+        position: "absolute",
+        className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 140
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
+        className: classes.toolbar,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 141
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        edge: "start",
+        color: "inherit",
+        "aria-label": "open drawer",
+        onClick: handleDrawerOpen,
+        className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 142
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 149
+        },
+        __self: this
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
+        component: "h1",
+        variant: "h6",
+        color: "inherit",
+        noWrap: true,
+        className: classes.title,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 151
+        },
+        __self: this
+    }, "Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        color: "inherit",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 154
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
+        badgeContent: 4,
+        color: "secondary",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 155
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 156
+        },
+        __self: this
+    }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
+        variant: "permanent",
+        classes: {
+            paper: _clsxDefault.default(classes.drawerPaper, !open && classes.drawerPaperClose)
+        },
+        open: open,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 161
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.toolbarIcon,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 168
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
+        onClick: handleDrawerClose,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 169
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 170
+        },
+        __self: this
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 173
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 174
+        },
+        __self: this
+    }, _listitemsReviewerJs.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 175
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 176
+        },
+        __self: this
+    }, _listitemsReviewerJs.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
+        className: classes.content,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 179
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: classes.appBarSpacer,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 180
+        },
+        __self: this
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
+        maxWidth: "lg",
+        className: classes.container,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 181
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 183
+        },
+        __self: this
+    }, "Reviwer Dashboard"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 184
+        },
+        __self: this
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 185
+        },
+        __self: this
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
+        striped: true,
+        bordered: true,
+        hover: true,
+        responsive: true,
+        variant: "light",
+        className: "table-sm",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 187
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 188
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 189
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 190
+        },
+        __self: this
+    }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 191
+        },
+        __self: this
+    }, "Paper"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 192
+        },
+        __self: this
+    }, "Description"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 193
+        },
+        __self: this
+    }, "Docs"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 194
+        },
+        __self: this
+    }, "Created at"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 195
+        },
+        __self: this
+    }, "update at"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 196
+        },
+        __self: this
+    }, "Approved"))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+            lineNumber: 199
+        },
+        __self: this
+    }, researchers.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            key: con._id,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 201
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 202
+            },
+            __self: this
+        }, con.researcherPaper), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 203
+            },
+            __self: this
+        }, con.researcherDes), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 204
+            },
+            __self: this
+        }, con.researchInsertDoc), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 205
+            },
+            __self: this
+        }, con.createdAt), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 206
+            },
+            __self: this
+        }, con.updatedAt), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 207
+            },
+            __self: this
+        }, con.researchIsApproved ? /*#__PURE__*/ _reactDefault.default.createElement("i", {
+            className: "fas fa-check",
+            style: {
+                color: 'green'
+            },
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 208
+            },
+            __self: this
+        }, " ") : /*#__PURE__*/ _reactDefault.default.createElement("i", {
+            className: "fas fa-times",
+            style: {
+                color: 'red'
+            },
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 208
+            },
+            __self: this
+        }, " ")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 211
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterBootstrap.LinkContainer, {
+            to: `/reserch/${con._id}`,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 212
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+            variant: "light",
+            className: "btn-sm",
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\ReviwerScreen\\reviewerdashboard\\reviwerResearch.js",
+                lineNumber: 213
+            },
+            __self: this
+        }, "Details"))))
+    )))))));
+}
+exports.default = Dashboard;
+_s(Dashboard, "LQfTDWNjbJfjqNuhMVeKkkzZ2pw=", false, function() {
+    return [
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
+});
+_c = Dashboard;
+var _c;
+$RefreshReg$(_c, "Dashboard");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./listitemsReviewer.js":"7c1KV","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../../components/Message/message.js":"6fMfw","../../../components/Loader/loader.js":"68bDI","../../../action/reviwerAction.js":"7iFEU","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -64581,7 +65095,8 @@ const reducer = _redux.combineReducers({
     userDetailsReducer: _userReducersJs.userDetailsReducer,
     newsApproved: _adminReducersJs.adminNewsReducer,
     nDetails: _adminReducersJs.getNewsDetailsById,
-    listWorkshops: _reviwerReducerJs.getAllWorkshop
+    listWorkshops: _reviwerReducerJs.getAllWorkshop,
+    listResearchers: _reviwerReducerJs.getAllResearch
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
