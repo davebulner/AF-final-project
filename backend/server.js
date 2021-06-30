@@ -32,6 +32,8 @@ app.use((req, res, next) => {
 });
 
 
+
+
 app.get('/', (req, res) => {
     res.send('API running...')
 })
@@ -42,8 +44,8 @@ app.use('/api/users', userRoutes)
 app.use('/api/researcher', researcherRoutes)
 app.use('/api/presenter', workPresenterRoutes)
 app.use('/api/uploads', uploadRoutes)
-app.use('/api/researchpapers',researchpapers)
-app.use('/api/reviewdetails',reviewDetails)
+app.use('/api/researchpapers', researchpapers)
+app.use('/api/reviewdetails', reviewDetails)
 app.use('/api/admin', adminRoutes)
 app.use('/api/news', newsRoutes)
 
