@@ -9,9 +9,9 @@ import {
       REVIWER_LIST_REQUEST_ADMIN,
       REVIWER_LIST_SUCCESS_ADMIN,
       REVIWER_LIST_FAIL_ADMIN,
-      ADMIN_CONFERENCE_DETAILS_BYID_REQUEST,
-      ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS,
-      ADMIN_CONFERENCE_DETAILS_BYID_FAIL,
+      ADMIN_CONFERENCE_DETAILS_ID_REQUEST,
+      ADMIN_CONFERENCE_DETAILS_ID_SUCCESS,
+      ADMIN_CONFERENCE_DETAILS_ID_FAIL,
       
 } from '../constants/adminConstants.js'
 
@@ -118,10 +118,11 @@ export const getReviwerList = () => async(dispatch, getState) => {
       }
 }
 
-export const getConferenceDetailsbyId = (id) => async(dispatch, getState) => {
+
+export const getConferenceDetailsById = (id) => async (dispatch, getState) => {
       try {
             dispatch({
-                  type: ADMIN_CONFERENCE_DETAILS_BYID_REQUEST,
+                  type: ADMIN_CONFERENCE_DETAILS_ID_REQUEST,
             })
             const {
                   userLogin: { userInfo },
@@ -134,16 +135,16 @@ export const getConferenceDetailsbyId = (id) => async(dispatch, getState) => {
                   },
             }
 
-            const { data } = await axios.get(`localhost:8040/api/admin/${id}`, config)
+            const { data } = await axios.get(`http://localhost:8040/api/conDetails/admin/con/${id}`, config)
 
             dispatch({
-                  type: ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS,
+                  type: ADMIN_CONFERENCE_DETAILS_ID_SUCCESS,
                   payload: data
             })
 
       } catch (error) {
             dispatch({
-                  type: ADMIN_CONFERENCE_DETAILS_BYID_FAIL,
+                  type: ADMIN_CONFERENCE_DETAILS_ID_FAIL,
                   payload:
                         error.response && error.response.data.message
                               ? error.response.data.message
