@@ -6,6 +6,8 @@ import { conDetailsDeleteReducer, conListReducer, conUnApprovedReduceer, conDeta
 import { conApprovedReduceer } from '../src/reducers/conferenceReducer.js'
 import { userRegisterReducer } from '../src/reducers/userReducers.js'
 import { conferenceReducer } from '../src/reducers/adminConferenceReducer.js'
+import { researcherInsert } from './reducers/researcherReducer.js'
+import { workshopInsert } from './reducers/workshopReducer.js'
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
@@ -16,7 +18,9 @@ const reducer = combineReducers({
     appConference: conferenceReducer,
     deleteCon: conDetailsDeleteReducer,
     updateCon: conDetailsUpdateReducer,
-    ConsDetails: conDetailsReducer
+    ConsDetails: conDetailsReducer,
+    researcherInsert: researcherInsert,
+    workshopInsert: workshopInsert,
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo')

@@ -12,6 +12,8 @@ import unappconlistScreen from './Screens/EditorScreen/unapprovedScreen'
 import profileScreen from './Screens/ProfileScreen/profileScreen'
 import AdminConference from './components/Admin/adminConferenceDetails/adminConferenceDetails.js'
 import ConferenceDetailsUpdate from './Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js'
+import researcherScreen from './Screens/ResearcherScreen/researcherScreen.js'
+import workShopScreen from './Screens/WorkShopScreen/workShopScreen'
 
 const App = () => {
       return (
@@ -27,6 +29,8 @@ const App = () => {
                         <Route path="/unapplist" component={unappconlistScreen} />
                         <Route path="/adminCon" component={AdminConference} />
                         <Route path="/con/:id" component={ConferenceDetailsUpdate} />
+                        <Route path="/researcher" component={researcherScreen} />
+                        <Route path="/workshop" component={workShopScreen} />
                   </div>
             </Router>
       )

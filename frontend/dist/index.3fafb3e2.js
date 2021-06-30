@@ -21880,18 +21880,22 @@ var _adminConferenceDetailsJs = require("./components/Admin/adminConferenceDetai
 var _adminConferenceDetailsJsDefault = parcelHelpers.interopDefault(_adminConferenceDetailsJs);
 var _conferenceDetailsEditScreenJs = require("./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js");
 var _conferenceDetailsEditScreenJsDefault = parcelHelpers.interopDefault(_conferenceDetailsEditScreenJs);
+var _researcherScreenJs = require("./Screens/ResearcherScreen/researcherScreen.js");
+var _researcherScreenJsDefault = parcelHelpers.interopDefault(_researcherScreenJs);
+var _workShopScreen = require("./Screens/WorkShopScreen/workShopScreen");
+var _workShopScreenDefault = parcelHelpers.interopDefault(_workShopScreen);
 const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 18
+            lineNumber: 20
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "main",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 19
+            lineNumber: 21
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21900,7 +21904,7 @@ const App = ()=>{
         exact: true,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 20
+            lineNumber: 22
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21908,7 +21912,7 @@ const App = ()=>{
         component: _loginScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 21
+            lineNumber: 23
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21916,7 +21920,7 @@ const App = ()=>{
         component: _registerScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 22
+            lineNumber: 24
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21924,7 +21928,7 @@ const App = ()=>{
         component: _lggedInHomeScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 23
+            lineNumber: 25
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21932,7 +21936,7 @@ const App = ()=>{
         component: _adminDashboardDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 24
+            lineNumber: 26
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21940,7 +21944,7 @@ const App = ()=>{
         component: _editorDashboardDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 25
+            lineNumber: 27
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21948,7 +21952,7 @@ const App = ()=>{
         component: _approvedScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 26
+            lineNumber: 28
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21956,7 +21960,7 @@ const App = ()=>{
         component: _unapprovedScreenDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 27
+            lineNumber: 29
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21964,7 +21968,7 @@ const App = ()=>{
         component: _adminConferenceDetailsJsDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 28
+            lineNumber: 30
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21972,7 +21976,23 @@ const App = ()=>{
         component: _conferenceDetailsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\App.js",
-            lineNumber: 29
+            lineNumber: 31
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/researcher",
+        component: _researcherScreenJsDefault.default,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\App.js",
+            lineNumber: 32
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/workshop",
+        component: _workShopScreenDefault.default,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\App.js",
+            lineNumber: 33
         },
         __self: undefined
     }))));
@@ -21987,7 +22007,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./App.css":"11ghl","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/ProfileScreen/profileScreen":"5EbTp","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT"}],"11ghl":[function() {},{}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"11ghl","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/ProfileScreen/profileScreen":"5EbTp","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./Screens/ResearcherScreen/researcherScreen.js":"34NXB","./Screens/WorkShopScreen/workShopScreen":"5YKsY"}],"11ghl":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -25360,38 +25380,24 @@ const Appbar = ()=>{
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-        href: "/login",
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 64
-        },
-        __self: undefined
-    }, " Login")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
-        className: "link",
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 65
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "/register",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 65
+            lineNumber: 64
         },
         __self: undefined
     }, "Register")), /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 66
+            lineNumber: 65
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 66
+            lineNumber: 65
         },
         __self: undefined
     }, "Contact us")), userInfo ? /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
@@ -25400,81 +25406,75 @@ const Appbar = ()=>{
         id: "username",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 70
+            lineNumber: 69
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterBootstrap.LinkContainer, {
         to: "/profile",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 71
+            lineNumber: 70
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
         class: "link-dark",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 72
+            lineNumber: 71
         },
         __self: undefined
     }, "Profile")), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown.Item, {
         onClick: logoutHandler,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 74
+            lineNumber: 73
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
         className: "link",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 75
+            lineNumber: 74
         },
         __self: undefined
     }, "logout"))) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Nav.Link, {
+        className: "link",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 78
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/login",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
             lineNumber: 79
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("li", {
-        className: "link",
+    }, "Login")), userInfo && userInfo.isEditor && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 80
-        },
-        __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("a", {
-        href: "#",
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 80
-        },
-        __self: undefined
-    }, "User"))), userInfo && userInfo.isEditor && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 85
+            lineNumber: 84
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/editor",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 86
+            lineNumber: 85
         },
         __self: undefined
     }, "editor")) || userInfo && userInfo.isAdmin && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 92
+            lineNumber: 91
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
         to: "/admincon",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 93
+            lineNumber: 92
         },
         __self: undefined
     }, "Admin")) || userInfo && userInfo.isReasearcher && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
@@ -25482,29 +25482,44 @@ const Appbar = ()=>{
         title: "Researcher",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 99
+            lineNumber: 98
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
-        to: "/editor",
+        to: "/researcher",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 100
+            lineNumber: 99
         },
         __self: undefined
-    }, "editor"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+    }, "Insert Research Paper")) || userInfo && userInfo.isWorkPresnter && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.NavDropdown, {
+        className: "link",
+        title: "Workshop Presenter",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 105
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "/workshop",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
+            lineNumber: 106
+        },
+        __self: undefined
+    }, "Insert Workshop Details"))), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         onClick: handleNavLinksToggle,
         className: "hambuger-toggle",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 109
+            lineNumber: 117
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("i", {
         className: "fas fa-bars fa-lg",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\components\\Navbar\\navbar.js",
-            lineNumber: 110
+            lineNumber: 118
         },
         __self: undefined
     })))));
@@ -59530,7 +59545,799 @@ $RefreshReg$(_c, "FormContainer");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"34NXB":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactBootstrap = require("react-bootstrap");
+var _registerScreenCss = require("../../Screens/RegisterScreen/registerScreen.css");
+var _reactRouterDom = require("react-router-dom");
+var _reactRedux = require("react-redux");
+var _navbarJs = require("../../components/Navbar/navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _footerJs = require("../../components/Footer/footer.js");
+var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
+var _messageJs = require("../../components/Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _loaderJs = require("../../components/Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _researcherAction = require("../../action/researcherAction");
+var _s = $RefreshSig$();
+const researcherScreen = ({ location , history  })=>{
+    _s();
+    const [researcherPaper, setResearcherPaper] = _react.useState('');
+    const [researcherDes, setResearcherDes] = _react.useState('');
+    const [researchIsApproved, setResearchIsApproved] = _react.useState(false);
+    const [researchInsertDoc, setResearchInsertDoc] = _react.useState('');
+    const [uploading, setUploading] = _react.useState(false);
+    const dispatch = _reactRedux.useDispatch();
+    const researcherInsert = _reactRedux.useSelector((state)=>state.researcherInsert
+    );
+    const { loading , error , researcherInfo  } = researcherInsert;
+    const redirect = location.search ? location.search.split('=')[1] : '/';
+    _react.useEffect(()=>{
+        if (researcherInfo) history.push(redirect);
+    }, [
+        history,
+        researcherInfo,
+        redirect
+    ]);
+    const submitHandler = (e)=>{
+        e.preventDefault();
+        dispatch(_researcherAction.researchAdd(researcherPaper, researcherDes, researchInsertDoc, researchIsApproved));
+    };
+    const uploadFileHandler = async (e)=>{
+        const file = e.target.files[0];
+        const formData = new FormData();
+        formData.append('document', file);
+        setUploading(true);
+        try {
+            const config = {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            };
+            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/uploads/document', formData, config);
+            setResearchInsertDoc(data);
+            setUploading(false);
+        } catch (error1) {
+            console.error(error1);
+            setUploading(false);
+        }
+    };
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 66
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "wrapper",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 67
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "nm",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 68
+        },
+        __self: undefined
+    }, error && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 69
+        },
+        __self: undefined
+    }, error), loading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 70
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "content",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 72
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form, {
+        onSubmit: submitHandler,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 74
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+        align: "center",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 75
+        },
+        __self: undefined
+    }, "Register"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "researcherPaper",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 77
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 78
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 79
+        },
+        __self: undefined
+    }, "Research Paper"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "text",
+        className: "form-control",
+        placeholder: "Enter Research Paper",
+        value: researcherPaper,
+        onChange: (e)=>setResearcherPaper(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 80
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "researcherDes",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 87
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 88
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 89
+        },
+        __self: undefined
+    }, "Research Description"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "text",
+        className: "form-control",
+        placeholder: "Enter Research Description",
+        value: researcherDes,
+        onChange: (e)=>setResearcherDes(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 90
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "image",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 98
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 99
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 100
+        },
+        __self: undefined
+    }, "Upload Document"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "text",
+        className: "form-control",
+        placeholder: "Enter Document URL",
+        value: researchInsertDoc,
+        onChange: (e)=>setResearchInsertDoc(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 101
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.File, {
+        id: "file",
+        label: "Choose File",
+        custom: true,
+        onChange: uploadFileHandler,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 106
+        },
+        __self: undefined
+    }), uploading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 107
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 110
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 111
+        },
+        __self: undefined
+    }, "Have An Account? ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: redirect ? `/login?redirect=${redirect}` : '/login',
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 112
+        },
+        __self: undefined
+    }, "Login"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+        type: "submit",
+        className: "btn btn-primary btn-block",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 117
+        },
+        __self: undefined
+    }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        className: "forgot-password text-right",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 118
+        },
+        __self: undefined
+    }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "#",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 119
+        },
+        __self: undefined
+    }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 128
+        },
+        __self: undefined
+    })));
+};
+_s(researcherScreen, "Z50pwOJwZccli/NZeqID3lRf11o=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
+exports.default = researcherScreen;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-bootstrap":"4n7hB","../../Screens/RegisterScreen/registerScreen.css":"6LOPH","react-router-dom":"1PMSK","react-redux":"7GDa4","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","../../components/Message/message.js":"6fMfw","../../components/Loader/loader.js":"68bDI","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../action/researcherAction":"5lMye"}],"6LOPH":[function() {},{}],"5lMye":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "researchAdd", ()=>researchAdd
+);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _researcherConstantJs = require("../constants/researcherConstant.js");
+const researchAdd = (researcherPaper, researcherDes, researchInsertDoc, researchIsApproved)=>async (dispatch)=>{
+        try {
+            dispatch({
+                type: _researcherConstantJs.RESEARCHER_INSERT_REQUEST
+            });
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            };
+            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/researcher/insertResearcher', {
+                researcherPaper,
+                researcherDes,
+                researchInsertDoc,
+                researchIsApproved
+            }, config);
+            dispatch({
+                type: _researcherConstantJs.RESEARCHER_INSERT_SUCESS,
+                payload: data
+            });
+            localStorage.setItem('researchInfo', JSON.stringify(data));
+        } catch (error) {
+            dispatch({
+                type: _researcherConstantJs.RESEARCHER_INSERT_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+
+},{"axios":"7rA65","../constants/researcherConstant.js":"2ZpxB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"2ZpxB":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "RESEARCHER_INSERT_REQUEST", ()=>RESEARCHER_INSERT_REQUEST
+);
+parcelHelpers.export(exports, "RESEARCHER_INSERT_SUCESS", ()=>RESEARCHER_INSERT_SUCESS
+);
+parcelHelpers.export(exports, "RESEARCHER_INSERT_FAIL", ()=>RESEARCHER_INSERT_FAIL
+);
+const RESEARCHER_INSERT_REQUEST = 'RESEARCHER_INSERT_REQUEST';
+const RESEARCHER_INSERT_SUCESS = 'RESEARCHER_INSERT_SUCESS';
+const RESEARCHER_INSERT_FAIL = 'RESEARCHER_INSERT_FAIL';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"5YKsY":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactBootstrap = require("react-bootstrap");
+var _registerScreenCss = require("../../Screens/RegisterScreen/registerScreen.css");
+var _reactRouterDom = require("react-router-dom");
+var _reactRedux = require("react-redux");
+var _navbarJs = require("../../components/Navbar/navbar.js");
+var _navbarJsDefault = parcelHelpers.interopDefault(_navbarJs);
+var _footerJs = require("../../components/Footer/footer.js");
+var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
+var _messageJs = require("../../components/Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _loaderJs = require("../../components/Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _workshopAction = require("../../action/workshopAction");
+var _s = $RefreshSig$();
+const workShopScreen = ({ location , history  })=>{
+    _s();
+    const [workshopName, setWorkshopName] = _react.useState('');
+    const [workshopDes, setWorkshopDes] = _react.useState('');
+    const [workTimeFrom, setWorkTimeFrom] = _react.useState('');
+    const [workTimeTo, setWorkTimeTo] = _react.useState('');
+    const [workDate, setWorkDate] = _react.useState('');
+    const [workIsApprove, setWorkIsApprove] = _react.useState(false);
+    const [workInsertDoc, setWorkInsertDoc] = _react.useState('');
+    const [uploading, setUploading] = _react.useState(false);
+    const dispatch = _reactRedux.useDispatch();
+    const workshopInsert = _reactRedux.useSelector((state)=>state.workshopInsert
+    );
+    const { loading , error , workshopInfo  } = workshopInsert;
+    const redirect = location.search ? location.search.split('=')[1] : '/';
+    _react.useEffect(()=>{
+        if (workshopInfo) history.push(redirect);
+    }, [
+        history,
+        workshopInsert,
+        redirect
+    ]);
+    const submitHandler = (e)=>{
+        e.preventDefault();
+        dispatch(_workshopAction.workshopAdd(workshopName, workshopDes, workTimeFrom, workTimeTo, workDate, workInsertDoc, workIsApprove));
+    };
+    const uploadFileHandler = async (e)=>{
+        const file = e.target.files[0];
+        const formData = new FormData();
+        formData.append('document', file);
+        setUploading(true);
+        try {
+            const config = {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+            };
+            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/uploads/document', formData, config);
+            setWorkInsertDoc(data);
+            setUploading(false);
+        } catch (error1) {
+            console.error(error1);
+            setUploading(false);
+        }
+    };
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 78
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "wrapper",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 80
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "nm",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 81
+        },
+        __self: undefined
+    }, error && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 82
+        },
+        __self: undefined
+    }, error), loading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 83
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "content",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 85
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form, {
+        onSubmit: submitHandler,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 87
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+        align: "center",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 88
+        },
+        __self: undefined
+    }, "Register"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "workShopName",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 90
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 91
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 92
+        },
+        __self: undefined
+    }, "Workshop Name"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "text",
+        className: "form-control",
+        placeholder: "Enter Workshop Name",
+        value: workshopName,
+        onChange: (e)=>setWorkshopName(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 93
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "workshopDes",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 100
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 101
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 102
+        },
+        __self: undefined
+    }, "Workshop Description"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "text",
+        className: "form-control",
+        placeholder: "Enter Workshop Description",
+        value: workshopDes,
+        onChange: (e)=>setWorkshopDes(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 103
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "workTimeFrom",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 110
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 111
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 112
+        },
+        __self: undefined
+    }, "Workshop Starting Time"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "text",
+        className: "form-control",
+        placeholder: "Enter Starting Workshop Time",
+        value: workTimeFrom,
+        onChange: (e)=>setWorkTimeFrom(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 113
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "workTimeTo",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 120
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 121
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 122
+        },
+        __self: undefined
+    }, "Workshop Ending Time"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "text",
+        className: "form-control",
+        placeholder: "Enter Ending Workshop Time",
+        value: workTimeTo,
+        onChange: (e)=>setWorkTimeTo(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 123
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "workDate",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 131
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 132
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 133
+        },
+        __self: undefined
+    }, "Workshop Date"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "date",
+        className: "form-control",
+        placeholder: "Enter Workshop Date",
+        value: workDate,
+        onChange: (e)=>setWorkDate(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 134
+        },
+        __self: undefined
+    }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
+        controlId: "image",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 141
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "form-group bn",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 142
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 143
+        },
+        __self: undefined
+    }, "Upload Document"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
+        type: "text",
+        className: "form-control",
+        placeholder: "Enter Document URL",
+        value: workInsertDoc,
+        onChange: (e)=>setWorkInsertDoc(e.target.value)
+        ,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 144
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.File, {
+        id: "file",
+        label: "Choose File",
+        custom: true,
+        onChange: uploadFileHandler,
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 149
+        },
+        __self: undefined
+    }), uploading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 150
+        },
+        __self: undefined
+    })), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 153
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 154
+        },
+        __self: undefined
+    }, "Have An Account? ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: redirect ? `/login?redirect=${redirect}` : '/login',
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 155
+        },
+        __self: undefined
+    }, "Login"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+        type: "submit",
+        className: "btn btn-primary btn-block",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 160
+        },
+        __self: undefined
+    }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        className: "forgot-password text-right",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 161
+        },
+        __self: undefined
+    }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "#",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 162
+        },
+        __self: undefined
+    }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 171
+        },
+        __self: undefined
+    })));
+};
+_s(workShopScreen, "yehjUGmUl7KAviwjxtstrEr/PbM=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
+exports.default = workShopScreen;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-bootstrap":"4n7hB","../../Screens/RegisterScreen/registerScreen.css":"6LOPH","react-router-dom":"1PMSK","react-redux":"7GDa4","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","../../components/Message/message.js":"6fMfw","../../components/Loader/loader.js":"68bDI","axios":"7rA65","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../action/workshopAction":"7AvMf"}],"6LOPH":[function() {},{}],"7AvMf":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "workshopAdd", ()=>workshopAdd
+);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _workshopConstantsJs = require("../constants/workshopConstants.js");
+const workshopAdd = (workshopName, workshopDes, workTimeFrom, workTimeTo, workDate, workInsertDoc, workIsApprove)=>async (dispatch)=>{
+        try {
+            dispatch({
+                type: _workshopConstantsJs.WORKSHOP_INSERT_REQUEST
+            });
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            };
+            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/presenter/insertPresenter', {
+                workshopName,
+                workshopDes,
+                workTimeFrom,
+                workTimeTo,
+                workDate,
+                workInsertDoc,
+                workIsApprove
+            }, config);
+            dispatch({
+                type: _workshopConstantsJs.WORKSHOP_INSERT_SUCESS,
+                payload: data
+            });
+            localStorage.setItem('workshopInfo', JSON.stringify(data));
+        } catch (error) {
+            dispatch({
+                type: _workshopConstantsJs.WORKSHOP_INSERT_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+
+},{"axios":"7rA65","../constants/workshopConstants.js":"5akWQ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"5akWQ":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "WORKSHOP_INSERT_REQUEST", ()=>WORKSHOP_INSERT_REQUEST
+);
+parcelHelpers.export(exports, "WORKSHOP_INSERT_SUCESS", ()=>WORKSHOP_INSERT_SUCESS
+);
+parcelHelpers.export(exports, "WORKSHOP_INSERT_FAIL", ()=>WORKSHOP_INSERT_FAIL
+);
+const WORKSHOP_INSERT_REQUEST = 'WORKSHOP_INSERT_REQUEST';
+const WORKSHOP_INSERT_SUCESS = 'WORKSHOP_INSERT_SUCESS';
+const WORKSHOP_INSERT_FAIL = 'WORKSHOP_INSERT_FAIL';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -59540,6 +60347,8 @@ var _reduxDevtoolsExtension = require("redux-devtools-extension");
 var _userReducersJs = require("../src/reducers/userReducers.js");
 var _conferenceReducerJs = require("../src/reducers/conferenceReducer.js");
 var _adminConferenceReducerJs = require("../src/reducers/adminConferenceReducer.js");
+var _researcherReducerJs = require("./reducers/researcherReducer.js");
+var _workshopReducerJs = require("./reducers/workshopReducer.js");
 const reducer = _redux.combineReducers({
     userLogin: _userReducersJs.userLoginReducer,
     listCon: _conferenceReducerJs.conListReducer,
@@ -59549,7 +60358,9 @@ const reducer = _redux.combineReducers({
     appConference: _adminConferenceReducerJs.conferenceReducer,
     deleteCon: _conferenceReducerJs.conDetailsDeleteReducer,
     updateCon: _conferenceReducerJs.conDetailsUpdateReducer,
-    ConsDetails: _conferenceReducerJs.conDetailsReducer
+    ConsDetails: _conferenceReducerJs.conDetailsReducer,
+    researcherInsert: _researcherReducerJs.researcherInsert,
+    workshopInsert: _workshopReducerJs.workshopInsert
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -59561,7 +60372,7 @@ const middleware = [_reduxThunkDefault.default];
 const store = _redux.createStore(reducer, initialState, _reduxDevtoolsExtension.composeWithDevTools(_redux.applyMiddleware(...middleware)));
 exports.default = store;
 
-},{"redux":"7panR","redux-thunk":"2oNwf","redux-devtools-extension":"3vUkb","../src/reducers/userReducers.js":"2BaWm","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../src/reducers/conferenceReducer.js":"2dHIK","../src/reducers/adminConferenceReducer.js":"6xwzG"}],"7panR":[function(require,module,exports) {
+},{"redux":"7panR","redux-thunk":"2oNwf","redux-devtools-extension":"3vUkb","../src/reducers/userReducers.js":"2BaWm","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../src/reducers/conferenceReducer.js":"2dHIK","../src/reducers/adminConferenceReducer.js":"6xwzG","./reducers/researcherReducer.js":"46B3G","./reducers/workshopReducer.js":"3WSFn"}],"7panR":[function(require,module,exports) {
 'use strict';
 Object.defineProperty(exports, '__esModule', {
     value: true
@@ -60418,6 +61229,62 @@ const conferenceApprovedReduceer = (state = {
     }
 };
 
-},{"../constants/adminConstants":"DJzj8","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"6qLk8":[function() {},{}]},["1j6wU","6iKAK","5rkFb"], "5rkFb", "parcelRequire0de8")
+},{"../constants/adminConstants":"DJzj8","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"46B3G":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "researcherInsert", ()=>researcherInsert
+);
+var _researcherConstantJs = require("../constants/researcherConstant.js");
+const researcherInsert = (state = {
+}, action)=>{
+    switch(action.type){
+        case _researcherConstantJs.RESEARCHER_INSERT_REQUEST:
+            return {
+                loading: true
+            };
+        case _researcherConstantJs.RESEARCHER_INSERT_SUCESS:
+            return {
+                loading: false,
+                researcherInfo: action.payload
+            };
+        case _researcherConstantJs.RESEARCHER_INSERT_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        default:
+            return state;
+    }
+};
+
+},{"../constants/researcherConstant.js":"2ZpxB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"3WSFn":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "workshopInsert", ()=>workshopInsert
+);
+var _workshopConstantsJs = require("../constants/workshopConstants.js");
+const workshopInsert = (state = {
+}, action)=>{
+    switch(action.type){
+        case _workshopConstantsJs.WORKSHOP_INSERT_REQUEST:
+            return {
+                loading: true
+            };
+        case _workshopConstantsJs.WORKSHOP_INSERT_SUCESS:
+            return {
+                loading: false,
+                workshopInfo: action.payload
+            };
+        case _workshopConstantsJs.WORKSHOP_INSERT_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        default:
+            return state;
+    }
+};
+
+},{"../constants/workshopConstants.js":"5akWQ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"6qLk8":[function() {},{}]},["1j6wU","6iKAK","5rkFb"], "5rkFb", "parcelRequire0de8")
 
 //# sourceMappingURL=index.3fafb3e2.js.map
