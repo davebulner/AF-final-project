@@ -1,5 +1,6 @@
 import asyncHandler from 'express-async-handler'
 import Workshop from '../models/workPresenterModel.js'
+import Researcher from '../models/researchModel.js'
 
 
 
@@ -9,4 +10,11 @@ const getAllWorkshopDetails = asyncHandler(async (req, res) => {
   res.json(workDetails)
 })
 
-export{ getAllWorkshopDetails }
+
+const getAllResearchDetails = asyncHandler(async (req, res) => {
+    const reskDetails = await Researcher.find({})
+    res.json(reskDetails)
+  })
+  
+
+export{ getAllWorkshopDetails, getAllResearchDetails }
