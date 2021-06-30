@@ -17,7 +17,10 @@ import {
     ADMIN_CONFERENCE_DETAILS_ID_RESET,
     ADMIN_APPROVED_REQUEST,
     ADMIN_APPROVED_SUCCESS,
-    ADMIN_APPROVED_FAIL
+    ADMIN_APPROVED_FAIL,
+    ADMIN_DECLINE_REQUEST,
+    ADMIN_DECLINE_SUCCESS,
+    ADMIN_DECLINE_FAIL
 
  
 } from '../constants/adminConstants'
@@ -98,6 +101,20 @@ export const getEditorReducer = (state = { users: [] }, action) => {
                   return state
         }
   }
+
+  export const conferenceDeclinedReducer = (state = {conferencedetails: {}} , action) => {
+      switch (action.type) {
+          case ADMIN_DECLINE_REQUEST:
+                  return { loading: true }
+          case ADMIN_DECLINE_SUCCESS:
+                return { loading: false, success: true }
+          case ADMIN_DECLINE_FAIL:
+                return { loading: false, error: action.payload}
+          default:
+                return state
+      }
+}
+
 
   
 
