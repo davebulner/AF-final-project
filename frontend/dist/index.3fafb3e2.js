@@ -21892,18 +21892,20 @@ var _approveScreenJs = require("./components/Admin/adminConferenceDetails/approv
 var _approveScreenJsDefault = parcelHelpers.interopDefault(_approveScreenJs);
 var _adminNewsDetailsJs = require("./components/Admin/adminNewsDetails/adminNewsDetails.js");
 var _adminNewsDetailsJsDefault = parcelHelpers.interopDefault(_adminNewsDetailsJs);
+var _adminNewsApproveJs = require("./components/Admin/adminNewsDetails/adminNewsApprove.js");
+var _adminNewsApproveJsDefault = parcelHelpers.interopDefault(_adminNewsApproveJs);
 const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 25
+            lineNumber: 26
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "main",
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 26
+            lineNumber: 27
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21912,7 +21914,7 @@ const App = ()=>{
         exact: true,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 27
+            lineNumber: 28
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21920,7 +21922,7 @@ const App = ()=>{
         component: _loginScreenDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 28
+            lineNumber: 29
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21928,7 +21930,7 @@ const App = ()=>{
         component: _registerScreenDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 29
+            lineNumber: 30
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21936,7 +21938,7 @@ const App = ()=>{
         component: _lggedInHomeScreenDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 30
+            lineNumber: 31
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21944,7 +21946,7 @@ const App = ()=>{
         component: _adminDashboardDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 31
+            lineNumber: 32
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21952,7 +21954,7 @@ const App = ()=>{
         component: _editorDashboardDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 32
+            lineNumber: 33
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21960,7 +21962,7 @@ const App = ()=>{
         component: _approvedScreenDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 33
+            lineNumber: 34
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21968,7 +21970,7 @@ const App = ()=>{
         component: _unapprovedScreenDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 34
+            lineNumber: 35
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21976,7 +21978,7 @@ const App = ()=>{
         component: _adminConferenceDetailsJsDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 35
+            lineNumber: 36
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21984,7 +21986,7 @@ const App = ()=>{
         component: _adminEditorsListJsDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 36
+            lineNumber: 37
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21992,7 +21994,7 @@ const App = ()=>{
         component: _adminReviwerJsDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 37
+            lineNumber: 38
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22000,7 +22002,7 @@ const App = ()=>{
         component: _conferenceDetailsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 38
+            lineNumber: 39
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22008,7 +22010,7 @@ const App = ()=>{
         component: _approveScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 39
+            lineNumber: 40
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22016,7 +22018,7 @@ const App = ()=>{
         component: _newsListScreenDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 40
+            lineNumber: 41
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22024,7 +22026,7 @@ const App = ()=>{
         component: _newsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 41
+            lineNumber: 42
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22032,7 +22034,15 @@ const App = ()=>{
         component: _adminNewsDetailsJsDefault.default,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 42
+            lineNumber: 43
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/adminNews/:id",
+        component: _adminNewsApproveJsDefault.default,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 44
         },
         __self: undefined
     }))));
@@ -22047,7 +22057,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./App.css":"3lxWH","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/RegisterScreen/registerScreen":"7xglY","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./Screens/ProfileScreen/profileScreen":"5EbTp","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./components/Admin/adminUserDetails/adminReviwer.js":"3xKCG","./Screens/NewsListScreen/newsListScreen":"9EX0B","./components/Admin/adminConferenceDetails/approveScreen.js":"v3seJ","./Screens/NewsEditScreen/newsEditScreen.js":"5e4OZ","./components/Admin/adminNewsDetails/adminNewsDetails.js":"6edcv"}],"3lxWH":[function() {},{}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"3lxWH","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","./Screens/LoginScreen/loginScreen":"2EjbP","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/RegisterScreen/registerScreen":"7xglY","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./Screens/ProfileScreen/profileScreen":"5EbTp","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./components/Admin/adminUserDetails/adminReviwer.js":"3xKCG","./Screens/NewsListScreen/newsListScreen":"9EX0B","./components/Admin/adminConferenceDetails/approveScreen.js":"v3seJ","./Screens/NewsEditScreen/newsEditScreen.js":"5e4OZ","./components/Admin/adminNewsDetails/adminNewsDetails.js":"6edcv","./components/Admin/adminNewsDetails/adminNewsApprove.js":"mlup2"}],"3lxWH":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -58225,6 +58235,10 @@ parcelHelpers.export(exports, "declineConference", ()=>declineConference
 );
 parcelHelpers.export(exports, "adminNewsList", ()=>adminNewsList
 );
+parcelHelpers.export(exports, "getNewsById", ()=>getNewsById
+);
+parcelHelpers.export(exports, "approveNews", ()=>approveNews
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _adminConstantsJs = require("../constants/adminConstants.js");
@@ -58391,6 +58405,55 @@ const adminNewsList = ()=>async (dispatch)=>{
         }
     }
 ;
+const getNewsById = (id)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_NEWS_DETAILS_ID_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get(`http://localhost:8040/api/news/admin/news/${id}`, config);
+            dispatch({
+                type: _adminConstantsJs.ADMIN_NEWS_DETAILS_ID_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_NEWS_DETAILS_ID_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const approveNews = (news)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_APPROVED_NEWS_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.put(`http://localhost:8040/api/admin/news/${news._id}/approved`, news, config);
+            dispatch({
+                type: _adminConstantsJs.ADMIN_APPROVED_NEWS_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_APPROVED_NEWS_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
 
 },{"axios":"7rA65","../constants/adminConstants.js":"DJzj8","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"DJzj8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -58459,6 +58522,22 @@ parcelHelpers.export(exports, "ADMIN_NEWS_LIST_FAIL", ()=>ADMIN_NEWS_LIST_FAIL
 );
 parcelHelpers.export(exports, "ADMIN_NEWS_LIST_RESET", ()=>ADMIN_NEWS_LIST_RESET
 );
+parcelHelpers.export(exports, "ADMIN_NEWS_DETAILS_ID_REQUEST", ()=>ADMIN_NEWS_DETAILS_ID_REQUEST
+);
+parcelHelpers.export(exports, "ADMIN_NEWS_DETAILS_ID_SUCCESS", ()=>ADMIN_NEWS_DETAILS_ID_SUCCESS
+);
+parcelHelpers.export(exports, "ADMIN_NEWS_DETAILS_ID_FAIL", ()=>ADMIN_NEWS_DETAILS_ID_FAIL
+);
+parcelHelpers.export(exports, "ADMIN_NEWS_DETAILS_ID_RESET", ()=>ADMIN_NEWS_DETAILS_ID_RESET
+);
+parcelHelpers.export(exports, "ADMIN_APPROVED_NEWS_REQUEST", ()=>ADMIN_APPROVED_NEWS_REQUEST
+);
+parcelHelpers.export(exports, "ADMIN_APPROVED_NEWS_SUCCESS", ()=>ADMIN_APPROVED_NEWS_SUCCESS
+);
+parcelHelpers.export(exports, "ADMIN_APPROVED_NEWS_FAIL", ()=>ADMIN_APPROVED_NEWS_FAIL
+);
+parcelHelpers.export(exports, "ADMIN_APPROVED_NEWS_RESET", ()=>ADMIN_APPROVED_NEWS_RESET
+);
 const CONFERENCE_APPROVED_LIST_REQUEST_ADMIN = 'CONFERENCE_APPROVED_LIST_REQUEST_ADMIN';
 const CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN = 'CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN';
 const CONFERENCE_APPROVED_LIST_FAIL_ADMIN = 'CONFERENCE_APPROVED_LIST_FAIL_ADMIN';
@@ -58491,6 +58570,14 @@ const ADMIN_NEWS_LIST_REQUEST = 'ADMIN_NEWS_LIST_REQUEST';
 const ADMIN_NEWS_LIST_SUCCESS = 'ADMIN_NEWS_LIST_SUCCESS';
 const ADMIN_NEWS_LIST_FAIL = 'ADMIN_NEWS_LIST_FAIL';
 const ADMIN_NEWS_LIST_RESET = 'ADMIN_NEWS_LIST_RESET';
+const ADMIN_NEWS_DETAILS_ID_REQUEST = 'ADMIN_NEWS_DETAILS_ID_REQUEST';
+const ADMIN_NEWS_DETAILS_ID_SUCCESS = 'ADMIN_NEWS_DETAILS_ID_SUCCESS';
+const ADMIN_NEWS_DETAILS_ID_FAIL = 'ADMIN_NEWS_DETAILS_ID_FAIL';
+const ADMIN_NEWS_DETAILS_ID_RESET = 'ADMIN_NEWS_DETAILS_ID_RESET';
+const ADMIN_APPROVED_NEWS_REQUEST = 'ADMIN_APPROVED_NEWS_REQUEST';
+const ADMIN_APPROVED_NEWS_SUCCESS = 'ADMIN_APPROVED_NEWS_SUCCESS';
+const ADMIN_APPROVED_NEWS_FAIL = 'ADMIN_APPROVED_NEWS_FAIL';
+const ADMIN_APPROVED_NEWS_RESET = 'ADMIN_APPROVED_NEWS_RESET';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"4KiUu":[function(require,module,exports) {
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -62403,7 +62490,7 @@ function Dashboard() {
             },
             __self: this
         }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterBootstrap.LinkContainer, {
-            to: `/news/${newA._id}`,
+            to: `/adminNews/${newA._id}`,
             __source: {
                 fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsDetails.js",
                 lineNumber: 218
@@ -62435,7 +62522,178 @@ $RefreshReg$(_c1, "Dashboard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../Message/message.js":"6fMfw","../../Loader/loader.js":"68bDI","../../../action/adminAction.js":"18Cn4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../adminDashboard/listitems3":"4KiUu"}],"6DxLW":[function() {},{}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../Message/message.js":"6fMfw","../../Loader/loader.js":"68bDI","../../../action/adminAction.js":"18Cn4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../adminDashboard/listitems3":"4KiUu"}],"mlup2":[function(require,module,exports) {
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactBootstrap = require("react-bootstrap");
+var _reactRedux = require("react-redux");
+var _message = require("../../../components/Message/message");
+var _messageDefault = parcelHelpers.interopDefault(_message);
+var _loader = require("../../../components/Loader/loader");
+var _loaderDefault = parcelHelpers.interopDefault(_loader);
+var _adminActionJs = require("../../../action/adminAction.js");
+var _adminConstantsJs = require("../../../constants/adminConstants.js");
+var _s = $RefreshSig$();
+const ApproveScreen = ({ match  })=>{
+    _s();
+    const newsId = match.params.id;
+    const dispatch = _reactRedux.useDispatch();
+    const nDetails = _reactRedux.useSelector((state)=>state.nDetails
+    );
+    const { news , loading , error  } = nDetails;
+    newsApproved = _reactRedux.useSelector((state)=>state.newsApproved
+    );
+    const { loading: loadingApprovel , success: successApprove  } = newsApproved;
+    _react.useEffect(()=>{
+        if (news || successApprove) {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_APPROVED_NEWS_RESET
+            });
+            dispatch(_adminActionJs.getNewsById(newsId));
+        }
+    }, [
+        dispatch,
+        successApprove
+    ]);
+    const approveHandler = ()=>{
+        dispatch(_adminActionJs.approveNews(news));
+    };
+    return loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 36
+        },
+        __self: undefined
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 38
+        },
+        __self: undefined
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 41
+        },
+        __self: undefined
+    }, "News ", news._id), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 42
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
+        md: 8,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 43
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup, {
+        variant: "flush",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 44
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup.Item, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 45
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 46
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 47
+        },
+        __self: undefined
+    }, "Name: "), " ", news.name), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 50
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 51
+        },
+        __self: undefined
+    }, "Date:"), news.date), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 55
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 56
+        },
+        __self: undefined
+    }, "Message:"), news.message), news.isApproved ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "success",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 62
+        },
+        __self: undefined
+    }, "Approved") : /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 66
+        },
+        __self: undefined
+    }, "Not Approved"))), !news.isApproved && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup.Item, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 73
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+        type: "button",
+        className: "btn btn-block",
+        onClick: approveHandler,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminNewsDetails\\adminNewsApprove.js",
+            lineNumber: 74
+        },
+        __self: undefined
+    }, "Mark as Approved")))));
+};
+_s(ApproveScreen, "VazKxgi2v29H1bwrGL47je0DakI=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
+_c = ApproveScreen;
+exports.default = ApproveScreen;
+var _c;
+$RefreshReg$(_c, "ApproveScreen");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../../components/Message/message":"6fMfw","../../../components/Loader/loader":"68bDI","../../../action/adminAction.js":"18Cn4","../../../constants/adminConstants.js":"DJzj8","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"6DxLW":[function() {},{}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -62468,7 +62726,9 @@ const reducer = _redux.combineReducers({
     newsUpdate: _newsReducersJs.newsUpadateReducer,
     newsCreate: _newsReducersJs.newsCreateReducer,
     cDetails: _adminReducersJs.getConferenceDetailsById,
-    newsDetails: _adminReducersJs.newsReducer
+    newsDetails: _adminReducersJs.newsReducer,
+    newsApproved: _adminReducersJs.adminNewsReducer,
+    nDetails: _adminReducersJs.getNewsDetailsById
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -63320,6 +63580,10 @@ parcelHelpers.export(exports, "conferenceDeclinedReducer", ()=>conferenceDecline
 );
 parcelHelpers.export(exports, "newsReducer", ()=>newsReducer
 );
+parcelHelpers.export(exports, "getNewsDetailsById", ()=>getNewsDetailsById
+);
+parcelHelpers.export(exports, "adminNewsReducer", ()=>adminNewsReducer
+);
 var _adminConstants = require("../constants/adminConstants");
 const conferenceReducer = (state = {
     conferencedetails: []
@@ -63491,6 +63755,55 @@ const newsReducer = (state = {
         case _adminConstants.ADMIN_NEWS_LIST_RESET:
             return {
                 news: []
+            };
+        default:
+            return state;
+    }
+};
+const getNewsDetailsById = (state = {
+    news: []
+}, action)=>{
+    switch(action.type){
+        case _adminConstants.ADMIN_NEWS_DETAILS_ID_REQUEST:
+            return {
+                loading: true
+            };
+        case _adminConstants.ADMIN_NEWS_DETAILS_ID_SUCCESS:
+            return {
+                loading: false,
+                news: action.payload
+            };
+        case _adminConstants.ADMIN_NEWS_DETAILS_ID_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        case _adminConstants.ADMIN_NEWS_DETAILS_ID_RESET:
+            return {
+                news: []
+            };
+        default:
+            return state;
+    }
+};
+const adminNewsReducer = (state = {
+    news: {
+    }
+}, action)=>{
+    switch(action.type){
+        case _adminConstants.ADMIN_APPROVED_NEWS_REQUEST:
+            return {
+                loading: true
+            };
+        case _adminConstants.ADMIN_APPROVED_NEWS_SUCCESS:
+            return {
+                loading: false,
+                success: true
+            };
+        case _adminConstants.ADMIN_APPROVED_NEWS_FAIL:
+            return {
+                loading: false,
+                error: action.payload
             };
         default:
             return state;
