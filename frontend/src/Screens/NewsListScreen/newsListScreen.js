@@ -24,7 +24,8 @@ import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from '../EditorScreen/Editor dashboard/listitems1';
 import { Link } from "react-router-dom";
-import { listAllNews } from '../../action/newsAction'
+import { listAllNews, deleteNews, createNewsDetails } from '../../action/newsAction'
+import { NEWS_CREATE_RESET } from '../../constants/newsConstants.js';
 
 const drawerWidth = 240;
 
@@ -107,7 +108,7 @@ const useStyles = makeStyles((theme) => ({
       },
 }));
 
-export default function newsListScreen() {
+export default function newsListScreen({ history }) {
       const classes = useStyles();
       const [open, setOpen] = React.useState(true);
       const handleDrawerOpen = () => {
@@ -123,9 +124,35 @@ export default function newsListScreen() {
       const listNews = useSelector(state => state.listNews)
       const { loading, error, news } = listNews
 
+      const delNews = useSelector(state => state.delNews)
+      const { success: successDelete } = delNews
+
+      const newsCreate = useSelector((state) => state.newsCreate)
+      const { loading: loadingCreate, error: errorCreate, success: successCreate, news: createNews } = newsCreate
+
+
       useEffect(() => {
             dispatch(listAllNews())
-      }, [dispatch])
+
+            dispatch({ type: NEWS_CREATE_RESET })
+
+            if (successCreate) {
+                  history.push(`/news/${createNews._id}`)
+            }
+
+      }, [dispatch, successDelete, successCreate, createNews])
+
+      const deleteHandler = (id) => {
+            if (window.confirm('Are you sure')) [
+                  dispatch(deleteNews(id))
+            ]
+      }
+
+      const craeteNewsHandler = () => {
+            dispatch(createNewsDetails())
+      }
+
+
 
       return (
             <div className={classes.root}>
@@ -173,23 +200,52 @@ export default function newsListScreen() {
                   <main className={classes.content}>
                         <div className={classes.appBarSpacer} />
                         <Container maxWidth="lg" className={classes.container}>
+
+                              <Row className='align-items-center'>
+
+                                    <Col className='text-right'>
+                                          <Button className='my-3' onClick={craeteNewsHandler}>
+                                                <i className='fas fa-plus'>Create News</i>
+                                          </Button>
+                                    </Col>
+                              </Row>
+                              <h1>All News</h1>
+                              {loadingCreate && <Loader />}
+                              {errorCreate && <Message variant='danger'>{errorCreate} </Message>}
                               {loading ? (<Loader />) : error ? (
                                     <Message variant='danger'>{error}</Message>
                               ) : (
                                     <Table striped bordered hover responsive variant="light" className='table-sm'>
                                           <thead>
                                                 <tr>
+                                                      <th>Name</th>
                                                       <th>Date</th>
                                                       <th>Message</th>
-                                                      <th></th>
                                                 </tr>
                                           </thead>
                                           <tbody>
                                                 {news.map((newA) => (
                                                       <tr key={newA._id} >
+                                                            <td>{newA.name}</td>
                                                             <td>{newA.date}</td>
                                                             <td>{newA.message}</td>
-
+                                                            <td>{newA.isApproved ? (
+                                                                  <i className='fas fa-check' style={{ color: 'green' }}></i>
+                                                            ) : (
+                                                                  <i className='fas fa-times' style={{ color: 'red' }}></i>
+                                                            )}</td>
+                                                            <td>
+                                                                  <Link to={`/news/${newA._id}`}>
+                                                                        <Button variant='light' className='btn-sm'>
+                                                                              <i className='fas fa-edit'></i>
+                                                                        </Button>
+                                                                  </Link>
+                                                                  <Button
+                                                                        variant='danger'
+                                                                        className='btn-sm'
+                                                                        onClick={() => deleteHandler(newA._id)}
+                                                                  ><i className='fas fa-trash'></i></Button>
+                                                            </td>
                                                       </tr>
                                                 ))}
                                           </tbody>
