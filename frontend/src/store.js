@@ -6,7 +6,12 @@ import { conDetailsDeleteReducer, conListReducer, conUnApprovedReduceer, conDeta
 import { conApprovedReduceer } from '../src/reducers/conferenceReducer.js'
 import { conferenceReducer, getEditorReducer } from '../src/reducers/adminReducers.js'
 import { userRegisterReducer } from '../src/reducers/userReducers.js'
+import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, conferenceApprovedReducer, conferenceDeclinedReducer } from '../src/reducers/adminReducers.js'
 import { conferenceReducer, getEditorReducer, getReviwerReducer } from '../src/reducers/adminReducers.js'
+import { newsListReducer, newsDeleteReducer, newsgetReducer, newsUpadateReducer, newsCreateReducer } from '../src/reducers/newsReducers.js'
+
+import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById,conferenceApprovedReducer,conferenceDeclinedReducer, newsReducer, adminNewsReducer, getNewsDetailsById } from '../src/reducers/adminReducers.js'
+import { newsListReducer } from '../src/reducers/newsReducers.js'
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
@@ -20,7 +25,19 @@ const reducer = combineReducers({
     updateCon: conDetailsUpdateReducer,
     ConsDetails: conDetailsReducer,
     createConferenceDetails: conCreateReducer,
-    reviwer: getReviwerReducer
+    reviwer: getReviwerReducer,
+    listNews: newsListReducer,
+    cDetails: getConferenceDetailsById,
+    confApproved: conferenceApprovedReducer,
+    confDecline: conferenceDeclinedReducer,
+    delNews: newsDeleteReducer,
+    getNews: newsgetReducer,
+    newsUpdate: newsUpadateReducer,
+    newsCreate: newsCreateReducer,
+    cDetails: getConferenceDetailsById,
+    newsDetails: newsReducer,
+    newsApproved: adminNewsReducer,
+    nDetails: getNewsDetailsById
 
 })
 

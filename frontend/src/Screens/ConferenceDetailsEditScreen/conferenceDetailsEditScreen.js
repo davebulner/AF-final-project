@@ -149,15 +149,7 @@ const ConferenceDetailsUpdate = ({ match, history }) => {
                                                 onChange={(e) => setVenue(e.target.value)}
                                           ></Form.Control>
                                     </Form.Group>
-                                    <Form.Group controlId='venue'>
-                                          <Form.Label>venue</Form.Label>
-                                          <Form.Control
-                                                type='text'
-                                                placeholder='Enter venue'
-                                                value={venue}
-                                                onChange={(e) => setVenue(e.target.value)}
-                                          ></Form.Control>
-                                    </Form.Group>
+
 
                                     <Button type='submit' variant='primary'>
                                           Update
