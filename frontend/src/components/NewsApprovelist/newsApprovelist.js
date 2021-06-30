@@ -37,7 +37,9 @@ export const newsList = () => {
                                                 <Card.Text>
                                                       {newA.date}
                                                 </Card.Text>
-                                                <Button variant="warning">View News</Button>
+                                                <Link to={`/view/${newA._id}`}>
+                                                      <Button variant="warning">View News</Button>
+                                                </Link>
                                           </Card.Body>
 
 

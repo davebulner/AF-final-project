@@ -17,7 +17,6 @@ const homeScreen = () => {
                         <Appbar />
                         <Showcase />
                         <NewsList />
-                        <Link to='fg.pdf' target="_blank" download >Generate Report</Link>
                         <Footer />
                   </div>
             </>
