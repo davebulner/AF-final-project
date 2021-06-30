@@ -1,34 +1,74 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
-import { Form, Button } from 'react-bootstrap'
+import axios from 'axios'
+import { Row, Col, ListGroup} from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../../../components/Message/message'
 import Loader from '../../../components/Loader/loader'
-import FromContainer from '../../../components/FormContainer/formContainer.js'
 import { getConferenceDetailsById } from '../../../action/adminAction.js'
-import { ADMIN_CONFERENCE_DETAILS_ID_RESET } from '../../../constants/adminConstants.js'
+
 
 const ApproveScreen = ({ match }) => {
-      const conId = match.params.id
+      const confId = match.params.id
+
+    
 
       const dispatch = useDispatch()
 
-      const ConfDetails = useSelector((state) => state.ConfDetails)
-      const { loading, error, conferencedetails } = ConfDetails
+      const cDetails = useSelector((state) => state.cDetails)
+      const { conferencedetails, loading, error } = cDetails
+
 
       useEffect(() => {
-            if (!conferencedetails) {
-                  dispatch(getConferenceDetailsById(conId))
+
+        if (!conferencedetails) {
+                  dispatch(getConferenceDetailsById(confId))
             } 
-            
       }, [dispatch])
 
-      return (
-            <>
 
-            
-                        <h1>Conference  Details {conferencedetails.conname}</h1>
-                  </>   )     
-}             
+      return loading ? (
+            <Loader />
+      ) : error ? (
+            <Message variant='danger'>{error}</Message>
+      ) : (
+            <>
+                  <h1>Conference {conferencedetails.conname}</h1>
+                  <Row>
+                        <Col md={8}>
+                              <ListGroup variant='flush'>
+                                    <ListGroup.Item>
+                                          <h2>Shipping</h2>
+                                          <p>
+                                                <strong>Name: </strong> {conferencedetails.conname}
+                                          </p>
+      
+                                          <p>
+                                                <strong>Address:</strong>
+                                                {conferencedetails.organizer}  
+                                          </p>
+                                          {conferencedetails.isApproved ? (
+                                                <Message variant='success'>
+                                                      isApproved 
+                                                </Message>
+                                          ) : (
+                                                <Message variant='danger'>Not isApproved</Message>
+                                          )}
+                                    </ListGroup.Item>
+
+                                   
+                                  
+                                    
+                                   
+                                                    
+
+                                 </ListGroup>                                      
+
+                                        
+                             
+                        </Col>
+                  </Row>
+            </>
+      )
+}
 
 export default ApproveScreen

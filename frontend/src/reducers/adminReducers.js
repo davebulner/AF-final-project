@@ -68,21 +68,23 @@ export const getEditorReducer = (state = { users: [] }, action) => {
       }
   }
 
-  
-export const conDetailsReducerById = (state = { conferencedetails: {} }, action) => {
+  export const getConferenceDetailsById = (state = { conferencedetails:[] }, action)  => {
       switch (action.type) {
             case ADMIN_CONFERENCE_DETAILS_ID_REQUEST:
-                  return { ...state, loading: true }
+                  return { loading: true }
             case ADMIN_CONFERENCE_DETAILS_ID_SUCCESS:
                   return { loading: false, conferencedetails: action.payload }
             case ADMIN_CONFERENCE_DETAILS_ID_FAIL:
                   return { loading: false, error: action.payload }
             case ADMIN_CONFERENCE_DETAILS_ID_RESET:
-                  return { conferencedetails: {} }
+                  return { conferencedetails: [] }
             default:
                   return state
       }
-}
+  }
+
+  
+
 
 
 

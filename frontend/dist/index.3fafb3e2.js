@@ -58293,7 +58293,7 @@ const getConferenceDetailsById = (id)=>async (dispatch, getState)=>{
             });
         } catch (error) {
             dispatch({
-                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_ID_FAIL,
+                type: CONFERENCE_DETAILS_BYID_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
@@ -61075,39 +61075,120 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _reactBootstrap = require("react-bootstrap");
 var _reactRedux = require("react-redux");
 var _message = require("../../../components/Message/message");
 var _messageDefault = parcelHelpers.interopDefault(_message);
 var _loader = require("../../../components/Loader/loader");
 var _loaderDefault = parcelHelpers.interopDefault(_loader);
-var _formContainerJs = require("../../../components/FormContainer/formContainer.js");
-var _formContainerJsDefault = parcelHelpers.interopDefault(_formContainerJs);
 var _adminActionJs = require("../../../action/adminAction.js");
-var _adminConstantsJs = require("../../../constants/adminConstants.js");
 var _s = $RefreshSig$();
 const ApproveScreen = ({ match  })=>{
     _s();
-    const conId = match.params.id;
+    const confId = match.params.id;
     const dispatch = _reactRedux.useDispatch();
-    const ConfDetails = _reactRedux.useSelector((state)=>state.ConfDetails
+    const cDetails = _reactRedux.useSelector((state)=>state.cDetails
     );
-    const { loading , error , conferencedetails  } = ConfDetails;
+    const { conferencedetails , loading , error  } = cDetails;
     _react.useEffect(()=>{
-        if (!conferencedetails) dispatch(_adminActionJs.getConferenceDetailsById(conId));
+        if (!conferencedetails) dispatch(_adminActionJs.getConferenceDetailsById(confId));
     }, [
         dispatch
     ]);
-    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+    return loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
             lineNumber: 30
         },
         __self: undefined
-    }, "Conference Details ", conferencedetails.conname)));
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 32
+        },
+        __self: undefined
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 35
+        },
+        __self: undefined
+    }, "Conference ", conferencedetails.conname), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 36
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
+        md: 8,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 37
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup, {
+        variant: "flush",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 38
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup.Item, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 39
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 40
+        },
+        __self: undefined
+    }, "Shipping"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 41
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 42
+        },
+        __self: undefined
+    }, "Name: "), " ", conferencedetails.conname), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 45
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 46
+        },
+        __self: undefined
+    }, "Address:"), conferencedetails.organizer), conferencedetails.isApproved ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "success",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 50
+        },
+        __self: undefined
+    }, "isApproved") : /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 54
+        },
+        __self: undefined
+    }, "Not isApproved"))))));
 };
-_s(ApproveScreen, "ZJkyArYM520eDrVUdmu/LKXeDBk=", false, function() {
+_s(ApproveScreen, "DvRhPYLqwgXUkdXF0TSK5+YTpto=", false, function() {
     return [_reactRedux.useDispatch, _reactRedux.useSelector];
 });
 _c = ApproveScreen;
@@ -61120,7 +61201,7 @@ $RefreshReg$(_c, "ApproveScreen");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-router-dom":"1PMSK","react-bootstrap":"4n7hB","react-redux":"7GDa4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../../action/adminAction.js":"18Cn4","../../../constants/adminConstants.js":"DJzj8","../../../components/FormContainer/formContainer.js":"1RrBX","../../../components/Message/message":"6fMfw","../../../components/Loader/loader":"68bDI"}],"6DxLW":[function() {},{}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","axios":"7rA65","react-bootstrap":"4n7hB","react-redux":"7GDa4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../../components/Message/message":"6fMfw","../../../components/Loader/loader":"68bDI","../../../action/adminAction.js":"18Cn4"}],"6DxLW":[function() {},{}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -61145,7 +61226,7 @@ const reducer = _redux.combineReducers({
     createConferenceDetails: _conferenceReducerJs.conCreateReducer,
     reviwer: _adminReducersJs.getReviwerReducer,
     listNews: _newsReducersJs.newsListReducer,
-    ConfDetails: _adminReducersJs.conDetailsReducerById
+    cDetails: _adminReducersJs.getConferenceDetailsById
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -61989,7 +62070,7 @@ parcelHelpers.export(exports, "getEditorReducer", ()=>getEditorReducer
 );
 parcelHelpers.export(exports, "getReviwerReducer", ()=>getReviwerReducer
 );
-parcelHelpers.export(exports, "conDetailsReducerById", ()=>conDetailsReducerById
+parcelHelpers.export(exports, "getConferenceDetailsById", ()=>getConferenceDetailsById
 );
 var _adminConstants = require("../constants/adminConstants");
 const conferenceReducer = (state = {
@@ -62069,14 +62150,12 @@ const getReviwerReducer = (state = {
             return state;
     }
 };
-const conDetailsReducerById = (state = {
-    conferencedetails: {
-    }
+const getConferenceDetailsById = (state = {
+    conferencedetails: []
 }, action)=>{
     switch(action.type){
         case _adminConstants.ADMIN_CONFERENCE_DETAILS_ID_REQUEST:
             return {
-                ...state,
                 loading: true
             };
         case _adminConstants.ADMIN_CONFERENCE_DETAILS_ID_SUCCESS:
@@ -62091,8 +62170,7 @@ const conDetailsReducerById = (state = {
             };
         case _adminConstants.ADMIN_CONFERENCE_DETAILS_ID_RESET:
             return {
-                conferencedetails: {
-                }
+                conferencedetails: []
             };
         default:
             return state;
