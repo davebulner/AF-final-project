@@ -12,6 +12,9 @@ import {
       ADMIN_CONFERENCE_DETAILS_ID_REQUEST,
       ADMIN_CONFERENCE_DETAILS_ID_SUCCESS,
       ADMIN_CONFERENCE_DETAILS_ID_FAIL,
+      ADMIN_APPROVED_REQUEST,
+      ADMIN_APPROVED_SUCCESS,
+      ADMIN_APPROVED_FAIL
       
 } from '../constants/adminConstants.js'
 
@@ -143,7 +146,7 @@ export const getConferenceDetailsById = (id) => async(dispatch, getState) => {
             })
       } catch (error) {
             dispatch({
-                  type: CONFERENCE_DETAILS_BYID_FAIL,
+                  type: ADMIN_CONFERENCE_DETAILS_ID_FAIL,
                   payload:
                         error.response && error.response.data.message
                               ? error.response.data.message
@@ -153,3 +156,36 @@ export const getConferenceDetailsById = (id) => async(dispatch, getState) => {
 
 }
 
+
+export const approveConference = (conferencedetails) => async (dispatch, getState) => {
+      try {
+            dispatch({
+                  type: ADMIN_APPROVED_REQUEST,
+            })
+
+            const {
+                  userLogin: { userInfo },
+            } = getState()
+
+            const config = {
+                  headers: {
+                        Authorization: `Bearer ${userInfo.token}`,
+                  },
+            }
+
+            const { data } = await axios.put(`http://localhost:8040/api/admin/${conferencedetails._id}/approved`, conferencedetails, config)
+
+            dispatch({
+                  type: ADMIN_APPROVED_SUCCESS,
+                  payload: data,
+            })
+      } catch (error) {
+            dispatch({
+                  type: ADMIN_APPROVED_FAIL,
+                  payload:
+                        error.response && error.response.data.message
+                              ? error.response.data.message
+                              : error.message,
+            })
+      }
+}

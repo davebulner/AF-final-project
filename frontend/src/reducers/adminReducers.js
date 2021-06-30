@@ -14,7 +14,10 @@ import {
     ADMIN_CONFERENCE_DETAILS_ID_REQUEST,
     ADMIN_CONFERENCE_DETAILS_ID_SUCCESS,
     ADMIN_CONFERENCE_DETAILS_ID_FAIL,
-    ADMIN_CONFERENCE_DETAILS_ID_RESET
+    ADMIN_CONFERENCE_DETAILS_ID_RESET,
+    ADMIN_APPROVED_REQUEST,
+    ADMIN_APPROVED_SUCCESS,
+    ADMIN_APPROVED_FAIL
 
  
 } from '../constants/adminConstants'
@@ -81,6 +84,19 @@ export const getEditorReducer = (state = { users: [] }, action) => {
             default:
                   return state
       }
+  }
+
+  export const conferenceApprovedReducer = (state = {conferencedetails: {}} , action) => {
+        switch (action.type) {
+            case ADMIN_APPROVED_REQUEST:
+                    return { loading: true }
+            case ADMIN_APPROVED_SUCCESS:
+                  return { loading: false, success: true }
+            case ADMIN_APPROVED_FAIL:
+                  return { loading: false, error: action.payload}
+            default:
+                  return state
+        }
   }
 
   

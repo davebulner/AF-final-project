@@ -13,7 +13,21 @@ const updateConferenceDeatils = asyncHandler(async(req, res) => {
         const updateApprovel = await conference.save()
 
         res.json(updateApprovel)
-    } else {
+    }else {
+        res.status(404)
+        throw new Error('Conference not found')
+    }
+})
+
+const declineConferenceDeatils = asyncHandler(async(req, res) => {
+    const conference = await ConferenceDetails.findById(req.params.id)
+
+    if(conference) {
+        conference.isApproved = false
+        const declineApprovel = await conference.save()
+
+        res.json(declineApprovel)
+    }else {
         res.status(404)
         throw new Error('Conference not found')
     }
@@ -43,7 +57,7 @@ const getConDetailsById = asyncHandler(async (req, res) => {
 
     if (confDetails) {
           res.json({
-                id: confDetails._id,
+                _id: confDetails._id,
                 conname: confDetails.conname,
                 description: confDetails.description,
                 organizer: confDetails.organizer,
@@ -62,4 +76,4 @@ const getConDetailsById = asyncHandler(async (req, res) => {
 })
 
 
-export { updateConferenceDeatils, getEditorList, getReviwerList, getConDetailsById }
+export { updateConferenceDeatils, getEditorList, getReviwerList, getConDetailsById, declineConferenceDeatils }

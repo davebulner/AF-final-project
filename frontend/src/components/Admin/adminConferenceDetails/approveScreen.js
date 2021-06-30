@@ -1,30 +1,37 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Row, Col, ListGroup} from 'react-bootstrap'
+import { Row, Col, ListGroup, Button} from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../../../components/Message/message'
 import Loader from '../../../components/Loader/loader'
-import { getConferenceDetailsById } from '../../../action/adminAction.js'
-
+import { getConferenceDetailsById, approveConference } from '../../../action/adminAction.js'
+import { ADMIN_APPROVED_RESET } from '../../../constants/adminConstants.js'
 
 const ApproveScreen = ({ match }) => {
       const confId = match.params.id
 
-    
-
+      
       const dispatch = useDispatch()
 
       const cDetails = useSelector((state) => state.cDetails)
       const { conferencedetails, loading, error } = cDetails
 
+      confApproved = useSelector((state)=> state.confApproved)
+      const { loading: loadingApprovel, success: successApprove } = confApproved
+
+
 
       useEffect(() => {
 
-        if (conferencedetails) {
+        if (conferencedetails || successApprove) {
+                  dispatch({type: ADMIN_APPROVED_RESET })
                   dispatch(getConferenceDetailsById(confId))
             } 
-      }, [dispatch])
+      }, [dispatch, successApprove])
 
+      const approveHandler = () => {
+            dispatch(approveConference(conferencedetails))
+      }
 
       return loading ? (
             <Loader />
@@ -42,25 +49,43 @@ const ApproveScreen = ({ match }) => {
                                           </p>
       
                                           <p>
-                                                <strong>Address:</strong>
+                                                <strong>Organizer:</strong>
                                                 {conferencedetails.organizer}  
+                                          </p>
+                                          <p>
+                                                <strong>Description:</strong>
+                                                {conferencedetails.description}  
+                                          </p>
+                                          <p>
+                                                <strong>Start Date:</strong>
+                                                {conferencedetails.startDate}  
+                                          </p>
+                                          <p>
+                                                <strong>End Date:</strong>
+                                                {conferencedetails.endDate}  
+                                          </p>
+                                          <p>
+                                                <strong>Venue:</strong>
+                                                {conferencedetails.venue}  
                                           </p>
                                           {conferencedetails.isApproved ? (
                                                 <Message variant='success'>
-                                                      isApproved 
+                                                      Approved 
                                                 </Message>
                                           ) : (
-                                                <Message variant='danger'>Not isApproved</Message>
+                                                <Message variant='danger'>Not Approved</Message>
                                           )}
-                                    </ListGroup.Item>
+                                    </ListGroup.Item>  
+                                                
 
-                                   
-                                  
-                                    
-                                   
-                                                    
-
-                                 </ListGroup>                                      
+                                 </ListGroup>   
+                                 {!conferencedetails.isApproved && (
+                                                <ListGroup.Item>
+                                                      <Button type='button' className='btn btn-block' onClick={approveHandler}>
+                                                            Mark as Approved
+                                                      </Button>
+                                                </ListGroup.Item>
+                                          )}                                   
 
                                         
                              

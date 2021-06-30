@@ -58199,6 +58199,8 @@ parcelHelpers.export(exports, "getReviwerList", ()=>getReviwerList
 );
 parcelHelpers.export(exports, "getConferenceDetailsById", ()=>getConferenceDetailsById
 );
+parcelHelpers.export(exports, "approveConference", ()=>approveConference
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _adminConstantsJs = require("../constants/adminConstants.js");
@@ -58293,7 +58295,31 @@ const getConferenceDetailsById = (id)=>async (dispatch, getState)=>{
             });
         } catch (error) {
             dispatch({
-                type: CONFERENCE_DETAILS_BYID_FAIL,
+                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_ID_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const approveConference = (conferencedetails)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_APPROVED_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.put(`http://localhost:8040/api/admin/${conferencedetails._id}/approved`, conferencedetails, config);
+            dispatch({
+                type: _adminConstantsJs.ADMIN_APPROVED_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_APPROVED_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
@@ -58335,6 +58361,14 @@ parcelHelpers.export(exports, "REVIWER_LIST_FAIL_ADMIN", ()=>REVIWER_LIST_FAIL_A
 );
 parcelHelpers.export(exports, "REVIWER_LIST_RESET_ADMIN", ()=>REVIWER_LIST_RESET_ADMIN
 );
+parcelHelpers.export(exports, "ADMIN_APPROVED_REQUEST", ()=>ADMIN_APPROVED_REQUEST
+);
+parcelHelpers.export(exports, "ADMIN_APPROVED_SUCCESS", ()=>ADMIN_APPROVED_SUCCESS
+);
+parcelHelpers.export(exports, "ADMIN_APPROVED_FAIL", ()=>ADMIN_APPROVED_FAIL
+);
+parcelHelpers.export(exports, "ADMIN_APPROVED_RESET", ()=>ADMIN_APPROVED_RESET
+);
 parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_ID_REQUEST", ()=>ADMIN_CONFERENCE_DETAILS_ID_REQUEST
 );
 parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_ID_SUCCESS", ()=>ADMIN_CONFERENCE_DETAILS_ID_SUCCESS
@@ -58359,6 +58393,10 @@ const REVIWER_LIST_REQUEST_ADMIN = 'REVIWER_LIST_REQUEST_ADMIN';
 const REVIWER_LIST_SUCCESS_ADMIN = 'REVIWER_LIST_SUCCESS_ADMIN';
 const REVIWER_LIST_FAIL_ADMIN = 'REVIWER_LIST_FAIL_ADMIN';
 const REVIWER_LIST_RESET_ADMIN = 'REVIWER_LIST_RESET_ADMIN';
+const ADMIN_APPROVED_REQUEST = 'ADMIN_APPROVED_REQUEST';
+const ADMIN_APPROVED_SUCCESS = 'ADMIN_APPROVED_SUCCESS';
+const ADMIN_APPROVED_FAIL = 'ADMIN_APPROVED_FAIL';
+const ADMIN_APPROVED_RESET = 'ADMIN_APPROVED_RESET';
 const ADMIN_CONFERENCE_DETAILS_ID_REQUEST = 'ADMIN_CONFERENCE_DETAILS_ID_REQUEST';
 const ADMIN_CONFERENCE_DETAILS_ID_SUCCESS = 'ADMIN_CONFERENCE_DETAILS_ID_SUCCESS';
 const ADMIN_CONFERENCE_DETAILS_ID_FAIL = 'ADMIN_CONFERENCE_DETAILS_ID_FAIL';
@@ -61084,6 +61122,7 @@ var _messageDefault = parcelHelpers.interopDefault(_message);
 var _loader = require("../../../components/Loader/loader");
 var _loaderDefault = parcelHelpers.interopDefault(_loader);
 var _adminActionJs = require("../../../action/adminAction.js");
+var _adminConstantsJs = require("../../../constants/adminConstants.js");
 var _s = $RefreshSig$();
 const ApproveScreen = ({ match  })=>{
     _s();
@@ -61092,95 +61131,170 @@ const ApproveScreen = ({ match  })=>{
     const cDetails = _reactRedux.useSelector((state)=>state.cDetails
     );
     const { conferencedetails , loading , error  } = cDetails;
+    confApproved = _reactRedux.useSelector((state)=>state.confApproved
+    );
+    const { loading: loadingApprovel , success: successApprove  } = confApproved;
     _react.useEffect(()=>{
-        if (conferencedetails) dispatch(_adminActionJs.getConferenceDetailsById(confId));
+        if (conferencedetails || successApprove) {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_APPROVED_RESET
+            });
+            dispatch(_adminActionJs.getConferenceDetailsById(confId));
+        }
     }, [
-        dispatch
+        dispatch,
+        successApprove
     ]);
+    const approveHandler = ()=>{
+        dispatch(_adminActionJs.approveConference(conferencedetails));
+    };
     return loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 30
+            lineNumber: 37
         },
         __self: undefined
     }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 32
+            lineNumber: 39
         },
         __self: undefined
     }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 35
+            lineNumber: 42
         },
         __self: undefined
     }, "Conference ", conferencedetails.conname), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 36
+            lineNumber: 43
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
         md: 8,
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 37
+            lineNumber: 44
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup, {
         variant: "flush",
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 38
+            lineNumber: 45
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup.Item, {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 39
+            lineNumber: 46
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 40
+            lineNumber: 47
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 41
+            lineNumber: 48
         },
         __self: undefined
     }, "Name: "), " ", conferencedetails.conname), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 44
+            lineNumber: 51
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 45
+            lineNumber: 52
         },
         __self: undefined
-    }, "Address:"), conferencedetails.organizer), conferencedetails.isApproved ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+    }, "Organizer:"), conferencedetails.organizer), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 55
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 56
+        },
+        __self: undefined
+    }, "Description:"), conferencedetails.description), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 59
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 60
+        },
+        __self: undefined
+    }, "Start Date:"), conferencedetails.startDate), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 63
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 64
+        },
+        __self: undefined
+    }, "End Date:"), conferencedetails.endDate), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 67
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 68
+        },
+        __self: undefined
+    }, "Venue:"), conferencedetails.venue), conferencedetails.isApproved ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
         variant: "success",
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 49
+            lineNumber: 72
         },
         __self: undefined
-    }, "isApproved") : /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+    }, "Approved") : /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 53
+            lineNumber: 76
         },
         __self: undefined
-    }, "Not isApproved"))))));
+    }, "Not Approved"))), !conferencedetails.isApproved && /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup.Item, {
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 83
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+        type: "button",
+        className: "btn btn-block",
+        onClick: approveHandler,
+        __source: {
+            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 84
+        },
+        __self: undefined
+    }, "Mark as Approved")))));
 };
 _s(ApproveScreen, "DvRhPYLqwgXUkdXF0TSK5+YTpto=", false, function() {
     return [_reactRedux.useDispatch, _reactRedux.useSelector];
@@ -61195,7 +61309,7 @@ $RefreshReg$(_c, "ApproveScreen");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","axios":"7rA65","react-bootstrap":"4n7hB","react-redux":"7GDa4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../../components/Message/message":"6fMfw","../../../components/Loader/loader":"68bDI","../../../action/adminAction.js":"18Cn4"}],"6DxLW":[function() {},{}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../../action/adminAction.js":"18Cn4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","axios":"7rA65","../../../components/Message/message":"6fMfw","../../../components/Loader/loader":"68bDI","../../../constants/adminConstants.js":"DJzj8"}],"6DxLW":[function() {},{}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -61220,7 +61334,8 @@ const reducer = _redux.combineReducers({
     createConferenceDetails: _conferenceReducerJs.conCreateReducer,
     reviwer: _adminReducersJs.getReviwerReducer,
     listNews: _newsReducersJs.newsListReducer,
-    cDetails: _adminReducersJs.getConferenceDetailsById
+    cDetails: _adminReducersJs.getConferenceDetailsById,
+    confApproved: _adminReducersJs.conferenceApprovedReducer
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -62066,6 +62181,8 @@ parcelHelpers.export(exports, "getReviwerReducer", ()=>getReviwerReducer
 );
 parcelHelpers.export(exports, "getConferenceDetailsById", ()=>getConferenceDetailsById
 );
+parcelHelpers.export(exports, "conferenceApprovedReducer", ()=>conferenceApprovedReducer
+);
 var _adminConstants = require("../constants/adminConstants");
 const conferenceReducer = (state = {
     conferencedetails: []
@@ -62165,6 +62282,29 @@ const getConferenceDetailsById = (state = {
         case _adminConstants.ADMIN_CONFERENCE_DETAILS_ID_RESET:
             return {
                 conferencedetails: []
+            };
+        default:
+            return state;
+    }
+};
+const conferenceApprovedReducer = (state = {
+    conferencedetails: {
+    }
+}, action)=>{
+    switch(action.type){
+        case _adminConstants.ADMIN_APPROVED_REQUEST:
+            return {
+                loading: true
+            };
+        case _adminConstants.ADMIN_APPROVED_SUCCESS:
+            return {
+                loading: false,
+                success: true
+            };
+        case _adminConstants.ADMIN_APPROVED_FAIL:
+            return {
+                loading: false,
+                error: action.payload
             };
         default:
             return state;
