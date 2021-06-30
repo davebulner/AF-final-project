@@ -24,7 +24,15 @@ import {
     ADMIN_NEWS_LIST_REQUEST,
     ADMIN_NEWS_LIST_SUCCESS,
     ADMIN_NEWS_LIST_FAIL,
-    ADMIN_NEWS_LIST_RESET
+    ADMIN_NEWS_LIST_RESET,
+    ADMIN_NEWS_DETAILS_ID_REQUEST,
+    ADMIN_NEWS_DETAILS_ID_SUCCESS,
+    ADMIN_NEWS_DETAILS_ID_FAIL,
+    ADMIN_NEWS_DETAILS_ID_RESET,
+    ADMIN_APPROVED_NEWS_REQUEST,
+    ADMIN_APPROVED_NEWS_SUCCESS,
+    ADMIN_APPROVED_NEWS_FAIL,
+    
 
  
 } from '../constants/adminConstants'
@@ -136,6 +144,34 @@ export const newsReducer = (state = { news: []  }, action) => {
       }
   }
 
+  export const getNewsDetailsById = (state = { news:[] }, action)  => {
+      switch (action.type) {
+            case ADMIN_NEWS_DETAILS_ID_REQUEST:
+                  return { loading: true }
+            case ADMIN_NEWS_DETAILS_ID_SUCCESS:
+                  return { loading: false, news: action.payload }
+            case ADMIN_NEWS_DETAILS_ID_FAIL:
+                  return { loading: false, error: action.payload }
+            case ADMIN_NEWS_DETAILS_ID_RESET:
+                  return { news: [] }
+            default:
+                  return state
+      }
+  }
+
+
+  export const adminNewsReducer = (state = {news: {}} , action) => {
+      switch (action.type) {
+          case ADMIN_APPROVED_NEWS_REQUEST:
+                  return { loading: true }
+          case ADMIN_APPROVED_NEWS_SUCCESS:
+                return { loading: false, success: true }
+          case ADMIN_APPROVED_NEWS_FAIL:
+                return { loading: false, error: action.payload}
+          default:
+                return state
+      }
+}
 
   
 

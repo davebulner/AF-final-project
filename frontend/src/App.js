@@ -20,6 +20,8 @@ import newsListScreen from './Screens/NewsListScreen/newsListScreen'
 import NewsEditScreen from './Screens/NewsEditScreen/newsEditScreen.js'
 import AdminApproveScreen from './components/Admin/adminConferenceDetails/approveScreen.js'
 import AdminNewsDetails from './components/Admin/adminNewsDetails/adminNewsDetails.js'
+import AdminNewsApprove from './components/Admin/adminNewsDetails/adminNewsApprove.js'
+import ReviewerScreen from './Screens/reviwerScreen/reviewerdashboard/reviewerdashboard.js'
 
 
 const App = () => {
@@ -45,6 +47,10 @@ const App = () => {
                         <Route path='/news/:id' component={NewsEditScreen} />
                         <Route path="/newsAdmin" component={AdminNewsDetails} />
                         <Route path="/profile" component={profileScreen} />
+                        <Route path="/newsAdmin" component={AdminNewsDetails} />
+                        <Route path="/adminNews/:id" component={AdminNewsApprove} />
+                        <Route path="/reviwer" component={ReviewerScreen} />
+
                   </div>
             </Router>
       )

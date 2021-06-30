@@ -7,4 +7,4 @@ import { getAllReviewerDetails,getReviewerDetails } from '../controllers/reviewe
 router.get('/',getAllReviewerDetails)
 router.get('/',getReviewerDetails)
 
-export default router
+export default router 

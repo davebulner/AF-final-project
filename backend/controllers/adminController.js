@@ -1,5 +1,6 @@
 import asyncHandler from 'express-async-handler'
 import ConferenceDetails from '../models/conferenceDetailsModel.js'
+import News from '../models/newsModel.js'
 import User  from '../models/userModel.js'
 
 
@@ -75,5 +76,38 @@ const getConDetailsById = asyncHandler(async (req, res) => {
     }
 })
 
+const getAdminNewsById = asyncHandler(async (req, res) => {
+    const adminNewsDetails = await News.findById(req.params.id)
 
-export { updateConferenceDeatils, getEditorList, getReviwerList, getConDetailsById, declineConferenceDeatils }
+    if (adminNewsDetails) {
+          res.json({
+                _id: adminNewsDetails._id,
+                name: adminNewsDetails.name,
+                date: adminNewsDetails.date,
+                message: adminNewsDetails.message,
+                isApproved: adminNewsDetails.isApproved
+
+          })
+    } else {
+          res.status(404)
+          throw new Error('News not found')
+    }
+})
+
+
+const approveNewsDeatils = asyncHandler(async(req, res) => {
+    const news = await News.findById(req.params.id)
+
+    if(news) {
+        news.isApproved = true
+        const updateApprovel = await news.save()
+
+        res.json(updateApprovel)
+    }else {
+        res.status(404)
+        throw new Error('News not found')
+    }
+})
+
+
+export { updateConferenceDeatils, getEditorList, getReviwerList, getConDetailsById, declineConferenceDeatils, getAdminNewsById, approveNewsDeatils }

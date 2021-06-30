@@ -12,7 +12,7 @@ import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDe
 import { conferenceReducer, getEditorReducer, getReviwerReducer } from '../src/reducers/adminReducers.js'
 import { newsListReducer, newsDeleteReducer, newsgetReducer, newsUpadateReducer, newsCreateReducer } from '../src/reducers/newsReducers.js'
 
-import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, newsReducer } from '../src/reducers/adminReducers.js'
+import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, conferenceApprovedReducer, conferenceDeclinedReducer, newsReducer, adminNewsReducer, getNewsDetailsById } from '../src/reducers/adminReducers.js'
 import { newsListReducer } from '../src/reducers/newsReducers.js'
 
 const reducer = combineReducers({
@@ -40,7 +40,9 @@ const reducer = combineReducers({
     newsCreate: newsCreateReducer,
     cDetails: getConferenceDetailsById,
     newsDetails: newsReducer,
-    userDetailsReducer: userDetailsReducer
+    userDetailsReducer: userDetailsReducer,
+    newsApproved: adminNewsReducer,
+    nDetails: getNewsDetailsById
 
 })
 
