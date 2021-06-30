@@ -65895,6 +65895,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getAllWorkshop", ()=>getAllWorkshop
 );
+parcelHelpers.export(exports, "getAllResearch", ()=>getAllResearch
+);
 var _reviwerConstantsJs = require("../constants/reviwerConstants.js");
 const getAllWorkshop = (state = {
     workshops: []
@@ -65917,6 +65919,32 @@ const getAllWorkshop = (state = {
         case _reviwerConstantsJs.WORKSHOP_LIST_RESET_REVIWER:
             return {
                 workshops: []
+            };
+        default:
+            return state;
+    }
+};
+const getAllResearch = (state = {
+    researchers: []
+}, action)=>{
+    switch(action.type){
+        case _reviwerConstantsJs.RESEARCH_LIST_REQUEST_REVIWER:
+            return {
+                loading: true
+            };
+        case _reviwerConstantsJs.WORKSHOP_LIST_SUCCESS_REVIWER:
+            return {
+                loading: false,
+                researchers: action.payload
+            };
+        case _reviwerConstantsJs.RESEARCH_LIST_SUCCESS_REVIWER:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        case _reviwerConstantsJs.RESEARCH_LIST_FAIL_REVIWER:
+            return {
+                researchers: []
             };
         default:
             return state;
