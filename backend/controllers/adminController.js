@@ -18,6 +18,16 @@ const updateConferenceDeatils = asyncHandler(async(req, res) => {
 })
 
 
+const getConferenceDetailsById = asyncHandler(async (req, res) => {
+    const conference = await ConferenceDetails.findById(req.params.id)
+
+    if (conference) {
+      res.json(conference)
+    } else {
+      res.status(404)
+      throw new Error('Conference not found')
+    }
+  })
 
 const getEditorList = asyncHandler(async (req, res) => {
     const editors = await User.find({
@@ -35,4 +45,4 @@ const getReviwerList = asyncHandler(async (req, res) => {
 
 })
 
-export { updateConferenceDeatils, getEditorList, getReviwerList }
+export { updateConferenceDeatils, getEditorList, getReviwerList, getConferenceDetailsById }

@@ -21892,14 +21892,14 @@ const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 22
+            lineNumber: 23
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "main",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 23
+            lineNumber: 24
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21908,7 +21908,7 @@ const App = ()=>{
         exact: true,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 24
+            lineNumber: 25
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21916,7 +21916,7 @@ const App = ()=>{
         component: _loginScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 25
+            lineNumber: 26
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21924,7 +21924,7 @@ const App = ()=>{
         component: _registerScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 26
+            lineNumber: 27
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21932,7 +21932,7 @@ const App = ()=>{
         component: _lggedInHomeScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 27
+            lineNumber: 28
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21940,7 +21940,7 @@ const App = ()=>{
         component: _adminDashboardDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 28
+            lineNumber: 29
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21948,7 +21948,7 @@ const App = ()=>{
         component: _editorDashboardDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 29
+            lineNumber: 30
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21956,7 +21956,7 @@ const App = ()=>{
         component: _approvedScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 30
+            lineNumber: 31
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21964,7 +21964,7 @@ const App = ()=>{
         component: _unapprovedScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 31
+            lineNumber: 32
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21972,7 +21972,7 @@ const App = ()=>{
         component: _adminConferenceDetailsJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 32
+            lineNumber: 33
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21980,7 +21980,7 @@ const App = ()=>{
         component: _adminEditorsListJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 33
+            lineNumber: 34
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21988,7 +21988,7 @@ const App = ()=>{
         component: _adminReviwerJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 34
+            lineNumber: 35
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21996,7 +21996,7 @@ const App = ()=>{
         component: _conferenceDetailsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 35
+            lineNumber: 36
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22004,7 +22004,7 @@ const App = ()=>{
         component: _newsListScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 36
+            lineNumber: 38
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22012,7 +22012,7 @@ const App = ()=>{
         component: _newsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 37
+            lineNumber: 39
         },
         __self: undefined
     }))));
@@ -58819,11 +58819,11 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "AdminconferenceList", ()=>AdminconferenceList
 );
-parcelHelpers.export(exports, "approvedByAdmin", ()=>approvedByAdmin
-);
 parcelHelpers.export(exports, "getEditorsList", ()=>getEditorsList
 );
 parcelHelpers.export(exports, "getReviwerList", ()=>getReviwerList
+);
+parcelHelpers.export(exports, "getConferenceDetailsbyId", ()=>getConferenceDetailsbyId
 );
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
@@ -58847,30 +58847,6 @@ const AdminconferenceList = ()=>async (dispatch, getState)=>{
         } catch (error) {
             dispatch({
                 type: _adminConstantsJs.CONFERENCE_LIST_FAIL_ADMIN,
-                payload: error.response && error.response.data.message ? error.response.data.message : error.message
-            });
-        }
-    }
-;
-const approvedByAdmin = (conferencedetails)=>async (dispatch, getState)=>{
-        try {
-            dispatch({
-                type: _adminConstantsJs.CONFERENCE_APPROVED_LIST_REQUEST_ADMIN
-            });
-            const { userLogin: { userInfo  } ,  } = getState();
-            const config = {
-                headers: {
-                    Authorization: `Bearer ${userInfo.token}`
-                }
-            };
-            const { data  } = await _axiosDefault.default.put(`http://localhost:8040/api/admin/${conferencedetails._id}`);
-            dispatch({
-                type: _adminConstantsJs.CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN,
-                payload: data
-            });
-        } catch (error) {
-            dispatch({
-                type: _adminConstantsJs.CONFERENCE_APPROVED_LIST_FAIL_ADMIN,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
@@ -58924,6 +58900,31 @@ const getReviwerList = ()=>async (dispatch, getState)=>{
         }
     }
 ;
+const getConferenceDetailsbyId = (id)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_BYID_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get(`localhost:8040/api/admin/${id}`, config);
+            dispatch({
+                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_BYID_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
 
 },{"axios":"7rA65","../constants/adminConstants.js":"DJzj8","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"DJzj8":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -58960,6 +58961,14 @@ parcelHelpers.export(exports, "REVIWER_LIST_FAIL_ADMIN", ()=>REVIWER_LIST_FAIL_A
 );
 parcelHelpers.export(exports, "REVIWER_LIST_RESET_ADMIN", ()=>REVIWER_LIST_RESET_ADMIN
 );
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_REQUEST", ()=>ADMIN_CONFERENCE_DETAILS_BYID_REQUEST
+);
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS", ()=>ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS
+);
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_FAIL", ()=>ADMIN_CONFERENCE_DETAILS_BYID_FAIL
+);
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_RESET", ()=>ADMIN_CONFERENCE_DETAILS_BYID_RESET
+);
 const CONFERENCE_APPROVED_LIST_REQUEST_ADMIN = 'CONFERENCE_APPROVED_LIST_REQUEST_ADMIN';
 const CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN = 'CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN';
 const CONFERENCE_APPROVED_LIST_FAIL_ADMIN = 'CONFERENCE_APPROVED_LIST_FAIL_ADMIN';
@@ -58976,6 +58985,10 @@ const REVIWER_LIST_REQUEST_ADMIN = 'REVIWER_LIST_REQUEST_ADMIN';
 const REVIWER_LIST_SUCCESS_ADMIN = 'REVIWER_LIST_SUCCESS_ADMIN';
 const REVIWER_LIST_FAIL_ADMIN = 'REVIWER_LIST_FAIL_ADMIN';
 const REVIWER_LIST_RESET_ADMIN = 'REVIWER_LIST_RESET_ADMIN';
+const ADMIN_CONFERENCE_DETAILS_BYID_REQUEST = 'ADMIN_CONFERENCE_DETAILS_BYID_REQUEST';
+const ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS = 'ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS';
+const ADMIN_CONFERENCE_DETAILS_BYID_FAIL = 'ADMIN_CONFERENCE_DETAILS_BYID_FAIL';
+const ADMIN_CONFERENCE_DETAILS_BYID_RESET = 'ADMIN_CONFERENCE_DETAILS_BYID_RESET';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"3WDQu":[function(require,module,exports) {
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -62427,8 +62440,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "conferenceReducer", ()=>conferenceReducer
 );
-parcelHelpers.export(exports, "conferenceApprovedReduceer", ()=>conferenceApprovedReduceer
-);
 parcelHelpers.export(exports, "getEditorReducer", ()=>getEditorReducer
 );
 parcelHelpers.export(exports, "getReviwerReducer", ()=>getReviwerReducer
@@ -62454,33 +62465,6 @@ const conferenceReducer = (state = {
             };
         case _adminConstants.CONFERENCE_LIST_RESET_ADMIN:
             return {
-                conferencedetails: []
-            };
-        default:
-            return state;
-    }
-};
-const conferenceApprovedReduceer = (state = {
-    conferencedetails: []
-}, action)=>{
-    switch(action.type){
-        case _adminConstants.CONFERENCE_APPROVED_LIST_REQUEST_ADMIN:
-            return {
-                loading: true
-            };
-        case _adminConstants.CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN:
-            return {
-                loading: false,
-                conferencedetails: action.payload
-            };
-        case _adminConstants.CONFERENCE_APPROVED_LIST_FAIL_ADMIN:
-            return {
-                loading: false,
-                error: action.payload
-            };
-        case _adminConstants.CONFERENCE_APPROVED_LIST_RESET_ADMIN:
-            return {
-                conferencedetails: []
             };
         default:
             return state;
