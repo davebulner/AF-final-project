@@ -58590,8 +58590,6 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "mainListItems", ()=>mainListItems
 );
-parcelHelpers.export(exports, "secondaryListItems", ()=>secondaryListItems
-);
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _listItem = require("@material-ui/core/ListItem");
@@ -58787,98 +58785,6 @@ const mainListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
     },
     __self: undefined
 }))));
-const secondaryListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 65
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_listSubheaderDefault.default, {
-    inset: true,
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 66
-    },
-    __self: undefined
-}, "Saved reports"), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
-    button: true,
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 67
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 68
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 69
-    },
-    __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
-    primary: "Current month",
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 71
-    },
-    __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
-    button: true,
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 73
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 74
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 75
-    },
-    __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
-    primary: "Last quarter",
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 77
-    },
-    __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemDefault.default, {
-    button: true,
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 79
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_listItemIconDefault.default, {
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 80
-    },
-    __self: undefined
-}, /*#__PURE__*/ _reactDefault.default.createElement(_assignmentDefault.default, {
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 81
-    },
-    __self: undefined
-})), /*#__PURE__*/ _reactDefault.default.createElement(_listItemTextDefault.default, {
-    primary: "Year-end sale",
-    __source: {
-        fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminDashboard\\listitems3.js",
-        lineNumber: 83
-    },
-    __self: undefined
-})));
 
   helpers.postlude(module);
 } finally {
