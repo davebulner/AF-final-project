@@ -22,6 +22,10 @@ import {
       CONFERENCE_DETAILS_BYID_SUCCESS,
       CONFERENCE_DETAILS_BYID_FAIL,
       CONFERENCE_DETAILS_BYID_RESET,
+      CONFERENCE_DETAILS_CREATE_REQUEST,
+      CONFERENCE_DETAILS_CREATE_SUCCESS,
+      CONFERENCE_DETAILS_CREATE_FAIL,
+      CONFERENCE_DETAILS_CREATE_RESET,
 } from '../constants/conferenceConstants.js'
 
 
@@ -109,6 +113,21 @@ export const conDetailsReducer = (state = { conferencedetails: {} }, action) => 
                   return { loading: false, error: action.payload }
             case CONFERENCE_DETAILS_BYID_RESET:
                   return { conferencedetails: {} }
+            default:
+                  return state
+      }
+}
+
+export const conCreateReducer = (state = {}, action) => {
+      switch (action.type) {
+            case CONFERENCE_DETAILS_CREATE_REQUEST:
+                  return { loading: true }
+            case CONFERENCE_DETAILS_CREATE_SUCCESS:
+                  return { loading: false, success: true, conferencedetails: action.payload }
+            case CONFERENCE_DETAILS_CREATE_FAIL:
+                  return { loading: false, error: action.payload }
+            case CONFERENCE_DETAILS_CREATE_RESET:
+                  return {}
             default:
                   return state
       }

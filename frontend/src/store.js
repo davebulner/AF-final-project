@@ -2,12 +2,18 @@ import { createStore, combineReducers, applyMiddleware } from 'redux'
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import { userLoginReducer } from '../src/reducers/userReducers.js'
-import { conDetailsDeleteReducer, conListReducer, conUnApprovedReduceer, conDetailsUpdateReducer, conDetailsReducer } from '../src/reducers/conferenceReducer.js'
+import { conDetailsDeleteReducer, conListReducer, conUnApprovedReduceer, conDetailsUpdateReducer, conDetailsReducer, conCreateReducer } from '../src/reducers/conferenceReducer.js'
 import { conApprovedReduceer } from '../src/reducers/conferenceReducer.js'
-import { userRegisterReducer } from '../src/reducers/userReducers.js'
-import { conferenceReducer } from '../src/reducers/adminConferenceReducer.js'
+import { conferenceReducer, getEditorReducer } from '../src/reducers/adminReducers.js'
+import { userRegisterReducer, userDetailsReducer } from '../src/reducers/userReducers.js'
 import { researcherInsert } from './reducers/researcherReducer.js'
 import { workshopInsert } from './reducers/workshopReducer.js'
+import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, conferenceApprovedReducer, conferenceDeclinedReducer } from '../src/reducers/adminReducers.js'
+import { conferenceReducer, getEditorReducer, getReviwerReducer } from '../src/reducers/adminReducers.js'
+import { newsListReducer, newsDeleteReducer, newsgetReducer, newsUpadateReducer, newsCreateReducer } from '../src/reducers/newsReducers.js'
+
+import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, newsReducer } from '../src/reducers/adminReducers.js'
+import { newsListReducer } from '../src/reducers/newsReducers.js'
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
@@ -17,10 +23,25 @@ const reducer = combineReducers({
     userRegister: userRegisterReducer,
     appConference: conferenceReducer,
     deleteCon: conDetailsDeleteReducer,
+    editors: getEditorReducer,
     updateCon: conDetailsUpdateReducer,
     ConsDetails: conDetailsReducer,
     researcherInsert: researcherInsert,
     workshopInsert: workshopInsert,
+    createConferenceDetails: conCreateReducer,
+    reviwer: getReviwerReducer,
+    listNews: newsListReducer,
+    cDetails: getConferenceDetailsById,
+    confApproved: conferenceApprovedReducer,
+    confDecline: conferenceDeclinedReducer,
+    delNews: newsDeleteReducer,
+    getNews: newsgetReducer,
+    newsUpdate: newsUpadateReducer,
+    newsCreate: newsCreateReducer,
+    cDetails: getConferenceDetailsById,
+    newsDetails: newsReducer,
+    userDetailsReducer: userDetailsReducer
+
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo')

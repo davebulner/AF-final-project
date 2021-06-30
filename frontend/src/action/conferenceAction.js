@@ -22,8 +22,11 @@ import {
       CONFERENCE_DETAILS_BYID_RESET,
       CONFERENCE_DETAILS_BYID_REQUEST,
       CONFERENCE_DETAILS_BYID_FAIL,
-      CONFERENCE_DETAILS_BYID_SUCCESS
-
+      CONFERENCE_DETAILS_BYID_SUCCESS,
+      CONFERENCE_DETAILS_CREATE_REQUEST,
+      CONFERENCE_DETAILS_CREATE_SUCCESS,
+      CONFERENCE_DETAILS_CREATE_FAIL,
+      CONFERENCE_DETAILS_CREATE_RESET,
 
 } from '../constants/conferenceConstants'
 
@@ -146,7 +149,7 @@ export const deleteConDetails = (id) => async (dispatch, getState) => {
 
       } catch (error) {
             dispatch({
-                  type: CONFERENCE_DETAILS_DELETE_FAIL,
+                  type: CONFERENCE_DETAILS_CREATE_FAIL,
                   payload:
                         error.response && error.response.data.message
                               ? error.response.data.message
@@ -222,6 +225,38 @@ export const updateConDetails = (conferencedetails) => async (dispatch, getState
                         error.response && error.response.data.message
                               ? error.response.data.message
                               : error.message,
+            })
+      }
+}
+
+export const createConDetails = () => async (dispatch, getState) => {
+      try {
+            dispatch({
+                  type: CONFERENCE_DETAILS_CREATE_REQUEST
+            })
+            const {
+                  userLogin: { userInfo },
+            } = getState()
+
+            const config = {
+                  headers: {
+                        Authorization: `Bearer ${userInfo.token}`,
+                  },
+            }
+
+            const { data } = await axios.post('http://localhost:8040/api/conDetails/addConDetails/', {}, config)
+
+            dispatch({
+                  type: CONFERENCE_DETAILS_CREATE_SUCCESS,
+                  payload: data,
+            })
+
+      } catch (error) {
+            dispatch({
+                  type: CONFERENCE_DETAILS_DELETE_FAIL,
+                  payload: error.response && error.response.data.message
+                        ? error.response.data.message
+                        : error.message,
             })
       }
 }

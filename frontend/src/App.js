@@ -11,9 +11,16 @@ import appconlistScreen from './Screens/EditorScreen/approvedScreen'
 import unappconlistScreen from './Screens/EditorScreen/unapprovedScreen'
 import profileScreen from './Screens/ProfileScreen/profileScreen'
 import AdminConference from './components/Admin/adminConferenceDetails/adminConferenceDetails.js'
+import getAdminEditor from './components/Admin/adminUserDetails/adminEditorsList.js'
+import getAdminReviwer from './components/Admin/adminUserDetails/adminReviwer.js'
 import ConferenceDetailsUpdate from './Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js'
 import researcherScreen from './Screens/ResearcherScreen/researcherScreen.js'
 import workShopScreen from './Screens/WorkShopScreen/workShopScreen'
+import newsListScreen from './Screens/NewsListScreen/newsListScreen'
+import NewsEditScreen from './Screens/NewsEditScreen/newsEditScreen.js'
+import AdminApproveScreen from './components/Admin/adminConferenceDetails/approveScreen.js'
+import AdminNewsDetails from './components/Admin/adminNewsDetails/adminNewsDetails.js'
+
 
 const App = () => {
       return (
@@ -28,9 +35,16 @@ const App = () => {
                         <Route path="/applist" component={appconlistScreen} />
                         <Route path="/unapplist" component={unappconlistScreen} />
                         <Route path="/adminCon" component={AdminConference} />
+                        <Route path="/adminEditors" component={getAdminEditor} />
+                        <Route path="/adminReviwer" component={getAdminReviwer} />
                         <Route path="/con/:id" component={ConferenceDetailsUpdate} />
                         <Route path="/researcher" component={researcherScreen} />
                         <Route path="/workshop" component={workShopScreen} />
+                        <Route path="/conDetails/:id" component={AdminApproveScreen} />
+                        <Route path="/newslist" component={newsListScreen} />
+                        <Route path='/news/:id' component={NewsEditScreen} />
+                        <Route path="/newsAdmin" component={AdminNewsDetails} />
+                        <Route path="/profile" component={profileScreen} />
                   </div>
             </Router>
       )

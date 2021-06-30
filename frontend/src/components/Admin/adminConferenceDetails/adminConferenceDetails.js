@@ -15,7 +15,7 @@ import Link from '@material-ui/core/Link';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems, secondaryListItems } from '../adminDashboard/listitems';
+import { mainListItems, secondaryListItems } from '../adminDashboard/listitems3';
 import { LinkContainer } from 'react-router-bootstrap'
 import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
@@ -27,7 +27,7 @@ import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../../Message/message.js'
 import Loader from '../../Loader/loader.js'
-import { AdminconferenceList } from '../../../action/adminAction.js'
+
 
 
 function Copyright() {

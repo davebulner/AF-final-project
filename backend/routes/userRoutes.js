@@ -1,6 +1,6 @@
 import express from 'express'
 const router = express.Router()
-import { authUser, getUserProfile, registerUser, updateUserProfile, getUserById, updateUser } from '../controllers/userController.js'
+import { authUser, getUserProfile, registerUser, updateUserProfile, getUserById, updateUser, getAllUsers } from '../controllers/userController.js'
 import { protect, admin } from '../middleware/authMiddleware.js'
 
 
@@ -11,7 +11,8 @@ router
     .put(protect, updateUserProfile)
 router.route('/').post(registerUser)
 router.route(':/id')
-    .get(protect, admin, getUserById)
-    .put(protect, admin, updateUser)
+    .get(protect, getUserById)
+    .put(protect, updateUser)
+router.get('/get', getAllUsers)
 
 export default router
