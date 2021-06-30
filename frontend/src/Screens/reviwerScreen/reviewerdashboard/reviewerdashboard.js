@@ -210,7 +210,7 @@ export default function Dashboard() {
                                         }
                                         </td>
                                         <td>
-                                            <LinkContainer to={`/conDetails/${con._id}`}>
+                                            <LinkContainer to={`/workshopDetails/${con._id}`}>
                                                 <Button variant='light' className='btn-sm'>
                                                     Details
                                                 </Button>
