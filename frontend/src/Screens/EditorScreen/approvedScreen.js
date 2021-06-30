@@ -4,8 +4,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import Message from '../../components/Message/message'
 import Loader from '../../components/Loader/loader'
 import { appConList } from '../../action/conferenceAction'
-import Appbar from '../../components/Navbar/navbar.js'
-import Editornavbar from '../../components/EditorNav/editorNavbar.js'
 
 
 import clsx from 'clsx';

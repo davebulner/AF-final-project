@@ -19,10 +19,12 @@ import workShopScreen from './Screens/WorkShopScreen/workShopScreen'
 import newsListScreen from './Screens/NewsListScreen/newsListScreen'
 import NewsEditScreen from './Screens/NewsEditScreen/newsEditScreen.js'
 import AdminApproveScreen from './components/Admin/adminConferenceDetails/approveScreen.js'
+import conferenceDetails from './Screens/ConferenceDetails/conferenceDetails.js'
 import AdminNewsDetails from './components/Admin/adminNewsDetails/adminNewsDetails.js'
 import AdminNewsApprove from './components/Admin/adminNewsDetails/adminNewsApprove.js'
 import WorkshopList from './Screens/ReviwerScreen/reviewerdashboard/reviewerdashboard.js'
 import Reasearcher from './Screens/ReviwerScreen/reviewerdashboard/reviwerResearch.js'
+import ViewNewsScreen from './Screens/ViewNewsScreen/viewNewsScreen.js'
 
 
 const App = () => {
@@ -46,15 +48,18 @@ const App = () => {
                         <Route path="/conDetails/:id" component={AdminApproveScreen} />
                         <Route path="/newslist" component={newsListScreen} />
                         <Route path='/news/:id' component={NewsEditScreen} />
+                        <Route path="/conference" component={conferenceDetails} />
+                        <Route path="/newsAdmin" component={AdminNewsDetails} />
                         <Route path="/newsAdmin" component={AdminNewsDetails} />
                         <Route path="/profile" component={profileScreen} />
                         <Route path="/newsAdmin" component={AdminNewsDetails} />
                         <Route path="/adminNews/:id" component={AdminNewsApprove} />
                         <Route path="/reviwer" component={WorkshopList} />
                         <Route path="/research" component={Reasearcher} />
+                        <Route path="/view/:id" component={ViewNewsScreen} />
 
                   </div>
-            </Router>
+            </Router >
       )
 }
 
