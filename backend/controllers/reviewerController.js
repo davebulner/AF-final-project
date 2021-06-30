@@ -1,23 +1,20 @@
-import Reviewer from '../models/userModel.js'
-
-const getAllReviewerDetails = async (req,res) => {
-        const rev = await Reviewer.find({});
-        res.json(rev);
-};
+import asyncHandler from 'express-async-handler'
+import Workshop from '../models/workPresenterModel.js'
+import Researcher from '../models/researchModel.js'
 
 
 
-const getReviewerDetails = async (req, res) => {
-  try {
-    //get Reviewer details
-    //-password : dont return the pasword
-    const user = await Reviewer.findById(req.user.id).select('-password');
-    res.json(user);
-  } catch {
-    console.log(err.message);
-    res.status(500).send('Server Error');
-  }
-};
+
+const getAllWorkshopDetails = asyncHandler(async (req, res) => {
+  const workDetails = await Workshop.find({})
+  res.json(workDetails)
+})
 
 
-export{ getAllReviewerDetails,getReviewerDetails }
+const getAllResearchDetails = asyncHandler(async (req, res) => {
+    const reskDetails = await Researcher.find({})
+    res.json(reskDetails)
+  })
+  
+
+export{ getAllWorkshopDetails, getAllResearchDetails }

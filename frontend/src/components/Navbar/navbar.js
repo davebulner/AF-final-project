@@ -108,6 +108,13 @@ const Appbar = () => {
                                           </Link>
 
                                     </NavDropdown>
+                              )|| userInfo && userInfo.isReviwer && (
+                                    <NavDropdown className="/reviwer" title='Riviwer'>
+                                          <Link to='/reviwer'>
+                                                Riviewer
+                                          </Link>
+
+                                    </NavDropdown>
                               )
 
                               }

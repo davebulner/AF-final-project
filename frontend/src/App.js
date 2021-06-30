@@ -21,7 +21,8 @@ import NewsEditScreen from './Screens/NewsEditScreen/newsEditScreen.js'
 import AdminApproveScreen from './components/Admin/adminConferenceDetails/approveScreen.js'
 import AdminNewsDetails from './components/Admin/adminNewsDetails/adminNewsDetails.js'
 import AdminNewsApprove from './components/Admin/adminNewsDetails/adminNewsApprove.js'
-import ReviewerScreen from './Screens/reviwerScreen/reviewerdashboard/reviewerdashboard.js'
+import WorkshopList from './Screens/ReviwerScreen/reviewerdashboard/reviewerdashboard.js'
+import Reasearcher from './Screens/ReviwerScreen/reviewerdashboard/reviwerResearch.js'
 
 
 const App = () => {
@@ -49,7 +50,8 @@ const App = () => {
                         <Route path="/profile" component={profileScreen} />
                         <Route path="/newsAdmin" component={AdminNewsDetails} />
                         <Route path="/adminNews/:id" component={AdminNewsApprove} />
-                        <Route path="/reviwer" component={ReviewerScreen} />
+                        <Route path="/reviwer" component={WorkshopList} />
+                        <Route path="/research" component={Reasearcher} />
 
                   </div>
             </Router>

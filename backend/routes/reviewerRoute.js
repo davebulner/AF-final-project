@@ -1,10 +1,10 @@
 import express from 'express'
-
 const router = express.Router()
 
-import { getAllReviewerDetails,getReviewerDetails } from '../controllers/reviewerController.js'
+import { getAllWorkshopDetails, getAllResearchDetails } from '../controllers/reviewerController.js'
+import { protect, reviver } from '../middleware/authMiddleware.js'
 
-router.get('/',getAllReviewerDetails)
-router.get('/',getReviewerDetails)
+router.get('/', protect, reviver, getAllWorkshopDetails)
+router.get('/research', protect, reviver, getAllResearchDetails)
 
 export default router 

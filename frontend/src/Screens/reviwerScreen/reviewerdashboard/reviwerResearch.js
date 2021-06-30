@@ -21,7 +21,7 @@ import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../../../components/Message/message.js'
 import Loader from '../../../components/Loader/loader.js'
-import { getAllWorkshops } from '../../../action/reviwerAction.js'
+import { getAllResearch } from '../../../action/reviwerAction.js'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
@@ -124,11 +124,11 @@ export default function Dashboard() {
 
     const dispatch = useDispatch()
 
-    const listWorkshops = useSelector(state => state.listWorkshops)
-    const { loading, error, workshops } = listWorkshops
+    const listResearchers = useSelector(state => state.listResearchers)
+    const { loading, error, researchers } = listResearchers
 
     useEffect(() => {
-      dispatch(getAllWorkshops())
+      dispatch(getAllResearch())
     }, [dispatch])
 
 
@@ -188,29 +188,28 @@ export default function Dashboard() {
                       <thead>
                             <tr>
                                   <th>Name</th>
+                                  <th>Paper</th>
                                   <th>Description</th>
-                                  <th>Time From</th>
-                                  <th>Time To</th>
-                                  <th>Time Date</th>
-                                  <th>Documents</th>
+                                  <th>Docs</th>
+                                  <th>Created at</th>
+                                  <th>update at</th>
                                   <th>Approved</th>
                             </tr>
                       </thead>
                       <tbody>
-                            {workshops.map((con) => (
+                            {researchers.map((con) => (
                                   <tr key={con._id} >
-                                        <td>{con.workshopName}</td>
-                                        <td>{con.workshopDes}</td>
-                                        <td>{con.workTimeFrom}</td>
-                                        <td>{con.workTimeTo}</td>
-                                        <td>{con.workDate}</td>
-                                        <td>{con.workInsertDoc}</td>
-                                        <td>{con.workIsApprove ? 
+                                        <td>{con.researcherPaper}</td>
+                                        <td>{con.researcherDes}</td>
+                                        <td>{con.researchInsertDoc}</td>
+                                        <td>{con.createdAt}</td>
+                                        <td>{con.updatedAt}</td>
+                                        <td>{con.researchIsApproved ? 
                                           (<i className='fas fa-check' style={{ color:'green' }}> </i>) : (<i className='fas fa-times' style={{ color:'red' }}> </i>)
                                         }
                                         </td>
                                         <td>
-                                            <LinkContainer to={`/workshopDetails/${con._id}`}>
+                                            <LinkContainer to={`/reserch/${con._id}`}>
                                                 <Button variant='light' className='btn-sm'>
                                                     Details
                                                 </Button>
