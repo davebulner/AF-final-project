@@ -17,7 +17,10 @@ import {
       ADMIN_APPROVED_FAIL,
       ADMIN_DECLINE_REQUEST,
       ADMIN_DECLINE_SUCCESS,
-      ADMIN_DECLINE_FAIL
+      ADMIN_DECLINE_FAIL,
+      ADMIN_NEWS_LIST_REQUEST,
+      ADMIN_NEWS_LIST_SUCCESS,
+      ADMIN_NEWS_LIST_FAIL
       
 } from '../constants/adminConstants.js'
 
@@ -218,6 +221,30 @@ export const declineConference = (conferencedetails) => async (dispatch, getStat
       } catch (error) {
             dispatch({
                   type: ADMIN_DECLINE_FAIL,
+                  payload:
+                        error.response && error.response.data.message
+                              ? error.response.data.message
+                              : error.message,
+            })
+      }
+}
+
+
+export const adminNewsList = () => async (dispatch) => {
+      try {
+            dispatch({
+                  type: ADMIN_NEWS_LIST_REQUEST,
+            })
+
+            const { data } = await axios.get('http://localhost:8040/api/news/allNews')
+            dispatch({
+                  type: ADMIN_NEWS_LIST_SUCCESS,
+                  payload: data
+            })
+
+      } catch (error) {
+            dispatch({
+                  type: ADMIN_NEWS_LIST_FAIL,
                   payload:
                         error.response && error.response.data.message
                               ? error.response.data.message

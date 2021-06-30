@@ -20,7 +20,11 @@ import {
     ADMIN_APPROVED_FAIL,
     ADMIN_DECLINE_REQUEST,
     ADMIN_DECLINE_SUCCESS,
-    ADMIN_DECLINE_FAIL
+    ADMIN_DECLINE_FAIL,
+    ADMIN_NEWS_LIST_REQUEST,
+    ADMIN_NEWS_LIST_SUCCESS,
+    ADMIN_NEWS_LIST_FAIL,
+    ADMIN_NEWS_LIST_RESET
 
  
 } from '../constants/adminConstants'
@@ -114,6 +118,23 @@ export const getEditorReducer = (state = { users: [] }, action) => {
                 return state
       }
 }
+
+
+export const newsReducer = (state = { news: []  }, action) => {
+      switch (action.type) {
+            case ADMIN_NEWS_LIST_REQUEST:
+                  return { loading: true }
+            case ADMIN_NEWS_LIST_SUCCESS:
+                  return { loading: false, news: action.payload }
+            case ADMIN_NEWS_LIST_FAIL:
+                  return { loading: false, error: action.payload }
+            case ADMIN_NEWS_LIST_RESET:
+                  return { news: []}
+            default:
+                  return state
+  
+      }
+  }
 
 
   
