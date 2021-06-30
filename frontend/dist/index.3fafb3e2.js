@@ -25823,24 +25823,10 @@ const Loginscreen = ({ location , history  })=>{
             lineNumber: 78
         },
         __self: undefined
-    }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
-        className: "forgot-password text-right",
+    }, "Submit")))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 79
-        },
-        __self: undefined
-    }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
-        href: "#",
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 80
-        },
-        __self: undefined
-    }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
-        __source: {
-            fileName: "D:\\AF final project\\frontend\\src\\Screens\\LoginScreen\\loginScreen.js",
-            lineNumber: 88
+            lineNumber: 86
         },
         __self: undefined
     })));
@@ -39846,6 +39832,8 @@ parcelHelpers.export(exports, "register", ()=>register
 );
 parcelHelpers.export(exports, "getUserDetails", ()=>getUserDetails
 );
+parcelHelpers.export(exports, "updateUserProfile", ()=>updateUserProfile
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _userConstants = require("../constants/userConstants");
@@ -39924,7 +39912,7 @@ const getUserDetails = (id)=>async (dispatch, getState)=>{
             dispatch({
                 type: _userConstants.USER_DETAILS_REQUEST
             });
-            const { userInfo  } = getState();
+            const { userLogin: { userInfo  } ,  } = getState();
             const config = {
                 headers: {
                     'Content-Type': 'application/json',
@@ -39939,6 +39927,31 @@ const getUserDetails = (id)=>async (dispatch, getState)=>{
         } catch (error) {
             dispatch({
                 type: _userConstants.USER_DETAILS_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const updateUserProfile = (user)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _userConstants.USER_UPDATE_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.put(`http://localhost:8040/api/users/profile`, user, config);
+            dispatch({
+                type: _userConstants.USER_UPDATE_SUCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _userConstants.USER_UPDATE_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
@@ -41334,6 +41347,16 @@ parcelHelpers.export(exports, "USER_DETAILS_SUCESS", ()=>USER_DETAILS_SUCESS
 );
 parcelHelpers.export(exports, "USER_DETAILS_FAIL", ()=>USER_DETAILS_FAIL
 );
+parcelHelpers.export(exports, "USER_DETAILS_RESET", ()=>USER_DETAILS_RESET
+);
+parcelHelpers.export(exports, "USER_UPDATE_REQUEST", ()=>USER_UPDATE_REQUEST
+);
+parcelHelpers.export(exports, "USER_UPDATE_SUCESS", ()=>USER_UPDATE_SUCESS
+);
+parcelHelpers.export(exports, "USER_UPDATE_FAIL", ()=>USER_UPDATE_FAIL
+);
+parcelHelpers.export(exports, "USER_UPDATE_RESET", ()=>USER_UPDATE_RESET
+);
 const USER_LOGIN_REQUEST = 'USER_LOGIN_REQUEST';
 const USER_LOGIN_SUCESS = 'USER_LOGIN_SUCESS';
 const USER_LOGIN_FAIL = 'USER_LOGIN_FAIL';
@@ -41344,6 +41367,11 @@ const USER_REGISTER_FAIL = 'USER_REGISTER_FAIL';
 const USER_DETAILS_REQUEST = 'USER_DETAILS_REQUEST';
 const USER_DETAILS_SUCESS = 'USER_DETAILS_SUCESS';
 const USER_DETAILS_FAIL = 'USER_DETAILS_FAIL';
+const USER_DETAILS_RESET = 'USER_DETAILS_RESET';
+const USER_UPDATE_REQUEST = 'USER_UPDATE_REQUEST';
+const USER_UPDATE_SUCESS = 'USER_UPDATE_SUCESS';
+const USER_UPDATE_FAIL = 'USER_UPDATE_FAIL';
+const USER_UPDATE_RESET = 'USER_UPDATE_RESET';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"6fMfw":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -58452,6 +58480,9 @@ const profileScreen = ({ location , history  })=>{
     const userLogin = _reactRedux.useSelector((state)=>state.userLogin
     );
     const { userInfo  } = userLogin;
+    const userUpdateProfileReducer = _reactRedux.useSelector((state)=>state.userUpdateProfileReducer
+    );
+    const { success  } = userUpdateProfileReducer;
     _react.useEffect(()=>{
         if (!userInfo) history.push('/login');
         else if (!user.name) dispatch(_userActionJs.getUserDetails('profile'));
@@ -58468,86 +58499,99 @@ const profileScreen = ({ location , history  })=>{
     const submitHandler = (e)=>{
         e.preventDefault();
         if (password !== confirmPassword) setMessage('Password do not match');
+        else dispatch(_userActionJs.updateUserProfile({
+            id: user._id,
+            name,
+            email,
+            password
+        }));
     };
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 58
+            lineNumber: 61
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "wrapper",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 60
+            lineNumber: 63
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "nm",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 61
+            lineNumber: 64
         },
         __self: undefined
     }, error && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 62
+            lineNumber: 65
         },
         __self: undefined
     }, message), error && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 63
+            lineNumber: 66
         },
         __self: undefined
-    }, error), loading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+    }, error), success && /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "success",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 64
+            lineNumber: 67
+        },
+        __self: undefined
+    }, "Profile Updated"), loading && /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
+            lineNumber: 68
         },
         __self: undefined
     })), /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "content",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 66
+            lineNumber: 70
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form, {
         onSubmit: submitHandler,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 68
+            lineNumber: 72
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
         align: "center",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 69
+            lineNumber: 73
         },
         __self: undefined
     }, "Profile"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
         controlId: "name",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 71
+            lineNumber: 75
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 72
+            lineNumber: 76
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 73
+            lineNumber: 77
         },
         __self: undefined
     }, "User Name"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
@@ -58559,27 +58603,27 @@ const profileScreen = ({ location , history  })=>{
         ,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 74
+            lineNumber: 78
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
         controlId: "radio",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 82
+            lineNumber: 86
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 83
+            lineNumber: 87
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 84
+            lineNumber: 88
         },
         __self: undefined
     }, "Email"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
@@ -58591,27 +58635,27 @@ const profileScreen = ({ location , history  })=>{
         ,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 85
+            lineNumber: 89
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
         controlId: "password",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 92
+            lineNumber: 96
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 93
+            lineNumber: 97
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 94
+            lineNumber: 98
         },
         __self: undefined
     }, "Password"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
@@ -58623,27 +58667,27 @@ const profileScreen = ({ location , history  })=>{
         ,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 95
+            lineNumber: 99
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Group, {
         controlId: "confirmPassword",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 102
+            lineNumber: 106
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "form-group bn",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 103
+            lineNumber: 107
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Label, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 104
+            lineNumber: 108
         },
         __self: undefined
     }, "Confirm Password"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Form.Control, {
@@ -58655,7 +58699,7 @@ const profileScreen = ({ location , history  })=>{
         ,
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 105
+            lineNumber: 109
         },
         __self: undefined
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
@@ -58663,33 +58707,33 @@ const profileScreen = ({ location , history  })=>{
         className: "btn btn-primary btn-block",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 113
+            lineNumber: 117
         },
         __self: undefined
     }, "Update"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         className: "forgot-password text-right",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 114
+            lineNumber: 118
         },
         __self: undefined
     }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 115
+            lineNumber: 119
         },
         __self: undefined
     }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ProfileScreen\\profileScreen.js",
-            lineNumber: 122
+            lineNumber: 126
         },
         __self: undefined
     })));
 };
-_s(profileScreen, "YGYRKdXFsNgcPMiQ3rUp0F3NVOs=", false, function() {
-    return [_reactRedux.useDispatch, _reactRedux.useSelector, _reactRedux.useSelector];
+_s(profileScreen, "07NSTV8+Vb7EEz1ydSHv9yXoPIc=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector, _reactRedux.useSelector, _reactRedux.useSelector];
 });
 exports.default = profileScreen;
 
@@ -60409,23 +60453,31 @@ const researcherScreen = ({ location , history  })=>{
             lineNumber: 107
         },
         __self: undefined
-    })), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
+    })), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "https://drive.google.com/file/d/1uHAC2EJBvxkhVgGLnFab52P1U6FoE8Du/view?usp=sharing",
+        target: "_blank",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
             lineNumber: 110
         },
         __self: undefined
+    }, "Researcher Document Template"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
+            lineNumber: 113
+        },
+        __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
-            lineNumber: 111
+            lineNumber: 114
         },
         __self: undefined
     }, "Have An Account? ", /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
         to: redirect ? `/login?redirect=${redirect}` : '/login',
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
-            lineNumber: 112
+            lineNumber: 115
         },
         __self: undefined
     }, "Login"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
@@ -60433,27 +60485,27 @@ const researcherScreen = ({ location , history  })=>{
         className: "btn btn-primary btn-block",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
-            lineNumber: 117
+            lineNumber: 121
         },
         __self: undefined
     }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         className: "forgot-password text-right",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
-            lineNumber: 118
+            lineNumber: 122
         },
         __self: undefined
     }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
-            lineNumber: 119
+            lineNumber: 123
         },
         __self: undefined
     }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\ResearcherScreen\\researcherScreen.js",
-            lineNumber: 128
+            lineNumber: 132
         },
         __self: undefined
     })));
@@ -60872,32 +60924,40 @@ const workShopScreen = ({ location , history  })=>{
             lineNumber: 155
         },
         __self: undefined
-    }, "Login"))), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+    }, "Login"))), /*#__PURE__*/ _reactDefault.default.createElement("a", {
+        href: "https://drive.google.com/file/d/1CMjNhwaIRVnJGRF5OGyOLJ-0xFJNlotw/view?usp=sharing",
+        target: "_blank",
+        __source: {
+            fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
+            lineNumber: 159
+        },
+        __self: undefined
+    }, "Workshop Document Template"), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
         type: "submit",
         className: "btn btn-primary btn-block",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
-            lineNumber: 160
+            lineNumber: 161
         },
         __self: undefined
     }, "Submit"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         className: "forgot-password text-right",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
-            lineNumber: 161
+            lineNumber: 162
         },
         __self: undefined
     }, "Forgot ", /*#__PURE__*/ _reactDefault.default.createElement("a", {
         href: "#",
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
-            lineNumber: 162
+            lineNumber: 163
         },
         __self: undefined
     }, "password?"))))), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
         __source: {
             fileName: "D:\\AF final project\\frontend\\src\\Screens\\WorkShopScreen\\workShopScreen.js",
-            lineNumber: 171
+            lineNumber: 172
         },
         __self: undefined
     })));
@@ -64297,6 +64357,7 @@ const reducer = _redux.combineReducers({
     cDetails: _adminReducersJs.getConferenceDetailsById,
     newsDetails: _adminReducersJs.newsReducer,
     userDetailsReducer: _userReducersJs.userDetailsReducer,
+    userUpdateProfileReducer: _userReducersJs.userUpdateProfileReducer,
     newsApproved: _adminReducersJs.adminNewsReducer,
     nDetails: _adminReducersJs.getNewsDetailsById
 });
@@ -64887,6 +64948,8 @@ parcelHelpers.export(exports, "userRegisterReducer", ()=>userRegisterReducer
 );
 parcelHelpers.export(exports, "userDetailsReducer", ()=>userDetailsReducer
 );
+parcelHelpers.export(exports, "userUpdateProfileReducer", ()=>userUpdateProfileReducer
+);
 var _userConstantsJs = require("../constants/userConstants.js");
 const userLoginReducer = (state = {
 }, action)=>{
@@ -64952,6 +65015,40 @@ const userDetailsReducer = (state = {
             return {
                 loading: false,
                 error: action.payload
+            };
+        case _userConstantsJs.USER_DETAILS_RESET:
+            return {
+                user: {
+                }
+            };
+        default:
+            return state;
+    }
+};
+const userUpdateProfileReducer = (state = {
+    user: {
+    }
+}, action)=>{
+    switch(action.type){
+        case _userConstantsJs.USER_UPDATE_REQUEST:
+            return {
+                ...state,
+                loading: true
+            };
+        case _userConstantsJs.USER_UPDATE_SUCESS:
+            return {
+                loading: false,
+                user: action.payload
+            };
+        case _userConstantsJs.USER_UPDATE_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        case _userConstantsJs.USER_UPDATE_RESET:
+            return {
+                user: {
+                }
             };
         default:
             return state;

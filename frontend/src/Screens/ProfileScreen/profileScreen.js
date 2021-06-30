@@ -7,7 +7,7 @@ import Navbar from '../../components/Navbar/navbar.js'
 import Footer from '../../components/Footer/footer.js'
 import Message from '../../components/Message/message.js'
 import Loader from '../../components/Loader/loader.js'
-import { getUserDetails } from '../../action/userAction.js'
+import { getUserDetails, updateUserProfile } from '../../action/userAction.js'
 
 const profileScreen = ({ location, history }) => {
     const [name, setName] = useState('')
@@ -23,6 +23,9 @@ const profileScreen = ({ location, history }) => {
 
     const userLogin = useSelector(state => state.userLogin)
     const { userInfo } = userLogin
+
+    const userUpdateProfileReducer = useSelector(state => state.userUpdateProfileReducer)
+    const { success } = userUpdateProfileReducer
 
 
 
@@ -46,7 +49,7 @@ const profileScreen = ({ location, history }) => {
             setMessage('Password do not match')
         }
         else {
-            //Update profile
+            dispatch(updateUserProfile({ id: user._id, name, email, password }))
         }
     }
 
@@ -61,6 +64,7 @@ const profileScreen = ({ location, history }) => {
                 <div className='nm'>
                     {error && <Message variant='danger'>{message}</Message>}
                     {error && <Message variant='danger'>{error}</Message>}
+                    {success && <Message variant='success'>Profile Updated</Message>}
                     {loading && <Loader />}
                 </div>
                 <div className='content'>

@@ -107,11 +107,15 @@ const researcherScreen = ({ location, history }) => {
                             {uploading && <Loader />}
                         </Form.Group>
 
+                        <a href="https://drive.google.com/file/d/1uHAC2EJBvxkhVgGLnFab52P1U6FoE8Du/view?usp=sharing" target="_blank">Researcher Document Template</a>
+
+
                         <Row>
                             <Col>
                                 Have An Account? <Link to={redirect ? `/login?redirect=${redirect}` : '/login'}>Login</Link>
                             </Col>
                         </Row>
+
 
 
                         <Button type="submit" className="btn btn-primary btn-block">Submit</Button>

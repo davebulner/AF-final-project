@@ -156,6 +156,7 @@ const workShopScreen = ({ location, history }) => {
                             </Col>
                         </Row>
 
+                        <a href="https://drive.google.com/file/d/1CMjNhwaIRVnJGRF5OGyOLJ-0xFJNlotw/view?usp=sharing" target="_blank">Workshop Document Template</a>
 
                         <Button type="submit" className="btn btn-primary btn-block">Submit</Button>
                         <p className="forgot-password text-right">

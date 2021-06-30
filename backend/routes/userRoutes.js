@@ -11,8 +11,8 @@ router
     .put(protect, updateUserProfile)
 router.route('/').post(registerUser)
 router.route(':/id')
-    .get(protect, getUserById)
-    .put(protect, updateUser)
+    .get(getUserById)
+    .put(updateUser)
 router.get('/get', getAllUsers)
 
 export default router

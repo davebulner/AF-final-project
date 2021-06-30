@@ -11,7 +11,7 @@ import { workshopInsert } from './reducers/workshopReducer.js'
 import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, conferenceApprovedReducer, conferenceDeclinedReducer } from '../src/reducers/adminReducers.js'
 import { conferenceReducer, getEditorReducer, getReviwerReducer } from '../src/reducers/adminReducers.js'
 import { newsListReducer, newsDeleteReducer, newsgetReducer, newsUpadateReducer, newsCreateReducer } from '../src/reducers/newsReducers.js'
-
+import { userUpdateProfileReducer } from '../src/reducers/userReducers.js'
 import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, conferenceApprovedReducer, conferenceDeclinedReducer, newsReducer, adminNewsReducer, getNewsDetailsById } from '../src/reducers/adminReducers.js'
 import { newsListReducer } from '../src/reducers/newsReducers.js'
 
@@ -41,8 +41,10 @@ const reducer = combineReducers({
     cDetails: getConferenceDetailsById,
     newsDetails: newsReducer,
     userDetailsReducer: userDetailsReducer,
+    userUpdateProfileReducer: userUpdateProfileReducer,
     newsApproved: adminNewsReducer,
-    nDetails: getNewsDetailsById
+    nDetails: getNewsDetailsById,
+
 
 })
 
