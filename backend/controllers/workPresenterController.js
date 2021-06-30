@@ -2,49 +2,45 @@ import asyncHandler from 'express-async-handler'
 import Presenter from '../models/workPresenterModel.js'
 
 
-// @desc insert researcher record 
-// @route POST /api/reviewer
-//@access Private
+// @desc insert document of workshop
+// @route POST /api/presenter/insertPresenter
+//@access Public
 
 const insertPresenter = asyncHandler(async (req, res) => {
-    const presenter = new Presenter({
-        presenterEmail: 'Sample pres email',
-        presenterPhoneNo: '1234567890',
-        proposal: '/documents/sample.pdf'
+  const { workshopName, workshopDes, workTimeFrom, workTimeTo, workDate, workInsertDoc, workIsApprove } = req.body
+
+
+  const presenter = await Presenter.create({
+    workshopName,
+    workshopDes,
+    workTimeFrom,
+    workTimeTo,
+    workDate,
+    workInsertDoc,
+    workIsApprove
+
+  })
+
+  if (presenter) {
+    res.status(201).json({
+      _id: presenter._id,
+      workshopName: presenter.workshopName,
+      workshopDes: presenter.workshopDes,
+      workTimeFrom: presenter.workTimeFrom,
+      workTimeTo: presenter.workTimeTo,
+      workDate: presenter.workDate,
+      workInsertDoc: presenter.workInsertDoc,
+      workIsApprove: presenter.workIsApprove
 
     })
-
-    const insertPresenter = await presenter.save()
-    res.status(201).json(insertPresenter)
-})
-
-
-const updatePresenter = asyncHandler(async (req, res) => {
-    const {
-        presenterEmail,
-        presenterPhoneNo,
-        proposal,
-  } = req.body
-
-  const presenter = await Presenter.findById(req.params.id)
-
-  if(presenter){
-    presenter.presenterEmail = presenterEmail
-    presenter.presenterPhoneNo =  presenterPhoneNo
-    presenter.proposal = proposal
-
-      const updatePresenter = await presenter.save()
-     res.json(updatePresenter)
-
-  }else{
-      
-    res.status(404)
-    throw new Error('workshop presenter details not found')
+  } else {
+    res.status(400)
+    throw new Error('Invalid WorkShop data')
   }
-  
-  
+
+
 })
 
 
 
-export { insertPresenter, updatePresenter }
+export { insertPresenter }

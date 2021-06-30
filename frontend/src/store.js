@@ -5,13 +5,16 @@ import { userLoginReducer } from '../src/reducers/userReducers.js'
 import { conDetailsDeleteReducer, conListReducer, conUnApprovedReduceer, conDetailsUpdateReducer, conDetailsReducer, conCreateReducer } from '../src/reducers/conferenceReducer.js'
 import { conApprovedReduceer } from '../src/reducers/conferenceReducer.js'
 import { conferenceReducer, getEditorReducer } from '../src/reducers/adminReducers.js'
-import { userRegisterReducer } from '../src/reducers/userReducers.js'
+import { userRegisterReducer, userDetailsReducer } from '../src/reducers/userReducers.js'
+import { researcherInsert } from './reducers/researcherReducer.js'
+import { workshopInsert } from './reducers/workshopReducer.js'
 import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, conferenceApprovedReducer, conferenceDeclinedReducer } from '../src/reducers/adminReducers.js'
 import { conferenceReducer, getEditorReducer, getReviwerReducer } from '../src/reducers/adminReducers.js'
 import { newsListReducer, newsDeleteReducer, newsgetReducer, newsUpadateReducer, newsCreateReducer } from '../src/reducers/newsReducers.js'
 
-import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, newsReducer } from '../src/reducers/adminReducers.js'
+import { conferenceReducer, getEditorReducer, getReviwerReducer, getConferenceDetailsById, conferenceApprovedReducer, conferenceDeclinedReducer, newsReducer, adminNewsReducer, getNewsDetailsById } from '../src/reducers/adminReducers.js'
 import { newsListReducer } from '../src/reducers/newsReducers.js'
+import { getAllWorkshop, getAllResearch } from '../src/reducers/reviwerReducer.js'
 
 const reducer = combineReducers({
     userLogin: userLoginReducer,
@@ -24,6 +27,8 @@ const reducer = combineReducers({
     editors: getEditorReducer,
     updateCon: conDetailsUpdateReducer,
     ConsDetails: conDetailsReducer,
+    researcherInsert: researcherInsert,
+    workshopInsert: workshopInsert,
     createConferenceDetails: conCreateReducer,
     reviwer: getReviwerReducer,
     listNews: newsListReducer,
@@ -35,7 +40,12 @@ const reducer = combineReducers({
     newsUpdate: newsUpadateReducer,
     newsCreate: newsCreateReducer,
     cDetails: getConferenceDetailsById,
-    newsDetails: newsReducer
+    newsDetails: newsReducer,
+    userDetailsReducer: userDetailsReducer,
+    newsApproved: adminNewsReducer,
+    nDetails: getNewsDetailsById,
+    listWorkshops: getAllWorkshop,
+    listResearchers: getAllResearch
 
 })
 

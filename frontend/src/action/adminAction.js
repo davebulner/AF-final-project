@@ -20,7 +20,14 @@ import {
       ADMIN_DECLINE_FAIL,
       ADMIN_NEWS_LIST_REQUEST,
       ADMIN_NEWS_LIST_SUCCESS,
-      ADMIN_NEWS_LIST_FAIL
+      ADMIN_NEWS_LIST_FAIL,
+      ADMIN_NEWS_DETAILS_ID_REQUEST,
+      ADMIN_NEWS_DETAILS_ID_SUCCESS,
+      ADMIN_NEWS_DETAILS_ID_FAIL,
+      ADMIN_APPROVED_NEWS_REQUEST,
+      ADMIN_APPROVED_NEWS_SUCCESS,
+      ADMIN_APPROVED_NEWS_FAIL
+
       
 } from '../constants/adminConstants.js'
 
@@ -245,6 +252,74 @@ export const adminNewsList = () => async (dispatch) => {
       } catch (error) {
             dispatch({
                   type: ADMIN_NEWS_LIST_FAIL,
+                  payload:
+                        error.response && error.response.data.message
+                              ? error.response.data.message
+                              : error.message,
+            })
+      }
+}
+
+
+export const getNewsById = (id) => async(dispatch, getState) => {
+      try{
+            dispatch({
+                  type: ADMIN_NEWS_DETAILS_ID_REQUEST,
+            })
+            const {
+                  userLogin: { userInfo },
+
+            } = getState()
+
+            const config = {
+                      headers: {
+                            'Content-Type': 'application/json',
+                            Authorization: `Bearer ${userInfo.token}`,
+                      },
+            }
+            const { data } = await axios.get(`http://localhost:8040/api/news/admin/news/${id}`, config)
+
+            dispatch({
+                  type: ADMIN_NEWS_DETAILS_ID_SUCCESS,
+                  payload: data
+            })
+      } catch (error) {
+            dispatch({
+                  type: ADMIN_NEWS_DETAILS_ID_FAIL,
+                  payload:
+                        error.response && error.response.data.message
+                              ? error.response.data.message
+                              : error.message,
+            })
+      }
+
+}
+
+export const approveNews = (news) => async (dispatch, getState) => {
+      try {
+            dispatch({
+                  type: ADMIN_APPROVED_NEWS_REQUEST,
+            })
+
+            const {
+                  userLogin: { userInfo },
+            } = getState()
+
+            const config = {
+                  headers: {
+                        Authorization: `Bearer ${userInfo.token}`,
+                  },
+            }
+
+            const { data } = await axios.put(`http://localhost:8040/api/admin/news/${news._id}/approved`, news, config)
+
+            dispatch({
+                  type: ADMIN_APPROVED_NEWS_SUCCESS,
+                  payload: data,
+            })
+      } catch (error) {
+            dispatch({
+                  type: ADMIN_APPROVED_NEWS_FAIL,
                   payload:
                         error.response && error.response.data.message
                               ? error.response.data.message

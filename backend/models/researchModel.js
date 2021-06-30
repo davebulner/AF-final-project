@@ -1,26 +1,33 @@
 import mongoose from 'mongoose'
 
 const researcherDataSchema = mongoose.Schema({
-  
+
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-  },
+        ref: 'Researcher'
+    },
 
-    researcherEmail: {
+    researcherPaper: {
         type: String,
         required: true,
     },
 
-    researcherPhoneNo: {
-        type: Number,
+    researcherDes: {
+        type: String,
         required: true,
     },
 
-    researchPaper: {
+    researchInsertDoc: {
         type: String,
-        required: true,
-    }
+        required: false,
+    },
+
+    researchIsApproved: {
+        type: Boolean,
+        default: false,
+        required: false
+    },
+
 
 }, {
     timestamps: true

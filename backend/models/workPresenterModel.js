@@ -1,26 +1,49 @@
 import mongoose from 'mongoose'
 
 const workPresenterDataSchema = mongoose.Schema({
-  
+
     user: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-  },
+        ref: 'Workshop'
+    },
 
-    presenterEmail: {
+    workshopName: {
         type: String,
         required: true,
     },
 
-    presenterPhoneNo: {
-        type: Number,
+    workshopDes: {
+        type: String,
         required: true,
     },
 
-    proposal: {
+    workTimeFrom: {
         type: String,
         required: true,
+    },
+
+    workTimeTo: {
+        type: String,
+        required: true,
+    },
+
+    workDate: {
+        type: Date,
+        required: true,
+    },
+
+    workInsertDoc: {
+        type: String,
+        required: false,
+    },
+
+    workIsApprove: {
+        type: Boolean,
+        default: false,
+        required: false
     }
+
+
 
 }, {
     timestamps: true

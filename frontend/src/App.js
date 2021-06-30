@@ -14,12 +14,18 @@ import AdminConference from './components/Admin/adminConferenceDetails/adminConf
 import getAdminEditor from './components/Admin/adminUserDetails/adminEditorsList.js'
 import getAdminReviwer from './components/Admin/adminUserDetails/adminReviwer.js'
 import ConferenceDetailsUpdate from './Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js'
+import researcherScreen from './Screens/ResearcherScreen/researcherScreen.js'
+import workShopScreen from './Screens/WorkShopScreen/workShopScreen'
 import newsListScreen from './Screens/NewsListScreen/newsListScreen'
 import NewsEditScreen from './Screens/NewsEditScreen/newsEditScreen.js'
 import AdminApproveScreen from './components/Admin/adminConferenceDetails/approveScreen.js'
 import conferenceDetails from './Screens/ConferenceDetails/conferenceDetails.js'
 import AdminNewsDetails from './components/Admin/adminNewsDetails/adminNewsDetails.js'
 import NewsCarousel from './components/NewsCarousel.js/newsCarousel'
+import AdminNewsApprove from './components/Admin/adminNewsDetails/adminNewsApprove.js'
+import WorkshopList from './Screens/ReviwerScreen/reviewerdashboard/reviewerdashboard.js'
+import Reasearcher from './Screens/ReviwerScreen/reviewerdashboard/reviwerResearch.js'
+
 
 const App = () => {
       return (
@@ -37,12 +43,21 @@ const App = () => {
                         <Route path="/adminEditors" component={getAdminEditor} />
                         <Route path="/adminReviwer" component={getAdminReviwer} />
                         <Route path="/con/:id" component={ConferenceDetailsUpdate} />
+                        <Route path="/researcher" component={researcherScreen} />
+                        <Route path="/workshop" component={workShopScreen} />
                         <Route path="/conDetails/:id" component={AdminApproveScreen} />
                         <Route path="/newslist" component={newsListScreen} />
                         <Route path='/news/:id' component={NewsEditScreen} />
                         <Route path="/conference" component={conferenceDetails} />
                         <Route path="/newsAdmin" component={AdminNewsDetails} />
                         <Route path="/courasel" component={NewsCarousel} />
+                        <Route path="/newsAdmin" component={AdminNewsDetails} />
+                        <Route path="/profile" component={profileScreen} />
+                        <Route path="/newsAdmin" component={AdminNewsDetails} />
+                        <Route path="/adminNews/:id" component={AdminNewsApprove} />
+                        <Route path="/reviwer" component={WorkshopList} />
+                        <Route path="/research" component={Reasearcher} />
+
                   </div>
             </Router>
       )

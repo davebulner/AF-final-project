@@ -61,7 +61,6 @@ const Appbar = () => {
                         <ul className={renderClasses()}>
 
                               <li className="link"><a href="/">Home</a></li>
-                              <li className="link" ><a href="/login"> Login</a></li>
                               <li className="link"><a href="/register">Register</a></li>
                               <li className="link"><a href="#">Contact us</a></li>
                               {userInfo ? (
@@ -76,8 +75,8 @@ const Appbar = () => {
                                           </NavDropdown.Item>
                                     </NavDropdown>
 
-                              ) : <Nav.Link>
-                                    <li className="link"><a href="#">User</a></li>
+                              ) : <Nav.Link className="link">
+                                    <Link to='/login'>Login</Link>
                               </Nav.Link>}
 
 
@@ -97,12 +96,28 @@ const Appbar = () => {
                                     </NavDropdown>
                               ) || userInfo && userInfo.isReasearcher && (
                                     <NavDropdown className="link" title='Researcher'>
-                                          <Link to='/editor'>
-                                                editor
+                                          <Link to='/researcher'>
+                                                Insert Research Paper
                                           </Link>
 
                                     </NavDropdown>
-                              )}
+                              ) || userInfo && userInfo.isWorkPresnter && (
+                                    <NavDropdown className="link" title='Workshop Presenter'>
+                                          <Link to='/workshop'>
+                                                Insert Workshop Details
+                                          </Link>
+
+                                    </NavDropdown>
+                              )|| userInfo && userInfo.isReviwer && (
+                                    <NavDropdown className="/reviwer" title='Riviwer'>
+                                          <Link to='/reviwer'>
+                                                Riviewer
+                                          </Link>
+
+                                    </NavDropdown>
+                              )
+
+                              }
 
 
                         </ul>
