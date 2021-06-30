@@ -50,12 +50,14 @@ export const mainListItems = (
     </ListItem>
   </Link>
 
+  <Link to="/newsAdmin">
     <ListItem button>
       <ListItemIcon>
-        <LayersIcon />
+        <BarChartIcon />
       </ListItemIcon>
-      <ListItemText primary="Integrations" />
+      <ListItemText primary="News List" />
     </ListItem>
+  </Link>
   </div>
 );
 
