@@ -19,7 +19,7 @@ import NewsEditScreen from './Screens/NewsEditScreen/newsEditScreen.js'
 import AdminApproveScreen from './components/Admin/adminConferenceDetails/approveScreen.js'
 import conferenceDetails from './Screens/ConferenceDetails/conferenceDetails.js'
 import AdminNewsDetails from './components/Admin/adminNewsDetails/adminNewsDetails.js'
-
+import NewsCarousel from './components/NewsCarousel.js/newsCarousel'
 
 const App = () => {
       return (
@@ -42,6 +42,7 @@ const App = () => {
                         <Route path='/news/:id' component={NewsEditScreen} />
                         <Route path="/conference" component={conferenceDetails} />
                         <Route path="/newsAdmin" component={AdminNewsDetails} />
+                        <Route path="/courasel" component={NewsCarousel} />
                   </div>
             </Router>
       )

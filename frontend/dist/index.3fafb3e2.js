@@ -21894,6 +21894,8 @@ var _conferenceDetailsJs = require("./Screens/ConferenceDetails/conferenceDetail
 var _conferenceDetailsJsDefault = parcelHelpers.interopDefault(_conferenceDetailsJs);
 var _adminNewsDetailsJs = require("./components/Admin/adminNewsDetails/adminNewsDetails.js");
 var _adminNewsDetailsJsDefault = parcelHelpers.interopDefault(_adminNewsDetailsJs);
+var _newsCarousel = require("./components/NewsCarousel.js/newsCarousel");
+var _newsCarouselDefault = parcelHelpers.interopDefault(_newsCarousel);
 const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
@@ -22045,6 +22047,14 @@ const App = ()=>{
             lineNumber: 44
         },
         __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/courasel",
+        component: _newsCarouselDefault.default,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 45
+        },
+        __self: undefined
     }))));
 };
 _c = App;
@@ -22057,7 +22067,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./Screens/ProfileScreen/profileScreen":"5EbTp","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./components/Admin/adminUserDetails/adminReviwer.js":"3xKCG","./Screens/NewsListScreen/newsListScreen":"9EX0B","./Screens/NewsEditScreen/newsEditScreen.js":"5e4OZ","./components/Admin/adminConferenceDetails/approveScreen.js":"v3seJ","./Screens/ConferenceDetails/conferenceDetails.js":"7DEUd","./components/Admin/adminNewsDetails/adminNewsDetails.js":"6edcv"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./Screens/ProfileScreen/profileScreen":"5EbTp","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./components/Admin/adminUserDetails/adminReviwer.js":"3xKCG","./Screens/NewsListScreen/newsListScreen":"9EX0B","./Screens/NewsEditScreen/newsEditScreen.js":"5e4OZ","./components/Admin/adminConferenceDetails/approveScreen.js":"v3seJ","./Screens/ConferenceDetails/conferenceDetails.js":"7DEUd","./components/Admin/adminNewsDetails/adminNewsDetails.js":"6edcv","./components/NewsCarousel.js/newsCarousel":"4kzNI"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -25155,36 +25165,49 @@ var _footerJsDefault = parcelHelpers.interopDefault(_footerJs);
 var _showcaseJs = require("../../components/Showcase/showcase.js");
 var _showcaseJsDefault = parcelHelpers.interopDefault(_showcaseJs);
 var _reactBootstrap = require("react-bootstrap");
-var _conferenceActionJs = require("../../action/conferenceAction.js");
-var _loaderJs = require("../../components/Loader/loader.js");
-var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
-var _messageJs = require("../../components/Message/message.js");
-var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _newsApprovelistJs = require("../../components/NewsApprovelist/newsApprovelist.js");
+var _newsApprovelistJsDefault = parcelHelpers.interopDefault(_newsApprovelistJs);
+var _reactRouterDom = require("react-router-dom");
 var _homescreenCss = require("./homescreen.css");
 const homeScreen = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "man",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 17
+            lineNumber: 16
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_navbarJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
-            lineNumber: 18
+            lineNumber: 17
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_showcaseJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            lineNumber: 18
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_newsApprovelistJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 19
         },
         __self: undefined
-    }), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
+        to: "fg.pdf",
+        target: "_blank",
+        download: true,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
             lineNumber: 20
+        },
+        __self: undefined
+    }, "Generate Report"), /*#__PURE__*/ _reactDefault.default.createElement(_footerJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\HomeScreen\\homescreen.js",
+            lineNumber: 21
         },
         __self: undefined
     }))));
@@ -25196,7 +25219,7 @@ exports.default = homeScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-redux":"7GDa4","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","../../components/Showcase/showcase.js":"2PCZy","react-bootstrap":"4n7hB","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../action/conferenceAction.js":"7CqFH","./homescreen.css":"2Ihqr"}],"7GDa4":[function(require,module,exports) {
+},{"react":"3b2NM","react-redux":"7GDa4","../../components/Navbar/navbar.js":"5c3hR","../../components/Footer/footer.js":"7dMDI","../../components/Showcase/showcase.js":"2PCZy","react-bootstrap":"4n7hB","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./homescreen.css":"2Ihqr","react-router-dom":"1PMSK","../../components/NewsApprovelist/newsApprovelist.js":"6jZl7"}],"7GDa4":[function(require,module,exports) {
 "use strict";
 var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 exports.__esModule = true;
@@ -41533,56 +41556,153 @@ $RefreshReg$(_c, "Showcase");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","react-redux":"7GDa4","react-bootstrap":"4n7hB","react-router-dom":"1PMSK"}],"7CqFH":[function(require,module,exports) {
+},{"react":"3b2NM","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","react-redux":"7GDa4","react-bootstrap":"4n7hB","react-router-dom":"1PMSK"}],"2Ihqr":[function() {},{}],"6jZl7":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "listConDetails", ()=>listConDetails
+parcelHelpers.export(exports, "newsList", ()=>newsList
 );
-parcelHelpers.export(exports, "appConList", ()=>appConList
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _reactBootstrap = require("react-bootstrap");
+var _reactRedux = require("react-redux");
+var _loaderJs = require("../Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _messageJs = require("../Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _newsAction = require("../../action/newsAction");
+var _listGroup = require("react-bootstrap/ListGroup");
+var _listGroupDefault = parcelHelpers.interopDefault(_listGroup);
+var _card = require("react-bootstrap/Card");
+var _cardDefault = parcelHelpers.interopDefault(_card);
+var _s = $RefreshSig$();
+const newsList = ()=>{
+    _s();
+    const dispatch = _reactRedux.useDispatch();
+    const listNews = _reactRedux.useSelector((state)=>state.listNews
+    );
+    const { loading , error , news  } = listNews;
+    _react.useEffect(()=>{
+        dispatch(_newsAction.listAllNews());
+    }, [
+        dispatch
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsApprovelist\\newsApprovelist.js",
+            lineNumber: 28
+        },
+        __self: undefined
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsApprovelist\\newsApprovelist.js",
+            lineNumber: 29
+        },
+        __self: undefined
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_cardDefault.default, {
+        className: "text-center",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsApprovelist\\newsApprovelist.js",
+            lineNumber: 31
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h3", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsApprovelist\\newsApprovelist.js",
+            lineNumber: 32
+        },
+        __self: undefined
+    }, "CONFERENCE NEWS"), news.map((newA)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            key: newA._id,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsApprovelist\\newsApprovelist.js",
+                lineNumber: 34
+            },
+            __self: undefined
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_cardDefault.default.Title, {
+            variant: "warning",
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsApprovelist\\newsApprovelist.js",
+                lineNumber: 35
+            },
+            __self: undefined
+        }, newA.name), /*#__PURE__*/ _reactDefault.default.createElement(_cardDefault.default.Body, {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsApprovelist\\newsApprovelist.js",
+                lineNumber: 36
+            },
+            __self: undefined
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_cardDefault.default.Text, {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsApprovelist\\newsApprovelist.js",
+                lineNumber: 37
+            },
+            __self: undefined
+        }, newA.date), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+            variant: "warning",
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsApprovelist\\newsApprovelist.js",
+                lineNumber: 40
+            },
+            __self: undefined
+        }, "View News")))
+    ))));
+};
+_s(newsList, "0VfMpwqd6hO4O7CW0kLk4yuHLcY=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
+exports.default = newsList;
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-router-dom":"1PMSK","react-bootstrap":"4n7hB","react-redux":"7GDa4","../Loader/loader.js":"68bDI","../Message/message.js":"6fMfw","../../action/newsAction":"6pSDk","react-bootstrap/ListGroup":"6fErm","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","react-bootstrap/Card":"1CZWQ"}],"6pSDk":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "listAllNews", ()=>listAllNews
 );
-parcelHelpers.export(exports, "unappConList", ()=>unappConList
+parcelHelpers.export(exports, "deleteNews", ()=>deleteNews
 );
-parcelHelpers.export(exports, "deleteConDetails", ()=>deleteConDetails
+parcelHelpers.export(exports, "getNewsDetails", ()=>getNewsDetails
 );
-parcelHelpers.export(exports, "getConferenceDetails", ()=>getConferenceDetails
+parcelHelpers.export(exports, "updateNews", ()=>updateNews
 );
-parcelHelpers.export(exports, "updateConDetails", ()=>updateConDetails
-);
-parcelHelpers.export(exports, "createConDetails", ()=>createConDetails
+parcelHelpers.export(exports, "createNewsDetails", ()=>createNewsDetails
 );
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _conferenceConstants = require("../constants/conferenceConstants");
-const listConDetails = ()=>async (dispatch)=>{
+var _newsConstants = require("../constants/newsConstants");
+const listAllNews = ()=>async (dispatch)=>{
         try {
             dispatch({
-                type: _conferenceConstants.CONFERENCE_LIST_REQUEST
+                type: _newsConstants.NEWS_LIST_REQUEST
             });
-            // const {
-            //       userLogin: { userInfo },
-            // } = getState()
-            // const config = {
-            //       headers: {
-            //             Authorization: `Bearer ${userInfo.token}`,
-            //       },
-            // }
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/');
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/news/allNews');
             dispatch({
-                type: _conferenceConstants.CONFERENCE_LIST_SUCCESS,
+                type: _newsConstants.NEWS_LIST_SUCCESS,
                 payload: data
             });
         } catch (error) {
             dispatch({
-                type: _conferenceConstants.CONFERENCE_LIST_FAIL,
+                type: _newsConstants.NEWS_LIST_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
     }
 ;
-const appConList = ()=>async (dispatch, getState)=>{
+const deleteNews = (id)=>async (dispatch, getState)=>{
         try {
             dispatch({
-                type: _conferenceConstants.CONFERENCE_APPROVED_LIST_REQUEST
+                type: _newsConstants.NEWS_DELETE_REQUEST
             });
             const { userLogin: { userInfo  } ,  } = getState();
             const config = {
@@ -41590,70 +41710,22 @@ const appConList = ()=>async (dispatch, getState)=>{
                     Authorization: `Bearer ${userInfo.token}`
                 }
             };
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/approvedCon', config);
+            await _axiosDefault.default.delete(`http://localhost:8040/api/news/${id}`, config);
             dispatch({
-                type: _conferenceConstants.CONFERENCE_APPROVED_LIST_SUCCESS,
-                payload: data
+                type: _newsConstants.NEWS_DELETE_SUCCESS
             });
         } catch (error) {
             dispatch({
-                type: _conferenceConstants.CONFERENCE_APPROVED_LIST_FAIL,
+                type: _newsConstants.NEWS_DELETE_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
     }
 ;
-const unappConList = ()=>async (dispatch, getState)=>{
+const getNewsDetails = (id)=>async (disaptch, getState)=>{
         try {
-            dispatch({
-                type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_REQUEST
-            });
-            const { userLogin: { userInfo  } ,  } = getState();
-            const config = {
-                headers: {
-                    Authorization: `Bearer ${userInfo.token}`
-                }
-            };
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/unAprrovedCon', config);
-            dispatch({
-                type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_SUCCESS,
-                payload: data
-            });
-        } catch (error) {
-            dispatch({
-                type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_FAIL,
-                payload: error.response && error.response.data.message ? error.response.data.message : error.message
-            });
-        }
-    }
-;
-const deleteConDetails = (id)=>async (dispatch, getState)=>{
-        try {
-            dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_DELETE_REQUEST
-            });
-            const { userLogin: { userInfo  } ,  } = getState();
-            const config = {
-                headers: {
-                    Authorization: `Bearer ${userInfo.token}`
-                }
-            };
-            await _axiosDefault.default.delete(`http://localhost:8040/api/conDetails/${id}`, config);
-            dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_DELETE_SUCCESS
-            });
-        } catch (error) {
-            dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_CREATE_FAIL,
-                payload: error.response && error.response.data.message ? error.response.data.message : error.message
-            });
-        }
-    }
-;
-const getConferenceDetails = (id)=>async (dispatch, getState)=>{
-        try {
-            dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_BYID_REQUEST
+            disaptch({
+                type: _newsConstants.NEWS_BYID_REQUEST
             });
             const { userLogin: { userInfo  } ,  } = getState();
             const config = {
@@ -41662,23 +41734,23 @@ const getConferenceDetails = (id)=>async (dispatch, getState)=>{
                     Authorization: `Bearer ${userInfo.token}`
                 }
             };
-            const { data  } = await _axiosDefault.default.get(`http://localhost:8040/api/conDetails/${id}`, config);
-            dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_BYID_SUCCESS,
+            const { data  } = await _axiosDefault.default.get(`http://localhost:8040/api/news/${id}`, config);
+            disaptch({
+                type: _newsConstants.NEWS_BYID_SUCCESS,
                 payload: data
             });
         } catch (error) {
-            dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_BYID_FAIL,
+            disaptch({
+                type: _newsConstants.NEWS_BYID_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
     }
 ;
-const updateConDetails = (conferencedetails)=>async (dispatch, getState)=>{
+const updateNews = (news)=>async (dispatch, getState)=>{
         try {
             dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_UPDATE_REQUEST
+                type: _newsConstants.NEWS_UPDATE_REQUEST
             });
             const { userLogin: { userInfo  } ,  } = getState();
             const config = {
@@ -41687,23 +41759,23 @@ const updateConDetails = (conferencedetails)=>async (dispatch, getState)=>{
                     Authorization: `Bearer ${userInfo.token}`
                 }
             };
-            const { data  } = await _axiosDefault.default.put(`http://localhost:8040/api/conDetails/${conferencedetails._id}`, conferencedetails, config);
+            const { data  } = await _axiosDefault.default.put(`http://localhost:8040/api/news/${news._id}`, news, config);
             dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_UPDATE_SUCCESS,
+                type: _newsConstants.NEWS_UPDATE_SUCCESS,
                 payload: data
             });
         } catch (error) {
             dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_UPDATE_FAIL,
+                type: _newsConstants.NEWS_UPDATE_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
     }
 ;
-const createConDetails = ()=>async (dispatch, getState)=>{
+const createNewsDetails = ()=>async (dispatch, getState)=>{
         try {
             dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_CREATE_REQUEST
+                type: _newsConstants.NEWS_CREATE_REQUEST
             });
             const { userLogin: { userInfo  } ,  } = getState();
             const config = {
@@ -41711,107 +41783,83 @@ const createConDetails = ()=>async (dispatch, getState)=>{
                     Authorization: `Bearer ${userInfo.token}`
                 }
             };
-            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/conDetails/addConDetails/', {
+            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/news/addNews', {
             }, config);
             dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_CREATE_SUCCESS,
+                type: _newsConstants.NEWS_CREATE_SUCCESS,
                 payload: data
             });
         } catch (error) {
             dispatch({
-                type: _conferenceConstants.CONFERENCE_DETAILS_DELETE_FAIL,
+                type: _newsConstants.NEWS_CREATE_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
     }
 ;
 
-},{"axios":"7rA65","../constants/conferenceConstants":"5LNy7","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"5LNy7":[function(require,module,exports) {
+},{"axios":"7rA65","../constants/newsConstants":"57eKq","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"57eKq":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "CONFERENCE_LIST_REQUEST", ()=>CONFERENCE_LIST_REQUEST
+parcelHelpers.export(exports, "NEWS_LIST_REQUEST", ()=>NEWS_LIST_REQUEST
 );
-parcelHelpers.export(exports, "CONFERENCE_LIST_SUCCESS", ()=>CONFERENCE_LIST_SUCCESS
+parcelHelpers.export(exports, "NEWS_LIST_SUCCESS", ()=>NEWS_LIST_SUCCESS
 );
-parcelHelpers.export(exports, "CONFERENCE_LIST_FAIL", ()=>CONFERENCE_LIST_FAIL
+parcelHelpers.export(exports, "NEWS_LIST_FAIL", ()=>NEWS_LIST_FAIL
 );
-parcelHelpers.export(exports, "CONFERENCE_LIST_RESET", ()=>CONFERENCE_LIST_RESET
+parcelHelpers.export(exports, "NEWS_LIST_RESET", ()=>NEWS_LIST_RESET
 );
-parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_REQUEST", ()=>CONFERENCE_APPROVED_LIST_REQUEST
+parcelHelpers.export(exports, "NEWS_DELETE_REQUEST", ()=>NEWS_DELETE_REQUEST
 );
-parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_SUCCESS", ()=>CONFERENCE_APPROVED_LIST_SUCCESS
+parcelHelpers.export(exports, "NEWS_DELETE_SUCCESS", ()=>NEWS_DELETE_SUCCESS
 );
-parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_FAIL", ()=>CONFERENCE_APPROVED_LIST_FAIL
+parcelHelpers.export(exports, "NEWS_DELETE_FAIL", ()=>NEWS_DELETE_FAIL
 );
-parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_RESET", ()=>CONFERENCE_APPROVED_LIST_RESET
+parcelHelpers.export(exports, "NEWS_BYID_REQUEST", ()=>NEWS_BYID_REQUEST
 );
-parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_REQUEST", ()=>CONFERENCE_UNAPPROVED_LIST_REQUEST
+parcelHelpers.export(exports, "NEWS_BYID_SUCCESS", ()=>NEWS_BYID_SUCCESS
 );
-parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_SUCCESS", ()=>CONFERENCE_UNAPPROVED_LIST_SUCCESS
+parcelHelpers.export(exports, "NEWS_BYID_FAIL", ()=>NEWS_BYID_FAIL
 );
-parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_FAIL", ()=>CONFERENCE_UNAPPROVED_LIST_FAIL
+parcelHelpers.export(exports, "NEWS_BYID_RESET", ()=>NEWS_BYID_RESET
 );
-parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_RESET", ()=>CONFERENCE_UNAPPROVED_LIST_RESET
+parcelHelpers.export(exports, "NEWS_UPDATE_REQUEST", ()=>NEWS_UPDATE_REQUEST
 );
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_DELETE_REQUEST", ()=>CONFERENCE_DETAILS_DELETE_REQUEST
+parcelHelpers.export(exports, "NEWS_UPDATE_SUCCESS", ()=>NEWS_UPDATE_SUCCESS
 );
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_DELETE_SUCCESS", ()=>CONFERENCE_DETAILS_DELETE_SUCCESS
+parcelHelpers.export(exports, "NEWS_UPDATE_FAIL", ()=>NEWS_UPDATE_FAIL
 );
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_DELETE_FAIL", ()=>CONFERENCE_DETAILS_DELETE_FAIL
+parcelHelpers.export(exports, "NEWS_UPDATE_RESET", ()=>NEWS_UPDATE_RESET
 );
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_UPDATE_REQUEST", ()=>CONFERENCE_DETAILS_UPDATE_REQUEST
+parcelHelpers.export(exports, "NEWS_CREATE_REQUEST", ()=>NEWS_CREATE_REQUEST
 );
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_UPDATE_SUCCESS", ()=>CONFERENCE_DETAILS_UPDATE_SUCCESS
+parcelHelpers.export(exports, "NEWS_CREATE_SUCCESS", ()=>NEWS_CREATE_SUCCESS
 );
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_UPDATE_FAIL", ()=>CONFERENCE_DETAILS_UPDATE_FAIL
+parcelHelpers.export(exports, "NEWS_CREATE_FAIL", ()=>NEWS_CREATE_FAIL
 );
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_UPDATE_RESET", ()=>CONFERENCE_DETAILS_UPDATE_RESET
+parcelHelpers.export(exports, "NEWS_CREATE_RESET", ()=>NEWS_CREATE_RESET
 );
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_BYID_REQUEST", ()=>CONFERENCE_DETAILS_BYID_REQUEST
-);
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_BYID_SUCCESS", ()=>CONFERENCE_DETAILS_BYID_SUCCESS
-);
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_BYID_FAIL", ()=>CONFERENCE_DETAILS_BYID_FAIL
-);
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_BYID_RESET", ()=>CONFERENCE_DETAILS_BYID_RESET
-);
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_CREATE_REQUEST", ()=>CONFERENCE_DETAILS_CREATE_REQUEST
-);
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_CREATE_SUCCESS", ()=>CONFERENCE_DETAILS_CREATE_SUCCESS
-);
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_CREATE_FAIL", ()=>CONFERENCE_DETAILS_CREATE_FAIL
-);
-parcelHelpers.export(exports, "CONFERENCE_DETAILS_CREATE_RESET", ()=>CONFERENCE_DETAILS_CREATE_RESET
-);
-const CONFERENCE_LIST_REQUEST = 'CONFERENCE_LIST_REQUEST';
-const CONFERENCE_LIST_SUCCESS = 'CONFERENCE_LIST_SUCCESS';
-const CONFERENCE_LIST_FAIL = 'CONFERENCE_LIST_FAIL';
-const CONFERENCE_LIST_RESET = 'CONFERENCE_LIST_RESET';
-const CONFERENCE_APPROVED_LIST_REQUEST = 'CONFERENCE_APPROVED_LIST_REQUEST';
-const CONFERENCE_APPROVED_LIST_SUCCESS = 'CONFERENCE_APPROVED_LIST_SUCCESS';
-const CONFERENCE_APPROVED_LIST_FAIL = 'CONFERENCE_APPROVED_LIST_FAIL';
-const CONFERENCE_APPROVED_LIST_RESET = 'CONFERENCE_APPROVED_LIST_RESET';
-const CONFERENCE_UNAPPROVED_LIST_REQUEST = 'CONFERENCE_UNAPPROVED_LIST_REQUEST';
-const CONFERENCE_UNAPPROVED_LIST_SUCCESS = 'CONFERENCE_UNAPPROVED_LIST_SUCCESS';
-const CONFERENCE_UNAPPROVED_LIST_FAIL = 'CONFERENCE_UNAPPROVED_LIST_FAIL';
-const CONFERENCE_UNAPPROVED_LIST_RESET = 'CONFERENCE_UNAPPROVED_LIST_RESET';
-const CONFERENCE_DETAILS_DELETE_REQUEST = 'CONFERENCE_DETAILS_DELETE_REQUEST';
-const CONFERENCE_DETAILS_DELETE_SUCCESS = 'CONFERENCE_DETAILS_DELETE_SUCCESS';
-const CONFERENCE_DETAILS_DELETE_FAIL = 'CONFERENCE_DETAILS_DELETE_FAIL';
-const CONFERENCE_DETAILS_UPDATE_REQUEST = 'CONFERENCE_DETAILS_UPDATE_REQUEST';
-const CONFERENCE_DETAILS_UPDATE_SUCCESS = 'CONFERENCE_DETAILS_UPDATE_SUCCESS';
-const CONFERENCE_DETAILS_UPDATE_FAIL = 'CONFERENCE_DETAILS_UPDATE_FAIL';
-const CONFERENCE_DETAILS_UPDATE_RESET = 'CONFERENCE_DETAILS_UPDATE_RESET';
-const CONFERENCE_DETAILS_BYID_REQUEST = 'CONFERENCE_DETAILS_BYID_REQUEST';
-const CONFERENCE_DETAILS_BYID_SUCCESS = 'CONFERENCE_DETAILS_BYID_SUCCESS';
-const CONFERENCE_DETAILS_BYID_FAIL = 'CONFERENCE_DETAILS_BYID_FAIL';
-const CONFERENCE_DETAILS_BYID_RESET = 'CONFERENCE_DETAILS_BYID_RESET';
-const CONFERENCE_DETAILS_CREATE_REQUEST = 'CONFERENCE_DETAILS_CREATE_REQUEST';
-const CONFERENCE_DETAILS_CREATE_SUCCESS = 'CONFERENCE_DETAILS_CREATE_SUCCESS';
-const CONFERENCE_DETAILS_CREATE_FAIL = 'CONFERENCE_DETAILS_CREATE_FAIL';
-const CONFERENCE_DETAILS_CREATE_RESET = 'CONFERENCE_DETAILS_CREATE_RESET';
+const NEWS_LIST_REQUEST = 'NEWS_LIST_REQUEST';
+const NEWS_LIST_SUCCESS = 'NEWS_LIST_SUCCESS';
+const NEWS_LIST_FAIL = 'NEWS_LIST_FAIL';
+const NEWS_LIST_RESET = 'NEWS_LIST_RESET';
+const NEWS_DELETE_REQUEST = 'NEWS_DELETE_REQUEST';
+const NEWS_DELETE_SUCCESS = 'NEWS_DELETE_SUCCESS';
+const NEWS_DELETE_FAIL = 'NEWS_DELETE_FAIL';
+const NEWS_BYID_REQUEST = 'NEWS_BYID_REQUEST';
+const NEWS_BYID_SUCCESS = 'NEWS_BYID_SUCCESS';
+const NEWS_BYID_FAIL = 'NEWS_BYID_FAIL';
+const NEWS_BYID_RESET = 'NEWS_BYID_RESET';
+const NEWS_UPDATE_REQUEST = 'NEWS_UPDATE_REQUEST';
+const NEWS_UPDATE_SUCCESS = 'NEWS_UPDATE_SUCCESS';
+const NEWS_UPDATE_FAIL = 'NEWS_UPDATE_FAIL';
+const NEWS_UPDATE_RESET = 'NEWS_UPDATE_RESET';
+const NEWS_CREATE_REQUEST = 'NEWS_CREATE_REQUEST';
+const NEWS_CREATE_SUCCESS = 'NEWS_CREATE_SUCCESS';
+const NEWS_CREATE_FAIL = 'NEWS_CREATE_FAIL';
+const NEWS_CREATE_RESET = 'NEWS_CREATE_RESET';
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"2Ihqr":[function() {},{}],"7xglY":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"7xglY":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -42687,7 +42735,285 @@ exports.default = appconlistScreen;
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../action/conferenceAction":"7CqFH","../../components/Navbar/navbar.js":"5c3hR","../../components/EditorNav/editorNavbar.js":"56S2h","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./Editor dashboard/listitems1":"1TblZ"}],"56S2h":[function(require,module,exports) {
+},{"react":"3b2NM","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../action/conferenceAction":"7CqFH","../../components/Navbar/navbar.js":"5c3hR","../../components/EditorNav/editorNavbar.js":"56S2h","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","./Editor dashboard/listitems1":"1TblZ"}],"7CqFH":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "listConDetails", ()=>listConDetails
+);
+parcelHelpers.export(exports, "appConList", ()=>appConList
+);
+parcelHelpers.export(exports, "unappConList", ()=>unappConList
+);
+parcelHelpers.export(exports, "deleteConDetails", ()=>deleteConDetails
+);
+parcelHelpers.export(exports, "getConferenceDetails", ()=>getConferenceDetails
+);
+parcelHelpers.export(exports, "updateConDetails", ()=>updateConDetails
+);
+parcelHelpers.export(exports, "createConDetails", ()=>createConDetails
+);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _conferenceConstants = require("../constants/conferenceConstants");
+const listConDetails = ()=>async (dispatch)=>{
+        try {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_LIST_REQUEST
+            });
+            // const {
+            //       userLogin: { userInfo },
+            // } = getState()
+            // const config = {
+            //       headers: {
+            //             Authorization: `Bearer ${userInfo.token}`,
+            //       },
+            // }
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/');
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_LIST_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_LIST_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const appConList = ()=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_APPROVED_LIST_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/approvedCon', config);
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_APPROVED_LIST_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_APPROVED_LIST_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const unappConList = ()=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/conDetails/unAprrovedCon', config);
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_UNAPPROVED_LIST_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const deleteConDetails = (id)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_DELETE_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            await _axiosDefault.default.delete(`http://localhost:8040/api/conDetails/${id}`, config);
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_DELETE_SUCCESS
+            });
+        } catch (error) {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_CREATE_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const getConferenceDetails = (id)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_BYID_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get(`http://localhost:8040/api/conDetails/${id}`, config);
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_BYID_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_BYID_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const updateConDetails = (conferencedetails)=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_UPDATE_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    'Content-Type': 'application/json',
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.put(`http://localhost:8040/api/conDetails/${conferencedetails._id}`, conferencedetails, config);
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_UPDATE_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_UPDATE_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const createConDetails = ()=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_CREATE_REQUEST
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/conDetails/addConDetails/', {
+            }, config);
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_CREATE_SUCCESS,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _conferenceConstants.CONFERENCE_DETAILS_DELETE_FAIL,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+
+},{"axios":"7rA65","../constants/conferenceConstants":"5LNy7","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"5LNy7":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "CONFERENCE_LIST_REQUEST", ()=>CONFERENCE_LIST_REQUEST
+);
+parcelHelpers.export(exports, "CONFERENCE_LIST_SUCCESS", ()=>CONFERENCE_LIST_SUCCESS
+);
+parcelHelpers.export(exports, "CONFERENCE_LIST_FAIL", ()=>CONFERENCE_LIST_FAIL
+);
+parcelHelpers.export(exports, "CONFERENCE_LIST_RESET", ()=>CONFERENCE_LIST_RESET
+);
+parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_REQUEST", ()=>CONFERENCE_APPROVED_LIST_REQUEST
+);
+parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_SUCCESS", ()=>CONFERENCE_APPROVED_LIST_SUCCESS
+);
+parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_FAIL", ()=>CONFERENCE_APPROVED_LIST_FAIL
+);
+parcelHelpers.export(exports, "CONFERENCE_APPROVED_LIST_RESET", ()=>CONFERENCE_APPROVED_LIST_RESET
+);
+parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_REQUEST", ()=>CONFERENCE_UNAPPROVED_LIST_REQUEST
+);
+parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_SUCCESS", ()=>CONFERENCE_UNAPPROVED_LIST_SUCCESS
+);
+parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_FAIL", ()=>CONFERENCE_UNAPPROVED_LIST_FAIL
+);
+parcelHelpers.export(exports, "CONFERENCE_UNAPPROVED_LIST_RESET", ()=>CONFERENCE_UNAPPROVED_LIST_RESET
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_DELETE_REQUEST", ()=>CONFERENCE_DETAILS_DELETE_REQUEST
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_DELETE_SUCCESS", ()=>CONFERENCE_DETAILS_DELETE_SUCCESS
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_DELETE_FAIL", ()=>CONFERENCE_DETAILS_DELETE_FAIL
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_UPDATE_REQUEST", ()=>CONFERENCE_DETAILS_UPDATE_REQUEST
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_UPDATE_SUCCESS", ()=>CONFERENCE_DETAILS_UPDATE_SUCCESS
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_UPDATE_FAIL", ()=>CONFERENCE_DETAILS_UPDATE_FAIL
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_UPDATE_RESET", ()=>CONFERENCE_DETAILS_UPDATE_RESET
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_BYID_REQUEST", ()=>CONFERENCE_DETAILS_BYID_REQUEST
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_BYID_SUCCESS", ()=>CONFERENCE_DETAILS_BYID_SUCCESS
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_BYID_FAIL", ()=>CONFERENCE_DETAILS_BYID_FAIL
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_BYID_RESET", ()=>CONFERENCE_DETAILS_BYID_RESET
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_CREATE_REQUEST", ()=>CONFERENCE_DETAILS_CREATE_REQUEST
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_CREATE_SUCCESS", ()=>CONFERENCE_DETAILS_CREATE_SUCCESS
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_CREATE_FAIL", ()=>CONFERENCE_DETAILS_CREATE_FAIL
+);
+parcelHelpers.export(exports, "CONFERENCE_DETAILS_CREATE_RESET", ()=>CONFERENCE_DETAILS_CREATE_RESET
+);
+const CONFERENCE_LIST_REQUEST = 'CONFERENCE_LIST_REQUEST';
+const CONFERENCE_LIST_SUCCESS = 'CONFERENCE_LIST_SUCCESS';
+const CONFERENCE_LIST_FAIL = 'CONFERENCE_LIST_FAIL';
+const CONFERENCE_LIST_RESET = 'CONFERENCE_LIST_RESET';
+const CONFERENCE_APPROVED_LIST_REQUEST = 'CONFERENCE_APPROVED_LIST_REQUEST';
+const CONFERENCE_APPROVED_LIST_SUCCESS = 'CONFERENCE_APPROVED_LIST_SUCCESS';
+const CONFERENCE_APPROVED_LIST_FAIL = 'CONFERENCE_APPROVED_LIST_FAIL';
+const CONFERENCE_APPROVED_LIST_RESET = 'CONFERENCE_APPROVED_LIST_RESET';
+const CONFERENCE_UNAPPROVED_LIST_REQUEST = 'CONFERENCE_UNAPPROVED_LIST_REQUEST';
+const CONFERENCE_UNAPPROVED_LIST_SUCCESS = 'CONFERENCE_UNAPPROVED_LIST_SUCCESS';
+const CONFERENCE_UNAPPROVED_LIST_FAIL = 'CONFERENCE_UNAPPROVED_LIST_FAIL';
+const CONFERENCE_UNAPPROVED_LIST_RESET = 'CONFERENCE_UNAPPROVED_LIST_RESET';
+const CONFERENCE_DETAILS_DELETE_REQUEST = 'CONFERENCE_DETAILS_DELETE_REQUEST';
+const CONFERENCE_DETAILS_DELETE_SUCCESS = 'CONFERENCE_DETAILS_DELETE_SUCCESS';
+const CONFERENCE_DETAILS_DELETE_FAIL = 'CONFERENCE_DETAILS_DELETE_FAIL';
+const CONFERENCE_DETAILS_UPDATE_REQUEST = 'CONFERENCE_DETAILS_UPDATE_REQUEST';
+const CONFERENCE_DETAILS_UPDATE_SUCCESS = 'CONFERENCE_DETAILS_UPDATE_SUCCESS';
+const CONFERENCE_DETAILS_UPDATE_FAIL = 'CONFERENCE_DETAILS_UPDATE_FAIL';
+const CONFERENCE_DETAILS_UPDATE_RESET = 'CONFERENCE_DETAILS_UPDATE_RESET';
+const CONFERENCE_DETAILS_BYID_REQUEST = 'CONFERENCE_DETAILS_BYID_REQUEST';
+const CONFERENCE_DETAILS_BYID_SUCCESS = 'CONFERENCE_DETAILS_BYID_SUCCESS';
+const CONFERENCE_DETAILS_BYID_FAIL = 'CONFERENCE_DETAILS_BYID_FAIL';
+const CONFERENCE_DETAILS_BYID_RESET = 'CONFERENCE_DETAILS_BYID_RESET';
+const CONFERENCE_DETAILS_CREATE_REQUEST = 'CONFERENCE_DETAILS_CREATE_REQUEST';
+const CONFERENCE_DETAILS_CREATE_SUCCESS = 'CONFERENCE_DETAILS_CREATE_SUCCESS';
+const CONFERENCE_DETAILS_CREATE_FAIL = 'CONFERENCE_DETAILS_CREATE_FAIL';
+const CONFERENCE_DETAILS_CREATE_RESET = 'CONFERENCE_DETAILS_CREATE_RESET';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"56S2h":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -61196,201 +61522,7 @@ _s(newsListScreen, "xCQ9ksLOR1Dvtk0xxNRl3LOf6Hw=", false, function() {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-redux":"7GDa4","react-bootstrap":"4n7hB","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","react-router-dom":"1PMSK","../../action/newsAction":"6pSDk","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../EditorScreen/Editor dashboard/listitems1":"1TblZ","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","../../constants/newsConstants.js":"57eKq"}],"6pSDk":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "listAllNews", ()=>listAllNews
-);
-parcelHelpers.export(exports, "deleteNews", ()=>deleteNews
-);
-parcelHelpers.export(exports, "getNewsDetails", ()=>getNewsDetails
-);
-parcelHelpers.export(exports, "updateNews", ()=>updateNews
-);
-parcelHelpers.export(exports, "createNewsDetails", ()=>createNewsDetails
-);
-var _axios = require("axios");
-var _axiosDefault = parcelHelpers.interopDefault(_axios);
-var _newsConstants = require("../constants/newsConstants");
-const listAllNews = ()=>async (dispatch)=>{
-        try {
-            dispatch({
-                type: _newsConstants.NEWS_LIST_REQUEST
-            });
-            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/news/allNews');
-            dispatch({
-                type: _newsConstants.NEWS_LIST_SUCCESS,
-                payload: data
-            });
-        } catch (error) {
-            dispatch({
-                type: _newsConstants.NEWS_LIST_FAIL,
-                payload: error.response && error.response.data.message ? error.response.data.message : error.message
-            });
-        }
-    }
-;
-const deleteNews = (id)=>async (dispatch, getState)=>{
-        try {
-            dispatch({
-                type: _newsConstants.NEWS_DELETE_REQUEST
-            });
-            const { userLogin: { userInfo  } ,  } = getState();
-            const config = {
-                headers: {
-                    Authorization: `Bearer ${userInfo.token}`
-                }
-            };
-            await _axiosDefault.default.delete(`http://localhost:8040/api/news/${id}`, config);
-            dispatch({
-                type: _newsConstants.NEWS_DELETE_SUCCESS
-            });
-        } catch (error) {
-            dispatch({
-                type: _newsConstants.NEWS_DELETE_FAIL,
-                payload: error.response && error.response.data.message ? error.response.data.message : error.message
-            });
-        }
-    }
-;
-const getNewsDetails = (id)=>async (disaptch, getState)=>{
-        try {
-            disaptch({
-                type: _newsConstants.NEWS_BYID_REQUEST
-            });
-            const { userLogin: { userInfo  } ,  } = getState();
-            const config = {
-                headers: {
-                    'Content-Type': 'application/json',
-                    Authorization: `Bearer ${userInfo.token}`
-                }
-            };
-            const { data  } = await _axiosDefault.default.get(`http://localhost:8040/api/news/${id}`, config);
-            disaptch({
-                type: _newsConstants.NEWS_BYID_SUCCESS,
-                payload: data
-            });
-        } catch (error) {
-            disaptch({
-                type: _newsConstants.NEWS_BYID_FAIL,
-                payload: error.response && error.response.data.message ? error.response.data.message : error.message
-            });
-        }
-    }
-;
-const updateNews = (news)=>async (dispatch, getState)=>{
-        try {
-            dispatch({
-                type: _newsConstants.NEWS_UPDATE_REQUEST
-            });
-            const { userLogin: { userInfo  } ,  } = getState();
-            const config = {
-                headers: {
-                    'Content-Type': 'application/json',
-                    Authorization: `Bearer ${userInfo.token}`
-                }
-            };
-            const { data  } = await _axiosDefault.default.put(`http://localhost:8040/api/news/${news._id}`, news, config);
-            dispatch({
-                type: _newsConstants.NEWS_UPDATE_SUCCESS,
-                payload: data
-            });
-        } catch (error) {
-            dispatch({
-                type: _newsConstants.NEWS_UPDATE_FAIL,
-                payload: error.response && error.response.data.message ? error.response.data.message : error.message
-            });
-        }
-    }
-;
-const createNewsDetails = ()=>async (dispatch, getState)=>{
-        try {
-            dispatch({
-                type: _newsConstants.NEWS_CREATE_REQUEST
-            });
-            const { userLogin: { userInfo  } ,  } = getState();
-            const config = {
-                headers: {
-                    Authorization: `Bearer ${userInfo.token}`
-                }
-            };
-            const { data  } = await _axiosDefault.default.post('http://localhost:8040/api/news/addNews', {
-            }, config);
-            dispatch({
-                type: _newsConstants.NEWS_CREATE_SUCCESS,
-                payload: data
-            });
-        } catch (error) {
-            dispatch({
-                type: _newsConstants.NEWS_CREATE_FAIL,
-                payload: error.response && error.response.data.message ? error.response.data.message : error.message
-            });
-        }
-    }
-;
-
-},{"axios":"7rA65","../constants/newsConstants":"57eKq","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"57eKq":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "NEWS_LIST_REQUEST", ()=>NEWS_LIST_REQUEST
-);
-parcelHelpers.export(exports, "NEWS_LIST_SUCCESS", ()=>NEWS_LIST_SUCCESS
-);
-parcelHelpers.export(exports, "NEWS_LIST_FAIL", ()=>NEWS_LIST_FAIL
-);
-parcelHelpers.export(exports, "NEWS_LIST_RESET", ()=>NEWS_LIST_RESET
-);
-parcelHelpers.export(exports, "NEWS_DELETE_REQUEST", ()=>NEWS_DELETE_REQUEST
-);
-parcelHelpers.export(exports, "NEWS_DELETE_SUCCESS", ()=>NEWS_DELETE_SUCCESS
-);
-parcelHelpers.export(exports, "NEWS_DELETE_FAIL", ()=>NEWS_DELETE_FAIL
-);
-parcelHelpers.export(exports, "NEWS_BYID_REQUEST", ()=>NEWS_BYID_REQUEST
-);
-parcelHelpers.export(exports, "NEWS_BYID_SUCCESS", ()=>NEWS_BYID_SUCCESS
-);
-parcelHelpers.export(exports, "NEWS_BYID_FAIL", ()=>NEWS_BYID_FAIL
-);
-parcelHelpers.export(exports, "NEWS_BYID_RESET", ()=>NEWS_BYID_RESET
-);
-parcelHelpers.export(exports, "NEWS_UPDATE_REQUEST", ()=>NEWS_UPDATE_REQUEST
-);
-parcelHelpers.export(exports, "NEWS_UPDATE_SUCCESS", ()=>NEWS_UPDATE_SUCCESS
-);
-parcelHelpers.export(exports, "NEWS_UPDATE_FAIL", ()=>NEWS_UPDATE_FAIL
-);
-parcelHelpers.export(exports, "NEWS_UPDATE_RESET", ()=>NEWS_UPDATE_RESET
-);
-parcelHelpers.export(exports, "NEWS_CREATE_REQUEST", ()=>NEWS_CREATE_REQUEST
-);
-parcelHelpers.export(exports, "NEWS_CREATE_SUCCESS", ()=>NEWS_CREATE_SUCCESS
-);
-parcelHelpers.export(exports, "NEWS_CREATE_FAIL", ()=>NEWS_CREATE_FAIL
-);
-parcelHelpers.export(exports, "NEWS_CREATE_RESET", ()=>NEWS_CREATE_RESET
-);
-const NEWS_LIST_REQUEST = 'NEWS_LIST_REQUEST';
-const NEWS_LIST_SUCCESS = 'NEWS_LIST_SUCCESS';
-const NEWS_LIST_FAIL = 'NEWS_LIST_FAIL';
-const NEWS_LIST_RESET = 'NEWS_LIST_RESET';
-const NEWS_DELETE_REQUEST = 'NEWS_DELETE_REQUEST';
-const NEWS_DELETE_SUCCESS = 'NEWS_DELETE_SUCCESS';
-const NEWS_DELETE_FAIL = 'NEWS_DELETE_FAIL';
-const NEWS_BYID_REQUEST = 'NEWS_BYID_REQUEST';
-const NEWS_BYID_SUCCESS = 'NEWS_BYID_SUCCESS';
-const NEWS_BYID_FAIL = 'NEWS_BYID_FAIL';
-const NEWS_BYID_RESET = 'NEWS_BYID_RESET';
-const NEWS_UPDATE_REQUEST = 'NEWS_UPDATE_REQUEST';
-const NEWS_UPDATE_SUCCESS = 'NEWS_UPDATE_SUCCESS';
-const NEWS_UPDATE_FAIL = 'NEWS_UPDATE_FAIL';
-const NEWS_UPDATE_RESET = 'NEWS_UPDATE_RESET';
-const NEWS_CREATE_REQUEST = 'NEWS_CREATE_REQUEST';
-const NEWS_CREATE_SUCCESS = 'NEWS_CREATE_SUCCESS';
-const NEWS_CREATE_FAIL = 'NEWS_CREATE_FAIL';
-const NEWS_CREATE_RESET = 'NEWS_CREATE_RESET';
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"5e4OZ":[function(require,module,exports) {
+},{"react":"3b2NM","react-redux":"7GDa4","react-bootstrap":"4n7hB","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/Box":"5C19c","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Grid":"5T6Yd","@material-ui/core/Paper":"5Fj22","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","react-router-dom":"1PMSK","../../action/newsAction":"6pSDk","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../EditorScreen/Editor dashboard/listitems1":"1TblZ","../../components/Loader/loader.js":"68bDI","../../components/Message/message.js":"6fMfw","../../constants/newsConstants.js":"57eKq"}],"5e4OZ":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -62423,7 +62555,104 @@ $RefreshReg$(_c1, "Dashboard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","../adminDashboard/listitems3":"4KiUu","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../Message/message.js":"6fMfw","../../Loader/loader.js":"68bDI","../../../action/adminAction.js":"18Cn4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"24gh2":[function() {},{}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","../adminDashboard/listitems3":"4KiUu","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../Message/message.js":"6fMfw","../../Loader/loader.js":"68bDI","../../../action/adminAction.js":"18Cn4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"4kzNI":[function(require,module,exports) {
+var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "NewsCarousel", ()=>NewsCarousel
+);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _reactBootstrap = require("react-bootstrap");
+var _reactRedux = require("react-redux");
+var _loaderJs = require("../Loader/loader.js");
+var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _messageJs = require("../Message/message.js");
+var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
+var _s = $RefreshSig$();
+const NewsCarousel = ()=>{
+    _s();
+    const dispatch = _reactRedux.useDispatch();
+    const listNews = _reactRedux.useSelector((state)=>state.listNews
+    );
+    const { loading , error , news  } = listNews;
+    _react.useEffect(()=>{
+        dispatch(listAllNews());
+    }, [
+        dispatch
+    ]);
+    return(/*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("div", {
+        className: "main",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsCarousel.js\\newsCarousel.js",
+            lineNumber: 23
+        },
+        __self: undefined
+    }, "loading ? ", /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsCarousel.js\\newsCarousel.js",
+            lineNumber: 24
+        },
+        __self: undefined
+    }), " : error ? ", /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsCarousel.js\\newsCarousel.js",
+            lineNumber: 24
+        },
+        __self: undefined
+    }, error), " : (", /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Carousel, {
+        pause: "hover",
+        className: "bg-light",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsCarousel.js\\newsCarousel.js",
+            lineNumber: 25
+        },
+        __self: undefined
+    }, news.map((newA)=>/*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Carousel.Item, {
+            key: newA._id,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsCarousel.js\\newsCarousel.js",
+                lineNumber: 27
+            },
+            __self: undefined
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Carousel.Caption, {
+            className: "carousel-caption",
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsCarousel.js\\newsCarousel.js",
+                lineNumber: 29
+            },
+            __self: undefined
+        }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+            className: "nm",
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\components\\NewsCarousel.js\\newsCarousel.js",
+                lineNumber: 30
+            },
+            __self: undefined
+        }, newA.name, " (date", newA.date, ")")))
+    )), ")")));
+};
+_s(NewsCarousel, "0VfMpwqd6hO4O7CW0kLk4yuHLcY=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
+_c = NewsCarousel;
+exports.default = NewsCarousel;
+var _c;
+$RefreshReg$(_c, "NewsCarousel");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","react-router-dom":"1PMSK","react-bootstrap":"4n7hB","react-redux":"7GDa4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","../Loader/loader.js":"68bDI","../Message/message.js":"6fMfw"}],"24gh2":[function() {},{}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");

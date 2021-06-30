@@ -4,9 +4,8 @@ import Appbar from '../../components/Navbar/navbar.js'
 import Footer from '../../components/Footer/footer.js'
 import Showcase from '../../components/Showcase/showcase.js'
 import { Button, Form, Table } from 'react-bootstrap';
-import { listConDetails } from '../../action/conferenceAction.js'
-import Loader from '../../components/Loader/loader.js'
-import Message from '../../components/Message/message.js'
+import NewsList from '../../components/NewsApprovelist/newsApprovelist.js'
+import { Link } from "react-router-dom";
 import './homescreen.css'
 
 
@@ -17,6 +16,8 @@ const homeScreen = () => {
                   <div className="man">
                         <Appbar />
                         <Showcase />
+                        <NewsList />
+                        <Link to='fg.pdf' target="_blank" download >Generate Report</Link>
                         <Footer />
                   </div>
             </>
