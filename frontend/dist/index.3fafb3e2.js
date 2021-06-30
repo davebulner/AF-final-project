@@ -62988,6 +62988,7 @@ var _messageJs = require("../../../components/Message/message.js");
 var _messageJsDefault = parcelHelpers.interopDefault(_messageJs);
 var _loaderJs = require("../../../components/Loader/loader.js");
 var _loaderJsDefault = parcelHelpers.interopDefault(_loaderJs);
+var _reviwerActionJs = require("../../../action/reviwerAction.js");
 var _s = $RefreshSig$();
 const drawerWidth = 240;
 const useStyles = _styles.makeStyles((theme)=>({
@@ -63086,17 +63087,26 @@ function Dashboard() {
         setOpen(false);
     };
     const fixedHeightPaper = _clsxDefault.default(classes.paper, classes.fixedHeight);
+    const dispatch = _reactRedux.useDispatch();
+    const listWorkshops = _reactRedux.useSelector((state)=>state.listWorkshops
+    );
+    const { loading , error , workshops  } = listWorkshops;
+    _react.useEffect(()=>{
+        dispatch(_reviwerActionJs.getAllWorkshops());
+    }, [
+        dispatch
+    ]);
     return(/*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.root,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 127
+            lineNumber: 138
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_cssBaselineDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 128
+            lineNumber: 139
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_appBarDefault.default, {
@@ -63104,14 +63114,14 @@ function Dashboard() {
         className: _clsxDefault.default(classes.appBar, open && classes.appBarShift),
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 129
+            lineNumber: 140
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_toolbarDefault.default, {
         className: classes.toolbar,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 130
+            lineNumber: 141
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
@@ -63122,13 +63132,13 @@ function Dashboard() {
         className: _clsxDefault.default(classes.menuButton, open && classes.menuButtonHidden),
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 131
+            lineNumber: 142
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_menuDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 138
+            lineNumber: 149
         },
         __self: this
     })), /*#__PURE__*/ _reactDefault.default.createElement(_typographyDefault.default, {
@@ -63139,14 +63149,14 @@ function Dashboard() {
         className: classes.title,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 140
+            lineNumber: 151
         },
         __self: this
     }, "Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
         color: "inherit",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 143
+            lineNumber: 154
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_badgeDefault.default, {
@@ -63154,13 +63164,13 @@ function Dashboard() {
         color: "secondary",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 144
+            lineNumber: 155
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_notificationsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 145
+            lineNumber: 156
         },
         __self: this
     }))))), /*#__PURE__*/ _reactDefault.default.createElement(_drawerDefault.default, {
@@ -63171,65 +63181,65 @@ function Dashboard() {
         open: open,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 150
+            lineNumber: 161
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.toolbarIcon,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 157
+            lineNumber: 168
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_iconButtonDefault.default, {
         onClick: handleDrawerClose,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 158
+            lineNumber: 169
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement(_chevronLeftDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 159
+            lineNumber: 170
         },
         __self: this
     }))), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 162
+            lineNumber: 173
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 163
+            lineNumber: 174
         },
         __self: this
     }, _listitemsReviewerJs.mainListItems), /*#__PURE__*/ _reactDefault.default.createElement(_dividerDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 164
+            lineNumber: 175
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_listDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 165
+            lineNumber: 176
         },
         __self: this
     }, _listitemsReviewerJs.secondaryListItems)), /*#__PURE__*/ _reactDefault.default.createElement("main", {
         className: classes.content,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 168
+            lineNumber: 179
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: classes.appBarSpacer,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 169
+            lineNumber: 180
         },
         __self: this
     }), /*#__PURE__*/ _reactDefault.default.createElement(_containerDefault.default, {
@@ -63237,28 +63247,197 @@ function Dashboard() {
         className: classes.container,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 170
+            lineNumber: 181
         },
         __self: this
     }, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 172
+            lineNumber: 183
         },
         __self: this
-    }, "Reviwer Dashboard"), /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+    }, "Reviwer Dashboard"), loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderJsDefault.default, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
-            lineNumber: 175
+            lineNumber: 184
         },
         __self: this
-    }, "reviwer")))));
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageJsDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 185
+        },
+        __self: this
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Table, {
+        striped: true,
+        bordered: true,
+        hover: true,
+        responsive: true,
+        variant: "light",
+        className: "table-sm",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 187
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("thead", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 188
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("tr", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 189
+        },
+        __self: this
+    }, /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 190
+        },
+        __self: this
+    }, "Name"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 191
+        },
+        __self: this
+    }, "Description"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 192
+        },
+        __self: this
+    }, "Time From"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 193
+        },
+        __self: this
+    }, "Time To"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 194
+        },
+        __self: this
+    }, "Time Date"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 195
+        },
+        __self: this
+    }, "Documents"), /*#__PURE__*/ _reactDefault.default.createElement("th", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 196
+        },
+        __self: this
+    }, "Approved"))), /*#__PURE__*/ _reactDefault.default.createElement("tbody", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+            lineNumber: 199
+        },
+        __self: this
+    }, workshops.map((con)=>/*#__PURE__*/ _reactDefault.default.createElement("tr", {
+            key: con._id,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 201
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 202
+            },
+            __self: this
+        }, con.workshopName), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 203
+            },
+            __self: this
+        }, con.workshopDes), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 204
+            },
+            __self: this
+        }, con.workTimeFrom), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 205
+            },
+            __self: this
+        }, con.workTimeTo), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 206
+            },
+            __self: this
+        }, con.workDate), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 207
+            },
+            __self: this
+        }, con.workInsertDoc), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 208
+            },
+            __self: this
+        }, con.workIsApprove ? /*#__PURE__*/ _reactDefault.default.createElement("i", {
+            className: "fas fa-check",
+            style: {
+                color: 'green'
+            },
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 209
+            },
+            __self: this
+        }, " ") : /*#__PURE__*/ _reactDefault.default.createElement("i", {
+            className: "fas fa-times",
+            style: {
+                color: 'red'
+            },
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 209
+            },
+            __self: this
+        }, " ")), /*#__PURE__*/ _reactDefault.default.createElement("td", {
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 212
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterBootstrap.LinkContainer, {
+            to: `/conDetails/${con._id}`,
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 213
+            },
+            __self: this
+        }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Button, {
+            variant: "light",
+            className: "btn-sm",
+            __source: {
+                fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\reviewerdashboard.js",
+                lineNumber: 214
+            },
+            __self: this
+        }, "Details"))))
+    )))))));
 }
 exports.default = Dashboard;
-_s(Dashboard, "ZbauVcu/I6GQoZvFWe0/Vd1mXmg=", false, function() {
+_s(Dashboard, "mJDjLjGgmqbtrUGj9FzzHZf9lyc=", false, function() {
     return [
-        useStyles
-    ];
+        useStyles, _reactRedux.useDispatch, _reactRedux.useSelector];
 });
 _c = Dashboard;
 var _c;
@@ -63269,7 +63448,7 @@ $RefreshReg$(_c, "Dashboard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../../components/Message/message.js":"6fMfw","../../../components/Loader/loader.js":"68bDI","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./listitemsReviewer.js":"36Zj1"}],"36Zj1":[function(require,module,exports) {
+},{"react":"3b2NM","clsx":"29lTl","@material-ui/core/styles":"1Rdvd","@material-ui/core/CssBaseline":"5UKTZ","@material-ui/core/Drawer":"7l2O8","@material-ui/core/AppBar":"3NZOv","@material-ui/core/Toolbar":"3jiG5","@material-ui/core/List":"5yMsX","@material-ui/core/Typography":"3wcF9","@material-ui/core/Divider":"4RdAl","@material-ui/core/IconButton":"2ndRy","@material-ui/core/Badge":"5IK52","@material-ui/core/Container":"3NY2X","@material-ui/core/Link":"7iRxz","@material-ui/icons/Menu":"5IEDk","@material-ui/icons/ChevronLeft":"1IYYX","@material-ui/icons/Notifications":"5TyxM","react-router-bootstrap":"LSFfJ","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../../components/Message/message.js":"6fMfw","../../../components/Loader/loader.js":"68bDI","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./listitemsReviewer.js":"36Zj1","../../../action/reviwerAction.js":"7iFEU"}],"36Zj1":[function(require,module,exports) {
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -63343,7 +63522,7 @@ const mainListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
     },
     __self: undefined
 }))), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Link, {
-    to: "/",
+    to: "/reviwer",
     __source: {
         fileName: "D:\\AF-final-project\\frontend\\src\\Screens\\reviwerScreen\\reviewerdashboard\\listitemsReviewer.js",
         lineNumber: 26
@@ -63481,7 +63660,56 @@ const mainListItems = /*#__PURE__*/ _reactDefault.default.createElement("div", {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","@material-ui/core/ListItem":"2DNb3","@material-ui/core/ListItemIcon":"5siUZ","@material-ui/core/ListItemText":"7t7nz","@material-ui/core/ListSubheader":"505Dd","@material-ui/icons/Dashboard":"5Q3Fn","@material-ui/icons/ShoppingCart":"6WIpv","@material-ui/icons/People":"4QwVK","@material-ui/icons/BarChart":"1075F","@material-ui/icons/Layers":"5vTqU","@material-ui/icons/Assignment":"3UO7R","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"34NXB":[function(require,module,exports) {
+},{"react":"3b2NM","@material-ui/core/ListItem":"2DNb3","@material-ui/core/ListItemIcon":"5siUZ","@material-ui/core/ListItemText":"7t7nz","@material-ui/core/ListSubheader":"505Dd","@material-ui/icons/Dashboard":"5Q3Fn","@material-ui/icons/ShoppingCart":"6WIpv","@material-ui/icons/People":"4QwVK","@material-ui/icons/BarChart":"1075F","@material-ui/icons/Layers":"5vTqU","@material-ui/icons/Assignment":"3UO7R","react-router-dom":"1PMSK","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"7iFEU":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getAllWorkshops", ()=>getAllWorkshops
+);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reviwerConstantsJs = require("../constants/reviwerConstants.js");
+const getAllWorkshops = ()=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _reviwerConstantsJs.WORKSHOP_LIST_REQUEST_REVIWER
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('http://localhost:8040/api/reviewdetails/', config);
+            dispatch({
+                type: _reviwerConstantsJs.WORKSHOP_LIST_SUCCESS_REVIWER,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _reviwerConstantsJs.WORKSHOP_LIST_FAIL_REVIWER,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+
+},{"axios":"7rA65","../constants/reviwerConstants.js":"5Tx56","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"5Tx56":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "WORKSHOP_LIST_REQUEST_REVIWER", ()=>WORKSHOP_LIST_REQUEST_REVIWER
+);
+parcelHelpers.export(exports, "WORKSHOP_LIST_SUCCESS_REVIWER", ()=>WORKSHOP_LIST_SUCCESS_REVIWER
+);
+parcelHelpers.export(exports, "WORKSHOP_LIST_FAIL_REVIWER", ()=>WORKSHOP_LIST_FAIL_REVIWER
+);
+parcelHelpers.export(exports, "WORKSHOP_LIST_RESET_REVIWER", ()=>WORKSHOP_LIST_RESET_REVIWER
+);
+const WORKSHOP_LIST_REQUEST_REVIWER = 'WORKSHOP_LIST_REQUEST_REVIWER';
+const WORKSHOP_LIST_SUCCESS_REVIWER = 'WORKSHOP_LIST_SUCCESS_REVIWER';
+const WORKSHOP_LIST_FAIL_REVIWER = 'WORKSHOP_LIST_FAIL_REVIWER';
+const WORKSHOP_LIST_RESET_REVIWER = 'WORKSHOP_LIST_RESET_REVIWER';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"34NXB":[function(require,module,exports) {
 var helpers = require("../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -64286,6 +64514,7 @@ var _adminReducersJs = require("../src/reducers/adminReducers.js");
 var _researcherReducerJs = require("./reducers/researcherReducer.js");
 var _workshopReducerJs = require("./reducers/workshopReducer.js");
 var _newsReducersJs = require("../src/reducers/newsReducers.js");
+var _reviwerReducerJs = require("../src/reducers/reviwerReducer.js");
 const reducer = _redux.combineReducers({
     userLogin: _userReducersJs.userLoginReducer,
     listCon: _conferenceReducerJs.conListReducer,
@@ -64313,7 +64542,8 @@ const reducer = _redux.combineReducers({
     newsDetails: _adminReducersJs.newsReducer,
     userDetailsReducer: _userReducersJs.userDetailsReducer,
     newsApproved: _adminReducersJs.adminNewsReducer,
-    nDetails: _adminReducersJs.getNewsDetailsById
+    nDetails: _adminReducersJs.getNewsDetailsById,
+    listWorkshops: _reviwerReducerJs.getAllWorkshop
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -64325,7 +64555,7 @@ const middleware = [_reduxThunkDefault.default];
 const store = _redux.createStore(reducer, initialState, _reduxDevtoolsExtension.composeWithDevTools(_redux.applyMiddleware(...middleware)));
 exports.default = store;
 
-},{"redux":"7panR","redux-thunk":"2oNwf","redux-devtools-extension":"3vUkb","../src/reducers/userReducers.js":"2BaWm","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../src/reducers/conferenceReducer.js":"2dHIK","../src/reducers/adminReducers.js":"1wIE8","../src/reducers/newsReducers.js":"6Sed3","./reducers/researcherReducer.js":"46B3G","./reducers/workshopReducer.js":"3WSFn"}],"7panR":[function(require,module,exports) {
+},{"redux":"7panR","redux-thunk":"2oNwf","redux-devtools-extension":"3vUkb","../src/reducers/userReducers.js":"2BaWm","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../src/reducers/conferenceReducer.js":"2dHIK","../src/reducers/adminReducers.js":"1wIE8","../src/reducers/newsReducers.js":"6Sed3","./reducers/researcherReducer.js":"46B3G","./reducers/workshopReducer.js":"3WSFn","../src/reducers/reviwerReducer.js":"10ABc"}],"7panR":[function(require,module,exports) {
 'use strict';
 Object.defineProperty(exports, '__esModule', {
     value: true
@@ -65622,6 +65852,39 @@ const workshopInsert = (state = {
     }
 };
 
-},{"../constants/workshopConstants.js":"5akWQ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"24gh2":[function() {},{}]},["1j6wU","6iKAK","5rkFb"], "5rkFb", "parcelRequire0de8")
+},{"../constants/workshopConstants.js":"5akWQ","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"10ABc":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "getAllWorkshop", ()=>getAllWorkshop
+);
+var _reviwerConstantsJs = require("../constants/reviwerConstants.js");
+const getAllWorkshop = (state = {
+    workshops: []
+}, action)=>{
+    switch(action.type){
+        case _reviwerConstantsJs.WORKSHOP_LIST_REQUEST_REVIWER:
+            return {
+                loading: true
+            };
+        case _reviwerConstantsJs.WORKSHOP_LIST_SUCCESS_REVIWER:
+            return {
+                loading: false,
+                workshops: action.payload
+            };
+        case _reviwerConstantsJs.WORKSHOP_LIST_FAIL_REVIWER:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        case _reviwerConstantsJs.WORKSHOP_LIST_RESET_REVIWER:
+            return {
+                workshops: []
+            };
+        default:
+            return state;
+    }
+};
+
+},{"../constants/reviwerConstants.js":"5Tx56","@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"24gh2":[function() {},{}]},["1j6wU","6iKAK","5rkFb"], "5rkFb", "parcelRequire0de8")
 
 //# sourceMappingURL=index.3fafb3e2.js.map

@@ -23,7 +23,7 @@ export const mainListItems = (
     </ListItem>
   </Link>
 
-  <Link to="/">
+  <Link to="/reviwer">
     <ListItem button>
       <ListItemIcon>
         <ShoppingCartIcon />

@@ -21,7 +21,7 @@ import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import Message from '../../../components/Message/message.js'
 import Loader from '../../../components/Loader/loader.js'
-
+import { getAllWorkshops } from '../../../action/reviwerAction.js'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
@@ -121,6 +121,17 @@ export default function Dashboard() {
     };
     const fixedHeightPaper = clsx(classes.paper, classes.fixedHeight);
     
+
+    const dispatch = useDispatch()
+
+    const listWorkshops = useSelector(state => state.listWorkshops)
+    const { loading, error, workshops } = listWorkshops
+
+    useEffect(() => {
+      dispatch(getAllWorkshops())
+    }, [dispatch])
+
+
     
 
     return (
@@ -170,10 +181,47 @@ export default function Dashboard() {
           <Container maxWidth="lg" className={classes.container}>
 
           <h1>Reviwer Dashboard</h1>
-         
-          
-               <h1>reviwer</h1>
-          
+          {loading ? (<Loader />) : error ? (
+                <Message variant='danger'>{error}</Message>
+          ) : (
+                <Table striped bordered hover responsive variant="light" className='table-sm'>
+                      <thead>
+                            <tr>
+                                  <th>Name</th>
+                                  <th>Description</th>
+                                  <th>Time From</th>
+                                  <th>Time To</th>
+                                  <th>Time Date</th>
+                                  <th>Documents</th>
+                                  <th>Approved</th>
+                            </tr>
+                      </thead>
+                      <tbody>
+                            {workshops.map((con) => (
+                                  <tr key={con._id} >
+                                        <td>{con.workshopName}</td>
+                                        <td>{con.workshopDes}</td>
+                                        <td>{con.workTimeFrom}</td>
+                                        <td>{con.workTimeTo}</td>
+                                        <td>{con.workDate}</td>
+                                        <td>{con.workInsertDoc}</td>
+                                        <td>{con.workIsApprove ? 
+                                          (<i className='fas fa-check' style={{ color:'green' }}> </i>) : (<i className='fas fa-times' style={{ color:'red' }}> </i>)
+                                        }
+                                        </td>
+                                        <td>
+                                            <LinkContainer to={`/conDetails/${con._id}`}>
+                                                <Button variant='light' className='btn-sm'>
+                                                    Details
+                                                </Button>
+                                            </LinkContainer>
+                                        </td>
+                                       
+                                  </tr>
+                            ))}
+                      </tbody>
+                </Table>
+          )}
           </Container>
         </main>
       </div>
