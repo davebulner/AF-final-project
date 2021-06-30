@@ -20,7 +20,7 @@ const ApproveScreen = ({ match }) => {
 
       useEffect(() => {
 
-        if (!conferencedetails) {
+        if (conferencedetails) {
                   dispatch(getConferenceDetailsById(confId))
             } 
       }, [dispatch])
@@ -37,7 +37,6 @@ const ApproveScreen = ({ match }) => {
                         <Col md={8}>
                               <ListGroup variant='flush'>
                                     <ListGroup.Item>
-                                          <h2>Shipping</h2>
                                           <p>
                                                 <strong>Name: </strong> {conferencedetails.conname}
                                           </p>

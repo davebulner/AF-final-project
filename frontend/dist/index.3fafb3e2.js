@@ -61093,7 +61093,7 @@ const ApproveScreen = ({ match  })=>{
     );
     const { conferencedetails , loading , error  } = cDetails;
     _react.useEffect(()=>{
-        if (!conferencedetails) dispatch(_adminActionJs.getConferenceDetailsById(confId));
+        if (conferencedetails) dispatch(_adminActionJs.getConferenceDetailsById(confId));
     }, [
         dispatch
     ]);
@@ -61142,48 +61142,42 @@ const ApproveScreen = ({ match  })=>{
             lineNumber: 39
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
             lineNumber: 40
         },
         __self: undefined
-    }, "Shipping"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
             lineNumber: 41
         },
         __self: undefined
-    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
-        __source: {
-            fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 42
-        },
-        __self: undefined
     }, "Name: "), " ", conferencedetails.conname), /*#__PURE__*/ _reactDefault.default.createElement("p", {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 45
+            lineNumber: 44
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 46
+            lineNumber: 45
         },
         __self: undefined
     }, "Address:"), conferencedetails.organizer), conferencedetails.isApproved ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
         variant: "success",
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 50
+            lineNumber: 49
         },
         __self: undefined
     }, "isApproved") : /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
         variant: "danger",
         __source: {
             fileName: "D:\\AF\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
-            lineNumber: 54
+            lineNumber: 53
         },
         __self: undefined
     }, "Not isApproved"))))));
