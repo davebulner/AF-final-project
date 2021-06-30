@@ -16,6 +16,7 @@ import getAdminReviwer from './components/Admin/adminUserDetails/adminReviwer.js
 import ConferenceDetailsUpdate from './Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js'
 import newsListScreen from './Screens/NewsListScreen/newsListScreen'
 import NewsEditScreen from './Screens/NewsEditScreen/newsEditScreen.js'
+import AdminApproveScreen from './components/Admin/adminConferenceDetails/approveScreen.js'
 
 
 const App = () => {
@@ -34,7 +35,7 @@ const App = () => {
                         <Route path="/adminEditors" component={getAdminEditor} />
                         <Route path="/adminReviwer" component={getAdminReviwer} />
                         <Route path="/con/:id" component={ConferenceDetailsUpdate} />
-                  
+                        <Route path="/conDetails/:id" component={AdminApproveScreen} />
                         <Route path="/newslist" component={newsListScreen} />
                         <Route path='/news/:id' component={NewsEditScreen} />
                   </div>

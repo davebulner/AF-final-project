@@ -21888,18 +21888,20 @@ var _newsListScreen = require("./Screens/NewsListScreen/newsListScreen");
 var _newsListScreenDefault = parcelHelpers.interopDefault(_newsListScreen);
 var _newsEditScreenJs = require("./Screens/NewsEditScreen/newsEditScreen.js");
 var _newsEditScreenJsDefault = parcelHelpers.interopDefault(_newsEditScreenJs);
+var _approveScreenJs = require("./components/Admin/adminConferenceDetails/approveScreen.js");
+var _approveScreenJsDefault = parcelHelpers.interopDefault(_approveScreenJs);
 const App = ()=>{
     return(/*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.BrowserRouter, {
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 23
+            lineNumber: 24
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement("div", {
         className: "main",
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 24
+            lineNumber: 25
         },
         __self: undefined
     }, /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21908,7 +21910,7 @@ const App = ()=>{
         exact: true,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 25
+            lineNumber: 26
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21916,7 +21918,7 @@ const App = ()=>{
         component: _loginScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 26
+            lineNumber: 27
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21924,7 +21926,7 @@ const App = ()=>{
         component: _registerScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 27
+            lineNumber: 28
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21932,7 +21934,7 @@ const App = ()=>{
         component: _lggedInHomeScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 28
+            lineNumber: 29
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21940,7 +21942,7 @@ const App = ()=>{
         component: _adminDashboardDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 29
+            lineNumber: 30
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21948,7 +21950,7 @@ const App = ()=>{
         component: _editorDashboardDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 30
+            lineNumber: 31
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21956,7 +21958,7 @@ const App = ()=>{
         component: _approvedScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 31
+            lineNumber: 32
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21964,7 +21966,7 @@ const App = ()=>{
         component: _unapprovedScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 32
+            lineNumber: 33
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21972,7 +21974,7 @@ const App = ()=>{
         component: _adminConferenceDetailsJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 33
+            lineNumber: 34
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21980,7 +21982,7 @@ const App = ()=>{
         component: _adminEditorsListJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 34
+            lineNumber: 35
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21988,7 +21990,7 @@ const App = ()=>{
         component: _adminReviwerJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 35
+            lineNumber: 36
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -21996,7 +21998,15 @@ const App = ()=>{
         component: _conferenceDetailsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 36
+            lineNumber: 37
+        },
+        __self: undefined
+    }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
+        path: "/conDetails/:id",
+        component: _approveScreenJsDefault.default,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
+            lineNumber: 38
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22004,7 +22014,7 @@ const App = ()=>{
         component: _newsListScreenDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 38
+            lineNumber: 39
         },
         __self: undefined
     }), /*#__PURE__*/ _reactDefault.default.createElement(_reactRouterDom.Route, {
@@ -22012,7 +22022,7 @@ const App = ()=>{
         component: _newsEditScreenJsDefault.default,
         __source: {
             fileName: "D:\\AF-final-project\\frontend\\src\\App.js",
-            lineNumber: 39
+            lineNumber: 40
         },
         __self: undefined
     }))));
@@ -22027,7 +22037,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./Screens/ProfileScreen/profileScreen":"5EbTp","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./components/Admin/adminUserDetails/adminReviwer.js":"3xKCG","./Screens/NewsListScreen/newsListScreen":"9EX0B","./Screens/NewsEditScreen/newsEditScreen.js":"5e4OZ"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
+},{"react":"3b2NM","./App.css":"4K27S","react-router-dom":"1PMSK","./Screens/HomeScreen/homescreen":"4gYva","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f","./Screens/LoginScreen/loginScreen":"2EjbP","./Screens/RegisterScreen/registerScreen":"7xglY","./Screens/EditorScreen/approvedScreen":"3lNMi","./Screens/EditorScreen/unapprovedScreen":"5BaDu","./components/Admin/adminDashboard/adminDashboard":"3WbXB","./Screens/EditorScreen/Editor dashboard/editorDashboard":"1Pedk","./Screens/loggedinHomeScreen/lggedInHomeScreen":"5pJ4O","./components/Admin/adminConferenceDetails/adminConferenceDetails.js":"4pxqo","./Screens/ConferenceDetailsEditScreen/conferenceDetailsEditScreen.js":"1ElwT","./Screens/ProfileScreen/profileScreen":"5EbTp","./components/Admin/adminUserDetails/adminEditorsList.js":"QhESC","./components/Admin/adminUserDetails/adminReviwer.js":"3xKCG","./Screens/NewsListScreen/newsListScreen":"9EX0B","./Screens/NewsEditScreen/newsEditScreen.js":"5e4OZ","./components/Admin/adminConferenceDetails/approveScreen.js":"v3seJ"}],"4K27S":[function() {},{}],"1PMSK":[function(require,module,exports) {
 "use strict";
 module.exports = require("./cjs/react-router-dom.js");
 
@@ -58823,7 +58833,7 @@ parcelHelpers.export(exports, "getEditorsList", ()=>getEditorsList
 );
 parcelHelpers.export(exports, "getReviwerList", ()=>getReviwerList
 );
-parcelHelpers.export(exports, "getConferenceDetailsbyId", ()=>getConferenceDetailsbyId
+parcelHelpers.export(exports, "getConferenceDetailsById", ()=>getConferenceDetailsById
 );
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
@@ -58900,10 +58910,10 @@ const getReviwerList = ()=>async (dispatch, getState)=>{
         }
     }
 ;
-const getConferenceDetailsbyId = (id)=>async (dispatch, getState)=>{
+const getConferenceDetailsById = (id)=>async (dispatch, getState)=>{
         try {
             dispatch({
-                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_BYID_REQUEST
+                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_ID_REQUEST
             });
             const { userLogin: { userInfo  } ,  } = getState();
             const config = {
@@ -58912,14 +58922,14 @@ const getConferenceDetailsbyId = (id)=>async (dispatch, getState)=>{
                     Authorization: `Bearer ${userInfo.token}`
                 }
             };
-            const { data  } = await _axiosDefault.default.get(`localhost:8040/api/admin/${id}`, config);
+            const { data  } = await _axiosDefault.default.get(`http://localhost:8040/api/conDetails/admin/con/${id}`, config);
             dispatch({
-                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS,
+                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_ID_SUCCESS,
                 payload: data
             });
         } catch (error) {
             dispatch({
-                type: _adminConstantsJs.ADMIN_CONFERENCE_DETAILS_BYID_FAIL,
+                type: CONFERENCE_DETAILS_BYID_FAIL,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }
@@ -58961,13 +58971,13 @@ parcelHelpers.export(exports, "REVIWER_LIST_FAIL_ADMIN", ()=>REVIWER_LIST_FAIL_A
 );
 parcelHelpers.export(exports, "REVIWER_LIST_RESET_ADMIN", ()=>REVIWER_LIST_RESET_ADMIN
 );
-parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_REQUEST", ()=>ADMIN_CONFERENCE_DETAILS_BYID_REQUEST
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_ID_REQUEST", ()=>ADMIN_CONFERENCE_DETAILS_ID_REQUEST
 );
-parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS", ()=>ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_ID_SUCCESS", ()=>ADMIN_CONFERENCE_DETAILS_ID_SUCCESS
 );
-parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_FAIL", ()=>ADMIN_CONFERENCE_DETAILS_BYID_FAIL
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_ID_FAIL", ()=>ADMIN_CONFERENCE_DETAILS_ID_FAIL
 );
-parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_BYID_RESET", ()=>ADMIN_CONFERENCE_DETAILS_BYID_RESET
+parcelHelpers.export(exports, "ADMIN_CONFERENCE_DETAILS_ID_RESET", ()=>ADMIN_CONFERENCE_DETAILS_ID_RESET
 );
 const CONFERENCE_APPROVED_LIST_REQUEST_ADMIN = 'CONFERENCE_APPROVED_LIST_REQUEST_ADMIN';
 const CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN = 'CONFERENCE_APPROVED_LIST_SUCCESS_ADMIN';
@@ -58985,10 +58995,10 @@ const REVIWER_LIST_REQUEST_ADMIN = 'REVIWER_LIST_REQUEST_ADMIN';
 const REVIWER_LIST_SUCCESS_ADMIN = 'REVIWER_LIST_SUCCESS_ADMIN';
 const REVIWER_LIST_FAIL_ADMIN = 'REVIWER_LIST_FAIL_ADMIN';
 const REVIWER_LIST_RESET_ADMIN = 'REVIWER_LIST_RESET_ADMIN';
-const ADMIN_CONFERENCE_DETAILS_BYID_REQUEST = 'ADMIN_CONFERENCE_DETAILS_BYID_REQUEST';
-const ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS = 'ADMIN_CONFERENCE_DETAILS_BYID_SUCCESS';
-const ADMIN_CONFERENCE_DETAILS_BYID_FAIL = 'ADMIN_CONFERENCE_DETAILS_BYID_FAIL';
-const ADMIN_CONFERENCE_DETAILS_BYID_RESET = 'ADMIN_CONFERENCE_DETAILS_BYID_RESET';
+const ADMIN_CONFERENCE_DETAILS_ID_REQUEST = 'ADMIN_CONFERENCE_DETAILS_ID_REQUEST';
+const ADMIN_CONFERENCE_DETAILS_ID_SUCCESS = 'ADMIN_CONFERENCE_DETAILS_ID_SUCCESS';
+const ADMIN_CONFERENCE_DETAILS_ID_FAIL = 'ADMIN_CONFERENCE_DETAILS_ID_FAIL';
+const ADMIN_CONFERENCE_DETAILS_ID_RESET = 'ADMIN_CONFERENCE_DETAILS_ID_RESET';
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"367CR"}],"3WDQu":[function(require,module,exports) {
 var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
@@ -61572,7 +61582,144 @@ $RefreshReg$(_c, "NewsDetailsUpdate");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"3b2NM","react-router-dom":"1PMSK","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","../../components/FormContainer/formContainer.js":"1RrBX","../../action/newsAction":"6pSDk","../../constants/newsConstants":"57eKq","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"24gh2":[function() {},{}],"4av32":[function(require,module,exports) {
+},{"react":"3b2NM","react-router-dom":"1PMSK","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../components/Message/message":"6fMfw","../../components/Loader/loader":"68bDI","../../components/FormContainer/formContainer.js":"1RrBX","../../action/newsAction":"6pSDk","../../constants/newsConstants":"57eKq","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"v3seJ":[function(require,module,exports) {
+var helpers = require("../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+helpers.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _axios = require("axios");
+var _axiosDefault = parcelHelpers.interopDefault(_axios);
+var _reactBootstrap = require("react-bootstrap");
+var _reactRedux = require("react-redux");
+var _message = require("../../../components/Message/message");
+var _messageDefault = parcelHelpers.interopDefault(_message);
+var _loader = require("../../../components/Loader/loader");
+var _loaderDefault = parcelHelpers.interopDefault(_loader);
+var _adminActionJs = require("../../../action/adminAction.js");
+var _s = $RefreshSig$();
+const ApproveScreen = ({ match  })=>{
+    _s();
+    const confId = match.params.id;
+    const dispatch = _reactRedux.useDispatch();
+    const cDetails = _reactRedux.useSelector((state)=>state.cDetails
+    );
+    const { conferencedetails , loading , error  } = cDetails;
+    _react.useEffect(()=>{
+        if (!conferencedetails) dispatch(_adminActionJs.getConferenceDetailsById(confId));
+    }, [
+        dispatch
+    ]);
+    return loading ? /*#__PURE__*/ _reactDefault.default.createElement(_loaderDefault.default, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 30
+        },
+        __self: undefined
+    }) : error ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 32
+        },
+        __self: undefined
+    }, error) : /*#__PURE__*/ _reactDefault.default.createElement(_reactDefault.default.Fragment, null, /*#__PURE__*/ _reactDefault.default.createElement("h1", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 35
+        },
+        __self: undefined
+    }, "Conference ", conferencedetails.conname), /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Row, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 36
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.Col, {
+        md: 8,
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 37
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup, {
+        variant: "flush",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 38
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement(_reactBootstrap.ListGroup.Item, {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 39
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("h2", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 40
+        },
+        __self: undefined
+    }, "Shipping"), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 41
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 42
+        },
+        __self: undefined
+    }, "Name: "), " ", conferencedetails.conname), /*#__PURE__*/ _reactDefault.default.createElement("p", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 45
+        },
+        __self: undefined
+    }, /*#__PURE__*/ _reactDefault.default.createElement("strong", {
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 46
+        },
+        __self: undefined
+    }, "Address:"), conferencedetails.organizer), conferencedetails.isApproved ? /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "success",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 50
+        },
+        __self: undefined
+    }, "isApproved") : /*#__PURE__*/ _reactDefault.default.createElement(_messageDefault.default, {
+        variant: "danger",
+        __source: {
+            fileName: "D:\\AF-final-project\\frontend\\src\\components\\Admin\\adminConferenceDetails\\approveScreen.js",
+            lineNumber: 54
+        },
+        __self: undefined
+    }, "Not isApproved"))))));
+};
+_s(ApproveScreen, "DvRhPYLqwgXUkdXF0TSK5+YTpto=", false, function() {
+    return [_reactRedux.useDispatch, _reactRedux.useSelector];
+});
+_c = ApproveScreen;
+exports.default = ApproveScreen;
+var _c;
+$RefreshReg$(_c, "ApproveScreen");
+
+  helpers.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react":"3b2NM","axios":"7rA65","react-bootstrap":"4n7hB","react-redux":"7GDa4","../../../components/Message/message":"6fMfw","../../../components/Loader/loader":"68bDI","../../../action/adminAction.js":"18Cn4","@parcel/transformer-js/src/esmodule-helpers.js":"367CR","../../../../node_modules/@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"4Jj4f"}],"24gh2":[function() {},{}],"4av32":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _redux = require("redux");
@@ -61600,7 +61747,8 @@ const reducer = _redux.combineReducers({
     delNews: _newsReducersJs.newsDeleteReducer,
     getNews: _newsReducersJs.newsgetReducer,
     newsUpdate: _newsReducersJs.newsUpadateReducer,
-    newsCreate: _newsReducersJs.newsCreateReducer
+    newsCreate: _newsReducersJs.newsCreateReducer,
+    cDetails: _adminReducersJs.getConferenceDetailsById
 });
 const userInfoFromStorage = localStorage.getItem('userInfo') ? JSON.parse(localStorage.getItem('userInfo')) : null;
 const initialState = {
@@ -62444,6 +62592,8 @@ parcelHelpers.export(exports, "getEditorReducer", ()=>getEditorReducer
 );
 parcelHelpers.export(exports, "getReviwerReducer", ()=>getReviwerReducer
 );
+parcelHelpers.export(exports, "getConferenceDetailsById", ()=>getConferenceDetailsById
+);
 var _adminConstants = require("../constants/adminConstants");
 const conferenceReducer = (state = {
     conferencedetails: []
@@ -62517,6 +62667,32 @@ const getReviwerReducer = (state = {
         case _adminConstants.REVIWER_LIST_RESET_ADMIN:
             return {
                 users: []
+            };
+        default:
+            return state;
+    }
+};
+const getConferenceDetailsById = (state = {
+    conferencedetails: []
+}, action)=>{
+    switch(action.type){
+        case _adminConstants.ADMIN_CONFERENCE_DETAILS_ID_REQUEST:
+            return {
+                loading: true
+            };
+        case _adminConstants.ADMIN_CONFERENCE_DETAILS_ID_SUCCESS:
+            return {
+                loading: false,
+                conferencedetails: action.payload
+            };
+        case _adminConstants.ADMIN_CONFERENCE_DETAILS_ID_FAIL:
+            return {
+                loading: false,
+                error: action.payload
+            };
+        case _adminConstants.ADMIN_CONFERENCE_DETAILS_ID_RESET:
+            return {
+                conferencedetails: []
             };
         default:
             return state;
