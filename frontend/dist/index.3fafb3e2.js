@@ -64457,6 +64457,8 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "getAllWorkshops", ()=>getAllWorkshops
 );
+parcelHelpers.export(exports, "getAllResearch", ()=>getAllResearch
+);
 var _axios = require("axios");
 var _axiosDefault = parcelHelpers.interopDefault(_axios);
 var _reviwerConstantsJs = require("../constants/reviwerConstants.js");
@@ -64479,6 +64481,30 @@ const getAllWorkshops = ()=>async (dispatch, getState)=>{
         } catch (error) {
             dispatch({
                 type: _reviwerConstantsJs.WORKSHOP_LIST_FAIL_REVIWER,
+                payload: error.response && error.response.data.message ? error.response.data.message : error.message
+            });
+        }
+    }
+;
+const getAllResearch = ()=>async (dispatch, getState)=>{
+        try {
+            dispatch({
+                type: _reviwerConstantsJs.RESEARCH_LIST_REQUEST_REVIWER
+            });
+            const { userLogin: { userInfo  } ,  } = getState();
+            const config = {
+                headers: {
+                    Authorization: `Bearer ${userInfo.token}`
+                }
+            };
+            const { data  } = await _axiosDefault.default.get('localhost:8040/api/reviewdetails/research', config);
+            dispatch({
+                type: _reviwerConstantsJs.RESEARCH_LIST_SUCCESS_REVIWER,
+                payload: data
+            });
+        } catch (error) {
+            dispatch({
+                type: _reviwerConstantsJs.RESEARCH_LIST_FAIL_REVIWER,
                 payload: error.response && error.response.data.message ? error.response.data.message : error.message
             });
         }

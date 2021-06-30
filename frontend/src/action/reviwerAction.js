@@ -40,3 +40,36 @@ export const getAllWorkshops = () => async (dispatch, getState) => {
           })
     }
 }
+
+
+export const getAllResearch = () => async (dispatch, getState) => {
+    try {
+          dispatch({
+                type: RESEARCH_LIST_REQUEST_REVIWER,
+          })
+          const {
+                userLogin: { userInfo },
+          } = getState()
+
+          const config = {
+                headers: {
+                      Authorization: `Bearer ${userInfo.token}`,
+                },
+          }
+
+          const { data } = await axios.get('localhost:8040/api/reviewdetails/research', config)
+
+          dispatch({
+                type: RESEARCH_LIST_SUCCESS_REVIWER,
+                payload: data
+          })
+    } catch (error) {
+          dispatch({
+                type: RESEARCH_LIST_FAIL_REVIWER,
+                payload:
+                      error.response && error.response.data.message
+                            ? error.response.data.message
+                            : error.message,
+          })
+    }
+}
